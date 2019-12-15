@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const ContainerLefStrip = styled.div`
   width: 20%;
-  height: 400px;
+  height: 100%;
   background-color: yellow;
   position: absolute;
   text-align: center;
