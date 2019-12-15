@@ -3,13 +3,14 @@ import LeftStrip from '../components/left-strip';
 import {
   Container,
   ContinerTitle,
+  TitleName,
 } from './styles'
 
 function index() {
   return (
     <Container>
       <ContinerTitle>
-        <h1>EDISO</h1>
+        <TitleName>Edison jordan alba sarmiento</TitleName>
       </ContinerTitle>
       <LeftStrip/>
     </Container>

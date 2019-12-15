@@ -1,10 +1,13 @@
 import React from 'react';
+import {
+  ContainerLefStrip
+} from './styles';
 
 function index() {
   return (
-    <div>
+    <ContainerLefStrip>
       <h1>Hola</h1>
-    </div>
+    </ContainerLefStrip>
   );
 }
 
