@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  width: 100%;
+  width: 100%;  
 `;
 export const ContinerTitle = styled.div`
   background-color: red;
@@ -10,4 +10,14 @@ export const ContinerTitle = styled.div`
 
 export const TitleName = styled.h1`
   text-align: right;
+`;
+
+export const ContinerInformation = styled.div`
+  width: 56%;
+  background-color: blue;
+  padding: 20px;
+  top: 0;
+  left: 0;
+  right: 68%;
+  margin: 0px 0px 0px 35%;
 `;

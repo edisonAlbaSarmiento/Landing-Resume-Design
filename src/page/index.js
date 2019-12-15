@@ -4,6 +4,7 @@ import {
   Container,
   ContinerTitle,
   TitleName,
+  ContinerInformation,
 } from './styles'
 
 function index() {
@@ -13,6 +14,10 @@ function index() {
         <TitleName>Edison jordan alba sarmiento</TitleName>
       </ContinerTitle>
       <LeftStrip/>
+      <ContinerInformation>
+        <TitleName>Edison jordan alba sarmiento</TitleName>
+
+      </ContinerInformation>
     </Container>
   );
 }
