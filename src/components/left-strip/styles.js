@@ -15,13 +15,15 @@ export const ContainerLefStrip = styled.div`
 `;
 
 export const ContainerImage = styled.div`
+  margin: 45px;
   width: 150px;
   height: 150px;
   background-color: green;
-  border-radius: 68px 68px 68px 68px;
+  border-radius: 50%;
+  overflow: hidden;
 `;
 
-export const Image = styled.image`
-  height: 20px;
-  width: 20px;
+export const Image = styled.img`
+  height: 100%;
+  width: 100%;
 `;
