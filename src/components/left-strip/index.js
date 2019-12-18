@@ -1,12 +1,16 @@
 import React from 'react';
 import {
-  ContainerLefStrip
+  ContainerLefStrip,
+  ContainerImage,
+  Image
 } from './styles';
 
 function index() {
   return (
     <ContainerLefStrip>
-      <h1>Hola</h1>
+      <ContainerImage>
+        <Image src="https://avatars1.githubusercontent.com/u/31748119?s=460&v=4" />
+      </ContainerImage>
     </ContainerLefStrip>
   );
 }
