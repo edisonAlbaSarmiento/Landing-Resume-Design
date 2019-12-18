@@ -5,6 +5,7 @@ import {
   ContinerTitle,
   TitleName,
   ContinerInformation,
+  ContainerInformationUser,
 } from './styles'
 
 function index() {
@@ -16,7 +17,9 @@ function index() {
       <LeftStrip/>
       <ContinerInformation>
         <TitleName>Edison jordan alba sarmiento</TitleName>
-
+      <ContainerInformationUser>
+        <h1>HOL</h1>
+      </ContainerInformationUser>
       </ContinerInformation>
     </Container>
   );

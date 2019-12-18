@@ -2,7 +2,7 @@ import React from 'react';
 import {
   ContainerLefStrip,
   ContainerImage,
-  Image
+  Image,
 } from './styles';
 
 function index() {
