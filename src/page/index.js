@@ -5,8 +5,8 @@ import {
   ContinerTitle,
   TitleName,
   ContinerInformation,
-  ContainerInformationUser,
 } from './styles'
+import ContainerInformationUser from '../components/information-content';
 
 function index() {
   return (
@@ -18,8 +18,12 @@ function index() {
       <ContinerInformation>
         <TitleName>Edison jordan alba sarmiento</TitleName>
       <ContainerInformationUser>
-        <h1>HOL</h1>
+        <p>sssdds</p>
       </ContainerInformationUser>
+      <ContainerInformationUser>
+      <p>AAAAAA</p>
+      </ContainerInformationUser>
+      <ContainerInformationUser />
       </ContinerInformation>
     </Container>
   );

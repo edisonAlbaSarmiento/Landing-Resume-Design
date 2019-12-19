@@ -22,8 +22,3 @@ export const ContinerInformation = styled.div`
   margin: 0px 0px 0px 35%;
 `;
 
-export const ContainerInformationUser = styled.div`
-  height: 50%;
-  width: 50%;
-  background-color: red;
-`;
