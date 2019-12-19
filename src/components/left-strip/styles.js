@@ -8,16 +8,17 @@ export const ContainerLefStrip = styled.div`
   text-align: center;
   top: 0;
   left: 0;
-  right: 68%;
+  right: 68%; 
   margin: 0 auto;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  flex-direction: column;
 `;
 
 export const ContainerImage = styled.div`
   margin: 45px;
-  width: 150px;
-  height: 150px;
+  width: 62%;
+  height: 19%;
   background-color: green;
   border-radius: 50%;
   overflow: hidden;

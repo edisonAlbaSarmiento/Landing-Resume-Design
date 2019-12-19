@@ -3,8 +3,8 @@ import styled from 'styled-components';
 export const ContainerInformationUser = styled.div`
   display: flex;
   flex-direction: row;
-  height: 50%;
+  height: ${props => props.centerTitle ? `8%` : `50%`};
   width: 100%;
   background-color: red;
-  justify-content: space-between;
+  justify-content: ${props => props.centerTitle ? `center` : `space-between`};
 `;

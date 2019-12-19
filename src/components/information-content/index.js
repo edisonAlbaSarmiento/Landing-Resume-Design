@@ -4,15 +4,22 @@ import {
 } from './styles'
 
 function index(
-  {children}
+  {
+    children, 
+    title,
+    icon,
+    center
+  },
 ) {
   return (
     <>
-    <ContainerInformationUser>
-    <h4>Abut me</h4>
-    <h4>Abut me</h4>
+    <ContainerInformationUser centerTitle={center}>
+    <h4>{title}</h4>
+    {icon && (
+      <h4>{icon}</h4>
+    )}
     </ContainerInformationUser>
-        {children}
+      {children}
    </>
   );
 }

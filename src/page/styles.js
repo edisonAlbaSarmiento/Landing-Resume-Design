@@ -22,3 +22,4 @@ export const ContinerInformation = styled.div`
   margin: 0px 0px 0px 35%;
 `;
 
+export const ContainerText = styled.p``;
