@@ -18,7 +18,7 @@ function index() {
       <LeftStrip/>
       <ContinerInformation>
         <TitleName>Edison jordan alba sarmiento</TitleName>
-        <ContainerInformationUser title='Abut me' icon='NAME'>
+        <ContainerInformationUser title='Abut me' icon='rocket'>
           <ContainerText>
           sssdsssddssssddssssddssssddssssddssssddssssddssssddssssddssssddssssddss
           ssddsdssssddssssddssssddssssddssssddssssddssssddssssddssssddssssddssssdds
