@@ -14,7 +14,6 @@ import UserGetData from '../hooks/data';
 
 function index() {
   const myData = UserGetData();
-  console.log('myData',myData)
   return myData.length === 0 ? <Pulsate color="red" size="100px" duration="5s" /> :(
     <Container>
       <ContinerTitle>
