@@ -8,12 +8,17 @@ import {
   ContainerText,
 } from './styles'
 import ContainerInformationUser from '../components/information-content';
+import { Pulsate } from 'styled-loaders-react'
+//Hooks
+import UserGetData from '../hooks/data';
 
 function index() {
-  return (
+  const myData = UserGetData();
+  console.log('myData',myData)
+  return myData.length === 0 ? <Pulsate color="red" size="100px" duration="5s" /> :(
     <Container>
       <ContinerTitle>
-        <TitleName>Edison jordan alba sarmiento</TitleName>
+        <TitleName>{myData.name}</TitleName>
       </ContinerTitle>
       <LeftStrip/>
       <ContinerInformation>
