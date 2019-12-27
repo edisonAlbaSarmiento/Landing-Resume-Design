@@ -4,6 +4,7 @@ import {
   ContainerImage,
   Image,
   ContainerInfoUser,
+  ContianerPower,
 } from './styles';
 import ContainerInformationUser from '../information-content';
 
@@ -30,7 +31,9 @@ function index({nameUser, avatar, email, phone}) {
           </ContainerInfoUser>
         </ContainerInformationUser>
         <ContainerInformationUser title='Power Charge' center>
-          <p>ededed</p>
+          <ContianerPower>
+            50%
+          </ContianerPower>
         </ContainerInformationUser>
         <ContainerInformationUser title='Redes Sociales' center>
           <p>Edison</p>

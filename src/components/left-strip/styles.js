@@ -35,3 +35,6 @@ export const ContainerInfoUser = styled.div`
   justify-content: space-between;
   padding: 0px 36px 0 36px;
 `;
+
+export const ContianerPower =  styled.div`
+`;
