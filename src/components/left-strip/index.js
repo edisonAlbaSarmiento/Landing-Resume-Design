@@ -3,17 +3,31 @@ import {
   ContainerLefStrip,
   ContainerImage,
   Image,
+  ContainerInfoUser,
 } from './styles';
 import ContainerInformationUser from '../information-content';
 
-function index() {
+function index({nameUser, avatar, email, phone}) {
+  console.log('nameUser',nameUser)
+  const name = nameUser;
   return (
     <ContainerLefStrip>
       <ContainerImage>
-        <Image src="https://avatars1.githubusercontent.com/u/31748119?s=460&v=4" />
+        <Image src={avatar} />
       </ContainerImage>
         <ContainerInformationUser title='Info' center>
-          <p>sssssss</p>
+          <ContainerInfoUser>
+            <p>{name}</p>
+            <p>EEEEEE</p>
+          </ContainerInfoUser>
+          <ContainerInfoUser>
+            <p>{email}</p>
+            <p>EEEEEE</p>
+          </ContainerInfoUser>
+          <ContainerInfoUser>
+            <p>{phone}</p>
+            <p>EEEEEE</p>
+          </ContainerInfoUser>
         </ContainerInformationUser>
         <ContainerInformationUser title='Power Charge' center>
           <p>ededed</p>

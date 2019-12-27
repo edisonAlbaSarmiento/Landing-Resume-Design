@@ -20,7 +20,12 @@ function index() {
       <ContinerTitle>
         <TitleName>{myData.name}</TitleName>
       </ContinerTitle>
-      <LeftStrip avatar={myData.avatar} />
+      <LeftStrip 
+        avatar={myData.avatar} 
+        email={myData.email}
+        phone={myData.phone}
+        nameUser={myData.name}
+      />
       <ContinerInformation>
         <ContainerInformationUser title='Abut me' icon='rocket'>
           <ContainerText>

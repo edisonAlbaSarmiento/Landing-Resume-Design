@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const ContainerLefStrip = styled.div`
   width: 20%;
-  height: auto;
+  height: 100%;
   background-color: #61a8a7;
   position: fixed;
   text-align: center;
@@ -27,4 +27,11 @@ export const ContainerImage = styled.div`
 export const Image = styled.img`
   height: 100%;
   width: 100%;
+`;
+
+export const ContainerInfoUser = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0px 36px 0 36px;
 `;
