@@ -27,5 +27,5 @@ export const ContinerInformation = styled.div`
 export const ContainerText = styled.p``;
 
 export const ContainerInformation = styled.div`
-  padding: 5%;
+  padding: 2% 3% 0 2%;
 `;

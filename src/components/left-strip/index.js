@@ -5,6 +5,9 @@ import {
   Image,
   ContainerInfoUser,
   ContianerPower,
+  Progress,
+  Container,
+  ProgressFill
 } from './styles';
 import ContainerInformationUser from '../information-content';
 
@@ -31,9 +34,27 @@ function index({nameUser, avatar, email, phone}) {
           </ContainerInfoUser>
         </ContainerInformationUser>
         <ContainerInformationUser title='Power Charge' center>
+          <Container>
           <ContianerPower>
-            50%
-          </ContianerPower>
+              <p>
+               JS
+              </p>
+              <Progress>
+                <ProgressFill value="5%"/>
+              </Progress>
+            </ContianerPower>
+            <ContianerPower>
+              JS <Progress>
+                <ProgressFill value="20%"/>
+              </Progress>
+            </ContianerPower>
+            <ContianerPower>
+              JS <Progress>
+                <ProgressFill value="50%" />
+              </Progress>
+            </ContianerPower>
+          </Container>
+  
         </ContainerInformationUser>
         <ContainerInformationUser title='Redes Sociales' center>
           <p>Edison</p>

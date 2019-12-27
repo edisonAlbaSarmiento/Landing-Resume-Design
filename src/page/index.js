@@ -45,6 +45,7 @@ function index() {
             {item.link !== '' && (
               <a href={item.link}>Ver credencial</a>
             )}
+            <hr/>
           </ContainerInformation>
         ))}
         </ContainerInformationUser>
