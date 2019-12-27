@@ -1,19 +1,21 @@
 {
     "address": "Bogotá, Colombia",
-    "avatar": "https://s3.amazonaws.com/chewiekie/img/photo.jpg",
+    "avatar": "https://avatars1.githubusercontent.com/u/31748119?s=460&v=4",
     "bio": "Ignore the squirrels, you'll never catch them anyway hack, for floof tum, tickle bum, jellybean footies curly toes climb leg roll over and sun my belly, ",
     "certificate": [
         {
             "date": "Jan 2021",
             "description": "Hack up furballs try to jump onto window and fall while scratching at wall. ",
             "institution": "La Estancia",
-            "name": "FrontEnd Developer"
+            "name": "FrontEnd Developer",
+            "link": "https://es.reactjs.org/docs/hooks-reference.html"
         },
         {
-            "date": "Jan 2021",
+            "date": "Jan 2022",
             "description": "Scratch at the door then walk away wack the mini furry mouse",
             "institution": "La Estancia",
-            "name": "Backend Developer"
+            "name": "Backend Developer",
+            "link": ""
         }
     ],
     "education": [
@@ -28,6 +30,13 @@
             "degree": "Space Engineering",
             "description": "Meow in empty rooms. Find empty spot in cupboard and sleep all day check cat door for ambush 10 times before coming in for hack. ",
             "endDate": "December 2015",
+            "institution": "Harvard",
+            "startDate": "Jan 2017"
+        },
+        {
+            "degree": "Space Engineering",
+            "description": "Meow in empty rooms. Find empty spot in cupboard and sleep all day check cat door for ambush 10 times before coming in for hack. ",
+            "endDate": "",
             "institution": "Harvard",
             "startDate": "Jan 2017"
         }
@@ -48,7 +57,7 @@
             "startDate": "Sept 2019"
         }
     ],
-    "name": "Melissa Walsh",
+    "name": "Edison Jordan Alba Sarmiento",
     "profession": "FrontEnd Developer",
     "skills": [
         {

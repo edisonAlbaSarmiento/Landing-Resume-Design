@@ -6,6 +6,7 @@ import {
   TitleName,
   ContinerInformation,
   ContainerText,
+  ContainerInformation
 } from './styles'
 import ContainerInformationUser from '../components/information-content';
 import { Pulsate } from 'styled-loaders-react'
@@ -19,25 +20,56 @@ function index() {
       <ContinerTitle>
         <TitleName>{myData.name}</TitleName>
       </ContinerTitle>
-      <LeftStrip/>
+      <LeftStrip avatar={myData.avatar} />
       <ContinerInformation>
-        <TitleName>Edison jordan alba sarmiento</TitleName>
         <ContainerInformationUser title='Abut me' icon='rocket'>
           <ContainerText>
-          sssdsssddssssddssssddssssddssssddssssddssssddssssddssssddssssddssssddss
-          ssddsdssssddssssddssssddssssddssssddssssddssssddssssddssssddssssddssssdds
-          sssddssssddssssddssssddssssddssssddssssddssssddssssddssssddssssddssssdds
+          {myData.bio}
           </ContainerText>
         </ContainerInformationUser>
-        <ContainerInformationUser title='Abut me 2' icon='NAME 2'>
-        <h4>2018 - 2019</h4>
-        <p>TESTEST</p>
-        <p>TESTEST TESTEST TESTEST TESTEST TESTEST</p>
+        <ContainerInformationUser title='Education' icon='NAME 2'>
+        {myData.education.map((item, index) => (
+          <ContainerInformation key={index}>
+            <h4>{item.startDate}</h4>
+            {item.endDate !== '' && (
+              <h4>{item.endDate}</h4>
+            )}
+            <p>{item.institution}</p>
+            <p>{item.degree}</p>
+            <p>{item.description}</p>
+            {item.link !== '' && (
+              <a href={item.link}>Ver credencial</a>
+            )}
+          </ContainerInformation>
+        ))}
         </ContainerInformationUser>
-        <ContainerInformationUser title='Abut me 3' icon='NAME 3'>
-          <h4>2018 - 2019</h4>
-          <p>TESTEST</p>
-          <p>TESTEST TESTEST TESTEST TESTEST TESTEST</p>
+        <ContainerInformationUser title='Experience' icon='NAME 3'>
+          {myData.experience.map((item, index) => (
+            <ContainerInformation key={index}>
+              <h4>{item.startDate}</h4>
+              {item.endDate !== '' && (
+                <h4>{item.endDate}</h4>
+              )}
+              <p>{item.company}</p>
+              <p>{item.jobTitle}</p>
+              <p>{item.jobDescription}</p>
+            </ContainerInformation>
+          ))}
+        </ContainerInformationUser>
+        <ContainerInformationUser title='Certificate' icon='NAME 3'>
+          {myData.certificate.map((item, index) => (
+          <ContainerInformation key={index}>
+            <h4>{item.date}</h4>
+            <p>{item.institution}</p>
+            <p>{item.name}</p>
+            <p>{item.description}</p>
+            {item.link !== '' && (
+              <a href='https://es.reactjs.org/docs/hooks-reference.html'>Ver credencial</a>
+            )}
+          </ContainerInformation>
+          ))}
+ 
+
         </ContainerInformationUser>
       </ContinerInformation>
     </Container>
