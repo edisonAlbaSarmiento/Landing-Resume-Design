@@ -6,6 +6,7 @@ export const Container = styled.div`
 export const ContinerTitle = styled.div`
   background-color: #30383a;
   padding: 20px;
+  margin-top: 1%;
 `;
 
 export const TitleName = styled.h1`

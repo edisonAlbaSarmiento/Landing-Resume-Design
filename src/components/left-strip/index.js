@@ -12,13 +12,13 @@ function index() {
       <ContainerImage>
         <Image src="https://avatars1.githubusercontent.com/u/31748119?s=460&v=4" />
       </ContainerImage>
-        <ContainerInformationUser title='TEST' center>
+        <ContainerInformationUser title='Info' center>
           <p>sssssss</p>
         </ContainerInformationUser>
-        <ContainerInformationUser title='TEST 2' center>
+        <ContainerInformationUser title='Power Charge' center>
           <p>ededed</p>
         </ContainerInformationUser>
-        <ContainerInformationUser title='TEST 3' center>
+        <ContainerInformationUser title='Redes Sociales' center>
           <p>Edison</p>
         </ContainerInformationUser>
     </ContainerLefStrip>

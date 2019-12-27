@@ -4,7 +4,7 @@ export const ContainerLefStrip = styled.div`
   width: 20%;
   height: auto;
   background-color: #61a8a7;
-  position: absolute;
+  position: fixed;
   text-align: center;
   top: 0;
   left: 0;
