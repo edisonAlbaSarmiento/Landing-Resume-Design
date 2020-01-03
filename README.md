@@ -1,5 +1,9 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+inspiration for change and new design
+
+https://www.uplabs.com/posts/glazzy-free-portfolio-psd-template
+
 ## Available Scripts
 
 In the project directory, you can run:
