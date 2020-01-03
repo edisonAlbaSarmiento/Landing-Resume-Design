@@ -1,85 +1,67 @@
-import React from 'react';
-import LeftStrip from '../components/left-strip';
+import React, { useState } from 'react';
+// import LeftStrip from '../components/left-strip';
 import {
   Container,
-  ContinerTitle,
-  TitleName,
-  ContinerInformation,
-  ContainerText,
-  ContainerInformation
+  // ContinerTitle,
+  // TitleName,
+  // ContinerInformation,
+  // ContainerText,
+  // ContainerInformation
 } from './styles'
-import ContainerInformationUser from '../components/information-content';
+// import ContainerInformationUser from '../components/information-content';
 import { Pulsate } from 'styled-loaders-react'
+import { Grid, Row, Col } from 'react-flexbox-grid';
+
+
 //Hooks
 import UserGetData from '../hooks/data';
 
-function index() {
+function Page() {
   const myData = UserGetData();
-  return myData.length === 0 ? <Pulsate color="red" size="100px" duration="5s" /> :(
-    <Container>
-      <ContinerTitle>
-        <TitleName>{myData.name}</TitleName>
-      </ContinerTitle>
-      <LeftStrip 
-        avatar={myData.avatar} 
-        email={myData.email}
-        phone={myData.phone}
-        nameUser={myData.name}
-      />
-      <ContinerInformation>
-        <ContainerInformationUser title='Abut me' icon='rocket'>
-          <ContainerText>
-          {myData.bio}
-          </ContainerText>
-        </ContainerInformationUser>
-        <ContainerInformationUser title='Education' icon='NAME 2'>
-        {myData.education.map((item, index) => (
-          <ContainerInformation key={index}>
-            <h4>{item.startDate}</h4>
-            {item.endDate !== '' && (
-              <h4>{item.endDate}</h4>
-            )}
-            <p>{item.institution}</p>
-            <p>{item.degree}</p>
-            <p>{item.description}</p>
-            {item.link !== '' && (
-              <a href={item.link}>Ver credencial</a>
-            )}
-            <hr/>
-          </ContainerInformation>
-        ))}
-        </ContainerInformationUser>
-        <ContainerInformationUser title='Experience' icon='NAME 3'>
-          {myData.experience.map((item, index) => (
-            <ContainerInformation key={index}>
-              <h4>{item.startDate}</h4>
-              {item.endDate !== '' && (
-                <h4>{item.endDate}</h4>
-              )}
-              <p>{item.company}</p>
-              <p>{item.jobTitle}</p>
-              <p>{item.jobDescription}</p>
-            </ContainerInformation>
-          ))}
-        </ContainerInformationUser>
-        <ContainerInformationUser title='Certificate' icon='NAME 3'>
-          {myData.certificate.map((item, index) => (
-          <ContainerInformation key={index}>
-            <h4>{item.date}</h4>
-            <p>{item.institution}</p>
-            <p>{item.name}</p>
-            <p>{item.description}</p>
-            {item.link !== '' && (
-              <a href='https://es.reactjs.org/docs/hooks-reference.html'>Ver credencial</a>
-            )}
-          </ContainerInformation>
-          ))}
- 
+  const [section, setSection] = useState('');
 
-        </ContainerInformationUser>
-      </ContinerInformation>
-    </Container>
+  return myData.length === 0 ? <Pulsate color="red" size="100px" duration="5s" /> :(
+    <Grid>
+     <Row>
+      <Col xs={3} >
+        <Container>
+          <h4 onClick={() => setSection('')}>
+            Hello, world!
+          </h4>
+          <button onClick={() => setSection('about')}>
+          Click me about
+        </button>
+        <button onClick={() => setSection('info')}>
+          Click me about
+        </button>
+        <button onClick={() => setSection('contact')}>
+          Click me about
+        </button>
+        </Container>
+      </Col>
+      {section === '' &&(
+        <Col xs={9} >
+        Hello, por defecto!
+        </Col>
+      )}
+      {section === 'about' &&(
+        <Col xs={9} >
+        Hello, about!
+        </Col>
+      )}
+      {section === 'info' &&(
+        <Col xs={9} >
+        Hello, info!
+        </Col>
+      )}
+      {section === 'contact' &&(
+        <Col xs={9} >
+        Hello, contact!
+        </Col>
+      )}
+      </Row>
+    </Grid>
   );
 }
 
-export default index;
+export default Page;
