@@ -1,5 +1,9 @@
 import React, { useState } from 'react';
-// import LeftStrip from '../components/left-strip';
+import {
+  ContainerRight, 
+  ContainerAbout
+} from '../components/index';
+
 import {
   Container,
   // ContinerTitle,
@@ -41,12 +45,13 @@ function Page() {
       </Col>
       {section === '' &&(
         <Col xs={9} >
-        Hello, por defecto!
+          <ContainerRight />
         </Col>
       )}
       {section === 'about' &&(
         <Col xs={9} >
-        Hello, about!
+          <ContainerAbout />
+
         </Col>
       )}
       {section === 'info' &&(
