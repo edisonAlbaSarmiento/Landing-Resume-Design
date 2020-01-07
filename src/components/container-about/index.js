@@ -1,65 +1,22 @@
 import React from 'react';
 import {
-  ContainerLefStrip,
-  ContainerImage,
-  Image,
-  ContainerInfoUser,
-  ContianerPower,
-  Progress,
   Container,
-  ProgressFill
+  ContainerTitle,
+  Title,
+  Line
 } from './styles';
-import ContainerInformationUser from '../information-content';
 
-function index({nameUser, avatar, email, phone}) {
-  console.log('nameUser',nameUser)
-  const name = nameUser;
+function index() {
   return (
-    <ContainerLefStrip>
-      <ContainerImage>
-        <Image src={avatar} />
-      </ContainerImage>
-        <ContainerInformationUser title='Info' center>
-          <ContainerInfoUser>
-            <p>{name}</p>
-            <p>ABTUS</p>
-          </ContainerInfoUser>
-          <ContainerInfoUser>
-            <p>{email}</p>
-            <p>EEEEEE</p>
-          </ContainerInfoUser>
-          <ContainerInfoUser>
-            <p>{phone}</p>
-            <p>EEEEEE</p>
-          </ContainerInfoUser>
-        </ContainerInformationUser>
-        <ContainerInformationUser title='Power Charge' center>
-          <Container>
-          <ContianerPower>
-              <p>
-               JS
-              </p>
-              <Progress>
-                <ProgressFill value="5%"/>
-              </Progress>
-            </ContianerPower>
-            <ContianerPower>
-              JS <Progress>
-                <ProgressFill value="20%"/>
-              </Progress>
-            </ContianerPower>
-            <ContianerPower>
-              JS <Progress>
-                <ProgressFill value="50%" />
-              </Progress>
-            </ContianerPower>
-          </Container>
-  
-        </ContainerInformationUser>
-        <ContainerInformationUser title='Redes Sociales' center>
-          <p>Edison</p>
-        </ContainerInformationUser>
-    </ContainerLefStrip>
+    <Container>
+      <ContainerTitle>
+        <Title>
+          About
+        </Title>
+        <Line />
+      </ContainerTitle>
+   
+    </Container>
   );
 }
 

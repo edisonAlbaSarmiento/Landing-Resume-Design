@@ -1,8 +1,7 @@
 import styled from 'styled-components';
 
 export const ContainerLefStrip = styled.div`
-  background-color: #61a8a7;
-
+  background-color: ${props => props.theme.color.purple};
 `;  
 
 export const ContainerImage = styled.div`

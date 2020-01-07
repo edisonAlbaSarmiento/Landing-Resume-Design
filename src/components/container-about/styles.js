@@ -1,57 +1,21 @@
 import styled from 'styled-components';
 
-export const ContainerLefStrip = styled.div`
+export const Container = styled.div`
   background-color: ${props => props.theme.color.purple};
-
+  display: flex;
 `;  
 
-export const ContainerImage = styled.div`
-  margin-left: 20%;
-  width: 62%;
-  background-color: green;
-  border-radius: 50%;
-  overflow: hidden;
+export const ContainerTitle = styled.div`
+  padding: 3%;
 `;
 
-export const Image = styled.img`
-  height: 100%;
+export const Title = styled.h2`
+  font-size: '20px';
+  color: ${props => props.theme.color.white};
+  height: 14%;
   width: 100%;
-`;
-
-export const ContainerInfoUser = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 0px 36px 0 36px;
-`;
-
-export const Container = styled.div`
-  display: flex;
-  align-items:center;
-  flex-direction: column;
-`;
-
-export const ContianerPower =  styled.div`
-  display: flex;
-  align-items:center;
-  margin: 10px;
-  width:100%;
-  height: 10px;
-`;
-
-export const Progress =  styled.div`
+`
+export const Line = styled.hr`
+  background-color: 'yellow';
   width: 100%;
-  height: 10px;
-  position: relative;
-  background-color: yellow;
-  margin: 10px;
-`;
-
-export const ProgressFill = styled.div`
-  position: absolute;
-  width: 10px;
-  height: 20px;
-  background-color: red;
-  top: -4px;
-  left: ${props => props.value ? props.value : '0%' };
 `;
