@@ -45,12 +45,12 @@ function Page() {
       </Col>
       {section === '' &&(
         <Col xs={9} >
-          <ContainerRight />
+          <ContainerAbout />
         </Col>
       )}
       {section === 'about' &&(
         <Col xs={9} >
-          <ContainerAbout />
+          <ContainerRight />
 
         </Col>
       )}
