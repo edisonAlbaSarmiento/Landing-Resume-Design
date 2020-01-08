@@ -3,7 +3,9 @@ import {
   Container,
   ContainerTitle,
   Title,
-  Line
+  Line,
+  ContainerCards,
+  Card
 } from './styles';
 
 function index() {
@@ -15,7 +17,10 @@ function index() {
         </Title>
         <Line />
       </ContainerTitle>
-   
+    <ContainerCards>
+      <Card>1</Card>
+      <Card>2</Card>
+    </ContainerCards>
     </Container>
   );
 }

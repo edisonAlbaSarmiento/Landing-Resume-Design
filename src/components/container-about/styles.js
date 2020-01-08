@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   background-color: ${props => props.theme.color.purple};
-  display: flex;
 `;  
 
 export const ContainerTitle = styled.div`
@@ -18,4 +17,16 @@ export const Title = styled.h2`
 export const Line = styled.hr`
   background-color: 'yellow';
   width: 100%;
+`;
+
+export const ContainerCards = styled.div`
+  display: flex;
+  justify-content: space-evenly;
+`;
+
+export const Card = styled.div`
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  width: 30%;
 `;
