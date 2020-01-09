@@ -5,7 +5,8 @@ import {
   Title,
   Line,
   ContainerCards,
-  Card
+  Card,
+  TitleName
 } from './styles';
 
 function index() {
@@ -18,7 +19,14 @@ function index() {
         <Line />
       </ContainerTitle>
     <ContainerCards>
-      <Card>1</Card>
+      <Card>
+        <TitleName>
+          Edison
+        </TitleName>
+        <TitleName>
+          Alba
+        </TitleName>
+      </Card>
       <Card>2</Card>
     </ContainerCards>
     </Container>

@@ -29,4 +29,12 @@ export const Card = styled.div`
   font-size: 30px;
   text-align: center;
   width: 30%;
+  background-color: red;
 `;
+
+export const TitleName = styled.h2`
+  font-size: '20px';
+  color: ${props => props.theme.color.white};
+  height: 14%;
+  width: 100%;
+`
