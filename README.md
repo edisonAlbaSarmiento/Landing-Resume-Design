@@ -4,6 +4,9 @@ inspiration for change and new design
 
 https://www.uplabs.com/posts/glazzy-free-portfolio-psd-template
 
+<img src="images/example.png">
+
+
 Style Flex
 http://roylee0704.github.io/react-flexbox-grid/
 
