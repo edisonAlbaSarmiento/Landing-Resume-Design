@@ -4,7 +4,7 @@ inspiration for change and new design
 
 https://www.uplabs.com/posts/glazzy-free-portfolio-psd-template
 
-<img src="images/example.png">
+<img src="images/example.png"  width=400>
 
 
 Style Flex
