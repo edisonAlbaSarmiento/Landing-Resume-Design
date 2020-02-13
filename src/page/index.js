@@ -30,16 +30,16 @@ function Page() {
       <Col xs={3} >
         <Container>
           <h4 onClick={() => setSection('')}>
-            Hello, world!
+            Inicio
           </h4>
           <button onClick={() => setSection('about')}>
-          Click me about
+          About
         </button>
         <button onClick={() => setSection('info')}>
-          Click me about
+          Info
         </button>
         <button onClick={() => setSection('contact')}>
-          Click me about
+          Contact
         </button>
         </Container>
       </Col>
@@ -56,12 +56,12 @@ function Page() {
       )}
       {section === 'info' &&(
         <Col xs={9} >
-        Hello, info!
+        Hola informacion
         </Col>
       )}
       {section === 'contact' &&(
         <Col xs={9} >
-        Hello, contact!
+        Hola contactenos
         </Col>
       )}
       </Row>
