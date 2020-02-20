@@ -9,7 +9,7 @@ export const ContainerTitle = styled.div`
 `;
 
 export const Title = styled.h2`
-  font-size: '20px';
+  font-size: 20px;
   color: ${props => props.theme.color.white};
   height: 14%;
   width: 100%;
@@ -21,19 +21,25 @@ export const Line = styled.hr`
 
 export const ContainerCards = styled.div`
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-start;
 `;
 
 export const Card = styled.div`
   padding: 20px;
   font-size: 30px;
   text-align: center;
-  width: 30%;
+  width: 100%;
   background-color: red;
 `;
 
 export const TitleName = styled.h2`
-  font-size: '20px';
+  font-size: 20px;
+  color: ${props => props.theme.color.white};
+  width: 100%;
+`;
+
+export const SubTitle = styled.h3`
+  font-size: 20px;
   color: ${props => props.theme.color.white};
   height: 14%;
   width: 100%;

@@ -6,7 +6,8 @@ import {
   Line,
   ContainerCards,
   Card,
-  TitleName
+  TitleName,
+  SubTitle
 } from './styles';
 
 function index() {
@@ -21,14 +22,16 @@ function index() {
     <ContainerCards>
       <Card>
         <TitleName>
-          Edison
+          vijay
         </TitleName>
         <TitleName>
-          Alba
+          verma
         </TitleName>
+        <SubTitle>
+          Freelance Product Designer
+        </SubTitle>
       </Card>
-      <Card>2</Card>
-    </ContainerCards>
+¡    </ContainerCards>
     </Container>
   );
 }
