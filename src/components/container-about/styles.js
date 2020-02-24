@@ -22,14 +22,23 @@ export const Line = styled.hr`
 export const ContainerCards = styled.div`
   display: flex;
   justify-content: flex-start;
+  flex-direction: column;
 `;
 
 export const Card = styled.div`
   padding: 20px;
   font-size: 30px;
   text-align: center;
-  width: 100%;
   background-color: red;
+  display: flex;
+  width: 30%;
+`;
+export const CardSubTilte = styled.div`
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  background-color: red;
+  width: 100%;
 `;
 
 export const TitleName = styled.h2`

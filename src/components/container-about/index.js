@@ -7,7 +7,8 @@ import {
   ContainerCards,
   Card,
   TitleName,
-  SubTitle
+  SubTitle,
+  CardSubTilte
 } from './styles';
 
 function index() {
@@ -27,10 +28,13 @@ function index() {
         <TitleName>
           verma
         </TitleName>
+      </Card>
+      <CardSubTilte>
         <SubTitle>
           Freelance Product Designer
         </SubTitle>
-      </Card>
+      </CardSubTilte>
+
 ¡    </ContainerCards>
     </Container>
   );
