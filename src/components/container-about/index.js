@@ -8,7 +8,8 @@ import {
   Card,
   TitleName,
   SubTitle,
-  CardSubTilte
+  CardSubTilte,
+  TitleBold,
 } from './styles';
 
 function index() {
@@ -23,10 +24,10 @@ function index() {
     <ContainerCards>
       <Card>
         <TitleName>
-          vijay
-        </TitleName>
-        <TitleName>
-          verma
+          <TitleBold>
+            vijay
+          </TitleBold>
+          verma.
         </TitleName>
       </Card>
       <CardSubTilte>

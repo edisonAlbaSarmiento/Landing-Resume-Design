@@ -53,3 +53,7 @@ export const SubTitle = styled.h3`
   height: 14%;
   width: 100%;
 `
+
+export const TitleBold = styled.div`
+font-weight: bold
+`; 
