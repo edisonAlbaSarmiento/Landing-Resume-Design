@@ -9,7 +9,7 @@ import {
   TitleName,
   SubTitle,
   CardSubTilte,
-  TitleBold,
+  TextDescription,
 } from './styles';
 
 function index() {
@@ -24,16 +24,17 @@ function index() {
     <ContainerCards>
       <Card>
         <TitleName>
-          <TitleBold>
-            vijay
-          </TitleBold>
-          verma.
+          vijay verma.
         </TitleName>
-      </Card>
-      <CardSubTilte>
         <SubTitle>
           Freelance Product Designer
         </SubTitle>
+      </Card>
+      <CardSubTilte>
+        <TextDescription>
+          Currently curating designs for new startups and  founders. also love 
+          to code in Laravel  and Ruby
+        </TextDescription>
       </CardSubTilte>
 
 ¡    </ContainerCards>

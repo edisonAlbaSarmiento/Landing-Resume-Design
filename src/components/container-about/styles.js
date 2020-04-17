@@ -27,24 +27,26 @@ export const ContainerCards = styled.div`
 
 export const Card = styled.div`
   padding: 20px;
-  font-size: 30px;
-  text-align: center;
-  background-color: red;
+  text-align: left;
+  background-color: yellow;
   display: flex;
-  width: 30%;
+  flex-direction: column;
+  width: 100%;
 `;
 export const CardSubTilte = styled.div`
-  padding: 20px;
+  padding: 0px 20px 0px 20px;
   font-size: 30px;
-  text-align: center;
+  text-align: left;
   background-color: red;
-  width: 100%;
+  width: 36%;
 `;
 
 export const TitleName = styled.h2`
-  font-size: 20px;
+  font-size: 55px;
   color: ${props => props.theme.color.white};
   width: 100%;
+  font-weight: bold;
+  margin: 0;
 `;
 
 export const SubTitle = styled.h3`
@@ -54,6 +56,8 @@ export const SubTitle = styled.h3`
   width: 100%;
 `
 
-export const TitleBold = styled.div`
-font-weight: bold
-`; 
+export const TextDescription = styled.p`
+  font-size: 20px;
+  color: ${props => props.theme.color.white};
+  width: 100%;
+`;
