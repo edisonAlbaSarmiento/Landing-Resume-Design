@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import {
   ContainerInformationUser,
 } from './styles'
@@ -22,6 +23,13 @@ function index(
       {children}
    </>
   );
+}
+
+index.propTypes = {
+  children: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  icon: PropTypes.string.isRequired, 
+  center: PropTypes.number.isRequired,
 }
 
 export default index;

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import {
   ContainerLefStrip,
   ContainerImage,
@@ -61,6 +62,13 @@ function index({nameUser, avatar, email, phone}) {
         </ContainerInformationUser>
     </ContainerLefStrip>
   );
+}
+
+index.propTypes = {
+  nameUser: PropTypes.string.isRequired,
+  avatar: PropTypes.string.isRequired,
+  email: PropTypes.string.isRequired, 
+  phone: PropTypes.number.isRequired,
 }
 
 export default index;
