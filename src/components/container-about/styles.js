@@ -64,6 +64,7 @@ export const Button1 = styled.button`
   width: 36%;
   background-color: ${props => props.activeButton === 1 ? props.theme.color.pink : props.theme.color.grayDisabled};
   border: none;
+  outline: none;
 `;
 
 export const Button2 = styled.button`
@@ -71,6 +72,7 @@ export const Button2 = styled.button`
   background-color: ${props => props.activeButton === 2 ? props.theme.color.pink : props.theme.color.grayDisabled};
   border: none;
   margin-left: 20%;
+  outline: none;
 `;
 
 export const TextButton = styled.p`
