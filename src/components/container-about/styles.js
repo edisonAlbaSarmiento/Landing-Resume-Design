@@ -28,7 +28,6 @@ export const ContainerCards = styled.div`
 export const Card = styled.div`
   padding: 20px;
   text-align: left;
-  background-color: yellow;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -37,7 +36,6 @@ export const CardSubTilte = styled.div`
   padding: 0px 20px 0px 20px;
   font-size: 30px;
   text-align: left;
-  background-color: red;
   width: 36%;
 `;
 
@@ -51,13 +49,36 @@ export const TitleName = styled.h2`
 
 export const SubTitle = styled.h3`
   font-size: 20px;
-  color: ${props => props.theme.color.white};
+  color: ${props => props.theme.color.pink};
   height: 14%;
   width: 100%;
 `
 
 export const TextDescription = styled.p`
   font-size: 20px;
-  color: ${props => props.theme.color.white};
+  color: ${props => props.theme.color.grayText};
   width: 100%;
+`;
+
+export const Button1 = styled.button`
+  width: 36%;
+  background-color: ${props => props.activeButton === 1 ? props.theme.color.pink : props.theme.color.grayDisabled};
+  border: none;
+`;
+
+export const Button2 = styled.button`
+  width: 36%;
+  background-color: ${props => props.activeButton === 2 ? props.theme.color.pink : props.theme.color.grayDisabled};
+  border: none;
+  margin-left: 20%;
+`;
+
+export const TextButton = styled.p`
+  font-size: 12px;
+  color: ${props => props.theme.color.white};
+`
+export const ContentButtons = styled.div`
+  display: flex;
+  justify-content: initial;
+  width: 33%;
 `;

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
   Container,
   ContainerTitle,
@@ -10,9 +10,14 @@ import {
   SubTitle,
   CardSubTilte,
   TextDescription,
+  Button1,
+  Button2,
+  TextButton,
+  ContentButtons,
 } from './styles';
 
-function index() {
+function About() {
+  const [activeButton, setActivButton] = useState(1);
   return (
     <Container>
       <ContainerTitle>
@@ -36,10 +41,23 @@ function index() {
           to code in Laravel  and Ruby
         </TextDescription>
       </CardSubTilte>
-
+      <Card>
+        <ContentButtons>
+            <Button1 activeButton={activeButton} onClick={() => setActivButton(1)}>
+              <TextButton>
+                Hire me
+              </TextButton>
+            </Button1>
+            <Button2 activeButton={activeButton} onClick={() => setActivButton(2)}>
+            <TextButton>
+              Know more
+            </TextButton>
+            </Button2>
+        </ContentButtons>
+      </Card>
 ¡    </ContainerCards>
     </Container>
   );
 }
 
-export default index;
+export default About;
