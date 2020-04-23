@@ -1,4 +1,10 @@
+/* eslint-disable jsx-a11y/click-events-have-key-events */
+/* eslint-disable react/button-has-type */
+/* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
+/* eslint-disable react/jsx-filename-extension */
 import React, { useState } from 'react';
+import { Pulsate } from 'styled-loaders-react'
+import { Grid, Row, Col } from 'react-flexbox-grid';
 import {
   ContainerRight, 
   ContainerAbout
@@ -13,11 +19,9 @@ import {
   // ContainerInformation
 } from './styles'
 // import ContainerInformationUser from '../components/information-content';
-import { Pulsate } from 'styled-loaders-react'
-import { Grid, Row, Col } from 'react-flexbox-grid';
 
 
-//Hooks
+// Hooks
 import UserGetData from '../hooks/data';
 
 function Page() {

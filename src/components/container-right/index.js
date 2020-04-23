@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-filename-extension */
 import React from 'react';
 import PropTypes from 'prop-types';
 import {
@@ -13,7 +14,6 @@ import {
 import ContainerInformationUser from '../information-content';
 
 function index({nameUser, avatar, email, phone}) {
-  console.log('nameUser',nameUser)
   const name = nameUser;
   return (
     <ContainerLefStrip>

@@ -1,6 +1,7 @@
+/* eslint-disable react/jsx-filename-extension */
 import React from 'react';
-import Page from './page';
 import { ThemeProvider } from 'styled-components';
+import Page from './page';
 
 // Imports: Themes
 import theme from './themes';

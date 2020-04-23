@@ -1,11 +1,15 @@
 module.exports = {
+	"parser": "babel-eslint",
     "env": {
         "browser": true,
         "es6": true
     },
     "extends": [
         "eslint:recommended",
-        "plugin:react/recommended"
+        "plugin:react/recommended",
+        "airbnb",
+        "prettier",
+        "prettier/react"
     ],
     "globals": {
         "Atomics": "readonly",
@@ -19,7 +23,8 @@ module.exports = {
         "sourceType": "module"
     },
     "plugins": [
-        "react"
+        "react",
+        "prettier"
     ],
     "rules": {
     }

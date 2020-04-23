@@ -4,6 +4,10 @@ export const Container = styled.div`
   background-color: ${props => props.theme.color.purple};
 `;  
 
+export const ContainerText = styled.div``; 
+
+export const ContainerImage = styled.div``; 
+
 export const ContainerTitle = styled.div`
   padding: 3%;
 `;
@@ -22,7 +26,7 @@ export const Line = styled.hr`
 export const ContainerCards = styled.div`
   display: flex;
   justify-content: flex-start;
-  flex-direction: column;
+  flex-direction: row ;
 `;
 
 export const Card = styled.div`
@@ -36,7 +40,7 @@ export const CardSubTilte = styled.div`
   padding: 0px 20px 0px 20px;
   font-size: 30px;
   text-align: left;
-  width: 36%;
+  width: 77%;
 `;
 
 export const TitleName = styled.h2`
@@ -82,5 +86,10 @@ export const TextButton = styled.p`
 export const ContentButtons = styled.div`
   display: flex;
   justify-content: initial;
-  width: 33%;
+  width: 60%;
+`;
+
+export const ImageBackground = styled.img`
+  width: 100%;
+  margin: 21% 1px 0 0px;
 `;
