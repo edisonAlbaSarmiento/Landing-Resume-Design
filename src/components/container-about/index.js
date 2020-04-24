@@ -29,7 +29,7 @@ function About() {
           About
         </Title>
         <Line />
-        npm run eslint  </ContainerTitle>
+      </ContainerTitle>
     <ContainerCards>
         <ContainerText>
           <Card>
@@ -63,7 +63,7 @@ function About() {
         </ContainerText>
         <ContainerImage>
           <Card>
-            <ImageBackground  src="https://img2.freepng.es/20180425/cee/kisspng-businessperson-desktop-wallpaper-5ae1381e9950e4.057601871524709406628.jpg" />
+            <ImageBackground  src="https://pngimage.net/wp-content/uploads/2018/05/empresario-png-3.png" />
           </Card>
         </ContainerImage>
       </ContainerCards>

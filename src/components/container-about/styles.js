@@ -15,12 +15,13 @@ export const ContainerTitle = styled.div`
 export const Title = styled.h2`
   font-size: 20px;
   color: ${props => props.theme.color.white};
-  height: 14%;
   width: 100%;
+  height: 2px;
 `
 export const Line = styled.hr`
-  background-color: 'yellow';
-  width: 100%;
+  background-color: ${props => props.theme.color.pink};
+  width: 7%;
+  float: left;
 `;
 
 export const ContainerCards = styled.div`
@@ -61,7 +62,7 @@ export const SubTitle = styled.h3`
 export const TextDescription = styled.p`
   font-size: 20px;
   color: ${props => props.theme.color.grayText};
-  width: 100%;
+  width: 82%;
 `;
 
 export const Button1 = styled.button`
@@ -90,6 +91,6 @@ export const ContentButtons = styled.div`
 `;
 
 export const ImageBackground = styled.img`
-  width: 100%;
-  margin: 21% 1px 0 0px;
+  width: 420px;
+  height: 420px;
 `;
