@@ -33,7 +33,7 @@ function Page() {
     <Grid>
      <Row>
       <Col xs={3} >
-        <Menu  setSection={setSection}/>
+        <Menu section={section}  setSection={setSection}/>
       </Col>
       {section === '' &&(
         <Col xs={9} >

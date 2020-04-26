@@ -4,7 +4,9 @@ const theme = {
     white: 'white',
     pink: '#ff67b6',
     grayDisabled: '#262138',
-    grayText: '#8e8d94'
+    grayText: '#8e8d94',
+    purpleMenu: '#281b36',
+    overMenu: '#281835',
   }
 }
 
