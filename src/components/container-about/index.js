@@ -18,6 +18,7 @@ import {
   ContainerText,
   ContainerImage,
   ImageBackground,
+  CardImage,
 } from './styles';
 
 function About() {
@@ -30,7 +31,7 @@ function About() {
         </Title>
         <Line />
       </ContainerTitle>
-    <ContainerCards>
+      <ContainerCards>
         <ContainerText>
           <Card>
             <TitleName>
@@ -62,9 +63,9 @@ function About() {
           </Card>
         </ContainerText>
         <ContainerImage>
-          <Card>
+          <CardImage>
             <ImageBackground  src="https://pngimage.net/wp-content/uploads/2018/05/empresario-png-3.png" />
-          </Card>
+          </CardImage>
         </ContainerImage>
       </ContainerCards>
     </Container>

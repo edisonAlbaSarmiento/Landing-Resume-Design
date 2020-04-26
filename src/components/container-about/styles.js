@@ -20,7 +20,9 @@ export const Title = styled.h2`
 `
 export const Line = styled.hr`
   background-color: ${props => props.theme.color.pink};
-  width: 7%;
+  height: 1px;
+  width: 8%;
+  border: 0;
   float: left;
 `;
 
@@ -36,7 +38,9 @@ export const Card = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
+  height: 20%;
 `;
+
 export const CardSubTilte = styled.div`
   padding: 0px 20px 0px 20px;
   font-size: 30px;
@@ -50,6 +54,7 @@ export const TitleName = styled.h2`
   width: 100%;
   font-weight: bold;
   margin: 0;
+  height: 60px;
 `;
 
 export const SubTitle = styled.h3`
@@ -66,14 +71,14 @@ export const TextDescription = styled.p`
 `;
 
 export const Button1 = styled.button`
-  width: 36%;
+  width: 44%;
   background-color: ${props => props.activeButton === 1 ? props.theme.color.pink : props.theme.color.grayDisabled};
   border: none;
   outline: none;
 `;
 
 export const Button2 = styled.button`
-  width: 36%;
+  width: 44%;
   background-color: ${props => props.activeButton === 2 ? props.theme.color.pink : props.theme.color.grayDisabled};
   border: none;
   margin-left: 20%;
@@ -81,7 +86,7 @@ export const Button2 = styled.button`
 `;
 
 export const TextButton = styled.p`
-  font-size: 12px;
+  font-size: 100%;
   color: ${props => props.theme.color.white};
 `
 export const ContentButtons = styled.div`
@@ -93,4 +98,12 @@ export const ContentButtons = styled.div`
 export const ImageBackground = styled.img`
   width: 420px;
   height: 420px;
+`;
+
+export const CardImage = styled.div`
+  padding: 20px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 `;

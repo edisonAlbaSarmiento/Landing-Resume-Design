@@ -7,11 +7,12 @@ import { Pulsate } from 'styled-loaders-react'
 import { Grid, Row, Col } from 'react-flexbox-grid';
 import {
   ContainerRight, 
-  ContainerAbout
+  ContainerAbout,
+  Menu
 } from '../components/index';
 
 import {
-  Container,
+  // Container,
   // ContinerTitle,
   // TitleName,
   // ContinerInformation,
@@ -32,20 +33,7 @@ function Page() {
     <Grid>
      <Row>
       <Col xs={3} >
-        <Container>
-          <h4 onClick={() => setSection('')}>
-            Inicio
-          </h4>
-          <button onClick={() => setSection('about')}>
-          About
-        </button>
-        <button onClick={() => setSection('info')}>
-          Info
-        </button>
-        <button onClick={() => setSection('contact')}>
-          Contact
-        </button>
-        </Container>
+        <Menu  setSection={setSection}/>
       </Col>
       {section === '' &&(
         <Col xs={9} >
