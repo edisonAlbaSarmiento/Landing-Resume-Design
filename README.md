@@ -76,3 +76,15 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `yarn build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+Para realizar la actualizacion de la pagina se debe hacer el build de la aplicacion
+
+npm run build 
+
+luego copiar todos los archivos de la carpeta static
+
+luego actulizar la carpeta docs con los nuevos archivos 
+
+reemplazar los links que tenga /static/ a static/
+
+
