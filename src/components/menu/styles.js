@@ -28,8 +28,7 @@ export const ButtonMenu = styled.button`
   outline: none;
   font-size: 18px;
   text-align: left;
-  padding-left: 25%;
-  padding-bottom: 14%;
+  padding: 8%;
   color: ${props => props.activeButton ? props.theme.color.pink : props.theme.color.white};
   border-left-style:${props => props.activeButton && 'solid'};
   border-left-color: ${props => props.activeButton && props.theme.color.pink};
