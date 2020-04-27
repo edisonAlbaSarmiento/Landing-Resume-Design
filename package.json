@@ -34,7 +34,8 @@
     "pre-commit": "npm run lint",
     "pre-push": "npm test",
     "post-merge": "npm install",
-    "post-rewrite": "npm install"
+    "post-rewrite": "npm install",
+    "homepage": "https://edisonalbasarmiento.github.io/Landing-Resume-Design/"
   },
   "eslintConfig": {
     "extends": "react-app"
