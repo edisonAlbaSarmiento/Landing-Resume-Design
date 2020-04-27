@@ -79,12 +79,12 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 
 Para realizar la actualizacion de la pagina se debe hacer el build de la aplicacion
 
-npm run build 
+### `npm run build`
 
-luego copiar todos los archivos de la carpeta static
+### luego copiar todos los archivos de la carpeta `static`
 
-luego actulizar la carpeta docs con los nuevos archivos 
+### luego actulizar la carpeta `docs` con los nuevos archivos 
 
-reemplazar los links que tenga /static/ a static/
+### reemplazar los links que tenga `/static/` a `static/`
 
 
