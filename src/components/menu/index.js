@@ -32,7 +32,6 @@ function Menu({setSection, section}) {
         Contact
       </ButtonMenu>
     </ContainerButtons>
-  
   </Container>
   );
 }
