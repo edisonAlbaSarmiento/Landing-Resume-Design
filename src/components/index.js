@@ -1,9 +1,9 @@
-import ContainerRight from './container-right';
+import ContainerWork from './container-work';
 import ContainerAbout from './container-about';
 import Menu from './menu';
 
 export {
-    ContainerRight,
+    ContainerWork,
     ContainerAbout,
     Menu
 }

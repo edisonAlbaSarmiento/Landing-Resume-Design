@@ -6,7 +6,7 @@ import React, { useState } from 'react';
 import { Pulsate } from 'styled-loaders-react'
 import { Grid, Row, Col } from 'react-flexbox-grid';
 import {
-  ContainerRight, 
+  ContainerWork, 
   ContainerAbout,
   Menu
 } from '../components/index';
@@ -42,7 +42,7 @@ function Page() {
       )}
       {section === 'about' &&(
         <Col xs={9} >
-          <ContainerRight />
+          <ContainerWork />
 
         </Col>
       )}
