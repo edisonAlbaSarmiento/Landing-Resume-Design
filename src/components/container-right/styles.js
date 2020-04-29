@@ -1,56 +1,57 @@
 import styled from 'styled-components';
 
-export const ContainerLefStrip = styled.div`
+export const Container = styled.div`
   background-color: ${props => props.theme.color.purple};
 `;  
 
-export const ContainerImage = styled.div`
-  margin-left: 20%;
-  width: 62%;
-  background-color: green;
-  border-radius: 50%;
-  overflow: hidden;
-`;
-
-export const Image = styled.img`
-  height: 100%;
-  width: 100%;
-`;
-
-export const ContainerInfoUser = styled.div`
+export const ContainerHeader = styled.div`
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  padding: 0px 36px 0 36px;
+  padding: 3%;
 `;
 
-export const Container = styled.div`
-  display: flex;
-  align-items:center;
-  flex-direction: column;
+export const ContainerTitle = styled.div`
+
 `;
 
-export const ContianerPower =  styled.div`
-  display: flex;
-  align-items:center;
-  margin: 10px;
-  width:100%;
-  height: 10px;
-`;
-
-export const Progress =  styled.div`
+export const Title = styled.h2`
+  font-size: 20px;
+  color: ${props => props.theme.color.white};
   width: 100%;
-  height: 10px;
-  position: relative;
-  background-color: yellow;
-  margin: 10px;
+  height: 2px;
+`
+
+export const ContainerIcons = styled.div`
+  display: flex;
 `;
 
-export const ProgressFill = styled.div`
-  position: absolute;
-  width: 10px;
-  height: 20px;
+export const Icons = styled.h2`
+  font-size: 20px;
+  color: ${props => props.theme.color.white};
+  width: 100%;
+  height: 2px;
+  padding-right: 13%;
+`
+
+export const Line = styled.hr`
+  background-color: ${props => props.theme.color.pink};
+  height: 1px;
+  width: 100%;
+  border: 0;
+  float: left;
+`;
+
+export const ContainerCards= styled.div`
   background-color: red;
-  top: -4px;
-  left: ${props => props.value ? props.value : '0%' };
+  width: 100%;
+  display: flex;
+  flex-flow: wrap;
+`;
+
+export const ContainerChildren = styled.div`
+  background-color: yellow;
+  width: 26%;
+  text-align: center;
+  margin: 10px;
+  padding: 20px;
 `;

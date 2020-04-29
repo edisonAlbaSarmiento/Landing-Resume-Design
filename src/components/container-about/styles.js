@@ -21,7 +21,7 @@ export const Title = styled.h2`
 export const Line = styled.hr`
   background-color: ${props => props.theme.color.pink};
   height: 1px;
-  width: 8%;
+  width: 7%;
   border: 0;
   float: left;
 `;

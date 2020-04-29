@@ -1,74 +1,103 @@
 /* eslint-disable react/jsx-filename-extension */
 import React from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import {
-  ContainerLefStrip,
-  ContainerImage,
-  Image,
-  ContainerInfoUser,
-  ContianerPower,
-  Progress,
+  Title,
   Container,
-  ProgressFill
+  ContainerHeader,
+  Line,
+  ContainerCards,
+  ContainerChildren,
+  ContainerTitle,
+  ContainerIcons,
+  Icons,
 } from './styles';
-import ContainerInformationUser from '../information-content';
 
-function index({nameUser, avatar, email, phone}) {
-  const name = nameUser;
+// function index({nameUser, avatar, email, phone}) {
+function index() {
   return (
-    <ContainerLefStrip>
-      <ContainerImage>
-        <Image src={avatar} />
-      </ContainerImage>
-        <ContainerInformationUser title='Info' center>
-          <ContainerInfoUser>
-            <p>{name}</p>
-            <p>EEEEEE</p>
-          </ContainerInfoUser>
-          <ContainerInfoUser>
-            <p>{email}</p>
-            <p>EEEEEE</p>
-          </ContainerInfoUser>
-          <ContainerInfoUser>
-            <p>{phone}</p>
-            <p>EEEEEE</p>
-          </ContainerInfoUser>
-        </ContainerInformationUser>
-        <ContainerInformationUser title='Power Charge' center>
-          <Container>
-          <ContianerPower>
-              <p>
-               JS
-              </p>
-              <Progress>
-                <ProgressFill value="5%"/>
-              </Progress>
-            </ContianerPower>
-            <ContianerPower>
-              JS <Progress>
-                <ProgressFill value="20%"/>
-              </Progress>
-            </ContianerPower>
-            <ContianerPower>
-              JS <Progress>
-                <ProgressFill value="50%" />
-              </Progress>
-            </ContianerPower>
-          </Container>
-  
-        </ContainerInformationUser>
-        <ContainerInformationUser title='Redes Sociales' center>
-          <p>Edison</p>
-        </ContainerInformationUser>
-    </ContainerLefStrip>
+    <Container>
+    <ContainerHeader>
+      <ContainerTitle>
+        <Title>
+            Work
+          </Title>
+        <Line />
+      </ContainerTitle>
+      <ContainerIcons>
+        <Icons>
+          Icon
+        </Icons>
+        <Icons>
+          Icon
+        </Icons>
+      </ContainerIcons>
+    </ContainerHeader>
+    <ContainerCards>
+   <ContainerChildren>
+     s
+   </ContainerChildren>
+   <ContainerChildren>
+     s
+   </ContainerChildren>
+   <ContainerChildren>
+     s
+   </ContainerChildren>
+   <ContainerChildren>
+     s
+   </ContainerChildren>
+   <ContainerChildren>
+     s
+   </ContainerChildren>
+   <ContainerChildren>
+     s
+   </ContainerChildren>
+   <ContainerChildren>
+     s
+   </ContainerChildren>
+   <ContainerChildren>
+     s
+   </ContainerChildren>
+   <ContainerChildren>
+     s
+   </ContainerChildren>
+   <ContainerChildren>
+     s
+   </ContainerChildren>
+   <ContainerChildren>
+     s
+   </ContainerChildren>
+   <ContainerChildren>
+     s
+   </ContainerChildren>
+   <ContainerChildren>
+     s
+   </ContainerChildren>
+   <ContainerChildren>
+     s
+   </ContainerChildren>
+   <ContainerChildren>
+     s
+   </ContainerChildren>
+   <ContainerChildren>
+     s
+   </ContainerChildren>
+   <ContainerChildren>
+     s
+   </ContainerChildren>
+   <ContainerChildren>
+     s
+   </ContainerChildren>
+    </ContainerCards>
+    </Container>
   );
 }
 
-index.propTypes = {
-  nameUser: PropTypes.string.isRequired,
-  avatar: PropTypes.string.isRequired,
-  email: PropTypes.string.isRequired, 
-  phone: PropTypes.number.isRequired,
-}
+// index.propTypes = {
+//   nameUser: PropTypes.string.isRequired,
+//   avatar: PropTypes.string.isRequired,
+//   email: PropTypes.string.isRequired, 
+//   phone: PropTypes.number.isRequired,
+// }
 
 export default index;
