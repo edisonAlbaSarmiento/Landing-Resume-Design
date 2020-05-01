@@ -13,45 +13,33 @@ import {
   ContainerCards,
   ContainerChildren,
   ContainerTitle,
-  ContainerIcons,
   ImageContainer,
   TextImage,
-  LinkShare,
+  ContainerDescription,
 } from './styles';
 
-function Work({dataWork}) {
+function Lab({dataWork}) {
   return (
     <Container>
     <ContainerHeader>
       <ContainerTitle>
         <Title>
-            Work
+            Lab
           </Title>
         <Line />
       </ContainerTitle>
-      <ContainerIcons>
-        <Tooltip title="Compartir por Whatsapp" arrow>
-          <IconButton>
-            <LinkShare href="whatsapp://send?text=https://edisonalbasarmiento.github.io/Landing-Resume-Design/" data-action="share/whatsapp/share">
-            <Share />
-            </LinkShare>  
-          </IconButton>
-        </Tooltip>
-      
-        <IconButton style={{color: 'white'}}>
-          <LinkShare>
-            <Search />
-          </LinkShare>
-        </IconButton>
-      </ContainerIcons>
     </ContainerHeader>
     <ContainerCards>
       {dataWork.map(item => (
         <ContainerChildren onClick={() => {window.open(`${item.urlWork}`)}}>
           <ImageContainer src={`${item.imageWork}`} />
-          <TextImage>
-            {item.description}
-          </TextImage>
+          <ContainerDescription>
+            <TextImage>
+              {item.description}
+            </TextImage>
+
+          </ContainerDescription>
+        
         </ContainerChildren>
       ))}
 
@@ -60,8 +48,8 @@ function Work({dataWork}) {
   );
 }
 
-Work.propTypes = {
+Lab.propTypes = {
   dataWork: PropTypes.objectOf.isRequired,
 }
 
-export default Work;
+export default Lab;

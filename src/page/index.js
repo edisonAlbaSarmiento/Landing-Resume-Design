@@ -8,6 +8,7 @@ import { Grid, Row, Col } from 'react-flexbox-grid';
 import {
   ContainerWork, 
   ContainerAbout,
+  Lab,
   Menu
 } from '../components/index';
 
@@ -47,7 +48,7 @@ function Page() {
       )}
       {section === 'info' &&(
         <Col xs={9} >
-        Hola informacion
+          <Lab dataWork={myData.work} />
         </Col>
       )}
       {section === 'contact' &&(
