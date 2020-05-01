@@ -28,7 +28,7 @@ function Work({dataWork}) {
         <Line />
       </ContainerTitle>
       <ContainerIcons>
-      <IconButton style={{color: 'white'}}>
+        <IconButton style={{color: 'white'}}>
           <Share />
         </IconButton>
         <IconButton style={{color: 'white'}}>

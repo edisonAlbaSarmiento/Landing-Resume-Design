@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   background-color: ${props => props.theme.color.purpleMenu};
-  width: 82%;
+  width: 100%;
 `;
 
 export const ContainerImage = styled.div`
@@ -35,4 +35,18 @@ export const ButtonMenu = styled.button`
   :active {
     background-color: ${props => props.theme.color.overMenu};
   }
+`;
+
+export const ContainerIconsFooter = styled.div`
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+`;
+
+export const IconImage = styled.img`
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 100%;
 `;

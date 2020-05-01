@@ -38,7 +38,7 @@ export const Card = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 20%;
+  height: 30%;
 `;
 
 export const CardSubTilte = styled.div`
@@ -54,7 +54,6 @@ export const TitleName = styled.h2`
   width: 100%;
   font-weight: bold;
   margin: 0;
-  height: 60px;
 `;
 
 export const SubTitle = styled.h3`
@@ -67,7 +66,7 @@ export const SubTitle = styled.h3`
 export const TextDescription = styled.p`
   font-size: 20px;
   color: ${props => props.theme.color.grayText};
-  width: 82%;
+  width: 85%;
 `;
 
 export const Button1 = styled.button`
