@@ -7,8 +7,15 @@ https://www.uplabs.com/posts/glazzy-free-portfolio-psd-template
 <img src="images/example.png"  width=400>
 
 
-Style Flex
+## Style Flex
 http://roylee0704.github.io/react-flexbox-grid/
+
+## Icons
+https://material-ui.com/es/components/icons/
+
+## Listado de iconos
+https://material.io/resources/icons/?icon=search&style=baseline
+
 
 ## Available Scripts
 
