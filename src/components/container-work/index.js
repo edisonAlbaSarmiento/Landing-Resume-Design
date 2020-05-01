@@ -38,7 +38,7 @@ function index({dataWork}) {
     </ContainerHeader>
     <ContainerCards>
       {dataWork.map(item => (
-        <ContainerChildren onClick={() => window.open(item.urlWork)}>
+        <ContainerChildren onClick={() => window.open(`${item.urlWork}`)}>
           <ImageContainer src={`${item.imageWork}`} />
           <TextImage>
             {item.description}
