@@ -61,3 +61,8 @@ export const ImageContainer = styled.img`
 export const TextImage = styled.span`
   color: white;
 `;
+
+export const LinkShare = styled.a`
+  text-decoration: none;
+  color: white;
+`;

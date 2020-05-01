@@ -6,7 +6,11 @@ export const Container = styled.div`
 
 export const ContainerText = styled.div``; 
 
-export const ContainerImage = styled.div``; 
+export const ContainerImage = styled.div`
+  @media (max-width: 768px) {
+    display: none;
+  }
+`; 
 
 export const ContainerTitle = styled.div`
   padding: 3%;
@@ -54,6 +58,9 @@ export const TitleName = styled.h2`
   width: 100%;
   font-weight: bold;
   margin: 0;
+  @media (max-width: 768px) {
+    
+  }
 `;
 
 export const SubTitle = styled.h3`

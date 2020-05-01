@@ -15,6 +15,7 @@ import {
   ContainerIcons,
   ImageContainer,
   TextImage,
+  LinkShare,
 } from './styles';
 
 function Work({dataWork}) {
@@ -28,11 +29,15 @@ function Work({dataWork}) {
         <Line />
       </ContainerTitle>
       <ContainerIcons>
-        <IconButton style={{color: 'white'}}>
-          <Share />
+        <IconButton>
+          <LinkShare href="whatsapp://send?text=https://edisonalbasarmiento.github.io/Landing-Resume-Design/" data-action="share/whatsapp/share">
+           <Share />
+          </LinkShare>  
         </IconButton>
         <IconButton style={{color: 'white'}}>
-          <Search />
+          <LinkShare>
+            <Search />
+          </LinkShare>
         </IconButton>
       </ContainerIcons>
     </ContainerHeader>

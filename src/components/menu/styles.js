@@ -14,6 +14,8 @@ export const ContainerImage = styled.div`
 export const ImageProfile = styled.img`
   border-radius: 50%;
   height: 120px;
+  width: 120px;
+}
 `;
 
 export const ContainerButtons = styled.div`
@@ -42,11 +44,4 @@ export const ContainerIconsFooter = styled.div`
   flex-direction: row;
   width: 100%;
   justify-content: center;
-`;
-
-export const IconImage = styled.img`
-  width: 20px;
-  height: 20px;
-  background-color: white;
-  border-radius: 100%;
 `;

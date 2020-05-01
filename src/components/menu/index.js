@@ -6,6 +6,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import IconButton from '@material-ui/core/IconButton';
+import GitHubIcon from '@material-ui/icons/GitHub';
+import FacebookIcon from '@material-ui/icons/Facebook';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import TwitterIcon from '@material-ui/icons/Twitter';
 import {
   Container,
   ContainerImage,
@@ -13,14 +17,7 @@ import {
   ContainerButtons,
   ButtonMenu,
   ContainerIconsFooter,
-  IconImage
 } from './styles';
-import { 
-  IconFacebook,
-  GitHub,
-  Linkedin,
-  Twitter, 
-} from '../../images';
 
 function Menu({setSection, section}) {
   return (
@@ -43,17 +40,17 @@ function Menu({setSection, section}) {
         </ButtonMenu>
       </ContainerButtons>
       <ContainerIconsFooter>
-      <IconButton>
-        <IconImage src={`${GitHub}`}/>
+      <IconButton style={{color: '#343b4f'}}>
+        <GitHubIcon/>
       </IconButton>
-      <IconButton>
-        <IconImage src={`${IconFacebook}`}/>
+      <IconButton style={{color: '#343b4f'}}>
+        <FacebookIcon/>
       </IconButton>
-      <IconButton>
-        <IconImage src={`${Linkedin}`}/>
+      <IconButton style={{color: '#343b4f'}}>
+        <LinkedInIcon />
       </IconButton>
-      <IconButton>
-        <IconImage src={`${Twitter}`}/>
+      <IconButton style={{color: '#343b4f'}}>
+        <TwitterIcon />
       </IconButton>
     </ContainerIconsFooter>
   </Container>
