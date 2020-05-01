@@ -1,10 +1,6 @@
 /* eslint-disable react/jsx-filename-extension */
 import React from 'react';
 import PropTypes from 'prop-types';
-import Share from '@material-ui/icons/Share';
-import Search from '@material-ui/icons/Search';
-import IconButton from '@material-ui/core/IconButton';
-import Tooltip from '@material-ui/core/Tooltip';
 import {
   Title,
   Container,
