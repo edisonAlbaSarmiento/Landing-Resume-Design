@@ -1,6 +1,7 @@
 /* eslint-disable react/jsx-filename-extension */
 import React from 'react';
 // import PropTypes from 'prop-types';
+import DeleteIcon from '@material-ui/icons/Delete';
 import {
   Title,
   Container,
@@ -12,6 +13,7 @@ import {
   ContainerIcons,
   Icons,
 } from './styles';
+
 
 // function index({nameUser, avatar, email, phone}) {
 function index() {
@@ -26,10 +28,10 @@ function index() {
       </ContainerTitle>
       <ContainerIcons>
         <Icons>
-          Icon
+        <DeleteIcon />
         </Icons>
         <Icons>
-          Icon
+        <DeleteIcon />
         </Icons>
       </ContainerIcons>
     </ContainerHeader>
