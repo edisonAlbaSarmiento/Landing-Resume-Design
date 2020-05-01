@@ -25,14 +25,6 @@ export const ContainerIcons = styled.div`
   display: flex;
 `;
 
-export const Icons = styled.h2`
-  font-size: 20px;
-  color: ${props => props.theme.color.white};
-  width: 100%;
-  height: 2px;
-  padding-right: 13%;
-`
-
 export const Line = styled.hr`
   background-color: ${props => props.theme.color.pink};
   height: 1px;
@@ -42,16 +34,25 @@ export const Line = styled.hr`
 `;
 
 export const ContainerCards= styled.div`
-  background-color: red;
   width: 100%;
   display: flex;
   flex-flow: wrap;
 `;
 
 export const ContainerChildren = styled.div`
-  background-color: yellow;
-  width: 26%;
+  background-color: #281b37;
+  width: 27%;
   text-align: center;
-  margin: 10px;
-  padding: 20px;
+  margin: 1%;
+  padding: 2%;
+  height: 0%;
+`;
+
+export const ImageContainer = styled.img`
+  width: 100%;
+  height: 100%;
+`;
+
+export const TextImage = styled.span`
+  color: white;
 `;
