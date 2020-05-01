@@ -37,7 +37,7 @@ function Page() {
       </Col>
       {section === '' &&(
         <Col xs={9} >
-          <ContainerAbout />
+          <ContainerAbout dataAbout={myData.about} />
         </Col>
       )}
       {section === 'about' &&(

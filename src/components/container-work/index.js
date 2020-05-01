@@ -17,7 +17,7 @@ import {
   TextImage,
 } from './styles';
 
-function index({dataWork}) {
+function Work({dataWork}) {
   return (
     <Container>
     <ContainerHeader>
@@ -38,7 +38,7 @@ function index({dataWork}) {
     </ContainerHeader>
     <ContainerCards>
       {dataWork.map(item => (
-        <ContainerChildren onClick={() => window.open(`${item.urlWork}`)}>
+        <ContainerChildren onClick={() => {window.open(`${item.urlWork}`)}}>
           <ImageContainer src={`${item.imageWork}`} />
           <TextImage>
             {item.description}
@@ -51,8 +51,8 @@ function index({dataWork}) {
   );
 }
 
-index.propTypes = {
+Work.propTypes = {
   dataWork: PropTypes.objectOf.isRequired,
 }
 
-export default index;
+export default Work;

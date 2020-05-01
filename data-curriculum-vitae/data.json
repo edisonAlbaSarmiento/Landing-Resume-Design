@@ -15,5 +15,10 @@
 				"description": "Hack up furballs 3",
 				"urlWork": "http://www.google.com"
 			}
-	]
+	],
+	"about": {
+		"userName": "Edison Jordan Alba Sarmiento",
+		"position" : "FullStack Developer",
+		"jobDescription" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque non ligula massa. Proin dictum eros non eros aliquet, non accumsan arcu maximus. Sed eu pellentesque turpis"
+	}
 }

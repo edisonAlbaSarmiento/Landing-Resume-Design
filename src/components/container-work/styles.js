@@ -46,6 +46,11 @@ export const ContainerChildren = styled.div`
   margin: 1%;
   padding: 2%;
   height: 0%;
+  cursor: pointer;
+  border-radius: 20px;
+  &:hover {
+    background-color: #4e3283;
+  }
 `;
 
 export const ImageContainer = styled.img`

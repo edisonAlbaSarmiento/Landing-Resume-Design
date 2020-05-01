@@ -1,5 +1,6 @@
 /* eslint-disable react/jsx-filename-extension */
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 import {
   Container,
   ContainerTitle,
@@ -21,7 +22,7 @@ import {
   CardImage,
 } from './styles';
 
-function About() {
+function About({dataAbout}) {
   const [activeButton, setActivButton] = useState(1);
   return (
     <Container>
@@ -35,16 +36,15 @@ function About() {
         <ContainerText>
           <Card>
             <TitleName>
-              vijay verma.
+              {dataAbout.userName}.
             </TitleName>
             <SubTitle>
-              Freelance Product Designer
+              {dataAbout.position}
             </SubTitle>
           </Card>
           <CardSubTilte>
             <TextDescription>
-              Currently curating designs for new startups and  founders. also love 
-              to code in Laravel  and Ruby
+              {dataAbout.jobDescription}
             </TextDescription>
           </CardSubTilte>
           <Card>
@@ -72,4 +72,7 @@ function About() {
   );
 }
 
+About.propTypes = {
+  dataAbout: PropTypes.objectOf.isRequired,
+}
 export default About;
