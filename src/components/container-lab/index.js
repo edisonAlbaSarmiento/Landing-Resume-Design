@@ -1,6 +1,7 @@
 /* eslint-disable react/jsx-filename-extension */
 import React from 'react';
 import PropTypes from 'prop-types';
+import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 import {
   Title,
   Container,
@@ -10,8 +11,11 @@ import {
   ContainerChildren,
   ContainerTitle,
   ImageContainer,
-  TextImage,
   ContainerDescription,
+  ContainerText,
+  TextPrimary,
+  TextSecond,
+  TextThree
 } from './styles';
 
 function Lab({dataWork}) {
@@ -27,13 +31,21 @@ function Lab({dataWork}) {
     </ContainerHeader>
     <ContainerCards>
       {dataWork.map(item => (
-        <ContainerChildren onClick={() => {window.open(`${item.urlWork}`)}}>
-          <ImageContainer src={`${item.imageWork}`} />
+        <ContainerChildren>
           <ContainerDescription>
-            <TextImage>
-              {item.description}
-            </TextImage>
-
+            <ImageContainer src={`${item.imageWork}`} />
+            <ContainerText>
+              <TextPrimary>
+                {item.description}
+              </TextPrimary>
+              <TextSecond>
+                {item.description}{item.description}
+              </TextSecond>
+              <TextThree onClick={() => {window.open(`${item.urlWork}`)}}>
+                {item.description} <ArrowForwardIosIcon style={{ fontSize: 10 }} />
+              </TextThree>
+            </ContainerText>
+           
           </ContainerDescription>
         
         </ContainerChildren>

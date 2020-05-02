@@ -37,15 +37,11 @@ export const ContainerCards= styled.div`
 
 export const ContainerChildren = styled.div`
   background-color: #281b37;
-  width: 27%;
+  width: 44%;
   text-align: center;
   margin: 1%;
   padding: 2%;
   height: 0%;
-  cursor: pointer;
-  &:hover {
-    background-color: #4e3283;
-  }
 `;
 
 export const ImageContainer = styled.img`
@@ -53,10 +49,32 @@ export const ImageContainer = styled.img`
   height: 100%;
 `;
 
-export const TextImage = styled.span`
-  color: white;
+export const ContainerDescription = styled.div`
+  background-color: #1e1b34;
 `;
 
-export const ContainerDescription = styled.div`
-  background-color: red;
+export const ContainerText = styled.div`
+  display: flex;
+  flex-direction: column;
+  padding: 3%;
 `;
+
+export const TextPrimary = styled.span`
+  color: white;
+  text-align: left;
+  font-size: 23px;
+`;
+
+export const TextSecond = styled.span`
+  color: #4f4d5d;
+  padding-top: 2%;
+  text-align: left;
+`;
+
+export const TextThree = styled.span`
+  color: ${props => props.theme.color.pink};
+  text-align: left;
+  padding-top: 2%;
+  font-size: 13px;
+  cursor: pointer;
+`

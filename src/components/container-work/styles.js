@@ -41,10 +41,9 @@ export const ContainerCards= styled.div`
 
 export const ContainerChildren = styled.div`
   background-color: #281b37;
-  width: 27%;
+  width: 30%;
   text-align: center;
   margin: 1%;
-  padding: 2%;
   height: 0%;
   cursor: pointer;
   border-radius: 20px;
