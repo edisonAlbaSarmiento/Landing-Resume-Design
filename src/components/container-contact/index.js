@@ -18,14 +18,14 @@ import {
   TextThree
 } from './styles';
 
-function Lab({dataLabs}) {
+function Contact({dataLabs}) {
   return (
     <Container>
     <ContainerHeader>
       <ContainerTitle>
         <Title>
-            Labs
-          </Title>
+          Contact
+        </Title>
         <Line />
       </ContainerTitle>
     </ContainerHeader>
@@ -56,8 +56,8 @@ function Lab({dataLabs}) {
   );
 }
 
-Lab.propTypes = {
+Contact.propTypes = {
   dataLabs: PropTypes.objectOf.isRequired,
 }
 
-export default Lab;
+export default Contact;

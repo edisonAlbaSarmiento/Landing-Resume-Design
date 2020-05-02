@@ -9,6 +9,7 @@ import {
   ContainerWork, 
   ContainerAbout,
   Lab,
+  Contact,
   Menu
 } from '../components/index';
 
@@ -53,7 +54,7 @@ function Page() {
       )}
       {section === 'contact' &&(
         <Col xs={9} >
-        Hola contactenos
+          <Contact  />
         </Col>
       )}
       </Row>
