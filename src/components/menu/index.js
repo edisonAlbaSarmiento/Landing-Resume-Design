@@ -32,7 +32,7 @@ function Menu({setSection, section}) {
         <ButtonMenu activeButton={section === 'about'}  onClick={() => setSection('about')}>
           Work
         </ButtonMenu>
-        <ButtonMenu activeButton={section === 'info'}  onClick={() => setSection('info')}>
+        <ButtonMenu activeButton={section === 'labs'}  onClick={() => setSection('labs')}>
           Labs
         </ButtonMenu>
         <ButtonMenu activeButton={section === 'contact'}  onClick={() => setSection('contact')}>

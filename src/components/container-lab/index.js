@@ -18,31 +18,31 @@ import {
   TextThree
 } from './styles';
 
-function Lab({dataWork}) {
+function Lab({dataLabs}) {
   return (
     <Container>
     <ContainerHeader>
       <ContainerTitle>
         <Title>
-            Lab
+            Labs
           </Title>
         <Line />
       </ContainerTitle>
     </ContainerHeader>
     <ContainerCards>
-      {dataWork.map(item => (
+      {dataLabs && dataLabs.map(item => (
         <ContainerChildren>
           <ContainerDescription>
             <ImageContainer src={`${item.imageWork}`} />
             <ContainerText>
               <TextPrimary>
-                {item.description}
+                {item.title}
               </TextPrimary>
               <TextSecond>
-                {item.description}{item.description}
+                {item.description}
               </TextSecond>
-              <TextThree onClick={() => {window.open(`${item.urlWork}`)}}>
-                {item.description} <ArrowForwardIosIcon style={{ fontSize: 10 }} />
+              <TextThree onClick={() => {window.open(`${item.viewMoreIn}`)}}>
+                View More  <ArrowForwardIosIcon style={{ fontSize: 10 }} />
               </TextThree>
             </ContainerText>
            
@@ -57,7 +57,7 @@ function Lab({dataWork}) {
 }
 
 Lab.propTypes = {
-  dataWork: PropTypes.objectOf.isRequired,
+  dataLabs: PropTypes.objectOf.isRequired,
 }
 
 export default Lab;

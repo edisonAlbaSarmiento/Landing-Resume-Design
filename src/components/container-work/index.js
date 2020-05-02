@@ -46,7 +46,7 @@ function Work({dataWork}) {
       </ContainerIcons>
     </ContainerHeader>
     <ContainerCards>
-      {dataWork.map(item => (
+      {dataWork && dataWork.map(item => (
         <ContainerChildren onClick={() => {window.open(`${item.urlWork}`)}}>
           <ImageContainer src={`${item.imageWork}`} />
           <TextImage>

@@ -46,9 +46,9 @@ function Page() {
           <ContainerWork dataWork={myData.work}/>
         </Col>
       )}
-      {section === 'info' &&(
+      {section === 'labs' &&(
         <Col xs={9} >
-          <Lab dataWork={myData.work} />
+          <Lab dataLabs={myData.labs} />
         </Col>
       )}
       {section === 'contact' &&(
