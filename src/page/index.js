@@ -29,7 +29,7 @@ import UserGetData from '../hooks/data';
 
 function Page() {
   const myData = UserGetData();
-  const [section, setSection] = useState('contact');
+  const [section, setSection] = useState('');
 
   return myData.length === 0 ? <Pulsate color="red" size="100px" duration="5s" /> :(
     <Grid>
