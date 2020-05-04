@@ -1,24 +1,24 @@
 /* eslint-disable react/jsx-filename-extension */
 import React from 'react';
-import PropTypes from 'prop-types';
-import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
+// import PropTypes from 'prop-types';
 import {
   Title,
   Container,
   ContainerHeader,
   Line,
   ContainerCards,
-  ContainerChildren,
   ContainerTitle,
-  ImageContainer,
-  ContainerDescription,
-  ContainerText,
-  TextPrimary,
-  TextSecond,
-  TextThree
+  TextTarea,
+  TitleTextTarea,
+  ContainerAbout,
+  ContainerInputs,
+  Input,
+  ButtonSubmit,
+  TextButton,
+  ContaninerButton,
 } from './styles';
 
-function Contact({dataLabs}) {
+function Contact() {
   return (
     <Container>
     <ContainerHeader>
@@ -30,34 +30,38 @@ function Contact({dataLabs}) {
       </ContainerTitle>
     </ContainerHeader>
     <ContainerCards>
-      {dataLabs && dataLabs.map(item => (
-        <ContainerChildren>
-          <ContainerDescription>
-            <ImageContainer src={`${item.imageLabs}`} />
-            <ContainerText>
-              <TextPrimary>
-                {item.title}
-              </TextPrimary>
-              <TextSecond>
-                {item.description}
-              </TextSecond>
-              <TextThree onClick={() => {window.open(`${item.viewMoreIn}`)}}>
-                View More  <ArrowForwardIosIcon style={{ fontSize: 10 }} />
-              </TextThree>
-            </ContainerText>
-           
-          </ContainerDescription>
-        
-        </ContainerChildren>
-      ))}
+        <ContainerAbout>
+          <TitleTextTarea>
+            Project brief description
+          </TitleTextTarea>
+          <TextTarea 
+            placeholder="Project Type, Target customer, timeline, estimate etc"
+            maxLength="300"
+          />
+        </ContainerAbout>
+        <ContainerAbout>
+          <TitleTextTarea>
+            Project brief description
+          </TitleTextTarea>
+          <ContainerInputs>
+            <Input placeholder="Full Name" />
+            <Input placeholder="Email Address" />
+            <Input placeholder="Company Name" />
+            <Input placeholder="Position" />
+            <ContaninerButton>
+              <ButtonSubmit>
+                <TextButton>
+                  Request a Quote
+                </TextButton>
+              </ButtonSubmit>
+            </ContaninerButton>
+         
+          </ContainerInputs>
+        </ContainerAbout>
 
     </ContainerCards>
     </Container>
   );
-}
-
-Contact.propTypes = {
-  dataLabs: PropTypes.objectOf.isRequired,
 }
 
 export default Contact;

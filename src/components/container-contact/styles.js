@@ -7,7 +7,7 @@ export const Container = styled.div`
 export const ContainerHeader = styled.div`
   display: flex;
   justify-content: space-between;
-  padding: 3%;
+  padding: 0px 0px 0px 2%;
 `;
 
 export const ContainerTitle = styled.div`
@@ -32,49 +32,53 @@ export const Line = styled.hr`
 export const ContainerCards= styled.div`
   width: 100%;
   display: flex;
-  flex-flow: wrap;
-`;
-
-export const ContainerChildren = styled.div`
-  background-color: #281b37;
-  width: 44%;
-  text-align: center;
-  margin: 1%;
-  padding: 2%;
-  height: 0%;
-`;
-
-export const ImageContainer = styled.img`
-  width: 100%;
-  height: 100%;
-`;
-
-export const ContainerDescription = styled.div`
-  background-color: #1e1b34;
-`;
-
-export const ContainerText = styled.div`
-  display: flex;
   flex-direction: column;
-  padding: 3%;
 `;
 
-export const TextPrimary = styled.span`
+export const TitleTextTarea = styled.h1`
+  color: #95939c;
+`;
+
+export const TextTarea = styled.textarea`
+  width: 96%;
+  height: 200px;
+  background-color: #21152e;
+  resize: none;
   color: white;
-  text-align: left;
-  font-size: 23px;
+  font-size: 18px;
+  margin: 1%;
+  padding: 7px;
 `;
 
-export const TextSecond = styled.span`
-  color: #4f4d5d;
-  padding-top: 2%;
-  text-align: left;
+export const ContainerAbout = styled.div`
+  padding: 2%;
 `;
 
-export const TextThree = styled.span`
-  color: ${props => props.theme.color.pink};
-  text-align: left;
-  padding-top: 2%;
-  font-size: 13px;
+export const ContainerInputs = styled.div``;
+
+export const Input = styled.input`
+  width: 46%;
+  height: 50px;
+  margin: 1%;
+  background-color: #1e1b34;
+  font-size: 18px;
+  color: white;
+  padding-left: 7px;
+`;
+export const ContaninerButton = styled.div`
+  margin: 1%;
+`;
+
+export const ButtonSubmit = styled.button`
+  width: 26%;
+  background-color: ${props => props.theme.color.pink};
+  border: none;
+  outline: none;
   cursor: pointer;
+`;
+
+export const TextButton = styled.p`
+  font-size: 15px;
+  color: ${props => props.theme.color.white};
 `
+
