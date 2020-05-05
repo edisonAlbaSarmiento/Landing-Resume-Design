@@ -32,3 +32,19 @@ export const ContainerText = styled.p``;
 export const ContainerInformation = styled.div`
   padding: 2% 3% 0 2%;
 `;
+
+export const ContainerMenu = styled.div`
+  flex-basis: 25%;
+  max-width: 25%;
+  height: 200px;
+`;
+
+export const Row = styled.div`
+  box-sizing: border-box;
+  display: flex;
+  flex: 0 1 auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-right: -8px;
+  margin-left: -8px;
+`;

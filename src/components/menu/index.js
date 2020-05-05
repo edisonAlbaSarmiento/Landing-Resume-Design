@@ -7,7 +7,7 @@ import PropTypes from 'prop-types';
 
 import IconButton from '@material-ui/core/IconButton';
 import GitHubIcon from '@material-ui/icons/GitHub';
-import FacebookIcon from '@material-ui/icons/Facebook';
+import InstagramIcon from '@material-ui/icons/Instagram';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import {
@@ -19,11 +19,11 @@ import {
   ContainerIconsFooter,
 } from './styles';
 
-function Menu({setSection, section}) {
+function Menu({setSection, section, dataMenu}) {
   return (
     <Container>
       <ContainerImage>
-        <ImageProfile src="https://avatars3.githubusercontent.com/u/31748119?s=460&u=5b533fd135904b8b25951011a0c3da20fe15b413&v=4" />
+        <ImageProfile src={`${dataMenu.userImage}`} />
       </ContainerImage>
       <ContainerButtons>
         <ButtonMenu activeButton={section === ''} onClick={() => setSection('')}>
@@ -40,16 +40,16 @@ function Menu({setSection, section}) {
         </ButtonMenu>
       </ContainerButtons>
       <ContainerIconsFooter>
-      <IconButton style={{color: '#343b4f'}}>
+      <IconButton style={{color: '#343b4f'}} onClick={() => window.open(`${dataMenu.facebook}`)}>
         <GitHubIcon/>
       </IconButton>
-      <IconButton style={{color: '#343b4f'}}>
-        <FacebookIcon/>
+      <IconButton style={{color: '#343b4f'}} onClick={() => window.open(`${dataMenu.instagram}`)}>
+        <InstagramIcon/>
       </IconButton>
-      <IconButton style={{color: '#343b4f'}}>
+      <IconButton style={{color: '#343b4f'}} onClick={() => window.open(`${dataMenu.linkedIn}`)}> 
         <LinkedInIcon />
       </IconButton>
-      <IconButton style={{color: '#343b4f'}}>
+      <IconButton style={{color: '#343b4f'}} onClick={() => window.open(`${dataMenu.twitter}`)}>
         <TwitterIcon />
       </IconButton>
     </ContainerIconsFooter>
@@ -58,6 +58,7 @@ function Menu({setSection, section}) {
 }
 
 Menu.propTypes = {
+  dataMenu: PropTypes.objectOf.isRequired,
   section: PropTypes.string.isRequired,
   setSection: PropTypes.func.isRequired,
 }

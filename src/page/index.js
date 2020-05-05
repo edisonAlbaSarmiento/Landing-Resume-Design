@@ -4,7 +4,7 @@
 /* eslint-disable react/jsx-filename-extension */
 import React, { useState } from 'react';
 import { Pulsate } from 'styled-loaders-react'
-import { Grid, Row, Col } from 'react-flexbox-grid';
+import { Grid, Col } from 'react-flexbox-grid';
 import {
   ContainerWork, 
   ContainerAbout,
@@ -20,6 +20,8 @@ import {
   // ContinerInformation,
   // ContainerText,
   // ContainerInformation
+  Row,
+  ContainerMenu,
 } from './styles'
 // import ContainerInformationUser from '../components/information-content';
 
@@ -34,9 +36,9 @@ function Page() {
   return myData.length === 0 ? <Pulsate color="red" size="100px" duration="5s" /> :(
     <Grid>
      <Row>
-      <Col xs={3} >
-        <Menu section={section}  setSection={setSection}/>
-      </Col>
+      <ContainerMenu>
+        <Menu section={section}  setSection={setSection} dataMenu={myData.dataUserMenu} />
+      </ContainerMenu>
       {section === '' &&(
         <Col xs={9} >
           <ContainerAbout dataAbout={myData.about} />

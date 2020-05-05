@@ -40,5 +40,12 @@
 		"userName": "Edison Jordan Alba Sarmiento",
 		"position" : "FullStack Developer",
 		"jobDescription" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque non ligula massa. Proin dictum eros non eros aliquet, non accumsan arcu maximus. Sed eu pellentesque turpis"
+	},
+	"dataUserMenu": {
+		"userImage": "https://co.linkedin.com/in/edison-jordan-alba-sarmiento-866799154",
+		"facebook": "https://github.com/edisonAlbaSarmiento",
+		"instagram": "https://www.instagram.com/edison_alba_s/?hl=es-la",
+		"linkedIn": "https://co.linkedin.com/in/edison-jordan-alba-sarmiento-866799154",
+		"twitter": ""
 	}
 }
