@@ -55,7 +55,7 @@ export const Card = styled.div`
 `;
 
 export const CardSubTilte = styled.div`
-  padding: 0px 20px 0px 20px;
+  padding: 3% 20px 0px 20px;
   font-size: 30px;
   text-align: left;
   width: 77%;
