@@ -50,6 +50,9 @@ export const ContainerChildren = styled.div`
   &:hover {
     background-color: #4e3283;
   }
+  @media (max-width: 768px) {
+    width: 48%;
+  }
 `;
 
 export const ImageContainer = styled.img`

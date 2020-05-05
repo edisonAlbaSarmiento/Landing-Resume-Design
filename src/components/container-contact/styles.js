@@ -37,6 +37,9 @@ export const ContainerCards= styled.div`
 
 export const TitleTextTarea = styled.h1`
   color: #95939c;
+  @media (max-width: 768px) {
+    font-size: 22px;
+  }
 `;
 
 export const TextTarea = styled.textarea`
@@ -48,6 +51,9 @@ export const TextTarea = styled.textarea`
   font-size: 18px;
   margin: 1%;
   padding: 7px;
+  @media (max-width: 768px) {
+    height: 100px;
+  }
 `;
 
 export const ContainerAbout = styled.div`
@@ -67,6 +73,7 @@ export const Input = styled.input`
   @media (max-width: 768px) {
     width: 98%;
     margin: 3%;
+    height: 39px;
   }
 `;
 
@@ -81,7 +88,7 @@ export const ButtonSubmit = styled.button`
   outline: none;
   cursor: pointer;
   @media (max-width: 768px) {
-    width: 50%;
+    width: 58%;
     margin: 3%;
   }
 `;

@@ -57,6 +57,9 @@ export const ContainerText = styled.div`
   display: flex;
   flex-direction: column;
   padding: 3%;
+  @media (max-width: 768px) {
+    padding: 0;
+  }
 `;
 
 export const TextPrimary = styled.span`

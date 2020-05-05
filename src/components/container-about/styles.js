@@ -50,7 +50,7 @@ export const Card = styled.div`
   height: 30%;
   @media (max-width: 768px) {
     width: 80%;
-    height: 39%;
+    height: 16%;
     }
 `;
 
@@ -68,7 +68,7 @@ export const TitleName = styled.h2`
   font-weight: bold;
   margin: 0;
   @media (max-width: 768px) {
-    
+    font-size: 24px;
   }
 `;
 
@@ -84,7 +84,7 @@ export const TextDescription = styled.p`
   color: ${props => props.theme.color.grayText};
   width: 85%;
   @media (max-width: 768px) {
-    width: 74%;
+    width: 100%;
   }
 `;
 
@@ -110,7 +110,7 @@ export const TextButton = styled.p`
 export const ContentButtons = styled.div`
   display: flex;
   justify-content: initial;
-  width: 60%;
+  width: 100%;
 `;
 
 export const ImageBackground = styled.img`
