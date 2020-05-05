@@ -51,7 +51,7 @@ function Contact() {
             <ContaninerButton>
               <ButtonSubmit>
                 <TextButton>
-                  Request a Quotes
+                  Request a Quote
                 </TextButton>
               </ButtonSubmit>
             </ContaninerButton>
