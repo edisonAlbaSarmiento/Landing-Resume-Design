@@ -51,7 +51,8 @@ export const ContainerChildren = styled.div`
     background-color: #4e3283;
   }
   @media (max-width: 768px) {
-    width: 48%;
+    width: 100%;
+    margin: 2%;
   }
 `;
 
