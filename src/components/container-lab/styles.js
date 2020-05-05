@@ -42,6 +42,9 @@ export const ContainerChildren = styled.div`
   margin: 1%;
   padding: 2%;
   height: 0%;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 export const ImageContainer = styled.img`
