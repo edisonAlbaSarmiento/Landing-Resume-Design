@@ -4,6 +4,9 @@ import styled from 'styled-components';
 export const Container = styled.div`
   background-color: ${props => props.theme.color.purpleMenu};
   width: 100%;
+  @media (max-width: 768px) {
+    /* display: none; */
+  }
 `;
 
 export const ContainerImage = styled.div`
@@ -15,7 +18,10 @@ export const ImageProfile = styled.img`
   border-radius: 50%;
   height: 120px;
   width: 120px;
-}
+  @media (max-width: 768px) {
+    height: 50px;
+    width: 50px;
+    }
 `;
 
 export const ContainerButtons = styled.div`
@@ -44,4 +50,10 @@ export const ContainerIconsFooter = styled.div`
   flex-direction: row;
   width: 100%;
   justify-content: center;
+  @media (max-width: 768px) {
+    text-align: center;
+    flex-direction: column;
+  }
 `;
+
+

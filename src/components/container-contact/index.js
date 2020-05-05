@@ -55,10 +55,8 @@ function Contact() {
                 </TextButton>
               </ButtonSubmit>
             </ContaninerButton>
-         
           </ContainerInputs>
         </ContainerAbout>
-
     </ContainerCards>
     </Container>
   );

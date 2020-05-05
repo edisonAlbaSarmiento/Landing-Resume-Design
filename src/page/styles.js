@@ -37,6 +37,9 @@ export const ContainerMenu = styled.div`
   flex-basis: 25%;
   max-width: 25%;
   height: 200px;
+  @media (max-width: 768px) {
+    flex-basis: auto;
+  }
 `;
 
 export const Row = styled.div`

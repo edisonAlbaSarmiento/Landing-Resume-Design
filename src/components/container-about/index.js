@@ -20,6 +20,7 @@ import {
   ContainerImage,
   ImageBackground,
   CardImage,
+  ContainerButtons,
 } from './styles';
 
 function About({dataAbout}) {
@@ -47,7 +48,7 @@ function About({dataAbout}) {
               {dataAbout.jobDescription}
             </TextDescription>
           </CardSubTilte>
-          <Card>
+          <ContainerButtons>
             <ContentButtons>
                 <Button1 activeButton={activeButton} onClick={() => setActivButton(1)}>
                   <TextButton>
@@ -60,7 +61,7 @@ function About({dataAbout}) {
                 </TextButton>
                 </Button2>
             </ContentButtons>
-          </Card>
+          </ContainerButtons>
         </ContainerText>
         <ContainerImage>
           <CardImage>

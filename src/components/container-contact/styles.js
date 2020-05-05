@@ -64,7 +64,12 @@ export const Input = styled.input`
   font-size: 18px;
   color: white;
   padding-left: 7px;
+  @media (max-width: 768px) {
+    width: 98%;
+    margin: 3%;
+  }
 `;
+
 export const ContaninerButton = styled.div`
   margin: 1%;
 `;
@@ -75,6 +80,10 @@ export const ButtonSubmit = styled.button`
   border: none;
   outline: none;
   cursor: pointer;
+  @media (max-width: 768px) {
+    width: 50%;
+    margin: 3%;
+  }
 `;
 
 export const TextButton = styled.p`
