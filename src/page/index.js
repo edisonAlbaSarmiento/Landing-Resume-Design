@@ -33,28 +33,34 @@ function Page() {
   const myData = UserGetData();
   const [section, setSection] = useState('');
   const [selectedLanguage, setLanguage] = useState(1);
+  const [selectedNLanguage, setNLanguage] = useState('en');
+  console.log('myData',myData)
+  if(myData.length > 0){
+    const data = myData.data[1]
+    console.log('mdata',data)
+  }
   
-  console.log('myData',myData )
+ 
 console.log('selectedLanguage',selectedLanguage)
   return myData.length === 0 ? <Pulsate color="red" size="100px" duration="5s" /> :(
     <Grid>
      <Row>
       <ContainerMenu>
-        <Menu section={section}  setSection={setSection} dataMenu={myData.es.dataUserMenu} />
+        <Menu section={section}  setSection={setSection} dataMenu={myData.data[selectedLanguage].es.dataUserMenu} />
       </ContainerMenu>
       {section === '' &&(
         <Col xs={9} >
-          <ContainerAbout dataAbout={myData.es.about} />
+          <ContainerAbout dataAbout={myData.data[selectedLanguage].es.about} />
         </Col>
       )}
       {section === 'about' &&(
         <Col xs={9} >
-          <ContainerWork dataWork={myData.es.work}/>
+          <ContainerWork dataWork={myData.data[selectedLanguage].es.work}/>
         </Col>
       )}
       {section === 'labs' &&(
         <Col xs={9} >
-          <Lab dataLabs={myData.es.labs} />
+          <Lab dataLabs={myData.data[selectedLanguage].es.labs} />
         </Col>
       )}
       {section === 'contact' &&(
