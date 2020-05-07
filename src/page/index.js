@@ -32,26 +32,29 @@ import UserGetData from '../hooks/data';
 function Page() {
   const myData = UserGetData();
   const [section, setSection] = useState('');
-console.log('mydata',myData)
+  const [selectedLanguage, setLanguage] = useState(1);
+  
+  console.log('myData',myData )
+console.log('selectedLanguage',selectedLanguage)
   return myData.length === 0 ? <Pulsate color="red" size="100px" duration="5s" /> :(
     <Grid>
      <Row>
       <ContainerMenu>
-        <Menu section={section}  setSection={setSection} dataMenu={myData.dataUserMenu} />
+        <Menu section={section}  setSection={setSection} dataMenu={myData.es.dataUserMenu} />
       </ContainerMenu>
       {section === '' &&(
         <Col xs={9} >
-          <ContainerAbout dataAbout={myData.about} />
+          <ContainerAbout dataAbout={myData.es.about} />
         </Col>
       )}
       {section === 'about' &&(
         <Col xs={9} >
-          <ContainerWork dataWork={myData.work}/>
+          <ContainerWork dataWork={myData.es.work}/>
         </Col>
       )}
       {section === 'labs' &&(
         <Col xs={9} >
-          <Lab dataLabs={myData.labs} />
+          <Lab dataLabs={myData.es.labs} />
         </Col>
       )}
       {section === 'contact' &&(
