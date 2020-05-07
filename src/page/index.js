@@ -32,7 +32,7 @@ import UserGetData from '../hooks/data';
 function Page() {
   const myData = UserGetData();
   const [section, setSection] = useState('');
-
+console.log('mydata',myData)
   return myData.length === 0 ? <Pulsate color="red" size="100px" duration="5s" /> :(
     <Grid>
      <Row>
