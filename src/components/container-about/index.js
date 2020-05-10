@@ -23,13 +23,13 @@ import {
   ContainerButtons,
 } from './styles';
 
-function About({dataAbout}) {
+function About({dataAbout, selectedLanguage}) {
   const [activeButton, setActivButton] = useState(1);
   return (
     <Container>
       <ContainerTitle>
         <Title>
-          About
+          {selectedLanguage === 0 ? ' About': 'Acerca de'} 
         </Title>
         <Line />
       </ContainerTitle>
@@ -52,12 +52,12 @@ function About({dataAbout}) {
             <ContentButtons>
                 <Button1 activeButton={activeButton} onClick={() => setActivButton(1)}>
                   <TextButton>
-                    Hire me
+                    {selectedLanguage === 0 ? 'Hire me': 'Contratame'} 
                   </TextButton>
                 </Button1>
                 <Button2 activeButton={activeButton} onClick={() => setActivButton(2)}>
                 <TextButton>
-                  Know more
+                  {selectedLanguage === 0 ? 'Know more': 'Saber más'} 
                 </TextButton>
                 </Button2>
             </ContentButtons>
@@ -75,5 +75,6 @@ function About({dataAbout}) {
 
 About.propTypes = {
   dataAbout: PropTypes.objectOf.isRequired,
+  selectedLanguage: PropTypes.string.isRequired,
 }
 export default About;

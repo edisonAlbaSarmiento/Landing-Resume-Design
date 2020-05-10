@@ -19,18 +19,18 @@ import {
   LinkShare,
 } from './styles';
 
-function Work({dataWork}) {
+function Work({dataWork, selectedLanguage}) {
   return (
     <Container>
     <ContainerHeader>
       <ContainerTitle>
-        <Title>
-            Work
+          <Title>
+            {selectedLanguage === 0 ? 'Work': 'Trabajo'} 
           </Title>
         <Line />
       </ContainerTitle>
       <ContainerIcons>
-        <Tooltip title="Compartir por Whatsapp" arrow>
+        <Tooltip title={selectedLanguage === 0 ? 'Compartir por Whatsapp': 'Share via Whatsapp'} arrow>
           <IconButton>
             <LinkShare href="whatsapp://send?text=https://edisonalbasarmiento.github.io/Landing-Resume-Design/" data-action="share/whatsapp/share">
             <Share />
@@ -62,6 +62,7 @@ function Work({dataWork}) {
 
 Work.propTypes = {
   dataWork: PropTypes.objectOf.isRequired,
+  selectedLanguage: PropTypes.string.isRequired,
 }
 
 export default Work;

@@ -1,6 +1,6 @@
 /* eslint-disable react/jsx-filename-extension */
 import React from 'react';
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import {
   Title,
   Container,
@@ -18,13 +18,13 @@ import {
   ContaninerButton,
 } from './styles';
 
-function Contact() {
+function Contact({selectedLanguage}) {
   return (
     <Container>
     <ContainerHeader>
       <ContainerTitle>
         <Title>
-          Contact
+          {selectedLanguage === 0 ? 'Contact': 'Contacto'} 
         </Title>
         <Line />
       </ContainerTitle>
@@ -32,26 +32,26 @@ function Contact() {
     <ContainerCards>
         <ContainerAbout>
           <TitleTextTarea>
-            Project brief description
+            {selectedLanguage === 0 ? 'Project brief description': 'Breve descripción del proyecto'} 
           </TitleTextTarea>
           <TextTarea 
-            placeholder="Project Type, Target customer, timeline, estimate etc"
+            placeholder={selectedLanguage === 0 ? 'Project Type, Target customer, timeline, estimate etc' : 'Tipo de proyecto, cliente objetivo, cronograma, estimación, etc.'}
             maxLength="300"
           />
         </ContainerAbout>
         <ContainerAbout>
           <TitleTextTarea>
-            Project brief description
+            {selectedLanguage === 0 ? 'Project brief description': 'Breve descripción del proyecto'}
           </TitleTextTarea>
           <ContainerInputs>
-            <Input placeholder="Full Name" />
-            <Input placeholder="Email Address" />
-            <Input placeholder="Company Name" />
-            <Input placeholder="Position" />
+            <Input placeholder={selectedLanguage === 0 ? 'Full Name': 'Nombre completo'}/>
+            <Input placeholder={selectedLanguage === 0 ? 'Email Address': 'Dirección de correo electrónico'}/>
+            <Input placeholder={selectedLanguage === 0 ? 'Company Name': 'Nombre de empresa'}/>
+            <Input placeholder={selectedLanguage === 0 ? 'Position': 'Posición'}/>
             <ContaninerButton>
               <ButtonSubmit>
                 <TextButton>
-                  Request a Quote
+                  {selectedLanguage === 0 ? 'Request a Quote': 'Solicitar presupuesto'}
                 </TextButton>
               </ButtonSubmit>
             </ContaninerButton>
@@ -60,6 +60,10 @@ function Contact() {
     </ContainerCards>
     </Container>
   );
+}
+
+Contact.propTypes = {
+  selectedLanguage: PropTypes.string.isRequired,
 }
 
 export default Contact;

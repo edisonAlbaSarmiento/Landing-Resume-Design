@@ -33,39 +33,47 @@ function Page() {
   const myData = UserGetData();
   const [section, setSection] = useState('');
   const [selectedLanguage, setLanguage] = useState(1);
-  const [selectedNLanguage, setNLanguage] = useState('en');
-  console.log('myData',myData)
-  if(myData.length > 0){
-    const data = myData.data[1]
-    console.log('mdata',data)
-  }
-  
  
-console.log('selectedLanguage',selectedLanguage)
+
   return myData.length === 0 ? <Pulsate color="red" size="100px" duration="5s" /> :(
     <Grid>
      <Row>
       <ContainerMenu>
-        <Menu section={section}  setSection={setSection} dataMenu={myData.data[selectedLanguage].es.dataUserMenu} />
+        <Menu 
+          section={section}
+          selectedLanguage={selectedLanguage}
+          setLanguage={setLanguage}
+          setSection={setSection} 
+          dataMenu={selectedLanguage === 1 ? myData.data[selectedLanguage].es.dataUserMenu : myData.data[selectedLanguage].en.dataUserMenu}
+        />
       </ContainerMenu>
       {section === '' &&(
         <Col xs={9} >
-          <ContainerAbout dataAbout={myData.data[selectedLanguage].es.about} />
+          <ContainerAbout
+            selectedLanguage={selectedLanguage} 
+            dataAbout={selectedLanguage === 1 ? myData.data[selectedLanguage].es.about : myData.data[selectedLanguage].en.about} 
+          />
         </Col>
       )}
       {section === 'about' &&(
         <Col xs={9} >
-          <ContainerWork dataWork={myData.data[selectedLanguage].es.work}/>
+          <ContainerWork
+            selectedLanguage={selectedLanguage} 
+            dataWork={selectedLanguage === 1 ? myData.data[selectedLanguage].es.work : myData.data[selectedLanguage].en.work}
+          />
         </Col>
       )}
       {section === 'labs' &&(
         <Col xs={9} >
-          <Lab dataLabs={myData.data[selectedLanguage].es.labs} />
+          <Lab 
+            selectedLanguage={selectedLanguage}
+            dataLabs={selectedLanguage === 1 ? myData.data[selectedLanguage].es.labs : myData.data[selectedLanguage].en.labs} 
+          />
         </Col>
       )}
       {section === 'contact' &&(
         <Col xs={9} >
-          <Contact  />
+          <Contact selectedLanguage={selectedLanguage} />
         </Col>
       )}
       </Row>

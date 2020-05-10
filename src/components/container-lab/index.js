@@ -18,13 +18,13 @@ import {
   TextThree
 } from './styles';
 
-function Lab({dataLabs}) {
+function Lab({dataLabs, selectedLanguage}) {
   return (
     <Container>
     <ContainerHeader>
       <ContainerTitle>
-        <Title>
-            Labs
+          <Title>
+            {selectedLanguage === 0 ? 'Labs': 'Laboratorios'} 
           </Title>
         <Line />
       </ContainerTitle>
@@ -42,7 +42,8 @@ function Lab({dataLabs}) {
                 {item.description}
               </TextSecond>
               <TextThree onClick={() => {window.open(`${item.viewMoreIn}`)}}>
-                View More  <ArrowForwardIosIcon style={{ fontSize: 10 }} />
+                {selectedLanguage === 0 ? 'View More': 'Ver más'} 
+                <ArrowForwardIosIcon style={{ fontSize: 10 }} />
               </TextThree>
             </ContainerText>
            
@@ -58,6 +59,7 @@ function Lab({dataLabs}) {
 
 Lab.propTypes = {
   dataLabs: PropTypes.objectOf.isRequired,
+  selectedLanguage: PropTypes.string.isRequired,
 }
 
 export default Lab;

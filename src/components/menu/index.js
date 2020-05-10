@@ -12,6 +12,8 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import Switch from '@material-ui/core/Switch';
 import { withStyles } from '@material-ui/core/styles';
+import Grid from '@material-ui/core/Grid';
+import Typography from '@material-ui/core/Typography';
 import {
   Container,
   ContainerImage,
@@ -19,6 +21,9 @@ import {
   ContainerButtons,
   ButtonMenu,
   ContainerIconsFooter,
+  ContainerChangeLanguage,
+  TextLanguage,
+  ContainerLanguage,
 } from './styles';
 
 const AntSwitch = withStyles((theme) => ({
@@ -55,14 +60,24 @@ const AntSwitch = withStyles((theme) => ({
   checked: {},
 }))(Switch);
 
-function Menu({setSection, section, dataMenu}) {
+function Menu({ 
+  setLanguage,
+  setSection, 
+  section, 
+  dataMenu, 
+  selectedLanguage,
+}) {
   const [state, setState] = useState({
     checkedC: true,
   });
 
   const handleChange = (event) => {
-    console.log('ENVENT', event)
     setState({ ...state, [event.target.name]: event.target.checked });
+    if( event.target.checked){
+      setLanguage(1)
+    }else {
+      setLanguage(0)
+    }
   };
   return (
     <Container>
@@ -71,18 +86,36 @@ function Menu({setSection, section, dataMenu}) {
       </ContainerImage>
       <ContainerButtons>
         <ButtonMenu activeButton={section === ''} onClick={() => setSection('')}>
-          About
+          {selectedLanguage === 0 ? 'About': 'Acerca de' }
         </ ButtonMenu>
         <ButtonMenu activeButton={section === 'about'}  onClick={() => setSection('about')}>
-          Work
+          {selectedLanguage === 0 ? 'Work': 'Trabajo' }
         </ButtonMenu>
         <ButtonMenu activeButton={section === 'labs'}  onClick={() => setSection('labs')}>
-          Labs
+          {selectedLanguage === 0 ? 'Labs': 'Laboratorios' } 
         </ButtonMenu>
         <ButtonMenu activeButton={section === 'contact'}  onClick={() => setSection('contact')}>
-          Contact
+          {selectedLanguage === 0 ? 'Contact': 'Contacto' } 
         </ButtonMenu>
-        <AntSwitch checked={state.checkedC} onChange={handleChange} name="checkedC" />
+        <ContainerChangeLanguage>
+        <Typography component="div">
+          <Grid component="label" container alignItems="center" spacing={1}>
+            <ContainerLanguage>
+              <TextLanguage>
+                EN
+              </TextLanguage>
+            </ContainerLanguage>
+            <ContainerLanguage>
+              <AntSwitch checked={state.checkedC} onChange={handleChange} name="checkedC" />
+            </ContainerLanguage>
+            <ContainerLanguage>
+              <TextLanguage>
+                ES
+              </TextLanguage>
+            </ContainerLanguage>
+          </Grid>
+         </Typography>
+      </ContainerChangeLanguage>
       </ContainerButtons>
       <ContainerIconsFooter>
       <IconButton style={{color: '#343b4f'}} onClick={() => window.open(`${dataMenu.facebook}`)}>
@@ -106,6 +139,8 @@ Menu.propTypes = {
   dataMenu: PropTypes.objectOf.isRequired,
   section: PropTypes.string.isRequired,
   setSection: PropTypes.func.isRequired,
+  setLanguage: PropTypes.func.isRequired,
+  selectedLanguage: PropTypes.string.isRequired,
 }
 
 export default Menu;

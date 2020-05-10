@@ -56,4 +56,29 @@ export const ContainerIconsFooter = styled.div`
   }
 `;
 
+export const ContainerChangeLanguage = styled.div`
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  @media (max-width: 768px) {
+    text-align: center;
+    flex-direction: column;
+  }
+`;
+
+export const TextLanguage = styled.h3`
+  font-size: 14px;
+  color: white;
+  @media (max-width: 768px) {
+    font-size: 10px;
+  }
+`;
+
+export const ContainerLanguage = styled.div`
+  padding: 4px;
+  @media (max-width: 768px) {
+    padding: 1;
+  }
+`;
 
