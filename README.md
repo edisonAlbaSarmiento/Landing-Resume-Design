@@ -6,6 +6,9 @@ https://www.uplabs.com/posts/glazzy-free-portfolio-psd-template
 
 <img src="images/example.png"  width=400>
 
+Servicio de envio de correos por SendGrid y EmailJS
+
+https://dashboard.emailjs.com
 
 ## Style Flex
 http://roylee0704.github.io/react-flexbox-grid/
