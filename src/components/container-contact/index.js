@@ -16,6 +16,7 @@ import {
   ButtonSubmit,
   TextButton,
   ContaninerButton,
+  Form,
 } from './styles';
 import { sendFeedback } from '../../utils';
 
@@ -26,50 +27,97 @@ const comapny = 'imaginamos'
 const position ='npse'
 const desdripcion  =' sjdshdkshdkjsahdslahdls'
 
-const Contact = async ({selectedLanguage}) => {
-  const response = await sendFeedback('sendgrid', {message_html: `${name}<br/> <br/> ${comapny}<br/> ${position}<br/> ${desdripcion}<br/>`, from_name: `${email}`, reply_to: 'edison.alba@imaginamos.com.co'})
-  console.log('RESP=OS', response.status)
-  return (
-    <Container>
-    <ContainerHeader>
-      <ContainerTitle>
-        <Title>
-          {selectedLanguage === 0 ? 'Contact': 'Contacto'} 
-        </Title>
-        <Line />
-      </ContainerTitle>
-    </ContainerHeader>
-    <ContainerCards>
-        <ContainerAbout>
-          <TitleTextTarea>
-            {selectedLanguage === 0 ? 'Project brief description': 'Breve descripción del proyecto'} 
-          </TitleTextTarea>
-          <TextTarea 
-            placeholder={selectedLanguage === 0 ? 'Project Type, Target customer, timeline, estimate etc' : 'Tipo de proyecto, cliente objetivo, cronograma, estimación, etc.'}
-            maxLength="300"
-          />
-        </ContainerAbout>
-        <ContainerAbout>
-          <TitleTextTarea>
-            {selectedLanguage === 0 ? 'Project brief description': 'Breve descripción del proyecto'}
-          </TitleTextTarea>
-          <ContainerInputs>
-            <Input placeholder={selectedLanguage === 0 ? 'Full Name': 'Nombre completo'}/>
-            <Input placeholder={selectedLanguage === 0 ? 'Email Address': 'Dirección de correo electrónico'}/>
-            <Input placeholder={selectedLanguage === 0 ? 'Company Name': 'Nombre de empresa'}/>
-            <Input placeholder={selectedLanguage === 0 ? 'Position': 'Posición'}/>
-            <ContaninerButton>
-              <ButtonSubmit>
-                <TextButton>
-                  {selectedLanguage === 0 ? 'Request a Quote': 'Solicitar presupuesto'}
-                </TextButton>
-              </ButtonSubmit>
-            </ContaninerButton>
-          </ContainerInputs>
-        </ContainerAbout>
-    </ContainerCards>
-    </Container>
-  );
+
+class Contact extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {value: []};
+
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+  handleChange= (event) => {
+    console.log('event.target.value',event.target.value)
+    const name = event.target.name;
+    const value = event.target.value;
+    console.log('event.target.value',name)
+    this.setState({
+      [name]: value
+    });
+
+  }
+
+  handleSubmit(event) {
+    console.log('event.wwwwtarget.value',event.target.value)
+    alert('A name was submitted: ' + this.state.value);
+    event.preventDefault();
+  }
+
+  render() {
+    const { selectedLanguage } = this.props;
+    const { value } = this.state;
+    return (
+      <Container>
+      <ContainerHeader>
+        <ContainerTitle>
+          <Title>
+            {selectedLanguage === 0 ? 'Contact': 'Contacto'} 
+          </Title>
+          <Line />
+        </ContainerTitle>
+      </ContainerHeader>
+      <ContainerCards>
+        <Form  onSubmit={this.handleSubmit}>
+          <ContainerAbout>
+            <TitleTextTarea value={value} >
+              {selectedLanguage === 0 ? 'Project brief description': 'Breve descripción del proyecto'} 
+            </TitleTextTarea>
+            <TextTarea 
+              placeholder={selectedLanguage === 0 ? 'Project Type, Target customer, timeline, estimate etc' : 'Tipo de proyecto, cliente objetivo, cronograma, estimación, etc.'}
+              maxLength="300"
+            />
+          </ContainerAbout>
+          <ContainerAbout>
+            <TitleTextTarea>
+              {selectedLanguage === 0 ? 'Project brief description': 'Breve descripción del proyecto'}
+            </TitleTextTarea>
+            <ContainerInputs>
+              <Input 
+                name="fullName"
+                placeholder={selectedLanguage === 0 ? 'Full Name': 'Nombre completo'} 
+                onChange={this.handleChange}
+              />
+              <Input 
+                name="email"
+                placeholder={selectedLanguage === 0 ? 'Email Address': 'Dirección de correo electrónico'} 
+                onChange={this.handleChange}
+              />
+              <Input 
+                name="comapany"
+                placeholder={selectedLanguage === 0 ? 'Company Name': 'Nombre de empresa'} 
+                onChange={this.handleChange}
+              />
+              <Input 
+                name="position"
+                placeholder={selectedLanguage === 0 ? 'Position': 'Posición'}
+                onChange={this.handleChange}
+              />
+              <ContaninerButton>
+                <ButtonSubmit>
+                  <TextButton type="submit">
+                    {selectedLanguage === 0 ? 'Request a Quote': 'Solicitar presupuesto'}
+                  </TextButton>
+                </ButtonSubmit>
+              </ContaninerButton>
+            </ContainerInputs>
+          </ContainerAbout>
+          </Form>
+        </ContainerCards>
+      </Container>
+    
+    );
+  }
 }
 
 Contact.propTypes = {

@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 
+export const Form = styled.form``;
+
 export const Container = styled.div`
   background-color: ${props => props.theme.color.purple};
 `;  
