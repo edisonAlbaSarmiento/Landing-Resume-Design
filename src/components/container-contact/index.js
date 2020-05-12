@@ -17,8 +17,18 @@ import {
   TextButton,
   ContaninerButton,
 } from './styles';
+import { sendFeedback } from '../../utils';
 
-function Contact({selectedLanguage}) {
+
+const name = 'Edison'
+const email ='test@tes.com'
+const comapny = 'imaginamos'
+const position ='npse'
+const desdripcion  =' sjdshdkshdkjsahdslahdls'
+
+const Contact = async ({selectedLanguage}) => {
+  const response = await sendFeedback('sendgrid', {message_html: `${name}<br/> <br/> ${comapny}<br/> ${position}<br/> ${desdripcion}<br/>`, from_name: `${email}`, reply_to: 'edison.alba@imaginamos.com.co'})
+  console.log('RESP=OS', response.status)
   return (
     <Container>
     <ContainerHeader>

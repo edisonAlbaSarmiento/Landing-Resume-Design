@@ -26,6 +26,13 @@
     -->
     <title>Edison Hoja de Vida</title>
   </head>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+  <script type="text/javascript">
+      
+    (function(){
+        emailjs.init('%REACT_APP_EMAILJS_API_KEY%');
+    })();
+  </script>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>

@@ -25,7 +25,6 @@ import {
 } from './styles'
 // import ContainerInformationUser from '../components/information-content';
 
-
 // Hooks
 import UserGetData from '../hooks/data';
 
@@ -33,8 +32,6 @@ function Page() {
   const myData = UserGetData();
   const [section, setSection] = useState('');
   const [selectedLanguage, setLanguage] = useState(1);
- 
-
   return myData.length === 0 ? <Pulsate color="red" size="100px" duration="5s" /> :(
     <Grid>
      <Row>

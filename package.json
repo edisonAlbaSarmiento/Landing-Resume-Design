@@ -5,6 +5,7 @@
   "dependencies": {
     "@material-ui/core": "^4.9.12",
     "@material-ui/icons": "^4.9.1",
+    "@sendgrid/mail": "^7.1.0",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
@@ -24,7 +25,8 @@
     "react-scripts": "3.3.0",
     "react-spring": "^8.0.27",
     "styled-components": "^4.4.1",
-    "styled-loaders-react": "^1.1.0"
+    "styled-loaders-react": "^1.1.0",
+    "dotenv": "^8.1.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -36,7 +38,8 @@
     "pre-push": "npm test",
     "post-merge": "npm install",
     "post-rewrite": "npm install",
-    "homepage": "https://edisonalbasarmiento.github.io/Landing-Resume-Design/"
+    "homepage": "https://edisonalbasarmiento.github.io/Landing-Resume-Design/",
+    "dotenv": "^8.2.0"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -61,6 +64,7 @@
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
+    "dotenv": "^8.2.0",
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-prettier": "^3.1.3",
