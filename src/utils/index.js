@@ -1,7 +1,8 @@
+/* eslint-disable import/prefer-default-export */
 export const sendFeedback = async (templateId, variables) => {
     console.log('ENTRO', process.env.REACT_APP_TEMPLATE_ID)
      const result = await window.emailjs.send(
-        `${templateId}`, `${process.env.REACT_APP_TEMPLATE_IDs}`,
+        `${templateId}`, `${process.env.REACT_APP_TEMPLATE_ID}`,
         variables
         ).then(res => {
             console.log('Email successfully sent!',res)
