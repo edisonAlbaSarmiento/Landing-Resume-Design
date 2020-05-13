@@ -1,6 +1,7 @@
 /* eslint-disable react/jsx-filename-extension */
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Formik } from 'formik';
 import {
   Title,
   Container,
@@ -19,7 +20,6 @@ import {
   Form,
 } from './styles';
 import { sendFeedback } from '../../utils';
-import { Formik } from 'formik';
 
 
 function Contact({selectedLanguage}){
@@ -38,12 +38,17 @@ function Contact({selectedLanguage}){
       }
       return errors;
     }}
-    onSubmit={(values, { setSubmitting }) => {
-      setTimeout(() => {
-      const response = sendFeedback('sendgrid', {message_html: `${values.fullName}<br/> <br/> ${values.company}<br/> ${values.position}<br/> ${values.description}<br/>`, from_name: `${values.fullName}`, reply_to: ''})
-      console.log('RESP=OS', response.status)
-        alert(JSON.stringify(values, null, 2));
+    onSubmit={(values, { setSubmitting, resetForm }) => {
+      setTimeout(async() => {
+      const response = await sendFeedback('sendgrid', {message_html: `${values.fullName}<br/> <br/> ${values.company}<br/> ${values.position}<br/> ${values.description}<br/>`, from_name: `${values.email}`, reply_to: ''})
+      console.log('RESP=OS', response)
+      if(response === 200){
+        alert('Mensaje enviado con exito');
+      }else {
+        alert('Algo salio mal, no se envio el mensaje');
+      }
         setSubmitting(false);
+        resetForm();
       }, 1000);
     }}
   >
