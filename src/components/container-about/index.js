@@ -1,6 +1,7 @@
 /* eslint-disable react/jsx-filename-extension */
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
+import ReactPlayer from "react-player";
 import {
   Container,
   ContainerTitle,
@@ -22,6 +23,7 @@ import {
   CardImage,
   ContainerButtons,
 } from './styles';
+import DialogTitle from '../modal';
 
 function About({dataAbout, selectedLanguage}) {
   const [activeButton, setActivButton] = useState(1);
@@ -59,7 +61,14 @@ function About({dataAbout, selectedLanguage}) {
                 <TextButton>
                   {selectedLanguage === 0 ? 'Know more': 'Saber más'}
                 </TextButton>
+
               </Button2>
+              <DialogTitle>
+                <ReactPlayer
+                  width="100%"
+                  url="https://www.youtube.com/watch?v=ug50zmP9I7s"
+                />
+              </DialogTitle>
             </ContentButtons>
           </ContainerButtons>
         </ContainerText>
