@@ -5,9 +5,9 @@ import Contact from './container-contact';
 import Menu from './menu';
 
 export {
-    ContainerWork,
-    ContainerAbout,
-    Lab,
-    Contact,
-    Menu
+  ContainerWork,
+  ContainerAbout,
+  Lab,
+  Contact,
+  Menu
 }

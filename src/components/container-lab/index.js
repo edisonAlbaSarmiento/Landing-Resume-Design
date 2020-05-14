@@ -21,38 +21,38 @@ import {
 function Lab({dataLabs, selectedLanguage}) {
   return (
     <Container>
-    <ContainerHeader>
-      <ContainerTitle>
+      <ContainerHeader>
+        <ContainerTitle>
           <Title>
-            {selectedLanguage === 0 ? 'Labs': 'Laboratorios'} 
+            {selectedLanguage === 0 ? 'Labs': 'Laboratorios'}
           </Title>
-        <Line />
-      </ContainerTitle>
-    </ContainerHeader>
-    <ContainerCards>
-      {dataLabs && dataLabs.map(item => (
-        <ContainerChildren>
-          <ContainerDescription>
-            <ImageContainer src={`${item.imageLabs}`} />
-            <ContainerText>
-              <TextPrimary>
-                {item.title}
-              </TextPrimary>
-              <TextSecond>
-                {item.description}
-              </TextSecond>
-              <TextThree onClick={() => {window.open(`${item.viewMoreIn}`)}}>
-                {selectedLanguage === 0 ? 'View More': 'Ver más'} 
-                <ArrowForwardIosIcon style={{ fontSize: 10 }} />
-              </TextThree>
-            </ContainerText>
-           
-          </ContainerDescription>
-        
-        </ContainerChildren>
-      ))}
+          <Line />
+        </ContainerTitle>
+      </ContainerHeader>
+      <ContainerCards>
+        {dataLabs && dataLabs.map(item => (
+          <ContainerChildren>
+            <ContainerDescription>
+              <ImageContainer src={`${item.imageLabs}`} />
+              <ContainerText>
+                <TextPrimary>
+                  {item.title}
+                </TextPrimary>
+                <TextSecond>
+                  {item.description}
+                </TextSecond>
+                <TextThree onClick={() => {window.open(`${item.viewMoreIn}`)}}>
+                  {selectedLanguage === 0 ? 'View More': 'Ver más'}
+                  <ArrowForwardIosIcon style={{ fontSize: 10 }} />
+                </TextThree>
+              </ContainerText>
 
-    </ContainerCards>
+            </ContainerDescription>
+
+          </ContainerChildren>
+        ))}
+
+      </ContainerCards>
     </Container>
   );
 }

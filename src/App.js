@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="App">
       <ThemeProvider theme={theme}>
-       <Page/>
+        <Page/>
       </ThemeProvider>
     </div>
   );

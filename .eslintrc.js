@@ -27,5 +27,14 @@ module.exports = {
         "prettier"
     ],
     "rules": {
+        "no-underscore-dangle": 1,
+        "arrow-body-style": 1,
+        "no-shadow": 1,
+        "consistent-return": 1,
+        "no-nested-ternary": 1,
+        "no-console": 1,
+        "no-case-declarations": 1,
+        "import/prefer-default-expoprt": 0,
+        "indent": ["error", 2],
     }
 };

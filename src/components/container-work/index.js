@@ -22,40 +22,40 @@ import {
 function Work({dataWork, selectedLanguage}) {
   return (
     <Container>
-    <ContainerHeader>
-      <ContainerTitle>
+      <ContainerHeader>
+        <ContainerTitle>
           <Title>
-            {selectedLanguage === 0 ? 'Work': 'Trabajo'} 
+            {selectedLanguage === 0 ? 'Work': 'Trabajo'}
           </Title>
-        <Line />
-      </ContainerTitle>
-      <ContainerIcons>
-        <Tooltip title={selectedLanguage === 0 ? 'Share via Whatsapp' : 'Compartir por Whatsapp'} arrow>
-          <IconButton>
-            <LinkShare href="whatsapp://send?text=https://edisonalbasarmiento.github.io/Landing-Resume-Design/" data-action="share/whatsapp/share">
-            <Share />
-            </LinkShare>  
-          </IconButton>
-        </Tooltip>
-      
-        <IconButton style={{color: 'white'}}>
-          <LinkShare>
-            <Search />
-          </LinkShare>
-        </IconButton>
-      </ContainerIcons>
-    </ContainerHeader>
-    <ContainerCards>
-      {dataWork && dataWork.map(item => (
-        <ContainerChildren onClick={() => {window.open(`${item.urlWork}`)}}>
-          <ImageContainer src={`${item.imageWork}`} />
-          <TextImage>
-            {item.description}
-          </TextImage>
-        </ContainerChildren>
-      ))}
+          <Line />
+        </ContainerTitle>
+        <ContainerIcons>
+          <Tooltip title={selectedLanguage === 0 ? 'Share via Whatsapp' : 'Compartir por Whatsapp'} arrow>
+            <IconButton>
+              <LinkShare href="whatsapp://send?text=https://edisonalbasarmiento.github.io/Landing-Resume-Design/" data-action="share/whatsapp/share">
+                <Share />
+              </LinkShare>
+            </IconButton>
+          </Tooltip>
 
-    </ContainerCards>
+          <IconButton style={{color: 'white'}}>
+            <LinkShare>
+              <Search />
+            </LinkShare>
+          </IconButton>
+        </ContainerIcons>
+      </ContainerHeader>
+      <ContainerCards>
+        {dataWork && dataWork.map(item => (
+          <ContainerChildren onClick={() => {window.open(`${item.urlWork}`)}}>
+            <ImageContainer src={`${item.imageWork}`} />
+            <TextImage>
+              {item.description}
+            </TextImage>
+          </ContainerChildren>
+        ))}
+
+      </ContainerCards>
     </Container>
   );
 }

@@ -1,18 +1,11 @@
-/* eslint-disable import/prefer-default-export */
-export const sendFeedback = async (templateId, variables) => {
-    console.log('ENTRO', process.env.REACT_APP_TEMPLATE_ID)
-     const result = await window.emailjs.send(
-        `${templateId}`, `${process.env.REACT_APP_TEMPLATE_ID}`,
-        variables
-        ).then(res => {
-            console.log('Email successfully sent!',res)
-            return res.status; 
-        })
-        // Handle errors here however you like, or use a React error boundary
-        .catch(err => {
-            console.log('Oh well, you failed. Here some thoughts on the error that occured:', err)
-            return err;
-        })
-        return result
-  
-    }
+const sendFeedback = async (templateId, variables) => {
+  const result = await window.emailjs.send(
+    `${templateId}`, `${process.env.REACT_APP_TEMPLATE_ID}`,
+    variables
+  ).then(res => res.status)
+  // Handle errors here however you like, or use a React error boundary
+    .catch(err => err)
+  return result
+}
+
+export default sendFeedback;

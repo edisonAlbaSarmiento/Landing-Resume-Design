@@ -7,7 +7,7 @@ import {
 
 function index(
   {
-    children, 
+    children,
     title,
     icon,
     center
@@ -15,21 +15,21 @@ function index(
 ) {
   return (
     <>
-    <ContainerInformationUser centerTitle={center}>
-    <h4>{title}</h4>
-    {icon && (
-      <h4>{icon}</h4>
-    )}
-    </ContainerInformationUser>
+      <ContainerInformationUser centerTitle={center}>
+        <h4>{title}</h4>
+        {icon && (
+          <h4>{icon}</h4>
+        )}
+      </ContainerInformationUser>
       {children}
-   </>
+    </>
   );
 }
 
 index.propTypes = {
   children: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
-  icon: PropTypes.string.isRequired, 
+  icon: PropTypes.string.isRequired,
   center: PropTypes.number.isRequired,
 }
 

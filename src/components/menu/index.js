@@ -60,11 +60,11 @@ const AntSwitch = withStyles((theme) => ({
   checked: {},
 }))(Switch);
 
-function Menu({ 
+function Menu({
   setLanguage,
-  setSection, 
-  section, 
-  dataMenu, 
+  setSection,
+  section,
+  dataMenu,
   selectedLanguage,
 }) {
   const [state, setState] = useState({
@@ -92,46 +92,46 @@ function Menu({
           {selectedLanguage === 0 ? 'Work': 'Trabajo' }
         </ButtonMenu>
         <ButtonMenu activeButton={section === 'labs'}  onClick={() => setSection('labs')}>
-          {selectedLanguage === 0 ? 'Labs': 'Laboratorios' } 
+          {selectedLanguage === 0 ? 'Labs': 'Laboratorios' }
         </ButtonMenu>
         <ButtonMenu activeButton={section === 'contact'}  onClick={() => setSection('contact')}>
-          {selectedLanguage === 0 ? 'Contact': 'Contacto' } 
+          {selectedLanguage === 0 ? 'Contact': 'Contacto' }
         </ButtonMenu>
         <ContainerChangeLanguage>
-        <Typography component="div">
-          <Grid component="label" container alignItems="center" spacing={1}>
-            <ContainerLanguage>
-              <TextLanguage>
+          <Typography component="div">
+            <Grid component="label" container alignItems="center" spacing={1}>
+              <ContainerLanguage>
+                <TextLanguage>
                 EN
-              </TextLanguage>
-            </ContainerLanguage>
-            <ContainerLanguage>
-              <AntSwitch checked={state.checkedC} onChange={handleChange} name="checkedC" />
-            </ContainerLanguage>
-            <ContainerLanguage>
-              <TextLanguage>
+                </TextLanguage>
+              </ContainerLanguage>
+              <ContainerLanguage>
+                <AntSwitch checked={state.checkedC} onChange={handleChange} name="checkedC" />
+              </ContainerLanguage>
+              <ContainerLanguage>
+                <TextLanguage>
                 ES
-              </TextLanguage>
-            </ContainerLanguage>
-          </Grid>
-         </Typography>
-      </ContainerChangeLanguage>
+                </TextLanguage>
+              </ContainerLanguage>
+            </Grid>
+          </Typography>
+        </ContainerChangeLanguage>
       </ContainerButtons>
       <ContainerIconsFooter>
-      <IconButton style={{color: '#343b4f'}} onClick={() => window.open(`${dataMenu.facebook}`)}>
-        <GitHubIcon/>
-      </IconButton>
-      <IconButton style={{color: '#343b4f'}} onClick={() => window.open(`${dataMenu.instagram}`)}>
-        <InstagramIcon/>
-      </IconButton>
-      <IconButton style={{color: '#343b4f'}} onClick={() => window.open(`${dataMenu.linkedIn}`)}> 
-        <LinkedInIcon />
-      </IconButton>
-      <IconButton style={{color: '#343b4f'}} onClick={() => window.open(`${dataMenu.twitter}`)}>
-        <TwitterIcon />
-      </IconButton>
-    </ContainerIconsFooter>
-  </Container>
+        <IconButton style={{color: '#343b4f'}} onClick={() => window.open(`${dataMenu.facebook}`)}>
+          <GitHubIcon/>
+        </IconButton>
+        <IconButton style={{color: '#343b4f'}} onClick={() => window.open(`${dataMenu.instagram}`)}>
+          <InstagramIcon/>
+        </IconButton>
+        <IconButton style={{color: '#343b4f'}} onClick={() => window.open(`${dataMenu.linkedIn}`)}>
+          <LinkedInIcon />
+        </IconButton>
+        <IconButton style={{color: '#343b4f'}} onClick={() => window.open(`${dataMenu.twitter}`)}>
+          <TwitterIcon />
+        </IconButton>
+      </ContainerIconsFooter>
+    </Container>
   );
 }
 
