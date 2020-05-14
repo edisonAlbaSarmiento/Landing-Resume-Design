@@ -29,7 +29,7 @@ function About({dataAbout, selectedLanguage}) {
     <Container>
       <ContainerTitle>
         <Title>
-          {selectedLanguage === 0 ? ' About': 'Acerca de'} 
+          {selectedLanguage === 0 ? ' About': 'Acerca de'}
         </Title>
         <Line />
       </ContainerTitle>
@@ -50,16 +50,16 @@ function About({dataAbout, selectedLanguage}) {
           </CardSubTilte>
           <ContainerButtons>
             <ContentButtons>
-                <Button1 activeButton={activeButton} onClick={() => setActivButton(1)}>
-                  <TextButton>
-                    {selectedLanguage === 0 ? 'Hire me': 'Contratame'} 
-                  </TextButton>
-                </Button1>
-                <Button2 activeButton={activeButton} onClick={() => setActivButton(2)}>
+              <Button1 activeButton={activeButton} onClick={() => setActivButton(1)}>
                 <TextButton>
-                  {selectedLanguage === 0 ? 'Know more': 'Saber más'} 
+                  {selectedLanguage === 0 ? 'Hire me': 'Contratame'}
                 </TextButton>
-                </Button2>
+              </Button1>
+              <Button2 activeButton={activeButton} onClick={() => setActivButton(2)}>
+                <TextButton>
+                  {selectedLanguage === 0 ? 'Know more': 'Saber más'}
+                </TextButton>
+              </Button2>
             </ContentButtons>
           </ContainerButtons>
         </ContainerText>
