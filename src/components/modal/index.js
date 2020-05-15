@@ -52,7 +52,7 @@ const DialogActions = withStyles((theme) => ({
   },
 }))(MuiDialogActions);
 
-function CustomizedDialogs({children}) {
+function CustomizedDialogs({children,  description}) {
   const [open, setOpen] = React.useState(false);
 
   const handleClickOpen = () => {
@@ -69,7 +69,7 @@ function CustomizedDialogs({children}) {
       </Button>
       <Dialog onClose={handleClose} aria-labelledby="customized-dialog-title" open={open}>
         <DialogTitle id="customized-dialog-title" onClose={handleClose}>
-          Modal title
+          {description}
         </DialogTitle>
         <DialogContent dividers>
           <Typography gutterBottom>
@@ -99,6 +99,7 @@ function CustomizedDialogs({children}) {
 
 CustomizedDialogs.propTypes = {
   children: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
 }
 
 export default CustomizedDialogs;

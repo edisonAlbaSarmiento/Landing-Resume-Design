@@ -63,7 +63,7 @@ function About({dataAbout, selectedLanguage}) {
                 </TextButton>
 
               </Button2>
-              <DialogTitle>
+              <DialogTitle description='Prueba title'>
                 <ReactPlayer
                   width="100%"
                   url="https://www.youtube.com/watch?v=ug50zmP9I7s"
