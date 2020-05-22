@@ -10,6 +10,7 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import TwitterIcon from '@material-ui/icons/Twitter';
+import MenuIcon from '@material-ui/icons/Menu';
 import Switch from '@material-ui/core/Switch';
 import { withStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
@@ -24,6 +25,7 @@ import {
   ContainerChangeLanguage,
   TextLanguage,
   ContainerLanguage,
+  ContainerMenuBurger,
 } from './styles';
 
 const AntSwitch = withStyles((theme) => ({
@@ -71,6 +73,7 @@ function Menu({
     checkedC: true,
   });
 
+  const [activeMenu, setStateactiveMenu] = useState(false);
   const handleChange = (event) => {
     setState({ ...state, [event.target.name]: event.target.checked });
     if( event.target.checked){
@@ -80,58 +83,78 @@ function Menu({
     }
   };
   return (
-    <Container>
-      <ContainerImage>
-        <ImageProfile src={`${dataMenu.userImage}`} />
-      </ContainerImage>
-      <ContainerButtons>
-        <ButtonMenu activeButton={section === ''} onClick={() => setSection('')}>
-          {selectedLanguage === 0 ? 'About': 'Acerca de' }
-        </ ButtonMenu>
-        <ButtonMenu activeButton={section === 'about'}  onClick={() => setSection('about')}>
-          {selectedLanguage === 0 ? 'Work': 'Trabajo' }
-        </ButtonMenu>
-        <ButtonMenu activeButton={section === 'labs'}  onClick={() => setSection('labs')}>
-          {selectedLanguage === 0 ? 'Labs': 'Laboratorios' }
-        </ButtonMenu>
-        <ButtonMenu activeButton={section === 'contact'}  onClick={() => setSection('contact')}>
-          {selectedLanguage === 0 ? 'Contact': 'Contacto' }
-        </ButtonMenu>
-        <ContainerChangeLanguage>
-          <Typography component="div">
-            <Grid component="label" container alignItems="center" spacing={1}>
-              <ContainerLanguage>
-                <TextLanguage>
+    <div>
+      <ContainerMenuBurger>
+        <IconButton style={{color: 'white' }} onClick={() => setStateactiveMenu(!activeMenu)}>
+          <MenuIcon/>
+        </IconButton>
+      </ContainerMenuBurger>
+      <Container activeMenu={activeMenu}>
+
+        <ContainerImage>
+          <ImageProfile src={`${dataMenu.userImage}`} />
+        </ContainerImage>
+        <ContainerButtons>
+          <ButtonMenu activeButton={section === ''} onClick={() => {
+            setSection('')
+            setStateactiveMenu(!activeMenu)
+          }}>
+            {selectedLanguage === 0 ? 'About': 'Acerca de' }
+          </ ButtonMenu>
+          <ButtonMenu activeButton={section === 'about'}  onClick={() => {
+            setSection('about')
+            setStateactiveMenu(!activeMenu)
+          }}>
+            {selectedLanguage === 0 ? 'Work': 'Trabajo' }
+          </ButtonMenu>
+          <ButtonMenu activeButton={section === 'labs'}  onClick={() => {
+            setSection('labs')
+            setStateactiveMenu(!activeMenu)
+          }}>
+            {selectedLanguage === 0 ? 'Labs': 'Laboratorios' }
+          </ButtonMenu>
+          <ButtonMenu activeButton={section === 'contact'}  onClick={() => {
+            setSection('contact')
+            setStateactiveMenu(!activeMenu)
+          }}>
+            {selectedLanguage === 0 ? 'Contact': 'Contacto' }
+          </ButtonMenu>
+          <ContainerChangeLanguage>
+            <Typography component="div">
+              <Grid component="label" container alignItems="center" spacing={1}>
+                <ContainerLanguage>
+                  <TextLanguage>
                 EN
-                </TextLanguage>
-              </ContainerLanguage>
-              <ContainerLanguage>
-                <AntSwitch checked={state.checkedC} onChange={handleChange} name="checkedC" />
-              </ContainerLanguage>
-              <ContainerLanguage>
-                <TextLanguage>
+                  </TextLanguage>
+                </ContainerLanguage>
+                <ContainerLanguage>
+                  <AntSwitch checked={state.checkedC} onChange={handleChange} name="checkedC" />
+                </ContainerLanguage>
+                <ContainerLanguage>
+                  <TextLanguage>
                 ES
-                </TextLanguage>
-              </ContainerLanguage>
-            </Grid>
-          </Typography>
-        </ContainerChangeLanguage>
-      </ContainerButtons>
-      <ContainerIconsFooter>
-        <IconButton style={{color: '#343b4f'}} onClick={() => window.open(`${dataMenu.facebook}`)}>
-          <GitHubIcon/>
-        </IconButton>
-        <IconButton style={{color: '#343b4f'}} onClick={() => window.open(`${dataMenu.instagram}`)}>
-          <InstagramIcon/>
-        </IconButton>
-        <IconButton style={{color: '#343b4f'}} onClick={() => window.open(`${dataMenu.linkedIn}`)}>
-          <LinkedInIcon />
-        </IconButton>
-        <IconButton style={{color: '#343b4f'}} onClick={() => window.open(`${dataMenu.twitter}`)}>
-          <TwitterIcon />
-        </IconButton>
-      </ContainerIconsFooter>
-    </Container>
+                  </TextLanguage>
+                </ContainerLanguage>
+              </Grid>
+            </Typography>
+          </ContainerChangeLanguage>
+        </ContainerButtons>
+        <ContainerIconsFooter>
+          <IconButton style={{color: '#343b4f'}} onClick={() => window.open(`${dataMenu.facebook}`)}>
+            <GitHubIcon/>
+          </IconButton>
+          <IconButton style={{color: '#343b4f'}} onClick={() => window.open(`${dataMenu.instagram}`)}>
+            <InstagramIcon/>
+          </IconButton>
+          <IconButton style={{color: '#343b4f'}} onClick={() => window.open(`${dataMenu.linkedIn}`)}>
+            <LinkedInIcon />
+          </IconButton>
+          <IconButton style={{color: '#343b4f'}} onClick={() => window.open(`${dataMenu.twitter}`)}>
+            <TwitterIcon />
+          </IconButton>
+        </ContainerIconsFooter>
+      </Container>
+    </div>
   );
 }
 

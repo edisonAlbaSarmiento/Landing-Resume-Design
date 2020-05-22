@@ -3,15 +3,15 @@ import styled from 'styled-components';
 export const Container = styled.div`
   background-color: ${props => props.theme.color.purple};
   width: 100%;
-`;  
+`;
 
-export const ContainerText = styled.div``; 
+export const ContainerText = styled.div``;
 
 export const ContainerImage = styled.div`
   @media (max-width: 768px) {
     display: none;
   }
-`; 
+`;
 
 export const ContainerTitle = styled.div`
   padding: 3%;

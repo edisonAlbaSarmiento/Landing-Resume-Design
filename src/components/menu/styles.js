@@ -6,6 +6,19 @@ export const Container = styled.div`
   width: 100%;
   @media (max-width: 768px) {
     /* display: none; */
+    width: 30%;
+    position: fixed;
+    z-index: 1;
+    margin-left: ${props => props.activeMenu ? '0px' : ' -140px'};
+    transition: all 0.5s;
+  }
+`;
+
+export const ContainerMenuBurger = styled.div`
+  display: none;
+  @media (max-width: 768px) {
+    display: inherit;
+    margin-top: 33%;
   }
 `;
 
