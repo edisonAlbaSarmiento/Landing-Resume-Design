@@ -19,6 +19,7 @@ import {
   TextButton,
   ContaninerButton,
   Form,
+  TextError,
 } from './styles';
 import sendFeedback from '../../utils';
 
@@ -30,6 +31,18 @@ function Contact({selectedLanguage}){
         initialValues={{ email: '', fullName: '', position: '', company:'', description: '' }}
         validate={values => {
           const errors = {};
+          if (!values.fullName) {
+            errors.fullName = 'Required';
+          }
+          if (!values.description) {
+            errors.description = 'Required';
+          }
+          if (!values.company) {
+            errors.company = 'Required';
+          }
+          if (!values.position) {
+            errors.position = 'Required';
+          }
           if (!values.email) {
             errors.email = 'Required';
           } else if (
@@ -85,6 +98,9 @@ function Contact({selectedLanguage}){
                     placeholder={selectedLanguage === 0 ? 'Project Type, Target customer, timeline, estimate etc' : 'Tipo de proyecto, cliente objetivo, cronograma, estimación, etc.'}
                     maxLength="300"
                   />
+                  <TextError>
+                    {errors.description && touched.description && errors.description}
+                  </TextError>
                 </ContainerAbout>
                 <ContainerAbout>
                   <TitleTextTarea>
@@ -98,6 +114,9 @@ function Contact({selectedLanguage}){
                       onBlur={handleBlur}
                       value={values.fullName}
                     />
+                    {/* <TextError>
+                      {errors.fullName && touched.fullName && errors.fullName}
+                    </TextError> */}
                     <Input
                       type="email"
                       name="email"
@@ -106,7 +125,9 @@ function Contact({selectedLanguage}){
                       value={values.email}
                       placeholder={selectedLanguage === 0 ? 'Email Address': 'Dirección de correo electrónico'}
                     />
-                    {errors.email && touched.email && errors.email}
+                    <TextError>
+                      {errors.email && touched.email && errors.email}
+                    </TextError>
                     <Input
                       name="company"
                       placeholder={selectedLanguage === 0 ? 'Company Name': 'Nombre de empresa'}
@@ -114,6 +135,9 @@ function Contact({selectedLanguage}){
                       onBlur={handleBlur}
                       value={values.company}
                     />
+                    {/* <TextError>
+                      {errors.company && touched.company && errors.company}
+                    </TextError> */}
                     <Input
                       name="position"
                       placeholder={selectedLanguage === 0 ? 'Position': 'Posición'}
@@ -121,6 +145,9 @@ function Contact({selectedLanguage}){
                       onBlur={handleBlur}
                       value={values.position}
                     />
+                    {/* <TextError>
+                      {errors.position && touched.position && errors.position}
+                    </TextError> */}
                     <ContaninerButton>
                       <ButtonSubmit>
                         <TextButton type="submit" disabled={isSubmitting}>

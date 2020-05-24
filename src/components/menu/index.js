@@ -76,6 +76,7 @@ function Menu({
   const [activeMenu, setStateactiveMenu] = useState(false);
   const handleChange = (event) => {
     setState({ ...state, [event.target.name]: event.target.checked });
+    setStateactiveMenu(!activeMenu)
     if( event.target.checked){
       setLanguage(0)
     }else {

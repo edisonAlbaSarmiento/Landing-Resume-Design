@@ -4,7 +4,7 @@ export const Form = styled.form``;
 
 export const Container = styled.div`
   background-color: ${props => props.theme.color.purple};
-`;  
+`;
 
 export const ContainerHeader = styled.div`
   display: flex;
@@ -12,9 +12,7 @@ export const ContainerHeader = styled.div`
   padding: 0px 0px 0px 2%;
 `;
 
-export const ContainerTitle = styled.div`
-
-`;
+export const ContainerTitle = styled.div``;
 
 export const Title = styled.h2`
   font-size: 20px;
@@ -100,3 +98,10 @@ export const TextButton = styled.p`
   color: ${props => props.theme.color.white};
 `
 
+export const ContinerError = styled.div`
+
+`;
+export const TextError = styled.p`
+  margin: 2px 0px 4px 8px;
+  color: red;
+`;
