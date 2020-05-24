@@ -21,7 +21,7 @@ import UserGetData from '../hooks/data';
 function Page() {
   const myData = UserGetData();
   const [section, setSection] = useState('');
-  const [selectedLanguage, setLanguage] = useState(1);
+  const [selectedLanguage, setLanguage] = useState(0);
   return myData.length === 0 ? <Pulsate color="white" size="100px" duration="5s" /> :(
     <Grid>
       <Row>
