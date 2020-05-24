@@ -6,8 +6,6 @@ import Dialog from '@material-ui/core/Dialog';
 import MuiDialogTitle from '@material-ui/core/DialogTitle';
 import MuiDialogContent from '@material-ui/core/DialogContent';
 import MuiDialogActions from '@material-ui/core/DialogActions';
-import IconButton from '@material-ui/core/IconButton';
-import CloseIcon from '@material-ui/icons/Close';
 import Typography from '@material-ui/core/Typography';
 import PropTypes from 'prop-types';
 import {
@@ -19,26 +17,17 @@ const styles = (theme) => ({
   root: {
     margin: 0,
     padding: theme.spacing(2),
-  },
-  closeButton: {
-    position: 'absolute',
-    right: theme.spacing(1),
-    top: theme.spacing(1),
-    color: theme.palette.grey[500],
+    backgroundColor: '#281c36',
+    color: '#ff67b6'
   },
 });
 
 const DialogTitle = withStyles(styles)((props) => {
-  const { children, classes, onClose, ...other } = props;
+  const { children, classes, ...other } = props;
   return (
     // eslint-disable-next-line react/jsx-filename-extension
     <MuiDialogTitle disableTypography className={classes.root} {...other}>
       <Typography variant="h6">{children}</Typography>
-      {onClose ? (
-        <IconButton aria-label="close" className={classes.closeButton} onClick={onClose}>
-          <CloseIcon />
-        </IconButton>
-      ) : null}
     </MuiDialogTitle>
   );
 });
@@ -46,6 +35,8 @@ const DialogTitle = withStyles(styles)((props) => {
 const DialogContent = withStyles((theme) => ({
   root: {
     padding: theme.spacing(2),
+    backgroundColor: '#241d2e',
+    color: 'white',
   },
 }))(MuiDialogContent);
 
@@ -53,6 +44,8 @@ const DialogActions = withStyles((theme) => ({
   root: {
     margin: 0,
     padding: theme.spacing(1),
+    backgroundColor: '#281c36',
+    color: 'white',
   },
 }))(MuiDialogActions);
 
@@ -64,7 +57,6 @@ function CustomizedDialogs({
   onClickActive
 }) {
   const [open, setOpen] = React.useState(false);
-  console.log('activeButton',activeButton)
   const handleClickOpen = () => {
     onClickActive();
     setOpen(true);
@@ -84,7 +76,7 @@ function CustomizedDialogs({
         <DialogTitle id="customized-dialog-title" onClose={handleClose}>
           {description}
         </DialogTitle>
-        <DialogContent dividers>
+        <DialogContent dividers='body'>
           <Typography gutterBottom>
             Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis
             in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
@@ -101,8 +93,8 @@ function CustomizedDialogs({
           {children}
         </DialogContent>
         <DialogActions>
-          <Button autoFocus onClick={handleClose} color="primary">
-            Save changes
+          <Button autoFocus onClick={handleClose} style={{color: '#ff67b6'}}>
+            {selectedLanguage === 0 ? 'Read': 'Leído'}
           </Button>
         </DialogActions>
       </Dialog>

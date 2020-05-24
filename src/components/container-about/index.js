@@ -62,7 +62,11 @@ function About({dataAbout, selectedLanguage, setSection}) {
               </ButtonHire>
               <ButtonKnow activeButton={activeButton} onClick={() => setActivButton(2)}>
                 <DialogTitle
-                  description='Prueba title'
+                  description={
+                    selectedLanguage === 0 ?
+                      'Brief Description and Video Autobiography'
+                      :
+                      'Descripción Breve y Vídeo Autobiografía' }
                   activeButton={activeButton}
                   onClickActive={() => setActivButton(2)}
                   selectedLanguage={selectedLanguage}
