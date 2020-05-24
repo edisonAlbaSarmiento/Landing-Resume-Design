@@ -77,9 +77,9 @@ function Menu({
   const handleChange = (event) => {
     setState({ ...state, [event.target.name]: event.target.checked });
     if( event.target.checked){
-      setLanguage(1)
-    }else {
       setLanguage(0)
+    }else {
+      setLanguage(1)
     }
   };
   return (
@@ -124,7 +124,7 @@ function Menu({
               <Grid component="label" container alignItems="center" spacing={1}>
                 <ContainerLanguage>
                   <TextLanguage>
-                EN
+                ES
                   </TextLanguage>
                 </ContainerLanguage>
                 <ContainerLanguage>
@@ -132,7 +132,7 @@ function Menu({
                 </ContainerLanguage>
                 <ContainerLanguage>
                   <TextLanguage>
-                ES
+                EN
                   </TextLanguage>
                 </ContainerLanguage>
               </Grid>
