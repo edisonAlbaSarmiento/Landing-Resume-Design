@@ -42,7 +42,9 @@
 			"about": {
 				"userName": "Edison Jordan Alba Sarmiento",
 				"position" : "FullStack Developer",
-				"jobDescription" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque non ligula massa. Proin dictum eros non eros aliquet, non accumsan arcu maximus. Sed eu pellentesque turpis"
+        "jobDescriptionShort" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque non ligula massa. Proin dictum eros non eros aliquet, non accumsan arcu maximus. Sed eu pellentesque turpis",
+        "DescriptionLargeModal": "Proin dictum eros non eros aliquet, non accumsan arcu maximus. Sed eu pellentesque turpisProin dictum eros non eros aliquet, non accumsan arcu maximus. Sed eu pellentesque turpisProin dictum eros non eros aliquet, non accumsan arcu maximus. Sed eu pellentesque turpisProin dictum eros non eros aliquet, non accumsan arcu maximus. Sed eu pellentesque turpisProin dictum eros non eros aliquet, non accumsan arcu maximus. Sed eu pellentesque turpis",
+        "urlVideoProfile": "https://www.youtube.com/watch?v=ug50zmP9I7s"
 			},
 			"dataUserMenu": {
 				"userImage": "https://avatars3.githubusercontent.com/u/31748119?s=460&amp;u=5b533fd135904b8b25951011a0c3da20fe15b413&amp;v=4",
@@ -95,7 +97,9 @@
 				"about": {
 					"userName": "Edison Jordan Alba Sarmiento",
 					"position" : "Desarrollador FullStack",
-					"jobDescription" : "Globalización y tecnología son dos conceptos íntimamente ligados. No podemos entender la globalización solamente como un proceso económico, tiene también implicaciones sociales y culturales"
+          "jobDescriptionShort" : "Globalización y tecnología son dos conceptos íntimamente ligados. No podemos entender la globalización solamente como un proceso económico, tiene también implicaciones sociales y culturales",
+          "DescriptionLargeModal": "Proin dictum eros non eros aliquet, non accumsan arcu maximus. Sed eu pellentesque turpisProin dictum eros non eros aliquet, non accumsan arcu maximus. Sed eu pellentesque turpisProin dictum eros non eros aliquet, non accumsan arcu maximus. Sed eu pellentesque turpisProin dictum eros non eros aliquet, non accumsan arcu maximus. Sed eu pellentesque turpisProin dictum eros non eros aliquet, non accumsan arcu maximus. Sed eu pellentesque turpis",
+          "urlVideoProfile": "https://www.youtube.com/watch?v=ug50zmP9I7s"
 				},
 				"dataUserMenu": {
 					"userImage": "https://avatars3.githubusercontent.com/u/31748119?s=460&amp;u=5b533fd135904b8b25951011a0c3da20fe15b413&amp;v=4",

@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import ReactPlayer from "react-player";
+import Typography from '@material-ui/core/Typography';
 import {
   Container,
   ContainerTitle,
@@ -47,7 +48,7 @@ function About({dataAbout, selectedLanguage, setSection}) {
           </Card>
           <CardSubTilte>
             <TextDescription>
-              {dataAbout.jobDescription}
+              {dataAbout.jobDescriptionShort}
             </TextDescription>
           </CardSubTilte>
           <ContainerButtons>
@@ -64,16 +65,19 @@ function About({dataAbout, selectedLanguage, setSection}) {
                 <DialogTitle
                   title={
                     selectedLanguage === 0 ?
-                      'Brief Description and Video Autobiography'
+                      'Autobiography'
                       :
-                      'Descripción Breve y Vídeo Autobiografía' }
+                      'Autobiografía' }
                   activeButton={activeButton}
                   onClickActive={() => setActivButton(2)}
                   selectedLanguage={selectedLanguage}
                 >
+                  <Typography gutterBottom>
+                    {dataAbout.DescriptionLargeModal}
+                  </Typography>
                   <ReactPlayer
                     width="100%"
-                    url="https://www.youtube.com/watch?v=ug50zmP9I7s"
+                    url={`${dataAbout.urlVideoProfile}`}
                   />
                 </DialogTitle>
               </ButtonKnow>

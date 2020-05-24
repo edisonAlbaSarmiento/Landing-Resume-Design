@@ -56,6 +56,9 @@ export const ButtonMenu = styled.button`
   :active {
     background-color: ${props => props.theme.color.overMenu};
   }
+  @media (max-width: 768px) {
+    font-size: 15px;
+  }
 `;
 
 export const ContainerIconsFooter = styled.div`
@@ -91,7 +94,7 @@ export const TextLanguage = styled.h3`
 export const ContainerLanguage = styled.div`
   padding: 4px;
   @media (max-width: 768px) {
-    padding: 1;
+    margin-left: 7%;
   }
 `;
 
