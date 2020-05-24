@@ -10,6 +10,10 @@ import IconButton from '@material-ui/core/IconButton';
 import CloseIcon from '@material-ui/icons/Close';
 import Typography from '@material-ui/core/Typography';
 import PropTypes from 'prop-types';
+import {
+  ButtonOpen,
+  TextButton,
+} from './style';
 
 const styles = (theme) => ({
   root: {
@@ -52,10 +56,17 @@ const DialogActions = withStyles((theme) => ({
   },
 }))(MuiDialogActions);
 
-function CustomizedDialogs({children,  description}) {
+function CustomizedDialogs({
+  children,
+  description,
+  activeButton,
+  selectedLanguage,
+  onClickActive
+}) {
   const [open, setOpen] = React.useState(false);
-
+  console.log('activeButton',activeButton)
   const handleClickOpen = () => {
+    onClickActive();
     setOpen(true);
   };
   const handleClose = () => {
@@ -64,9 +75,11 @@ function CustomizedDialogs({children,  description}) {
 
   return (
     <div>
-      <Button variant="outlined" color="primary" onClick={handleClickOpen}>
-        Open dialog
-      </Button>
+      <ButtonOpen  activeButton={activeButton} onClick={handleClickOpen}>
+        <TextButton>
+          {selectedLanguage === 0 ? 'Know more': 'Saber más'}
+        </TextButton>
+      </ButtonOpen>
       <Dialog onClose={handleClose} aria-labelledby="customized-dialog-title" open={open}>
         <DialogTitle id="customized-dialog-title" onClose={handleClose}>
           {description}
@@ -100,6 +113,9 @@ function CustomizedDialogs({children,  description}) {
 CustomizedDialogs.propTypes = {
   children: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
+  selectedLanguage: PropTypes.string.isRequired,
+  activeButton: PropTypes.bool.isRequired,
+  onClickActive: PropTypes.func.isRequired,
 }
 
 export default CustomizedDialogs;

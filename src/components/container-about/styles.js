@@ -88,18 +88,18 @@ export const TextDescription = styled.p`
   }
 `;
 
-export const Button1 = styled.button`
+export const ButtonHire = styled.button`
   width: 44%;
   background-color: ${props => props.activeButton === 1 ? props.theme.color.pink : props.theme.color.grayDisabled};
   border: none;
   outline: none;
 `;
 
-export const Button2 = styled.button`
+export const ButtonKnow = styled.button`
   width: 44%;
   background-color: ${props => props.activeButton === 2 ? props.theme.color.pink : props.theme.color.grayDisabled};
   border: none;
-  margin-left: 20%;
+  margin-left: 10%;
   outline: none;
 `;
 

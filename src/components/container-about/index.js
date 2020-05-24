@@ -13,8 +13,8 @@ import {
   SubTitle,
   CardSubTilte,
   TextDescription,
-  Button1,
-  Button2,
+  ButtonHire,
+  ButtonKnow,
   TextButton,
   ContentButtons,
   ContainerText,
@@ -25,7 +25,7 @@ import {
 } from './styles';
 import DialogTitle from '../modal';
 
-function About({dataAbout, selectedLanguage}) {
+function About({dataAbout, selectedLanguage, setSection}) {
   const [activeButton, setActivButton] = useState(1);
   return (
     <Container>
@@ -52,23 +52,28 @@ function About({dataAbout, selectedLanguage}) {
           </CardSubTilte>
           <ContainerButtons>
             <ContentButtons>
-              <Button1 activeButton={activeButton} onClick={() => setActivButton(1)}>
+              <ButtonHire activeButton={activeButton} onClick={() => {
+                setActivButton(1)
+                setSection('contact')
+              }}>
                 <TextButton>
                   {selectedLanguage === 0 ? 'Hire me': 'Contratame'}
                 </TextButton>
-              </Button1>
-              <Button2 activeButton={activeButton} onClick={() => setActivButton(2)}>
-                <TextButton>
-                  {selectedLanguage === 0 ? 'Know more': 'Saber más'}
-                </TextButton>
+              </ButtonHire>
+              <ButtonKnow activeButton={activeButton} onClick={() => setActivButton(2)}>
+                <DialogTitle
+                  description='Prueba title'
+                  activeButton={activeButton}
+                  onClickActive={() => setActivButton(2)}
+                  selectedLanguage={selectedLanguage}
+                >
+                  <ReactPlayer
+                    width="100%"
+                    url="https://www.youtube.com/watch?v=ug50zmP9I7s"
+                  />
+                </DialogTitle>
+              </ButtonKnow>
 
-              </Button2>
-              <DialogTitle description='Prueba title'>
-                <ReactPlayer
-                  width="100%"
-                  url="https://www.youtube.com/watch?v=ug50zmP9I7s"
-                />
-              </DialogTitle>
             </ContentButtons>
           </ContainerButtons>
         </ContainerText>
@@ -85,5 +90,6 @@ function About({dataAbout, selectedLanguage}) {
 About.propTypes = {
   dataAbout: PropTypes.objectOf.isRequired,
   selectedLanguage: PropTypes.string.isRequired,
+  setSection: PropTypes.func.isRequired,
 }
 export default About;

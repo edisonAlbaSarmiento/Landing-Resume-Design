@@ -1,6 +1,3 @@
-/* eslint-disable jsx-a11y/click-events-have-key-events */
-/* eslint-disable react/button-has-type */
-/* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
 /* eslint-disable react/jsx-filename-extension */
 import React, { useState } from 'react';
 import { Pulsate } from 'styled-loaders-react'
@@ -14,16 +11,9 @@ import {
 } from '../components/index';
 
 import {
-  // Container,
-  // ContinerTitle,
-  // TitleName,
-  // ContinerInformation,
-  // ContainerText,
-  // ContainerInformation
   Row,
   ContainerMenu,
-} from './styles'
-// import ContainerInformationUser from '../components/information-content';
+} from './styles';
 
 // Hooks
 import UserGetData from '../hooks/data';
@@ -31,7 +21,7 @@ import UserGetData from '../hooks/data';
 function Page() {
   const myData = UserGetData();
   const [section, setSection] = useState('');
-  const [selectedLanguage, setLanguage] = useState(1);
+  const [selectedLanguage, setLanguage] = useState(0);
   return myData.length === 0 ? <Pulsate color="red" size="100px" duration="5s" /> :(
     <Grid>
       <Row>
@@ -47,6 +37,7 @@ function Page() {
         {section === '' &&(
           <Col xs={9} >
             <ContainerAbout
+              setSection={setSection}
               selectedLanguage={selectedLanguage}
               dataAbout={selectedLanguage === 1 ? myData.data[selectedLanguage].es.about : myData.data[selectedLanguage].en.about}
             />
