@@ -1,5 +1,5 @@
 /* eslint-disable react/jsx-filename-extension */
-import React from 'react';
+import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import Share from '@material-ui/icons/Share';
 import Search from '@material-ui/icons/Search';
@@ -17,9 +17,24 @@ import {
   ImageContainer,
   TextImage,
   LinkShare,
+  InputFilter,
 } from './styles';
 
 function Work({dataWork, selectedLanguage}) {
+  const [searchTerm, setSearchTerm] = React.useState("");
+  const [searchResults, setSearchResults] = React.useState([]);
+  const [activeInput, setActiveInput] = React.useState(false);
+
+  const handleChange = e => {
+    setSearchTerm(e.target.value);
+  };
+  useEffect(() => {
+    const results = dataWork.filter(item =>
+      item.description.includes(searchTerm)
+    );
+    setSearchResults(results);
+    // eslint-disable-next-line
+  }, [searchTerm]);
   return (
     <Container>
       <ContainerHeader>
@@ -37,24 +52,37 @@ function Work({dataWork, selectedLanguage}) {
               </LinkShare>
             </IconButton>
           </Tooltip>
+          {activeInput && (
+            <InputFilter
+              type="text"
+              placeholder="Search"
+              value={searchTerm}
+              onChange={handleChange}
+            />
+          )}
 
           <IconButton style={{color: 'white'}}>
-            <LinkShare>
+            <LinkShare onClick={() => setActiveInput(!activeInput)}>
               <Search />
             </LinkShare>
           </IconButton>
         </ContainerIcons>
       </ContainerHeader>
       <ContainerCards>
-        {dataWork && dataWork.map(item => (
-          <ContainerChildren onClick={() => {window.open(`${item.urlWork}`)}}>
-            <ImageContainer src={`${item.imageWork}`} />
-            <TextImage>
-              {item.description}
-            </TextImage>
-          </ContainerChildren>
-        ))}
-
+        {searchResults.length > 0 ?
+          searchResults.map(item => (
+            <ContainerChildren onClick={() => {window.open(`${item.urlWork}`)}}>
+              <ImageContainer src={`${item.imageWork}`} />
+              <TextImage>
+                {item.description}
+              </TextImage>
+            </ContainerChildren>
+          ))
+          :
+          <TextImage>
+          Sin resultados
+          </TextImage>
+        }
       </ContainerCards>
     </Container>
   );

@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   background-color: ${props => props.theme.color.purple};
-`;  
+`;
 
 export const ContainerHeader = styled.div`
   display: flex;
@@ -68,4 +68,10 @@ export const TextImage = styled.span`
 export const LinkShare = styled.a`
   text-decoration: none;
   color: white;
+`;
+
+export const InputFilter = styled.input`
+  width: 50%;
+  margin: 3% 0px 0px 3%;
+  height: 50%;
 `;
