@@ -54,7 +54,7 @@ function Contact({selectedLanguage}){
         }}
         onSubmit={(values, { setSubmitting, resetForm }) => {
           setTimeout(async() => {
-            const response = await sendFeedback('sendgrid', {message_html: `${values.fullName}<br/> <br/> ${values.company}<br/> ${values.position}<br/> ${values.description}<br/>`, from_name: `${values.email}`, reply_to: ''})
+            const response = await sendFeedback('sendgrid', {message_html: `${values.fullName}<br/> ${values.description}<br/> ${values.company}<br/> ${values.position}<br/>`, from_name: `${values.email}`, reply_to: ''})
             if(response === 200){
               alert('Mensaje enviado con exito');
             }else {

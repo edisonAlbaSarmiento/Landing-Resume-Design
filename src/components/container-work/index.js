@@ -5,6 +5,7 @@ import Share from '@material-ui/icons/Share';
 import Search from '@material-ui/icons/Search';
 import IconButton from '@material-ui/core/IconButton';
 import Tooltip from '@material-ui/core/Tooltip';
+import CloseIcon from '@material-ui/icons/Close';
 import {
   Title,
   Container,
@@ -63,7 +64,7 @@ function Work({dataWork, selectedLanguage}) {
 
           <IconButton style={{color: 'white'}}>
             <LinkShare onClick={() => setActiveInput(!activeInput)}>
-              <Search />
+              {activeInput ? <CloseIcon/> : <Search />}
             </LinkShare>
           </IconButton>
         </ContainerIcons>
