@@ -55,7 +55,7 @@ function Work({dataWork, selectedLanguage}) {
           {activeInput && (
             <InputFilter
               type="text"
-              placeholder="Search"
+              placeholder={selectedLanguage === 0 ? 'Search': 'Buscar'}
               value={searchTerm}
               onChange={handleChange}
             />
@@ -80,7 +80,7 @@ function Work({dataWork, selectedLanguage}) {
           ))
           :
           <TextImage>
-          Sin resultados
+            {selectedLanguage === 0 ? 'Without results': 'Sin resultados'}
           </TextImage>
         }
       </ContainerCards>
