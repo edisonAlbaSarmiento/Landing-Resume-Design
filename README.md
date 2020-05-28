@@ -1,6 +1,12 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-inspiration for change and new design
+
+## DEPLOY
+
+https://edisonalbasarmiento.github.io/Landing-Resume-Design/
+
+### inspiration for change and new design
+
 
 https://www.uplabs.com/posts/glazzy-free-portfolio-psd-template
 
