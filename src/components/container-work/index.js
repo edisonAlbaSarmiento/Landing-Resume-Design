@@ -48,7 +48,7 @@ function Work({dataWork, selectedLanguage}) {
         <ContainerIcons>
           <Tooltip title={selectedLanguage === 0 ? 'Share via Whatsapp' : 'Compartir por Whatsapp'} arrow>
             <IconButton>
-              <LinkShare href="whatsapp://send?text=https://edisonalbasarmiento.github.io/Landing-Resume-Design/" data-action="share/whatsapp/share">
+              <LinkShare target="_blank" href="https://api.whatsapp.com/send?text=Ver mi pagina https://edisonalbasarmiento.github.io/Landing-Resume-Design/" data-action="share/whatsapp/share">
                 <Share />
               </LinkShare>
             </IconButton>

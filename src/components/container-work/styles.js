@@ -47,8 +47,12 @@ export const ContainerChildren = styled.div`
   height: 0%;
   cursor: pointer;
   border-radius: 20px;
+  margin-top: 0;
+  transition: 1s;
   &:hover {
     background-color: #4e3283;
+    margin-top: -10px;
+    transition: 1s;
   }
   @media (max-width: 768px) {
     width: 100%;
