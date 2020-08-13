@@ -31,22 +31,15 @@ function Work({dataWork, selectedLanguage}) {
   };
 
   useEffect(() => {
-    console.log('HOLA')
     async function getData(){
       const results = await dataWork.filter(item =>
         item.description.includes(searchTerm)
       );
-      console.log('results',results)
-
       setSearchResults(results);
     }
     getData()
     // eslint-disable-next-line
   }, [searchTerm]);
-
-  console.log('dataWork',dataWork)
-
-  console.log('selectedLanguage',selectedLanguage)
   return (
     <Container>
       <ContainerHeader>
