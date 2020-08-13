@@ -4,7 +4,9 @@
 /* eslint-disable react/jsx-filename-extension */
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-
+import {
+  Link
+} from "react-router-dom";
 import IconButton from '@material-ui/core/IconButton';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import InstagramIcon from '@material-ui/icons/Instagram';
@@ -96,30 +98,40 @@ function Menu({
           <ImageProfile src={`${dataMenu.userImage}`} />
         </ContainerImage>
         <ContainerButtons>
-          <ButtonMenu activeButton={section === ''} onClick={() => {
-            setSection('')
-            setStateactiveMenu(!activeMenu)
-          }}>
-            {selectedLanguage === 0 ? 'About': 'Acerca de' }
-          </ ButtonMenu>
-          <ButtonMenu activeButton={section === 'about'}  onClick={() => {
-            setSection('about')
-            setStateactiveMenu(!activeMenu)
-          }}>
-            {selectedLanguage === 0 ? 'Work': 'Trabajo' }
-          </ButtonMenu>
-          <ButtonMenu activeButton={section === 'labs'}  onClick={() => {
-            setSection('labs')
-            setStateactiveMenu(!activeMenu)
-          }}>
-            {selectedLanguage === 0 ? 'Labs': 'Laboratorios' }
-          </ButtonMenu>
-          <ButtonMenu activeButton={section === 'contact'}  onClick={() => {
-            setSection('contact')
-            setStateactiveMenu(!activeMenu)
-          }}>
-            {selectedLanguage === 0 ? 'Contact': 'Contacto' }
-          </ButtonMenu>
+          <Link to="/">
+
+            <ButtonMenu activeButton={section === ''} onClick={() => {
+              setSection('')
+              setStateactiveMenu(!activeMenu)
+            }}>
+              {selectedLanguage === 0 ? 'About': 'Acerca de' }
+
+            </ ButtonMenu>
+          </Link>
+          <Link to="/work">
+            <ButtonMenu activeButton={section === 'about'}  onClick={() => {
+              setSection('about')
+              setStateactiveMenu(!activeMenu)
+            }}>
+              {selectedLanguage === 0 ? 'Work': 'Trabajo' }
+            </ButtonMenu>
+          </Link>
+          <Link to="/labs">
+            <ButtonMenu activeButton={section === 'labs'}  onClick={() => {
+              setSection('labs')
+              setStateactiveMenu(!activeMenu)
+            }}>
+              {selectedLanguage === 0 ? 'Labs': 'Laboratorios' }
+            </ButtonMenu>
+          </Link>
+          <Link to="/contact">
+            <ButtonMenu activeButton={section === 'contact'}  onClick={() => {
+              setSection('contact')
+              setStateactiveMenu(!activeMenu)
+            }}>
+              {selectedLanguage === 0 ? 'Contact': 'Contacto' }
+            </ButtonMenu>
+          </Link>
           <ContainerChangeLanguage>
             <Typography component="div">
               <Grid component="label" container alignItems="center" spacing={1}>

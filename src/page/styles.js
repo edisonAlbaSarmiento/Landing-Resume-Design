@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   padding: 5%;
   background-color: red;
 `;
@@ -34,20 +34,7 @@ export const ContainerInformation = styled.div`
 `;
 
 export const ContainerMenu = styled.div`
-  flex-basis: 25%;
-  max-width: 25%;
-  height: 200px;
   @media (max-width: 768px) {
     flex-basis: auto;
   }
-`;
-
-export const Row = styled.div`
-  box-sizing: border-box;
-  display: flex;
-  flex: 0 1 auto;
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin-right: -8px;
-  margin-left: -8px;
 `;

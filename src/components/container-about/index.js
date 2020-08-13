@@ -4,6 +4,10 @@ import PropTypes from 'prop-types';
 import ReactPlayer from "react-player";
 import Typography from '@material-ui/core/Typography';
 import {
+  Link,
+  useParams
+} from "react-router-dom";
+import {
   Container,
   ContainerTitle,
   Title,
@@ -28,6 +32,8 @@ import DialogTitle from '../modal';
 
 function About({dataAbout, selectedLanguage, setSection}) {
   const [activeButton, setActivButton] = useState(1);
+  const { dataRouter } = useParams();
+  console.log('dataRouter', dataRouter)
   return (
     <Container>
       <ContainerTitle>
@@ -53,14 +59,16 @@ function About({dataAbout, selectedLanguage, setSection}) {
           </CardSubTilte>
           <ContainerButtons>
             <ContentButtons>
-              <ButtonHire activeButton={activeButton} onClick={() => {
-                setActivButton(1)
-                setSection('contact')
-              }}>
-                <TextButton>
-                  {selectedLanguage === 0 ? 'Hire me': 'Contratame'}
-                </TextButton>
-              </ButtonHire>
+              <Link to="/contact" style={{textDecoration: 'none',   width: '44%'}}>
+                <ButtonHire activeButton={activeButton} onClick={() => {
+                  setActivButton(1)
+                  setSection('contact')
+                }}>
+                  <TextButton>
+                    {selectedLanguage === 0 ? 'Hire me': 'Contratame'}
+                  </TextButton>
+                </ButtonHire>
+              </Link>
               <ButtonKnow activeButton={activeButton} onClick={() => setActivButton(2)}>
                 <DialogTitle
                   title={
@@ -81,7 +89,14 @@ function About({dataAbout, selectedLanguage, setSection}) {
                   />
                 </DialogTitle>
               </ButtonKnow>
-
+              {/* <Link to={{
+                pathname: "/help",
+                dataRouter: 'test'
+              }} >
+                <ButtonHire>
+                  {selectedLanguage === 0 ? 'TESTs': 'TEST' }
+                </ButtonHire>
+              </Link> */}
             </ContentButtons>
           </ContainerButtons>
         </ContainerText>

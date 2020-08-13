@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   background-color: ${props => props.theme.color.purple};
-`;  
+`;
 
 export const ContainerHeader = styled.div`
   display: flex;
@@ -42,6 +42,13 @@ export const ContainerChildren = styled.div`
   margin: 1%;
   padding: 2%;
   height: 0%;
+  cursor: pointer;
+  transition: 1s;
+  &:hover {
+    background-color: #4e3283;
+    margin-top: -10px;
+    transition: 1s;
+  }
   @media (max-width: 768px) {
     width: 100%;
   }

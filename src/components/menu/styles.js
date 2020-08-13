@@ -9,7 +9,7 @@ export const Container = styled.div`
     width: 30%;
     position: fixed;
     z-index: 1;
-    margin-left: ${props => props.activeMenu ? '0px' : ' -140px'};
+    margin-left: ${props => props.activeMenu ? '-12%' : ' -400px'};
     transition: all 0.5s;
   }
 `;

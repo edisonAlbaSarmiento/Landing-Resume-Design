@@ -89,7 +89,7 @@ export const TextDescription = styled.p`
 `;
 
 export const ButtonHire = styled.button`
-  width: 44%;
+  width: 100%;
   background-color: ${props => props.activeButton === 1 ? props.theme.color.pink : props.theme.color.grayDisabled};
   border: none;
   outline: none;
