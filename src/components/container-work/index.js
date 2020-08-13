@@ -29,13 +29,24 @@ function Work({dataWork, selectedLanguage}) {
   const handleChange = e => {
     setSearchTerm(e.target.value);
   };
+
   useEffect(() => {
-    const results = dataWork.filter(item =>
-      item.description.includes(searchTerm)
-    );
-    setSearchResults(results);
+    console.log('HOLA')
+    async function getData(){
+      const results = await dataWork.filter(item =>
+        item.description.includes(searchTerm)
+      );
+      console.log('results',results)
+
+      setSearchResults(results);
+    }
+    getData()
     // eslint-disable-next-line
   }, [searchTerm]);
+
+  console.log('dataWork',dataWork)
+
+  console.log('selectedLanguage',selectedLanguage)
   return (
     <Container>
       <ContainerHeader>
