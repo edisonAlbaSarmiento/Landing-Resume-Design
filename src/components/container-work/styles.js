@@ -60,7 +60,7 @@ export const ContainerChildren = styled.div`
 `;
 
 export const ImageContainer = styled.img`
-  width: 100%;
+  width: 65%;
   height: 100%;
 `;
 
@@ -78,3 +78,5 @@ export const InputFilter = styled.input`
   margin: 3% 0px 0px 3%;
   height: 50%;
 `;
+
+export const ContainerText = styled.div``;
