@@ -4,6 +4,7 @@ import styled from 'styled-components';
 export const Container = styled.div`
   background-color: ${props => props.theme.color.purpleMenu};
   width: 100%;
+  border-radius: 2%;
   @media (max-width: 768px) {
     /* display: none; */
     width: 30%;
@@ -45,6 +46,8 @@ export const ContainerButtons = styled.div`
 
 export const ButtonMenu = styled.button`
   background-color: transparent;
+  cursor: pointer;
+  width: 100%;
   border: none;
   outline: none;
   font-size: 18px;

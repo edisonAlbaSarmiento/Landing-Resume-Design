@@ -42,12 +42,11 @@ export const ContainerCards = styled.div`
 `;
 
 export const Card = styled.div`
-  padding: 20px;
+  padding-left: 20px;
   text-align: left;
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 30%;
   @media (max-width: 768px) {
     width: 80%;
     height: 16%;
@@ -93,14 +92,16 @@ export const ButtonHire = styled.button`
   background-color: ${props => props.activeButton === 1 ? props.theme.color.pink : props.theme.color.grayDisabled};
   border: none;
   outline: none;
+  border-radius: 2%;
 `;
 
 export const ButtonKnow = styled.button`
-  width: 44%;
+  width: 50%;
   background-color: ${props => props.activeButton === 2 ? props.theme.color.pink : props.theme.color.grayDisabled};
   border: none;
   margin-left: 10%;
   outline: none;
+  border-radius: 2%;
 `;
 
 export const TextButton = styled.p`
@@ -114,7 +115,7 @@ export const ContentButtons = styled.div`
 `;
 
 export const ImageBackground = styled.img`
-  width: 100%;
+  width: 430px;
   opacity: 0.4;
   border-radius: 5px 41% 5px 40%;
 `;
