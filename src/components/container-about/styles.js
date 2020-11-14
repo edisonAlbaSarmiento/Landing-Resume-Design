@@ -114,8 +114,9 @@ export const ContentButtons = styled.div`
 `;
 
 export const ImageBackground = styled.img`
-  width: 420px;
-  height: 420px;
+  width: 100%;
+  opacity: 0.4;
+  border-radius: 5px 41% 5px 40%;
 `;
 
 export const CardImage = styled.div`

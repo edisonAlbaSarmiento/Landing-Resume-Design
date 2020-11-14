@@ -35,7 +35,7 @@ function Work({dataWork, selectedLanguage}) {
     console.log('HOLA')
     async function getData(){
       const results = await dataWork.filter(item =>
-        item.description.includes(searchTerm)
+        item.description.toLowerCase().includes(searchTerm)
       );
       console.log('results',results)
 

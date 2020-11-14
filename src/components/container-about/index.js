@@ -102,7 +102,7 @@ function About({dataAbout, selectedLanguage, setSection}) {
         </ContainerText>
         <ContainerImage>
           <CardImage>
-            <ImageBackground  src="https://pngimage.net/wp-content/uploads/2018/05/empresario-png-3.png" />
+            <ImageBackground  src="https://images.unsplash.com/photo-1509966756634-9c23dd6e6815?ixlib=rb-1.2.1&auto=format&fit=crop&w=1310&q=80" />
           </CardImage>
         </ContainerImage>
       </ContainerCards>
