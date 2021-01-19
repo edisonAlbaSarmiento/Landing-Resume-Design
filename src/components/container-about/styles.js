@@ -89,7 +89,7 @@ export const TextDescription = styled.p`
 
 export const ButtonHire = styled.button`
   width: 100%;
-  background-color: ${props => props.activeButton === 1 ? props.theme.color.pink : props.theme.color.grayDisabled};
+  background-color: ${props => !props.activeButton ? props.theme.color.pink : props.theme.color.grayDisabled};
   border: none;
   outline: none;
   border-radius: 2%;
@@ -97,7 +97,7 @@ export const ButtonHire = styled.button`
 
 export const ButtonKnow = styled.button`
   width: 50%;
-  background-color: ${props => props.activeButton === 2 ? props.theme.color.pink : props.theme.color.grayDisabled};
+  background-color: ${props => props.activeButton ? props.theme.color.pink : props.theme.color.grayDisabled};
   border: none;
   margin-left: 10%;
   outline: none;

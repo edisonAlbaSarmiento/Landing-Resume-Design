@@ -28,10 +28,10 @@ import {
   CardImage,
   ContainerButtons,
 } from './styles';
-import DialogTitle from '../modal';
+import CustomizedDialogs from '../modal';
 
 function About({dataAbout, selectedLanguage, setSection}) {
-  const [activeButton, setActivButton] = useState(1);
+  const [activeButton, setActiveButton] = useState(false);
   const { dataRouter } = useParams();
   console.log('dataRouter', dataRouter)
   return (
@@ -61,7 +61,7 @@ function About({dataAbout, selectedLanguage, setSection}) {
             <ContentButtons>
               <Link to="/contact" style={{textDecoration: 'none',   width: '44%'}}>
                 <ButtonHire activeButton={activeButton} onClick={() => {
-                  setActivButton(1)
+                  setActiveButton(false)
                   setSection('contact')
                 }}>
                   <TextButton>
@@ -69,15 +69,15 @@ function About({dataAbout, selectedLanguage, setSection}) {
                   </TextButton>
                 </ButtonHire>
               </Link>
-              <ButtonKnow activeButton={activeButton} onClick={() => setActivButton(2)}>
-                <DialogTitle
+              <ButtonKnow activeButton={activeButton} onClick={() => setActiveButton(true)}>
+                <CustomizedDialogs
                   title={
                     selectedLanguage === 0 ?
                       'Autobiography'
                       :
                       'Autobiografía' }
                   activeButton={activeButton}
-                  onClickActive={() => setActivButton(2)}
+                  onClickActive={() => setActiveButton(true)}
                   selectedLanguage={selectedLanguage}
                 >
                   <Typography gutterBottom>
@@ -87,7 +87,7 @@ function About({dataAbout, selectedLanguage, setSection}) {
                     width="100%"
                     url={`${dataAbout.urlVideoProfile}`}
                   />
-                </DialogTitle>
+                </CustomizedDialogs>
               </ButtonKnow>
               {/* <Link to={{
                 pathname: "/help",

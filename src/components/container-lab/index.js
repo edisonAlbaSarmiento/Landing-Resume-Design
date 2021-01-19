@@ -1,5 +1,5 @@
 /* eslint-disable react/jsx-filename-extension */
-import React from 'react';
+import React, {useState} from 'react';
 import PropTypes from 'prop-types';
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 import {
@@ -15,10 +15,31 @@ import {
   ContainerText,
   TextPrimary,
   TextSecond,
-  TextThree
+  TextThree,
+  ContainerModal
 } from './styles';
+import CustomizedDialogs from '../modal';
 
+const Modal = (index) => (
+  <CustomizedDialogs
+    itemId={index}
+    title="edde"
+    // activeButton={activeButton}
+    // selectedLanguage={selectedLanguage}
+    // onClickActive={() => changeState(index)}
+  >
+      DENTro
+
+  </CustomizedDialogs>
+
+)
 function Lab({dataLabs, selectedLanguage}) {
+  const [activeButton, setActivButton] = useState(false);
+  const changeState = (item) => {
+    console.log('item', item)
+    setActivButton(!activeButton)
+  }
+
   return (
     <Container>
       <ContainerHeader>
@@ -30,8 +51,10 @@ function Lab({dataLabs, selectedLanguage}) {
         </ContainerTitle>
       </ContainerHeader>
       <ContainerCards>
-        {dataLabs && dataLabs.map(item => (
-          <ContainerChildren>
+        {dataLabs && dataLabs.map((item, index) => (
+          <ContainerChildren onClick={() => changeState(item)}>
+            {console.log('index', index)}
+
             <ContainerDescription>
               <ImageContainer src={`${item.imageLabs}`} />
               <ContainerText>
@@ -41,15 +64,23 @@ function Lab({dataLabs, selectedLanguage}) {
                 <TextSecond>
                   {item.description}
                 </TextSecond>
-                <TextThree onClick={() => {window.open(`${item.viewMoreIn}`)}}>
-                  {selectedLanguage === 0 ? 'View More': 'Ver más'}
-                  <ArrowForwardIosIcon style={{ fontSize: 10 }} />
-                </TextThree>
+                {/*
+                                  <ContainerModal>
+
+                   <TextThree>
+
+                    {selectedLanguage === 0 ? 'View More': 'Ver más'}
+                    <ArrowForwardIosIcon style={{ fontSize: 10 }} />
+                  </TextThree>
+                                  </ContainerModal>
+
+                  */}
+
+                <modal/>
               </ContainerText>
 
             </ContainerDescription>
-
-          </ContainerChildren>
+          </ContainerChildren >
         ))}
 
       </ContainerCards>

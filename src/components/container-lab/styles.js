@@ -91,3 +91,11 @@ export const TextThree = styled.span`
   font-size: 13px;
   cursor: pointer;
 `
+export const ContainerModal = styled.div`
+  width: 50%;
+  background-color: ${props => props.activeButton === 2 ? props.theme.color.pink : props.theme.color.grayDisabled};
+  border: none;
+  margin-left: 10%;
+  outline: none;
+  border-radius: 2%;
+`;

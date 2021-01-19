@@ -54,19 +54,22 @@ function CustomizedDialogs({
   title,
   activeButton,
   selectedLanguage,
-  onClickActive
+  onClickActive,
+  itemId,
 }) {
+  console.log('itemId',itemId)
+
   const [open, setOpen] = React.useState(false);
   const handleClickOpen = () => {
     onClickActive();
     setOpen(true);
   };
   const handleClose = () => {
+    onClickActive();
     setOpen(false);
   };
-
   return (
-    <div>
+    <div key={itemId}>
       <ButtonOpen  activeButton={activeButton} onClick={handleClickOpen}>
         <TextButton>
           {selectedLanguage === 0 ? 'Know more': 'Saber más'}
@@ -89,12 +92,19 @@ function CustomizedDialogs({
   );
 }
 
+CustomizedDialogs.defaultProps = {
+  onClickActive: () => {},
+  activeButton: false,
+  selectedLanguage: 0,
+}
+
 CustomizedDialogs.propTypes = {
   children: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
-  selectedLanguage: PropTypes.string.isRequired,
-  activeButton: PropTypes.bool.isRequired,
-  onClickActive: PropTypes.func.isRequired,
+  selectedLanguage: PropTypes.string,
+  activeButton: PropTypes.bool,
+  onClickActive: PropTypes.func,
+  itemId: PropTypes.number.isRequired,
 }
 
 export default CustomizedDialogs;

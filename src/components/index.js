@@ -4,6 +4,7 @@ import Lab from './container-lab';
 import Contact from './container-contact';
 import Menu from './menu';
 import ContainerDetail  from './container-detail';
+import CustomizedDialogs from './modal';
 
 export {
   ContainerWork,
@@ -11,5 +12,6 @@ export {
   Lab,
   Contact,
   Menu,
-  ContainerDetail
+  ContainerDetail,
+  CustomizedDialogs
 }

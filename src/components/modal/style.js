@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const ButtonOpen = styled.button`
-  background-color: ${props => props.activeButton === 2 ? props.theme.color.pink : props.theme.color.grayDisabled};
+  background-color: ${props => props.activeButton ? props.theme.color.pink : props.theme.color.grayDisabled};
   border: none;
   outline: none;
   width: 100%;
