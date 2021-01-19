@@ -6,17 +6,17 @@
 				{
 					"imageWork": "https://raw.githubusercontent.com/edisonAlbaSarmiento/Landing-Resume-Design/master/images/icon-imaginamos.jpeg",
 					"description": "Imaginamos",
-					"urlWork": "https://github.com/edisonAlbaSarmiento"
+					"urlWork": "https://imaginamos.com/"
 				},
 				{
 					"imageWork": "https://raw.githubusercontent.com/edisonAlbaSarmiento/Landing-Resume-Design/master/images/icon-chiper.png",
 					"description": "Chiper",
-					"urlWork": "http://www.google.com"
+					"urlWork": "https://chiper.co/"
 				},
 				{
 					"imageWork": "https://raw.githubusercontent.com/edisonAlbaSarmiento/Landing-Resume-Design/master/images/icon-etb.jpeg",
 					"description": "ETB-Practices",
-					"urlWork": "http://www.google.com"
+					"urlWork": "https://etb.com/"
 				}
 			],
 			"labs": [
@@ -61,18 +61,19 @@
 					{
             "imageWork": "https://raw.githubusercontent.com/edisonAlbaSarmiento/Landing-Resume-Design/master/images/icon-imaginamos.jpeg",
 						"description": "Imaginamos",
-						"urlWork": "https://github.com/edisonAlbaSarmiento"
+						"urlWork": "https://imaginamos.com/"
 					},
 					{
             "imageWork": "https://raw.githubusercontent.com/edisonAlbaSarmiento/Landing-Resume-Design/master/images/icon-chiper.png",
 						"description": "Chiper",
-						"urlWork": "http://www.google.com"
+						"urlWork": "https://chiper.co/"
 					},
 					{
             "imageWork": "https://raw.githubusercontent.com/edisonAlbaSarmiento/Landing-Resume-Design/master/images/icon-etb.jpeg",
             "description": "ETB-Praticas",
-						"urlWork": "http://www.google.com"
-					}
+						"urlWork": "https://etb.com/"
+          }
+
 				],
 				"labs": [
 					{
