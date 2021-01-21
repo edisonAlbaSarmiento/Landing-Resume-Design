@@ -22,8 +22,10 @@ import CustomizedDialogs from '../modal';
 
 function Lab({dataLabs, selectedLanguage}) {
   const [activeButton, setActivButton] = useState(false);
-  const changeState = (item) => {
+  const changeState = (item, index) => {
     console.log('ENTRO EDI', item)
+    console.log('ENTRO EDI index', index)
+
     setActivButton(!activeButton)
   }
 
@@ -39,7 +41,7 @@ function Lab({dataLabs, selectedLanguage}) {
       </ContainerHeader>
       <ContainerCards>
         {dataLabs && dataLabs.map((item, index) => (
-          <ContainerChildren onClick={() => changeState(item)}>
+          <ContainerChildren onClick={() => changeState(item, index)}>
             {console.log('index', index)}
 
             <ContainerDescription>
