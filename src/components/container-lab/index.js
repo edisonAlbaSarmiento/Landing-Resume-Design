@@ -25,8 +25,10 @@ function Lab({dataLabs, selectedLanguage}) {
   const changeState = (item, index) => {
     console.log('ENTRO EDI', item)
     console.log('ENTRO EDI index', index)
+    if(item.id === index){
+      setActivButton(!activeButton)
 
-    setActivButton(!activeButton)
+    }
   }
 
   return (
@@ -67,7 +69,7 @@ function Lab({dataLabs, selectedLanguage}) {
                 <CustomizedDialogs
                   // itemId={index}
                   title="edde"
-                  activeButton={activeButton}
+                  activeButton={item.id === index && activeButton}
                   selectedLanguage={selectedLanguage}
                   onClickActive={changeState}
                 >
