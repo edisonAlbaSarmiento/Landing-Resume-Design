@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+import { bounceInRight } from 'react-animations';
+import { animation } from '../../utils';
 
 export const Form = styled.form``;
 
@@ -33,6 +35,7 @@ export const ContainerCards= styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
+  animation: 1s ${animation(bounceInRight)};
 `;
 
 export const TitleTextTarea = styled.h1`

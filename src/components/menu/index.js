@@ -108,6 +108,14 @@ function Menu({
 
             </ ButtonMenu>
           </Link>
+          <Link to="/skills">
+            <ButtonMenu activeButton={section === 'skills'}  onClick={() => {
+              setSection('skills')
+              setStateactiveMenu(!activeMenu)
+            }}>
+              {selectedLanguage === 0 ? 'Skills': 'Habilidades' }
+            </ButtonMenu>
+          </Link>
           <Link to="/work">
             <ButtonMenu activeButton={section === 'about'}  onClick={() => {
               setSection('about')

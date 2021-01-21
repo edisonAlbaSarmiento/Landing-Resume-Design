@@ -20,7 +20,7 @@ import {
 } from './styles';
 import CustomizedDialogs from '../modal';
 
-function Lab({dataLabs, selectedLanguage}) {
+function ContainerSkills({dataLabs, selectedLanguage}) {
   const [activeButton, setActivButton] = useState(false);
   const changeState = (item) => {
     console.log('ENTRO EDI', item)
@@ -32,12 +32,14 @@ function Lab({dataLabs, selectedLanguage}) {
       <ContainerHeader>
         <ContainerTitle>
           <Title>
-            {selectedLanguage === 0 ? 'Labs': 'Laboratorios'}
+            {selectedLanguage === 0 ? 'Skills': 'Habilidades'}
           </Title>
           <Line />
         </ContainerTitle>
       </ContainerHeader>
       <ContainerCards>
+      {console.log('dataLabs', dataLabs)}
+
         {dataLabs && dataLabs.map((item, index) => (
           <ContainerChildren onClick={() => changeState(item)}>
             {console.log('index', index)}
@@ -87,9 +89,9 @@ function Lab({dataLabs, selectedLanguage}) {
   );
 }
 
-Lab.propTypes = {
+ContainerSkills.propTypes = {
   dataLabs: PropTypes.objectOf.isRequired,
   selectedLanguage: PropTypes.string.isRequired,
 }
 
-export default Lab;
+export default ContainerSkills;

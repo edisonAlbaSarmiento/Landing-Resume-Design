@@ -21,7 +21,9 @@ import {
   Form,
   TextError,
 } from './styles';
-import sendFeedback from '../../utils';
+import {
+  sendFeedback
+} from '../../utils';
 
 
 function Contact({selectedLanguage}){

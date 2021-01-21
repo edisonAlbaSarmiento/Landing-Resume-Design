@@ -12,7 +12,8 @@ import {
   Lab,
   Contact,
   Menu,
-  ContainerDetail
+  ContainerDetail,
+  ContainerSkills
 } from '../components/index';
 
 import {
@@ -50,6 +51,12 @@ function Page() {
                 />
               </Route>
             )}
+            <Route path="/skills">
+              <ContainerSkills
+                selectedLanguage={selectedLanguage}
+                dataLabs={selectedLanguage === 1 ? myData.data[selectedLanguage].es.work : myData.data[selectedLanguage].en.work}
+              />
+            </Route>
             <Route path="/work">
               <ContainerWork
                 selectedLanguage={selectedLanguage}

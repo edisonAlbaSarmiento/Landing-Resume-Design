@@ -1,4 +1,12 @@
-const sendFeedback = async (templateId, variables) => {
+import { keyframes} from 'styled-components';
+
+export const animation = nameAnimation => {
+  return keyframes`${nameAnimation}`;
+}
+
+
+
+export const sendFeedback = async (templateId, variables) => {
   const result = await window.emailjs.send(
     `${templateId}`, `${process.env.REACT_APP_TEMPLATE_ID}`,
     variables
@@ -7,5 +15,3 @@ const sendFeedback = async (templateId, variables) => {
     .catch(err => err)
   return result
 }
-
-export default sendFeedback;

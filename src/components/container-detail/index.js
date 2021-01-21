@@ -46,7 +46,7 @@ function ContainerDetail({dataRouter}) {
         </Title>
         <Line />
       </ContainerTitle>
-      <Tooltip title='Share via Whatsapp' arrow>
+      <Tooltip title='Comparte via Whatsapp' arrow>
         <IconButton>
           <LinkShare target="_blank" href="https://api.whatsapp.com/send?text=Ver mi pagina https://edisonalbasarmiento.github.io/Landing-Resume-Design/" data-action="share/whatsapp/share">
             <Share />
