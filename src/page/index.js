@@ -5,7 +5,6 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  useLocation,
 } from "react-router-dom";
 import {
   ContainerWork,
@@ -14,7 +13,8 @@ import {
   Contact,
   Menu,
   ContainerDetail,
-  ContainerSkills
+  ContainerSkills,
+  NoMatch
 } from '../components/index';
 
 import {
@@ -23,17 +23,7 @@ import {
 import UserGetData from '../hooks/data';
 
 
-function NoMatch() {
-  const location = useLocation();
 
-  return (
-    <div>
-      <h3>
-        NO ENCONTR LA RUTA <code>{location.pathname}</code>
-      </h3>
-    </div>
-  );
-}
 
 function Page() {
   const myData = UserGetData();

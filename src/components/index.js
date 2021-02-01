@@ -5,8 +5,8 @@ import Contact from './container-contact';
 import Menu from './menu';
 import ContainerDetail  from './container-detail';
 import ContainerSkills  from './container-skills';
-
 import CustomizedDialogs from './modal';
+import NoMatch from './not-found-page';
 
 export {
   ContainerWork,
@@ -16,5 +16,6 @@ export {
   Menu,
   ContainerDetail,
   CustomizedDialogs,
-  ContainerSkills
+  ContainerSkills,
+  NoMatch
 }
