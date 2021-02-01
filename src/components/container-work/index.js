@@ -6,6 +6,7 @@ import Search from '@material-ui/icons/Search';
 import IconButton from '@material-ui/core/IconButton';
 import Tooltip from '@material-ui/core/Tooltip';
 import CloseIcon from '@material-ui/icons/Close';
+import { Link } from 'react-router-dom'
 import {
   Title,
   Container,
@@ -83,16 +84,22 @@ function Work({dataWork, selectedLanguage}) {
       </ContainerHeader>
       <ContainerCards>
         {searchResults.length > 0 ?
-          searchResults.map(item => (
-            <ContainerChildren onClick={() => {window.open(`${item.urlWork}`)}}>
-              <ImageContainer src={`${item.imageWork}`} />
-              <ContainerText>
-                <TextImage>
-                  {item.description}
-                </TextImage>
-              </ContainerText>
+          searchResults.map((item, index) => (
+            <Link to={`/work/${index}`}>
+              <strong>
+                {index}
+              </strong>
+              <ContainerChildren onClick={() => {window.open(`${item.urlWork}`)}}>
+                <ImageContainer src={`${item.imageWork}`} />
+                <ContainerText>
+                  <TextImage>
+                    {item.description}
+                  </TextImage>
+                </ContainerText>
 
-            </ContainerChildren>
+              </ContainerChildren>
+            </Link>
+
           ))
           :
           <TextImage>

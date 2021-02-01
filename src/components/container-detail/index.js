@@ -37,7 +37,7 @@ function ContainerDetail({dataRouter}) {
   //   // eslint-disable-next-line
   // }, [searchTerm]);
 
-  console.log('dataRouter', dataRouter)
+  console.log('dataRouter DETAIL', dataRouter)
   return (
     <Container>
       <ContainerTitle>

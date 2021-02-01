@@ -5,6 +5,7 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
+  useLocation,
 } from "react-router-dom";
 import {
   ContainerWork,
@@ -21,6 +22,18 @@ import {
 } from './styles';
 import UserGetData from '../hooks/data';
 
+
+function NoMatch() {
+  const location = useLocation();
+
+  return (
+    <div>
+      <h3>
+        NO ENCONTR LA RUTA <code>{location.pathname}</code>
+      </h3>
+    </div>
+  );
+}
 
 function Page() {
   const myData = UserGetData();
@@ -43,7 +56,7 @@ function Page() {
         <div style={{width: '60%'}}>
           <Switch>
             {section === '' &&(
-              <Route path="/">
+              <Route exact path="/">
                 <ContainerAbout
                   setSection={setSection}
                   selectedLanguage={selectedLanguage}
@@ -51,35 +64,35 @@ function Page() {
                 />
               </Route>
             )}
-            <Route path="/skills">
+            <Route exact path="/skills">
               <ContainerSkills
                 selectedLanguage={selectedLanguage}
                 dataLabs={selectedLanguage === 1 ? myData.data[selectedLanguage].es.work : myData.data[selectedLanguage].en.work}
               />
             </Route>
-            <Route path="/work">
+            <Route exact path="/work">
               <ContainerWork
                 selectedLanguage={selectedLanguage}
                 dataWork={selectedLanguage === 1 ? myData.data[selectedLanguage].es.work : myData.data[selectedLanguage].en.work}
               />
             </Route>
-            <Route path="/labs">
+            <Route exact path="/labs">
               <Lab
                 selectedLanguage={selectedLanguage}
                 dataLabs={selectedLanguage === 1 ? myData.data[selectedLanguage].es.labs : myData.data[selectedLanguage].en.labs}
               />
             </Route>
-            <Route path="/contact">
+            <Route exact path="/contact">
               <Contact selectedLanguage={selectedLanguage} />
             </Route>
-
+            <Route path="/work/:id"
+              exact
+              strict
+              component={ContainerDetail}/>
+            <Route component={NoMatch} />
           </Switch>
         </div>
       </div>
-      <Route path="/help/:id"
-        exact
-        strict
-        component={ContainerDetail}/>
     </Router>
   );
 }
