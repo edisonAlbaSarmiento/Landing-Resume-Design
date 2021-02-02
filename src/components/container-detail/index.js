@@ -7,6 +7,9 @@ import IconButton from '@material-ui/core/IconButton';
 import Tooltip from '@material-ui/core/Tooltip';
 // import CloseIcon from '@material-ui/icons/Close';
 import {
+  useParams
+} from "react-router-dom";
+import {
   Title,
   Container,
   // ContainerHeader,
@@ -21,7 +24,7 @@ import {
   // InputFilter,
 } from './styles';
 
-function ContainerDetail({dataRouter}) {
+function ContainerDetail({dataRouter, dataWork}) {
   // const [searchTerm, setSearchTerm] = React.useState("");
   // const [searchResults, setSearchResults] = React.useState([]);
   // const [activeInput, setActiveInput] = React.useState(false);
@@ -36,13 +39,19 @@ function ContainerDetail({dataRouter}) {
   //   setSearchResults(results);
   //   // eslint-disable-next-line
   // }, [searchTerm]);
+  console.log('dataWork dataWork', dataWork)
+  const { id } = useParams();
+  console.log('dataRouter slug', id)
 
   console.log('dataRouter DETAIL', dataRouter)
+  const image = dataWork[parseInt(id, 10)];
+  console.log('dataRouter image', image)
+
   return (
     <Container>
       <ContainerTitle>
         <Title>
-            yest
+          {image.description}
         </Title>
         <Line />
       </ContainerTitle>
@@ -59,8 +68,7 @@ function ContainerDetail({dataRouter}) {
 }
 
 ContainerDetail.propTypes = {
-  // dataWork: PropTypes.objectOf.isRequired,
-  // selectedLanguage: PropTypes.string.isRequired,
+  dataWork: PropTypes.objectOf.isRequired,
   dataRouter: PropTypes.string.isRequired,
 }
 

@@ -78,7 +78,11 @@ function Page() {
             <Route path="/work/:id"
               exact
               strict
-              component={ContainerDetail}/>
+            >
+              <ContainerDetail
+                selectedLanguage={selectedLanguage}
+                dataWork={selectedLanguage === 1 ? myData.data[selectedLanguage].es.work : myData.data[selectedLanguage].en.work} />
+            </Route>
             <Route component={NoMatch} />
           </Switch>
         </div>
