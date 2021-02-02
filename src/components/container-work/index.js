@@ -85,20 +85,17 @@ function Work({dataWork, selectedLanguage}) {
       <ContainerCards>
         {searchResults.length > 0 ?
           searchResults.map((item, index) => (
-            <Link to={`/work/${index}`}>
-              <strong>
-                {index}
-              </strong>
-              <ContainerChildren onClick={() => {window.open(`${item.urlWork}`)}}>
+            // <ContainerChildren onClick={() => {window.open(`${item.urlWork}`)}}>
+            <ContainerChildren>
+              <Link to={`/work/${index}`}>
                 <ImageContainer src={`${item.imageWork}`} />
                 <ContainerText>
                   <TextImage>
                     {item.description}
                   </TextImage>
                 </ContainerText>
-
-              </ContainerChildren>
-            </Link>
+              </Link>
+            </ContainerChildren>
 
           ))
           :
