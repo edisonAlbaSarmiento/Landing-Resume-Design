@@ -1,0 +1,320 @@
+{
+    "id": 2,
+    "created_at": "2021-05-27T16:27:50.239Z",
+    "updated_at": "2021-05-27T17:14:58.708Z",
+    "Home": {
+      "id": 1,
+      "categoryNameFavorite": "tes",
+      "discountsTitle": "test",
+      "searchPlaceholder": "est",
+      "buttonMainOffer": "test",
+      "chatbankerButton": "test",
+      "chatbankerTitle": "test",
+      "newTitle": null,
+      "recommendTitle": null,
+      "favoriteTitleDetail": "test",
+      "newsTitle": "test",
+      "recommendsTitle": "test",
+      "favoriteIcon": {
+        "id": 1,
+        "name": "Orso.png",
+        "alternativeText": "",
+        "caption": "",
+        "width": 600,
+        "height": 451,
+        "formats": {
+          "small": {
+            "ext": ".png",
+            "url": "http://localhost:1337/upload/file/General/unassociate-files/small_Orso.png",
+            "hash": "small_Orso_1284cba8bc",
+            "mime": "image/png",
+            "name": "small_Orso.png",
+            "path": null,
+            "size": 75.39,
+            "width": 500,
+            "height": 376
+          }
+        },
+        "hash": "Orso_1284cba8bc",
+        "ext": ".png",
+        "mime": "image/png",
+        "size": 43.35,
+        "url": "http://localhost:1337/upload/file/General/unassociate-files/Orso.png",
+        "previewUrl": null,
+        "provider": "rappi-cb-aws-s3",
+        "provider_metadata": null,
+        "created_at": "2021-05-18T14:09:48.110Z",
+        "updated_at": "2021-05-18T14:09:48.178Z"
+      },
+      "chatbankerImage": {
+        "id": 1,
+        "name": "Orso.png",
+        "alternativeText": "",
+        "caption": "",
+        "width": 600,
+        "height": 451,
+        "formats": {
+          "small": {
+            "ext": ".png",
+            "url": "http://localhost:1337/upload/file/General/unassociate-files/small_Orso.png",
+            "hash": "small_Orso_1284cba8bc",
+            "mime": "image/png",
+            "name": "small_Orso.png",
+            "path": null,
+            "size": 75.39,
+            "width": 500,
+            "height": 376
+          }
+        },
+        "hash": "Orso_1284cba8bc",
+        "ext": ".png",
+        "mime": "image/png",
+        "size": 43.35,
+        "url": "http://localhost:1337/upload/file/General/unassociate-files/Orso.png",
+        "previewUrl": null,
+        "provider": "rappi-cb-aws-s3",
+        "provider_metadata": null,
+        "created_at": "2021-05-18T14:09:48.110Z",
+        "updated_at": "2021-05-18T14:09:48.178Z"
+      }
+    },
+  
+  
+  
+  
+    
+    "general": {
+      "id": 1,
+      "offerImageSmall": {
+        "id": 1,
+        "name": "Orso.png",
+        "alternativeText": "",
+        "caption": "",
+        "width": 600,
+        "height": 451,
+        "formats": {
+          "small": {
+            "ext": ".png",
+            "url": "http://localhost:1337/upload/file/General/unassociate-files/small_Orso.png",
+            "hash": "small_Orso_1284cba8bc",
+            "mime": "image/png",
+            "name": "small_Orso.png",
+            "path": null,
+            "size": 75.39,
+            "width": 500,
+            "height": 376
+          }
+        },
+        "hash": "Orso_1284cba8bc",
+        "ext": ".png",
+        "mime": "image/png",
+        "size": 43.35,
+        "url": "http://localhost:1337/upload/file/General/unassociate-files/Orso.png",
+        "previewUrl": null,
+        "provider": "rappi-cb-aws-s3",
+        "provider_metadata": null,
+        "created_at": "2021-05-18T14:09:48.110Z",
+        "updated_at": "2021-05-18T14:09:48.178Z"
+      },
+      "offerImageMedium": {
+        "id": 1,
+        "name": "Orso.png",
+        "alternativeText": "",
+        "caption": "",
+        "width": 600,
+        "height": 451,
+        "formats": {
+          "small": {
+            "ext": ".png",
+            "url": "http://localhost:1337/upload/file/General/unassociate-files/small_Orso.png",
+            "hash": "small_Orso_1284cba8bc",
+            "mime": "image/png",
+            "name": "small_Orso.png",
+            "path": null,
+            "size": 75.39,
+            "width": 500,
+            "height": 376
+          }
+        },
+        "hash": "Orso_1284cba8bc",
+        "ext": ".png",
+        "mime": "image/png",
+        "size": 43.35,
+        "url": "http://localhost:1337/upload/file/General/unassociate-files/Orso.png",
+        "previewUrl": null,
+        "provider": "rappi-cb-aws-s3",
+        "provider_metadata": null,
+        "created_at": "2021-05-18T14:09:48.110Z",
+        "updated_at": "2021-05-18T14:09:48.178Z"
+      },
+      "offerImageLarge": {
+        "id": 1,
+        "name": "Orso.png",
+        "alternativeText": "",
+        "caption": "",
+        "width": 600,
+        "height": 451,
+        "formats": {
+          "small": {
+            "ext": ".png",
+            "url": "http://localhost:1337/upload/file/General/unassociate-files/small_Orso.png",
+            "hash": "small_Orso_1284cba8bc",
+            "mime": "image/png",
+            "name": "small_Orso.png",
+            "path": null,
+            "size": 75.39,
+            "width": 500,
+            "height": 376
+          }
+        },
+        "hash": "Orso_1284cba8bc",
+        "ext": ".png",
+        "mime": "image/png",
+        "size": 43.35,
+        "url": "http://localhost:1337/upload/file/General/unassociate-files/Orso.png",
+        "previewUrl": null,
+        "provider": "rappi-cb-aws-s3",
+        "provider_metadata": null,
+        "created_at": "2021-05-18T14:09:48.110Z",
+        "updated_at": "2021-05-18T14:09:48.178Z"
+      },
+      "partnerImage": {
+        "id": 1,
+        "name": "Orso.png",
+        "alternativeText": "",
+        "caption": "",
+        "width": 600,
+        "height": 451,
+        "formats": {
+          "small": {
+            "ext": ".png",
+            "url": "http://localhost:1337/upload/file/General/unassociate-files/small_Orso.png",
+            "hash": "small_Orso_1284cba8bc",
+            "mime": "image/png",
+            "name": "small_Orso.png",
+            "path": null,
+            "size": 75.39,
+            "width": 500,
+            "height": 376
+          }
+        },
+        "hash": "Orso_1284cba8bc",
+        "ext": ".png",
+        "mime": "image/png",
+        "size": 43.35,
+        "url": "http://localhost:1337/upload/file/General/unassociate-files/Orso.png",
+        "previewUrl": null,
+        "provider": "rappi-cb-aws-s3",
+        "provider_metadata": null,
+        "created_at": "2021-05-18T14:09:48.110Z",
+        "updated_at": "2021-05-18T14:09:48.178Z"
+      },
+      "categoryImage": {
+        "id": 1,
+        "name": "Orso.png",
+        "alternativeText": "",
+        "caption": "",
+        "width": 600,
+        "height": 451,
+        "formats": {
+          "small": {
+            "ext": ".png",
+            "url": "http://localhost:1337/upload/file/General/unassociate-files/small_Orso.png",
+            "hash": "small_Orso_1284cba8bc",
+            "mime": "image/png",
+            "name": "small_Orso.png",
+            "path": null,
+            "size": 75.39,
+            "width": 500,
+            "height": 376
+          }
+        },
+        "hash": "Orso_1284cba8bc",
+        "ext": ".png",
+        "mime": "image/png",
+        "size": 43.35,
+        "url": "http://localhost:1337/upload/file/General/unassociate-files/Orso.png",
+        "previewUrl": null,
+        "provider": "rappi-cb-aws-s3",
+        "provider_metadata": null,
+        "created_at": "2021-05-18T14:09:48.110Z",
+        "updated_at": "2021-05-18T14:09:48.178Z"
+      }
+    },
+    "filters": {
+      "id": 1,
+      "categoryTitle": "test",
+      "paymentTitle": "test",
+      "disableButtonTitle": "test",
+      "enableButtonTitle": "test",
+      "banner": {
+        "id": 1,
+        "name": "Orso.png",
+        "alternativeText": "",
+        "caption": "",
+        "width": 600,
+        "height": 451,
+        "formats": {
+          "small": {
+            "ext": ".png",
+            "url": "http://localhost:1337/upload/file/General/unassociate-files/small_Orso.png",
+            "hash": "small_Orso_1284cba8bc",
+            "mime": "image/png",
+            "name": "small_Orso.png",
+            "path": null,
+            "size": 75.39,
+            "width": 500,
+            "height": 376
+          }
+        },
+        "hash": "Orso_1284cba8bc",
+        "ext": ".png",
+        "mime": "image/png",
+        "size": 43.35,
+        "url": "http://localhost:1337/upload/file/General/unassociate-files/Orso.png",
+        "previewUrl": null,
+        "provider": "rappi-cb-aws-s3",
+        "provider_metadata": null,
+        "created_at": "2021-05-18T14:09:48.110Z",
+        "updated_at": "2021-05-18T14:09:48.178Z"
+      }
+    },
+    "offerDetail": { "id": 1, "similarOffersTitle": "test" },
+    "search": { "id": 1, "emptyTitle": "test" },
+    "categoryList": { "id": 1, "searchPlaceholder": "test" },
+    "categoryDetailPartner": {
+      "id": 1,
+      "listTitle": "test",
+      "banner": {
+        "id": 1,
+        "name": "Orso.png",
+        "alternativeText": "",
+        "caption": "",
+        "width": 600,
+        "height": 451,
+        "formats": {
+          "small": {
+            "ext": ".png",
+            "url": "http://localhost:1337/upload/file/General/unassociate-files/small_Orso.png",
+            "hash": "small_Orso_1284cba8bc",
+            "mime": "image/png",
+            "name": "small_Orso.png",
+            "path": null,
+            "size": 75.39,
+            "width": 500,
+            "height": 376
+          }
+        },
+        "hash": "Orso_1284cba8bc",
+        "ext": ".png",
+        "mime": "image/png",
+        "size": 43.35,
+        "url": "http://localhost:1337/upload/file/General/unassociate-files/Orso.png",
+        "previewUrl": null,
+        "provider": "rappi-cb-aws-s3",
+        "provider_metadata": null,
+        "created_at": "2021-05-18T14:09:48.110Z",
+        "updated_at": "2021-05-18T14:09:48.178Z"
+      }
+    }
+  }
