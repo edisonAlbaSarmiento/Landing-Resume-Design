@@ -3,7 +3,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## DEPLOY
 
-https://edisonalbasarmiento.github.io/Landing-Resume-Design/
+http://www.edison.com.co/
 
 ### inspiration for change and new design
 
