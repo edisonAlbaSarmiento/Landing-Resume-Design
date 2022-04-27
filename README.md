@@ -3,7 +3,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## DEPLOY
 
-http://www.edison.com.co/
+https://www.edison.com.co/
 
 ### inspiration for change and new design
 
