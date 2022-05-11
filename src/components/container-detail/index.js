@@ -1,14 +1,12 @@
 /* eslint-disable react/jsx-filename-extension */
-import React from 'react';
-import PropTypes from 'prop-types';
-import Share from '@material-ui/icons/Share';
+import React from "react";
+import PropTypes from "prop-types";
+import Share from "@material-ui/icons/Share";
 // import Search from '@material-ui/icons/Search';
-import IconButton from '@material-ui/core/IconButton';
-import Tooltip from '@material-ui/core/Tooltip';
+import IconButton from "@material-ui/core/IconButton";
+import Tooltip from "@material-ui/core/Tooltip";
 // import CloseIcon from '@material-ui/icons/Close';
-import {
-  useParams
-} from "react-router-dom";
+import { useParams } from "react-router-dom";
 import {
   Title,
   Container,
@@ -22,9 +20,9 @@ import {
   // TextImage,
   LinkShare,
   // InputFilter,
-} from './styles';
+} from "./styles";
 
-function ContainerDetail({dataRouter, dataWork}) {
+function ContainerDetail({ dataRouter, dataWork }) {
   // const [searchTerm, setSearchTerm] = React.useState("");
   // const [searchResults, setSearchResults] = React.useState([]);
   // const [activeInput, setActiveInput] = React.useState(false);
@@ -39,30 +37,31 @@ function ContainerDetail({dataRouter, dataWork}) {
   //   setSearchResults(results);
   //   // eslint-disable-next-line
   // }, [searchTerm]);
-  console.log('dataWork dataWork', dataWork)
+  console.log("dataWork dataWork", dataWork);
   const { id } = useParams();
-  console.log('dataRouter slug', id)
+  console.log("dataRouter slug", id);
 
-  console.log('dataRouter DETAIL', dataRouter)
+  console.log("dataRouter DETAIL", dataRouter);
   const image = dataWork[parseInt(id, 10)];
-  console.log('dataRouter image', image)
+  console.log("dataRouter image", image);
 
   return (
     <Container>
       <ContainerTitle>
-        <Title>
-          {image.description}
-        </Title>
+        <Title>{image?.description}</Title>
         <Line />
       </ContainerTitle>
-      <Tooltip title='Comparte via Whatsapp' arrow>
+      <Tooltip title="Comparte via Whatsapp" arrow>
         <IconButton>
-          <LinkShare target="_blank" href="https://api.whatsapp.com/send?text=Ver mi pagina https://edisonalbasarmiento.github.io/Landing-Resume-Design/" data-action="share/whatsapp/share">
+          <LinkShare
+            target="_blank"
+            href="https://api.whatsapp.com/send?text=Ver mi pagina https://edisonalbasarmiento.github.io/Landing-Resume-Design/"
+            data-action="share/whatsapp/share"
+          >
             <Share />
           </LinkShare>
         </IconButton>
       </Tooltip>
-
     </Container>
   );
 }
@@ -70,6 +69,6 @@ function ContainerDetail({dataRouter, dataWork}) {
 ContainerDetail.propTypes = {
   dataWork: PropTypes.objectOf.isRequired,
   dataRouter: PropTypes.string.isRequired,
-}
+};
 
 export default ContainerDetail;

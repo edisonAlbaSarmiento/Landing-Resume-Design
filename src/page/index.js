@@ -57,8 +57,8 @@ function Page() {
                   selectedLanguage={selectedLanguage}
                   dataAbout={
                     selectedLanguage === 1
-                      ? myData.data[selectedLanguage].es.about
-                      : myData.data[selectedLanguage].en.about
+                      ? myData?.data[selectedLanguage].es.about
+                      : myData?.data[selectedLanguage].en.about
                   }
                 />
               </Route>
@@ -68,8 +68,8 @@ function Page() {
                 selectedLanguage={selectedLanguage}
                 dataLabs={
                   selectedLanguage === 1
-                    ? myData.data[selectedLanguage].es.work
-                    : myData.data[selectedLanguage].en.work
+                    ? myData?.data[selectedLanguage].es.work
+                    : myData?.data[selectedLanguage].en.work
                 }
               />
             </Route>
@@ -78,8 +78,8 @@ function Page() {
                 selectedLanguage={selectedLanguage}
                 dataWork={
                   selectedLanguage === 1
-                    ? myData.data[selectedLanguage].es.work
-                    : myData.data[selectedLanguage].en.work
+                    ? myData?.data[selectedLanguage].es.work
+                    : myData?.data[selectedLanguage].en.work
                 }
               />
             </Route>
@@ -88,8 +88,8 @@ function Page() {
                 selectedLanguage={selectedLanguage}
                 dataLabs={
                   selectedLanguage === 1
-                    ? myData.data[selectedLanguage].es.labs
-                    : myData.data[selectedLanguage].en.labs
+                    ? myData?.data[selectedLanguage].es.labs
+                    : myData?.data[selectedLanguage].en.labs
                 }
               />
             </Route>
@@ -101,8 +101,8 @@ function Page() {
                 selectedLanguage={selectedLanguage}
                 dataWork={
                   selectedLanguage === 1
-                    ? myData.data[selectedLanguage].es.work
-                    : myData.data[selectedLanguage].en.work
+                    ? myData?.data[selectedLanguage].es.work
+                    : myData?.data[selectedLanguage].en.work
                 }
               />
             </Route>
