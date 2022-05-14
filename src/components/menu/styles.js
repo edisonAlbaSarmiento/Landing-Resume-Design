@@ -1,8 +1,7 @@
-
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Container = styled.div`
-  background-color: ${props => props.theme.color.purpleMenu};
+  background-color: ${(props) => props.theme.color.purpleMenu};
   width: 100%;
   border-radius: 2%;
   @media (max-width: 768px) {
@@ -10,7 +9,7 @@ export const Container = styled.div`
     width: 30%;
     position: fixed;
     z-index: 1;
-    margin-left: ${props => props.activeMenu ? '-12%' : ' -400px'};
+    margin-left: ${(props) => (props.activeMenu ? "2%" : " -400px")};
     transition: all 0.5s;
   }
 `;
@@ -35,7 +34,7 @@ export const ImageProfile = styled.img`
   @media (max-width: 768px) {
     height: 50px;
     width: 50px;
-    }
+  }
 `;
 
 export const ContainerButtons = styled.div`
@@ -53,11 +52,12 @@ export const ButtonMenu = styled.button`
   font-size: 18px;
   text-align: left;
   padding: 8%;
-  color: ${props => props.activeButton ? props.theme.color.pink : props.theme.color.white};
-  border-left-style:${props => props.activeButton && 'solid'};
-  border-left-color: ${props => props.activeButton && props.theme.color.pink};
+  color: ${(props) =>
+    props.activeButton ? props.theme.color.pink : props.theme.color.white};
+  border-left-style: ${(props) => props.activeButton && "solid"};
+  border-left-color: ${(props) => props.activeButton && props.theme.color.pink};
   :active {
-    background-color: ${props => props.theme.color.overMenu};
+    background-color: ${(props) => props.theme.color.overMenu};
   }
   @media (max-width: 768px) {
     font-size: 15px;
@@ -100,4 +100,3 @@ export const ContainerLanguage = styled.div`
     margin-left: 7%;
   }
 `;
-
