@@ -2,17 +2,20 @@
 import React from "react";
 import { ThemeProvider } from "styled-components";
 import Page from "./page";
+import { BrowserRouter as Router } from "react-router-dom";
 
 // Imports: Themes
 import theme from "./themes";
 
 function App() {
   return (
-    <div className="App">
-      <ThemeProvider theme={theme}>
-        <Page />
-      </ThemeProvider>
-    </div>
+    <Router>
+      <div className="App">
+        <ThemeProvider theme={theme}>
+          <Page />
+        </ThemeProvider>
+      </div>
+    </Router>
   );
 }
 

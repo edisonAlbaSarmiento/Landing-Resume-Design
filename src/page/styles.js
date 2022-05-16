@@ -1,10 +1,9 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
   padding: 5%;
-  background-color: red;
 `;
 export const ContinerTitle = styled.div`
   background-color: #30383a;
@@ -36,5 +35,12 @@ export const ContainerInformation = styled.div`
 export const ContainerMenu = styled.div`
   @media (max-width: 768px) {
     flex-basis: auto;
+  }
+`;
+
+export const ContentBody = styled.div`
+  width: 100%;
+  @media (max-width: 768px) {
+    padding: 0 2% 0 0%;
   }
 `;

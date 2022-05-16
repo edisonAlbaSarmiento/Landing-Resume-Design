@@ -1,9 +1,9 @@
-import styled from 'styled-components';
-import { bounceInRight } from 'react-animations';
-import { animation } from '../../utils';
+import styled from "styled-components";
+import { bounceInRight } from "react-animations";
+import { animation } from "../../utils";
 
 export const Container = styled.div`
-  background-color: ${props => props.theme.color.purple};
+  background-color: ${(props) => props.theme.color.purple};
   width: 100%;
 `;
 
@@ -21,28 +21,27 @@ export const ContainerTitle = styled.div`
 
 export const Title = styled.h2`
   font-size: 20px;
-  color: ${props => props.theme.color.white};
+  color: ${(props) => props.theme.color.white};
   width: 100%;
   height: 2px;
-`
+`;
 export const Line = styled.hr`
-  background-color: ${props => props.theme.color.pink};
+  background-color: ${(props) => props.theme.color.pink};
   height: 1px;
   width: 7%;
   border: 0;
   float: left;
   @media (max-width: 768px) {
     width: 24%;
-    }
+  }
 `;
 
 export const ContainerCards = styled.div`
   display: flex;
   justify-content: flex-start;
-  flex-direction: row ;
+  flex-direction: row;
   width: 100%;
   animation: 1s ${animation(bounceInRight)};
-
 `;
 
 export const Card = styled.div`
@@ -54,7 +53,7 @@ export const Card = styled.div`
   @media (max-width: 768px) {
     width: 80%;
     height: 16%;
-    }
+  }
 `;
 
 export const CardSubTilte = styled.div`
@@ -66,7 +65,7 @@ export const CardSubTilte = styled.div`
 
 export const TitleName = styled.h2`
   font-size: 55px;
-  color: ${props => props.theme.color.white};
+  color: ${(props) => props.theme.color.white};
   width: 100%;
   font-weight: bold;
   margin: 0;
@@ -77,14 +76,14 @@ export const TitleName = styled.h2`
 
 export const SubTitle = styled.h3`
   font-size: 20px;
-  color: ${props => props.theme.color.pink};
+  color: ${(props) => props.theme.color.pink};
   height: 14%;
   width: 100%;
-`
+`;
 
 export const TextDescription = styled.p`
   font-size: 20px;
-  color: ${props => props.theme.color.grayText};
+  color: ${(props) => props.theme.color.grayText};
   width: 85%;
   @media (max-width: 768px) {
     width: 100%;
@@ -93,7 +92,10 @@ export const TextDescription = styled.p`
 
 export const ButtonHire = styled.button`
   width: 100%;
-  background-color: ${props => !props.activeButton ? props.theme.color.pink : props.theme.color.grayDisabled};
+  background-color: ${(props) =>
+    !props.activeButton
+      ? props.theme.color.pink
+      : props.theme.color.grayDisabled};
   border: none;
   outline: none;
   border-radius: 2%;
@@ -101,7 +103,10 @@ export const ButtonHire = styled.button`
 
 export const ButtonKnow = styled.button`
   width: 50%;
-  background-color: ${props => props.activeButton ? props.theme.color.pink : props.theme.color.grayDisabled};
+  background-color: ${(props) =>
+    props.activeButton
+      ? props.theme.color.pink
+      : props.theme.color.grayDisabled};
   border: none;
   margin-left: 10%;
   outline: none;
@@ -110,8 +115,8 @@ export const ButtonKnow = styled.button`
 
 export const TextButton = styled.p`
   font-size: 100%;
-  color: ${props => props.theme.color.white};
-`
+  color: ${(props) => props.theme.color.white};
+`;
 export const ContentButtons = styled.div`
   display: flex;
   justify-content: initial;
@@ -129,7 +134,6 @@ export const CardImage = styled.div`
   text-align: left;
   display: flex;
   flex-direction: column;
-  width: 100%;
 `;
 
 export const ContainerButtons = styled.div`

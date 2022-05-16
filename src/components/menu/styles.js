@@ -4,12 +4,13 @@ export const Container = styled.div`
   background-color: ${(props) => props.theme.color.purpleMenu};
   width: 100%;
   border-radius: 2%;
+
   @media (max-width: 768px) {
     /* display: none; */
     width: 30%;
     position: fixed;
     z-index: 1;
-    margin-left: ${(props) => (props.activeMenu ? "2%" : " -400px")};
+    margin-left: ${(props) => (props.activeMenu ? "2%" : " -800px")};
     transition: all 0.5s;
   }
 `;

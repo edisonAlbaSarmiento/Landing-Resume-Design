@@ -1,7 +1,7 @@
 /* eslint-disable react/jsx-filename-extension */
 import React, { useState } from "react";
 import { Pulsate } from "styled-loaders-react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 import {
   ContainerWork,
   ContainerAbout,
@@ -13,17 +13,20 @@ import {
   NoMatch,
 } from "../components/index";
 
-import { ContainerMenu } from "./styles";
+import { ContainerMenu, ContentBody } from "./styles";
 import UserGetData from "../hooks/data";
 
 function Page() {
   const myData = UserGetData();
   const [section, setSection] = useState("");
   const [selectedLanguage, setLanguage] = useState(0);
+  const [activeMenu, setStateactiveMenu] = useState(false);
+  const [showPageNotFound, setShowPageNotFound] = useState(false);
+
   return myData.length === 0 ? (
     <Pulsate color="white" size="100px" duration="5s" />
   ) : (
-    <Router>
+    <>
       <div
         style={{
           width: "100%",
@@ -33,22 +36,27 @@ function Page() {
           justifyContent: "center",
         }}
       >
-        <div>
-          <ContainerMenu>
-            <Menu
-              section={section}
-              selectedLanguage={selectedLanguage}
-              setLanguage={setLanguage}
-              setSection={setSection}
-              dataMenu={
-                selectedLanguage === 1
-                  ? myData.data[selectedLanguage].es.dataUserMenu
-                  : myData.data[selectedLanguage].en.dataUserMenu
-              }
-            />
-          </ContainerMenu>
-        </div>
-        <div style={{ width: "100%" }}>
+        {!showPageNotFound && (
+          <div>
+            <ContainerMenu>
+              <Menu
+                section={section}
+                selectedLanguage={selectedLanguage}
+                setLanguage={setLanguage}
+                setSection={setSection}
+                activeMenu={activeMenu}
+                setStateactiveMenu={setStateactiveMenu}
+                dataMenu={
+                  selectedLanguage === 1
+                    ? myData.data[selectedLanguage].es.dataUserMenu
+                    : myData.data[selectedLanguage].en.dataUserMenu
+                }
+              />
+            </ContainerMenu>
+          </div>
+        )}
+
+        <ContentBody onClick={() => setStateactiveMenu(false)}>
           <Switch>
             {section === "" && (
               <Route exact path="/">
@@ -106,11 +114,16 @@ function Page() {
                 }
               />
             </Route>
-            <Route component={NoMatch} />
+            <Route>
+              <NoMatch
+                setShowPageNotFound={setShowPageNotFound}
+                selectedLanguage={selectedLanguage}
+              />
+            </Route>
           </Switch>
-        </div>
+        </ContentBody>
       </div>
-    </Router>
+    </>
   );
 }
 
