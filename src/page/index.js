@@ -76,8 +76,8 @@ function Page() {
                 selectedLanguage={selectedLanguage}
                 dataLabs={
                   selectedLanguage === 1
-                    ? myData?.data[selectedLanguage].es.work
-                    : myData?.data[selectedLanguage].en.work
+                    ? myData?.data[selectedLanguage].es.skills
+                    : myData?.data[selectedLanguage].en.skills
                 }
               />
             </Route>

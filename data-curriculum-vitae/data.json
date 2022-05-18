@@ -49,6 +49,68 @@
           "DescriptionLargeModal": "Proin dictum eros non eros aliquet, non accumsan arcu maximus. Sed eu pellentesque turpisProin dictum eros non eros aliquet, non accumsan arcu maximus. Sed eu pellentesque turpisProin dictum eros non eros aliquet, non accumsan arcu maximus. Sed eu pellentesque turpisProin dictum eros non eros aliquet, non accumsan arcu maximus. Sed eu pellentesque turpisProin dictum eros non eros aliquet, non accumsan arcu maximus. Sed eu pellentesque turpis",
           "urlVideoProfile": "https://www.youtube.com/watch?v=ug50zmP9I7s"
         },
+        "skills": [
+          {
+            "image": "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg",
+            "porcentus": 50,
+            "title": "JavaScript"
+          },
+          {
+            "image": "https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg",
+            "porcentus": 50,
+            "title": "Typescript"
+          },
+          {
+            "image": "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg",
+            "porcentus": 50,
+            "title": "React"
+          },
+          {
+            "image": "https://raw.githubusercontent.com/devicons/devicon/master/icons/materialui/materialui-original.svg",
+            "porcentus": 50,
+            "title": "Material UI"
+          },
+          {
+            "image": "https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg",
+            "porcentus": 50,
+            "title": "Redux"
+          },
+          {
+            "image": "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-plain-wordmark.svg",
+            "porcentus": 50,
+            "title": "CSS3"
+          },
+          {
+            "image": "https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg",
+            "porcentus": 50,
+            "title": "HTML5"
+          },
+          {
+            "image": "https://raw.githubusercontent.com/devicons/devicon/master/icons/firebase/firebase-plain-wordmark.svg",
+            "porcentus": 50,
+            "title": "Firebase"
+          },
+          {
+            "image": "https://raw.githubusercontent.com/devicons/devicon/master/icons/nextjs/nextjs-original.svg",
+            "porcentus": 50,
+            "title": "Nextjs"
+          },
+          {
+            "image": "https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg",
+            "porcentus": 50,
+            "title": "MySQL"
+          },
+          {
+            "image": "https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg",
+            "porcentus": 50,
+            "title": "NodeJS"
+          },
+          {
+            "image": "https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original-wordmark.svg",
+            "porcentus": 50,
+            "title": "Git"
+          }
+        ],
         "dataUserMenu": {
           "userImage": "https://avatars3.githubusercontent.com/u/31748119?s=460&amp;u=5b533fd135904b8b25951011a0c3da20fe15b413&amp;v=4",
           "facebook": "https://github.com/edisonAlbaSarmiento",
@@ -107,6 +169,68 @@
           "DescriptionLargeModal": "la globalización solamente como un proceso económico, tiene también implicaciones sociales y culturalela globalización solamente como un proceso económico, tiene también implicaciones sociales y culturalela globalización solamente como un proceso económico, tiene también implicaciones sociales y culturalela globalización solamente como un proceso económico, tiene también implicaciones sociales y culturalela globalización solamente como un proceso económico, tiene también implicaciones sociales y culturale",
           "urlVideoProfile": "https://www.youtube.com/watch?v=ug50zmP9I7s"
         },
+        "skills": [
+          {
+            "image": "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg",
+            "porcentus": 50,
+            "title": "JavaScript"
+          },
+          {
+            "image": "https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg",
+            "porcentus": 50,
+            "title": "Typescript"
+          },
+          {
+            "image": "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg",
+            "porcentus": 50,
+            "title": "React"
+          },
+          {
+            "image": "https://raw.githubusercontent.com/devicons/devicon/master/icons/materialui/materialui-original.svg",
+            "porcentus": 50,
+            "title": "Material UI"
+          },
+          {
+            "image": "https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg",
+            "porcentus": 50,
+            "title": "Redux"
+          },
+          {
+            "image": "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-plain-wordmark.svg",
+            "porcentus": 50,
+            "title": "CSS3"
+          },
+          {
+            "image": "https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg",
+            "porcentus": 50,
+            "title": "HTML5"
+          },
+          {
+            "image": "https://raw.githubusercontent.com/devicons/devicon/master/icons/firebase/firebase-plain-wordmark.svg",
+            "porcentus": 50,
+            "title": "Firebase"
+          },
+          {
+            "image": "https://raw.githubusercontent.com/devicons/devicon/master/icons/nextjs/nextjs-original.svg",
+            "porcentus": 50,
+            "title": "Nextjs"
+          },
+          {
+            "image": "https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg",
+            "porcentus": 50,
+            "title": "MySQL"
+          },
+          {
+            "image": "https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg",
+            "porcentus": 50,
+            "title": "NodeJS"
+          },
+          {
+            "image": "https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original-wordmark.svg",
+            "porcentus": 50,
+            "title": "Git"
+          }
+        ],
         "dataUserMenu": {
           "userImage": "https://avatars3.githubusercontent.com/u/31748119?s=460&amp;u=5b533fd135904b8b25951011a0c3da20fe15b413&amp;v=4",
           "facebook": "https://github.com/edisonAlbaSarmiento",
