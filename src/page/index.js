@@ -1,5 +1,5 @@
 /* eslint-disable react/jsx-filename-extension */
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Pulsate } from "styled-loaders-react";
 import { Switch, Route } from "react-router-dom";
 import {
@@ -17,11 +17,49 @@ import { ContainerMenu, ContentBody } from "./styles";
 import UserGetData from "../hooks/data";
 
 function Page() {
-  const myData = UserGetData();
+  const { myData, errorMessage } = UserGetData();
   const [section, setSection] = useState("");
   const [selectedLanguage, setLanguage] = useState(0);
   const [activeMenu, setStateactiveMenu] = useState(false);
   const [showPageNotFound, setShowPageNotFound] = useState(false);
+  const [dataMenuState, setDataUserMenu] = useState(null);
+  const [dataAboutState, setDataAbout] = useState(null);
+  const [dataSkillsState, setDataSkills] = useState(null);
+  const [dataWorkState, setDataWork] = useState(null);
+  const [dataLabsState, setDataLabs] = useState(null);
+
+  const _getData = () => {
+    switch (selectedLanguage) {
+      case selectedLanguage === 1:
+        setDataUserMenu(myData?.data[selectedLanguage].es.dataUserMenu);
+        setDataAbout(myData?.data[selectedLanguage].es.about);
+        setDataSkills(myData?.data[selectedLanguage].es.skills);
+        setDataWork(myData?.data[selectedLanguage].es.work);
+        setDataLabs(myData?.data[selectedLanguage].es.labs);
+        break;
+      case selectedLanguage === 2:
+        setDataUserMenu(myData?.data[selectedLanguage].en.dataUserMenu);
+        setDataAbout(myData?.data[selectedLanguage].en.about);
+        setDataSkills(myData?.data[selectedLanguage].en.skills);
+        setDataWork(myData?.data[selectedLanguage].en.work);
+        setDataLabs(myData?.data[selectedLanguage].en.labs);
+        break;
+      default:
+        break;
+    }
+  };
+  useEffect(() => {
+    _getData();
+  }, [_getData]);
+
+  if (errorMessage) {
+    return (
+      <NoMatch
+        setShowPageNotFound={setShowPageNotFound}
+        selectedLanguage={selectedLanguage}
+      />
+    );
+  }
 
   return myData.length === 0 ? (
     <Pulsate color="white" size="100px" duration="5s" />
@@ -46,11 +84,7 @@ function Page() {
                 setSection={setSection}
                 activeMenu={activeMenu}
                 setStateactiveMenu={setStateactiveMenu}
-                dataMenu={
-                  selectedLanguage === 1
-                    ? myData.data[selectedLanguage].es.dataUserMenu
-                    : myData.data[selectedLanguage].en.dataUserMenu
-                }
+                dataMenu={dataMenuState}
               />
             </ContainerMenu>
           </div>
@@ -63,57 +97,38 @@ function Page() {
                 <ContainerAbout
                   setSection={setSection}
                   selectedLanguage={selectedLanguage}
-                  dataAbout={
-                    selectedLanguage === 1
-                      ? myData?.data[selectedLanguage].es.about
-                      : myData?.data[selectedLanguage].en.about
-                  }
+                  dataAbout={dataAboutState}
                 />
               </Route>
             )}
             <Route exact path="/skills">
               <ContainerSkills
                 selectedLanguage={selectedLanguage}
-                dataSkills={
-                  selectedLanguage === 1
-                    ? myData?.data[selectedLanguage].es.skills
-                    : myData?.data[selectedLanguage].en.skills
-                }
+                dataSkills={dataSkillsState}
               />
             </Route>
             <Route exact path="/work">
               <ContainerWork
                 selectedLanguage={selectedLanguage}
-                dataWork={
-                  selectedLanguage === 1
-                    ? myData?.data[selectedLanguage].es.work
-                    : myData?.data[selectedLanguage].en.work
-                }
+                dataWork={dataWorkState}
+              />
+            </Route>
+            <Route path="/work/:id" exact strict>
+              <ContainerDetail
+                selectedLanguage={selectedLanguage}
+                dataWork={dataWorkState}
               />
             </Route>
             <Route exact path="/labs">
               <Lab
                 selectedLanguage={selectedLanguage}
-                dataLabs={
-                  selectedLanguage === 1
-                    ? myData?.data[selectedLanguage].es.labs
-                    : myData?.data[selectedLanguage].en.labs
-                }
+                dataLabs={dataLabsState}
               />
             </Route>
             <Route exact path="/contact">
               <Contact selectedLanguage={selectedLanguage} />
             </Route>
-            <Route path="/work/:id" exact strict>
-              <ContainerDetail
-                selectedLanguage={selectedLanguage}
-                dataWork={
-                  selectedLanguage === 1
-                    ? myData?.data[selectedLanguage].es.work
-                    : myData?.data[selectedLanguage].en.work
-                }
-              />
-            </Route>
+
             <Route>
               <NoMatch
                 setShowPageNotFound={setShowPageNotFound}

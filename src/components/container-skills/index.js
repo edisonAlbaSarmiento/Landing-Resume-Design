@@ -14,11 +14,11 @@ import {
   ContainerDescription,
   ContainerText,
   TextPrimary,
-  TextSecond,
+  // TextSecond,
   // TextThree,
   // ContainerModal
 } from "./styles";
-import CustomizedDialogs from "../modal";
+// import CustomizedDialogs from "../modal";
 
 function ContainerSkills({ dataSkills, selectedLanguage }) {
   const [activeButton, setActivButton] = useState(false);
