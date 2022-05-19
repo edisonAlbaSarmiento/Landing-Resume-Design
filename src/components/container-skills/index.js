@@ -20,7 +20,7 @@ import {
 } from "./styles";
 import CustomizedDialogs from "../modal";
 
-function ContainerSkills({ dataLabs, selectedLanguage }) {
+function ContainerSkills({ dataSkills, selectedLanguage }) {
   const [activeButton, setActivButton] = useState(false);
   const changeState = (item) => {
     console.log("ENTRO EDI", item);
@@ -36,18 +36,18 @@ function ContainerSkills({ dataLabs, selectedLanguage }) {
         </ContainerTitle>
       </ContainerHeader>
       <ContainerCards>
-        {console.log("dataLabs", dataLabs)}
+        {console.log("dataSkills", dataSkills)}
 
-        {dataLabs &&
-          dataLabs.map((item, index) => (
-            <ContainerChildren onClick={() => changeState(item)}>
+        {dataSkills &&
+          dataSkills.map((item, index) => (
+            <ContainerChildren onClick={() => changeState(item)} key={index}>
               {console.log("index", index)}
 
               <ContainerDescription>
-                <ImageContainer src={`${item.imageLabs}`} />
+                <ImageContainer src={`${item.image}`} title={`${item.title}`} />
                 <ContainerText>
                   <TextPrimary>{item.title}</TextPrimary>
-                  <TextSecond>{item.description}</TextSecond>
+                  {/* <TextSecond>{item.description}</TextSecond> */}
                   {/*
                                   <ContainerModal>
 
@@ -59,7 +59,7 @@ function ContainerSkills({ dataLabs, selectedLanguage }) {
                                   </ContainerModal>
 
                   */}
-                  <CustomizedDialogs
+                  {/* <CustomizedDialogs
                     // itemId={index}
                     title="edde"
                     activeButton={activeButton}
@@ -68,7 +68,7 @@ function ContainerSkills({ dataLabs, selectedLanguage }) {
                   >
                     {console.log("ENTRO EDI2", activeButton)}
                     DENTro
-                  </CustomizedDialogs>
+                  </CustomizedDialogs> */}
                 </ContainerText>
               </ContainerDescription>
             </ContainerChildren>
@@ -79,7 +79,7 @@ function ContainerSkills({ dataLabs, selectedLanguage }) {
 }
 
 ContainerSkills.propTypes = {
-  dataLabs: PropTypes.objectOf.isRequired,
+  dataSkills: PropTypes.objectOf.isRequired,
   selectedLanguage: PropTypes.string.isRequired,
 };
 

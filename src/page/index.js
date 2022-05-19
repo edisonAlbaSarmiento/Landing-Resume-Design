@@ -74,7 +74,7 @@ function Page() {
             <Route exact path="/skills">
               <ContainerSkills
                 selectedLanguage={selectedLanguage}
-                dataLabs={
+                dataSkills={
                   selectedLanguage === 1
                     ? myData?.data[selectedLanguage].es.skills
                     : myData?.data[selectedLanguage].en.skills

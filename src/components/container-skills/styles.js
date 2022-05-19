@@ -1,7 +1,7 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Container = styled.div`
-  background-color: ${props => props.theme.color.purple};
+  background-color: ${(props) => props.theme.color.purple};
 `;
 
 export const ContainerHeader = styled.div`
@@ -10,26 +10,24 @@ export const ContainerHeader = styled.div`
   padding: 3%;
 `;
 
-export const ContainerTitle = styled.div`
-
-`;
+export const ContainerTitle = styled.div``;
 
 export const Title = styled.h2`
   font-size: 20px;
-  color: ${props => props.theme.color.white};
+  color: ${(props) => props.theme.color.white};
   width: 100%;
   height: 2px;
-`
+`;
 
 export const Line = styled.hr`
-  background-color: ${props => props.theme.color.pink};
+  background-color: ${(props) => props.theme.color.pink};
   height: 1px;
   width: 100%;
   border: 0;
   float: left;
 `;
 
-export const ContainerCards= styled.div`
+export const ContainerCards = styled.div`
   width: 100%;
   display: flex;
   flex-flow: wrap;
@@ -37,7 +35,7 @@ export const ContainerCards= styled.div`
 
 export const ContainerChildren = styled.div`
   background-color: #281b37;
-  width: 44%;
+  width: 14%;
   text-align: center;
   margin: 1%;
   padding: 2%;
@@ -48,15 +46,16 @@ export const ContainerChildren = styled.div`
     background-color: #4e3283;
     margin-top: -10px;
     transition: 1s;
+    padding: 2%;
   }
   @media (max-width: 768px) {
-    width: 100%;
+    width: 43%;
   }
 `;
 
 export const ImageContainer = styled.img`
-  width: 100%;
-  height: 100%;
+  width: 100px;
+  height: 100px;
 `;
 
 export const ContainerDescription = styled.div`
@@ -85,15 +84,18 @@ export const TextSecond = styled.span`
 `;
 
 export const TextThree = styled.span`
-  color: ${props => props.theme.color.pink};
+  color: ${(props) => props.theme.color.pink};
   text-align: left;
   padding-top: 2%;
   font-size: 13px;
   cursor: pointer;
-`
+`;
 export const ContainerModal = styled.div`
   width: 50%;
-  background-color: ${props => props.activeButton === 2 ? props.theme.color.pink : props.theme.color.grayDisabled};
+  background-color: ${(props) =>
+    props.activeButton === 2
+      ? props.theme.color.pink
+      : props.theme.color.grayDisabled};
   border: none;
   margin-left: 10%;
   outline: none;
