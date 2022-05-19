@@ -60,13 +60,13 @@ function Lab({ dataLabs, selectedLanguage }) {
                   <CustomizedDialogs
                     key={item.title}
                     // itemId={index}
-                    title="edde"
+                    title={selectedLanguage === 0 ? "Detail" : "Detalle"}
                     activeButton={activeButton}
                     selectedLanguage={selectedLanguage}
                     onClickActive={changeState}
                   >
                     {console.log("ENTRO EDI2", activeButton)}
-                    DENTro
+                    Contain
                   </CustomizedDialogs>
                 </ContainerText>
               </ContainerDescription>
