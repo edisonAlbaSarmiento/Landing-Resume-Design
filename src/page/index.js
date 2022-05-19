@@ -1,5 +1,4 @@
-/* eslint-disable react/jsx-filename-extension */
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import { Pulsate } from "styled-loaders-react";
 import { Switch, Route } from "react-router-dom";
 import {
@@ -28,7 +27,7 @@ function Page() {
   const [dataWorkState, setDataWork] = useState(null);
   const [dataLabsState, setDataLabs] = useState(null);
 
-  const _getData = () => {
+  const _getData = useCallback(() => {
     switch (selectedLanguage) {
       case selectedLanguage === 1:
         setDataUserMenu(myData?.data[selectedLanguage].es.dataUserMenu);
@@ -47,7 +46,8 @@ function Page() {
       default:
         break;
     }
-  };
+  }, [selectedLanguage, myData]);
+
   useEffect(() => {
     _getData();
   }, [_getData]);
