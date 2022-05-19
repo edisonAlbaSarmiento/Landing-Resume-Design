@@ -1,9 +1,9 @@
-import styled from 'styled-components';
-import { bounceInRight } from 'react-animations';
-import { animation } from '../../utils';
+import styled from "styled-components";
+import { bounceInRight } from "react-animations";
+import { animation } from "../../utils";
 
 export const Container = styled.div`
-  background-color: ${props => props.theme.color.purple};
+  background-color: ${(props) => props.theme.color.purple};
 `;
 
 export const ContainerHeader = styled.div`
@@ -12,30 +12,28 @@ export const ContainerHeader = styled.div`
   padding: 3%;
 `;
 
-export const ContainerTitle = styled.div`
-
-`;
+export const ContainerTitle = styled.div``;
 
 export const Title = styled.h2`
   font-size: 20px;
-  color: ${props => props.theme.color.white};
+  color: ${(props) => props.theme.color.white};
   width: 100%;
   height: 2px;
-`
+`;
 
 export const ContainerIcons = styled.div`
   display: flex;
 `;
 
 export const Line = styled.hr`
-  background-color: ${props => props.theme.color.pink};
+  background-color: ${(props) => props.theme.color.pink};
   height: 1px;
   width: 100%;
   border: 0;
   float: left;
 `;
 
-export const ContainerCards= styled.div`
+export const ContainerCards = styled.div`
   width: 100%;
   display: flex;
   flex-flow: wrap;
@@ -44,7 +42,7 @@ export const ContainerCards= styled.div`
 
 export const ContainerChildren = styled.div`
   background-color: #281b37;
-  width: 30%;
+  width: 15%;
   text-align: center;
   margin: 1%;
   height: 0%;
@@ -57,7 +55,7 @@ export const ContainerChildren = styled.div`
     transition: 1s;
   }
   @media (max-width: 768px) {
-    width: 100%;
+    width: 43%;
     margin: 2%;
   }
 `;

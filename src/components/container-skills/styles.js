@@ -46,7 +46,6 @@ export const ContainerChildren = styled.div`
     background-color: #4e3283;
     margin-top: -10px;
     transition: 1s;
-    padding: 2%;
   }
   @media (max-width: 768px) {
     width: 43%;
