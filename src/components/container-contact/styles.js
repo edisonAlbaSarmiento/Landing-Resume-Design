@@ -1,37 +1,37 @@
-import styled from 'styled-components';
-import { bounceInRight } from 'react-animations';
-import { animation } from '../../utils';
+import styled from "styled-components";
+import { bounceInRight } from "react-animations";
+import { animation } from "../../utils";
 
 export const Form = styled.form``;
 
 export const Container = styled.div`
-  background-color: ${props => props.theme.color.purple};
+  background-color: ${(props) => props.theme.color.purple};
 `;
 
 export const ContainerHeader = styled.div`
   display: flex;
   justify-content: space-between;
-  padding: 0px 0px 0px 2%;
+  padding: 3%;
 `;
 
 export const ContainerTitle = styled.div``;
 
 export const Title = styled.h2`
   font-size: 20px;
-  color: ${props => props.theme.color.white};
+  color: ${(props) => props.theme.color.white};
   width: 100%;
   height: 2px;
-`
+`;
 
 export const Line = styled.hr`
-  background-color: ${props => props.theme.color.pink};
+  background-color: ${(props) => props.theme.color.pink};
   height: 1px;
   width: 100%;
   border: 0;
   float: left;
 `;
 
-export const ContainerCards= styled.div`
+export const ContainerCards = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -86,7 +86,7 @@ export const ContaninerButton = styled.div`
 
 export const ButtonSubmit = styled.button`
   width: 26%;
-  background-color: ${props => props.theme.color.pink};
+  background-color: ${(props) => props.theme.color.pink};
   border: none;
   outline: none;
   cursor: pointer;
@@ -98,12 +98,10 @@ export const ButtonSubmit = styled.button`
 
 export const TextButton = styled.p`
   font-size: 15px;
-  color: ${props => props.theme.color.white};
-`
-
-export const ContinerError = styled.div`
-
+  color: ${(props) => props.theme.color.white};
 `;
+
+export const ContinerError = styled.div``;
 export const TextError = styled.p`
   margin: 2px 0px 4px 8px;
   color: red;

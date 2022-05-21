@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import { bounceInRight } from "react-animations";
+import { animation } from "../../utils";
 
 export const Container = styled.div`
   background-color: ${(props) => props.theme.color.purple};
@@ -31,6 +33,7 @@ export const ContainerCards = styled.div`
   width: 100%;
   display: flex;
   flex-flow: wrap;
+  animation: 1s ${animation(bounceInRight)};
 `;
 
 export const ContainerChildren = styled.div`
