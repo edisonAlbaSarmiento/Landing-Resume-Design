@@ -31,31 +31,23 @@ function Page() {
   const [dataLabsState, setDataLabs] = useState([]);
 
   const _getData = useCallback(() => {
-    console.log("myData 1", myData);
-
     if (myData?.data?.length > 0) {
-      console.log("myData eNTRO2", myData?.data[selectedLanguage]);
       switch (selectedLanguage) {
-        case selectedLanguage === 1:
+        case 0:
+          setDataUserMenu(myData?.data[selectedLanguage].en.dataUserMenu);
+          setDataAbout(myData?.data[selectedLanguage].en.about);
+          setDataSkills(myData?.data[selectedLanguage].en.skills);
+          setDataWork(myData?.data[selectedLanguage].en.work);
+          setDataLabs(myData?.data[selectedLanguage].en.labs);
+          break;
+        case 1:
           setDataUserMenu(myData?.data[selectedLanguage].es.dataUserMenu);
           setDataAbout(myData?.data[selectedLanguage].es.about);
           setDataSkills(myData?.data[selectedLanguage].es.skills);
           setDataWork(myData?.data[selectedLanguage].es.work);
           setDataLabs(myData?.data[selectedLanguage].es.labs);
           break;
-        // case selectedLanguage === 1:
-        //   setDataUserMenu(myData?.data[selectedLanguage].es.dataUserMenu);
-        //   setDataAbout(myData?.data[selectedLanguage].es.about);
-        //   setDataSkills(myData?.data[selectedLanguage].es.skills);
-        //   setDataWork(myData?.data[selectedLanguage].es.work);
-        //   setDataLabs(myData?.data[selectedLanguage].es.labs);
-        //   break;
         default:
-          setDataUserMenu(myData?.data[selectedLanguage].en.dataUserMenu);
-          setDataAbout(myData?.data[selectedLanguage].en.about);
-          setDataSkills(myData?.data[selectedLanguage].en.skills);
-          setDataWork(myData?.data[selectedLanguage].en.work);
-          setDataLabs(myData?.data[selectedLanguage].en.labs);
           break;
       }
     }
