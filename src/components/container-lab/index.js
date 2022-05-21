@@ -38,14 +38,14 @@ function Lab({ dataLabs, selectedLanguage }) {
       <ContainerCards>
         {dataLabs &&
           dataLabs.map((item, index) => (
-            <ContainerChildren key={item.title}>
+            <ContainerChildren key={item?.title}>
               {console.log("index", index)}
 
               <ContainerDescription>
-                <ImageContainer src={`${item.imageLabs}`} />
+                <ImageContainer src={`${item?.imageLabs}`} />
                 <ContainerText>
-                  <TextPrimary>{item.title}</TextPrimary>
-                  <TextSecond>{item.description}</TextSecond>
+                  <TextPrimary>{item?.title}</TextPrimary>
+                  <TextSecond>{item?.description}</TextSecond>
                   {/*
                                   <ContainerModal>
 
@@ -58,7 +58,7 @@ function Lab({ dataLabs, selectedLanguage }) {
 
                   */}
                   <CustomizedDialogs
-                    key={item.title}
+                    key={item?.title}
                     // itemId={index}
                     title={selectedLanguage === 0 ? "Detail" : "Detalle"}
                     activeButton={activeButton}
@@ -77,9 +77,13 @@ function Lab({ dataLabs, selectedLanguage }) {
   );
 }
 
+Lab.defaultProps = {
+  dataLabs: [],
+};
+
 Lab.propTypes = {
-  dataLabs: PropTypes.objectOf.isRequired,
-  selectedLanguage: PropTypes.string.isRequired,
+  dataLabs: PropTypes.array.isRequired,
+  selectedLanguage: PropTypes.number.isRequired,
 };
 
 export default Lab;

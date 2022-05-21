@@ -17,35 +17,49 @@ import UserGetData from "../hooks/data";
 
 function Page() {
   const { myData, errorMessage } = UserGetData();
+  console.log("myData", myData);
+  console.log("errorMessage", errorMessage);
+
   const [section, setSection] = useState("");
   const [selectedLanguage, setLanguage] = useState(0);
   const [activeMenu, setStateactiveMenu] = useState(false);
   const [showPageNotFound, setShowPageNotFound] = useState(false);
   const [dataMenuState, setDataUserMenu] = useState(null);
   const [dataAboutState, setDataAbout] = useState(null);
-  const [dataSkillsState, setDataSkills] = useState(null);
-  const [dataWorkState, setDataWork] = useState(null);
-  const [dataLabsState, setDataLabs] = useState(null);
+  const [dataSkillsState, setDataSkills] = useState([]);
+  const [dataWorkState, setDataWork] = useState([]);
+  const [dataLabsState, setDataLabs] = useState([]);
 
   const _getData = useCallback(() => {
-    switch (selectedLanguage) {
-      case selectedLanguage === 1:
-        setDataUserMenu(myData?.data[selectedLanguage].es.dataUserMenu);
-        setDataAbout(myData?.data[selectedLanguage].es.about);
-        setDataSkills(myData?.data[selectedLanguage].es.skills);
-        setDataWork(myData?.data[selectedLanguage].es.work);
-        setDataLabs(myData?.data[selectedLanguage].es.labs);
-        break;
-      case selectedLanguage === 2:
-        setDataUserMenu(myData?.data[selectedLanguage].en.dataUserMenu);
-        setDataAbout(myData?.data[selectedLanguage].en.about);
-        setDataSkills(myData?.data[selectedLanguage].en.skills);
-        setDataWork(myData?.data[selectedLanguage].en.work);
-        setDataLabs(myData?.data[selectedLanguage].en.labs);
-        break;
-      default:
-        break;
+    console.log("myData 1", myData);
+
+    if (myData?.data?.length > 0) {
+      console.log("myData eNTRO2", myData?.data[selectedLanguage]);
+      switch (selectedLanguage) {
+        case selectedLanguage === 1:
+          setDataUserMenu(myData?.data[selectedLanguage].es.dataUserMenu);
+          setDataAbout(myData?.data[selectedLanguage].es.about);
+          setDataSkills(myData?.data[selectedLanguage].es.skills);
+          setDataWork(myData?.data[selectedLanguage].es.work);
+          setDataLabs(myData?.data[selectedLanguage].es.labs);
+          break;
+        // case selectedLanguage === 1:
+        //   setDataUserMenu(myData?.data[selectedLanguage].es.dataUserMenu);
+        //   setDataAbout(myData?.data[selectedLanguage].es.about);
+        //   setDataSkills(myData?.data[selectedLanguage].es.skills);
+        //   setDataWork(myData?.data[selectedLanguage].es.work);
+        //   setDataLabs(myData?.data[selectedLanguage].es.labs);
+        //   break;
+        default:
+          setDataUserMenu(myData?.data[selectedLanguage].en.dataUserMenu);
+          setDataAbout(myData?.data[selectedLanguage].en.about);
+          setDataSkills(myData?.data[selectedLanguage].en.skills);
+          setDataWork(myData?.data[selectedLanguage].en.work);
+          setDataLabs(myData?.data[selectedLanguage].en.labs);
+          break;
+      }
     }
+    console.log(selectedLanguage);
   }, [selectedLanguage, myData]);
 
   useEffect(() => {
@@ -60,6 +74,13 @@ function Page() {
       />
     );
   }
+  console.info("dataLabsState", [
+    dataLabsState,
+    dataWorkState,
+    dataSkillsState,
+    dataAboutState,
+    dataMenuState,
+  ]);
 
   return myData.length === 0 ? (
     <Pulsate color="white" size="100px" duration="5s" />

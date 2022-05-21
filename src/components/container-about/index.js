@@ -40,11 +40,11 @@ function About({ dataAbout, selectedLanguage, setSection }) {
       <ContainerCards>
         <ContainerText>
           <Card>
-            <TitleName>{dataAbout.userName}.</TitleName>
-            <SubTitle>{dataAbout.position}</SubTitle>
+            <TitleName>{dataAbout?.userName}.</TitleName>
+            <SubTitle>{dataAbout?.position}</SubTitle>
           </Card>
           <CardSubTilte>
-            <TextDescription>{dataAbout.jobDescriptionShort}</TextDescription>
+            <TextDescription>{dataAbout?.jobDescriptionShort}</TextDescription>
           </CardSubTilte>
           <ContainerButtons>
             <ContentButtons>
@@ -77,11 +77,11 @@ function About({ dataAbout, selectedLanguage, setSection }) {
                   selectedLanguage={selectedLanguage}
                 >
                   <Typography gutterBottom>
-                    {dataAbout.DescriptionLargeModal}
+                    {dataAbout?.DescriptionLargeModal}
                   </Typography>
                   <ReactPlayer
                     width="100%"
-                    url={`${dataAbout.urlVideoProfile}`}
+                    url={`${dataAbout?.urlVideoProfile}`}
                   />
                 </CustomizedDialogs>
               </ButtonKnow>
@@ -107,8 +107,8 @@ function About({ dataAbout, selectedLanguage, setSection }) {
 }
 
 About.propTypes = {
-  dataAbout: PropTypes.objectOf.isRequired,
-  selectedLanguage: PropTypes.string.isRequired,
+  dataAbout: PropTypes.any,
+  selectedLanguage: PropTypes.number.isRequired,
   setSection: PropTypes.func.isRequired,
 };
 export default About;

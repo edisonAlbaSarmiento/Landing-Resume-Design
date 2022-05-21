@@ -6,7 +6,6 @@ import Search from "@material-ui/icons/Search";
 import IconButton from "@material-ui/core/IconButton";
 import Tooltip from "@material-ui/core/Tooltip";
 import CloseIcon from "@material-ui/icons/Close";
-import { Link } from "react-router-dom";
 import {
   Title,
   Container,
@@ -21,6 +20,7 @@ import {
   LinkShare,
   InputFilter,
   ContainerText,
+  LinkButtom,
 } from "./styles";
 
 function Work({ dataWork, selectedLanguage }) {
@@ -35,8 +35,8 @@ function Work({ dataWork, selectedLanguage }) {
   useEffect(() => {
     console.log("HOLA");
     async function getData() {
-      const results = await dataWork.filter((item) =>
-        item.description.toLowerCase().includes(searchTerm)
+      const results = await dataWork?.filter((item) =>
+        item?.description.toLowerCase().includes(searchTerm)
       );
       console.log("results", results);
 
@@ -94,14 +94,14 @@ function Work({ dataWork, selectedLanguage }) {
       <ContainerCards>
         {searchResults.length > 0 ? (
           searchResults.map((item, index) => (
-            // <ContainerChildren onClick={() => {window.open(`${item.urlWork}`)}}>
-            <ContainerChildren>
-              <Link to={`/work/${index}`}>
-                <ImageContainer src={`${item.imageWork}`} />
+            // <ContainerChildren onClick={() => {window.open(`${item?.urlWork}`)}}>
+            <ContainerChildren key={index}>
+              <LinkButtom to={`/work/${index}`}>
+                <ImageContainer src={`${item?.imageWork}`} />
                 <ContainerText>
-                  <TextImage>{item.description}</TextImage>
+                  <TextImage>{item?.description}</TextImage>
                 </ContainerText>
-              </Link>
+              </LinkButtom>
             </ContainerChildren>
           ))
         ) : (
@@ -115,8 +115,8 @@ function Work({ dataWork, selectedLanguage }) {
 }
 
 Work.propTypes = {
-  dataWork: PropTypes.objectOf.isRequired,
-  selectedLanguage: PropTypes.string.isRequired,
+  dataWork: PropTypes.array.isRequired,
+  selectedLanguage: PropTypes.number.isRequired,
 };
 
 export default Work;

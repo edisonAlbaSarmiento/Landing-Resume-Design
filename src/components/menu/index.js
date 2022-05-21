@@ -97,7 +97,7 @@ function Menu({
       </ContainerMenuBurger>
       <Container activeMenu={activeMenu}>
         <ContainerImage>
-          <ImageProfile src={`${dataMenu.userImage}`} />
+          <ImageProfile src={`${dataMenu?.userImage}`} />
         </ContainerImage>
         <ContainerButtons>
           <Link to="/">
@@ -206,12 +206,16 @@ function Menu({
   );
 }
 
+Menu.defaultProps = {
+  dataMenu: {},
+};
+
 Menu.propTypes = {
-  dataMenu: PropTypes.objectOf.isRequired,
+  dataMenu: PropTypes.any,
   section: PropTypes.string.isRequired,
   setSection: PropTypes.func.isRequired,
   setLanguage: PropTypes.func.isRequired,
-  selectedLanguage: PropTypes.string.isRequired,
+  selectedLanguage: PropTypes.number.isRequired,
 };
 
 export default Menu;

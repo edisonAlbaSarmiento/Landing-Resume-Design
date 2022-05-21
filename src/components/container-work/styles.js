@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { bounceInRight } from "react-animations";
 import { animation } from "../../utils";
+import { Link } from "react-router-dom";
 
 export const Container = styled.div`
   background-color: ${(props) => props.theme.color.purple};
@@ -81,3 +82,7 @@ export const InputFilter = styled.input`
 `;
 
 export const ContainerText = styled.div``;
+
+export const LinkButtom = styled(Link)`
+  text-decoration: none;
+`;

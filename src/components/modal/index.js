@@ -1,24 +1,21 @@
 /* eslint-disable react/jsx-props-no-spreading */
-import React from 'react';
-import { withStyles } from '@material-ui/core/styles';
-import Button from '@material-ui/core/Button';
-import Dialog from '@material-ui/core/Dialog';
-import MuiDialogTitle from '@material-ui/core/DialogTitle';
-import MuiDialogContent from '@material-ui/core/DialogContent';
-import MuiDialogActions from '@material-ui/core/DialogActions';
-import PropTypes from 'prop-types';
-import Typography from '@material-ui/core/Typography';
-import {
-  ButtonOpen,
-  TextButton,
-} from './style';
+import React from "react";
+import { withStyles } from "@material-ui/core/styles";
+import Button from "@material-ui/core/Button";
+import Dialog from "@material-ui/core/Dialog";
+import MuiDialogTitle from "@material-ui/core/DialogTitle";
+import MuiDialogContent from "@material-ui/core/DialogContent";
+import MuiDialogActions from "@material-ui/core/DialogActions";
+import PropTypes from "prop-types";
+import Typography from "@material-ui/core/Typography";
+import { ButtonOpen, TextButton } from "./style";
 
 const styles = (theme) => ({
   root: {
     margin: 0,
     padding: theme.spacing(2),
-    backgroundColor: '#281c36',
-    color: '#ff67b6'
+    backgroundColor: "#281c36",
+    color: "#ff67b6",
   },
 });
 
@@ -35,8 +32,8 @@ const DialogTitle = withStyles(styles)((props) => {
 const DialogContent = withStyles((theme) => ({
   root: {
     padding: theme.spacing(2),
-    backgroundColor: '#241d2e',
-    color: 'white',
+    backgroundColor: "#241d2e",
+    color: "white",
   },
 }))(MuiDialogContent);
 
@@ -44,8 +41,8 @@ const DialogActions = withStyles((theme) => ({
   root: {
     margin: 0,
     padding: theme.spacing(1),
-    backgroundColor: '#281c36',
-    color: 'white',
+    backgroundColor: "#281c36",
+    color: "white",
   },
 }))(MuiDialogActions);
 
@@ -57,7 +54,7 @@ function CustomizedDialogs({
   onClickActive,
   itemId,
 }) {
-  console.log('itemId',itemId)
+  console.log("itemId", itemId);
 
   const [open, setOpen] = React.useState(false);
   const handleClickOpen = () => {
@@ -70,21 +67,23 @@ function CustomizedDialogs({
   };
   return (
     <div key={itemId}>
-      <ButtonOpen  activeButton={activeButton} onClick={handleClickOpen}>
+      <ButtonOpen activeButton={activeButton} onClick={handleClickOpen}>
         <TextButton>
-          {selectedLanguage === 0 ? 'Know more': 'Saber más'}
+          {selectedLanguage === 0 ? "Know more" : "Saber más"}
         </TextButton>
       </ButtonOpen>
-      <Dialog onClose={handleClose} aria-labelledby="customized-dialog-title" open={open}>
+      <Dialog
+        onClose={handleClose}
+        aria-labelledby="customized-dialog-title"
+        open={open}
+      >
         <DialogTitle id="customized-dialog-title" onClose={handleClose}>
           {title}
         </DialogTitle>
-        <DialogContent dividers='body'>
-          {children}
-        </DialogContent>
+        <DialogContent dividers="body">{children}</DialogContent>
         <DialogActions>
-          <Button autoFocus onClick={handleClose} style={{color: '#ff67b6'}}>
-            {selectedLanguage === 0 ? 'Read': 'Leído'}
+          <Button autoFocus onClick={handleClose} style={{ color: "#ff67b6" }}>
+            {selectedLanguage === 0 ? "Read" : "Leído"}
           </Button>
         </DialogActions>
       </Dialog>
@@ -96,15 +95,15 @@ CustomizedDialogs.defaultProps = {
   onClickActive: () => {},
   activeButton: false,
   selectedLanguage: 0,
-}
+};
 
 CustomizedDialogs.propTypes = {
-  children: PropTypes.string.isRequired,
+  children: PropTypes.any.isRequired,
   title: PropTypes.string.isRequired,
-  selectedLanguage: PropTypes.string,
+  selectedLanguage: PropTypes.number,
   activeButton: PropTypes.bool,
   onClickActive: PropTypes.func,
-  itemId: PropTypes.number.isRequired,
-}
+  itemId: PropTypes.number,
+};
 
 export default CustomizedDialogs;

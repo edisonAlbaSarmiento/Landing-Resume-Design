@@ -44,10 +44,13 @@ function ContainerSkills({ dataSkills, selectedLanguage }) {
               {console.log("index", index)}
 
               <ContainerDescription>
-                <ImageContainer src={`${item.image}`} title={`${item.title}`} />
+                <ImageContainer
+                  src={`${item?.image}`}
+                  title={`${item?.title}`}
+                />
                 <ContainerText>
-                  <TextPrimary>{item.title}</TextPrimary>
-                  {/* <TextSecond>{item.description}</TextSecond> */}
+                  <TextPrimary>{item?.title}</TextPrimary>
+                  {/* <TextSecond>{item?.description}</TextSecond> */}
                   {/*
                                   <ContainerModal>
 
@@ -79,8 +82,8 @@ function ContainerSkills({ dataSkills, selectedLanguage }) {
 }
 
 ContainerSkills.propTypes = {
-  dataSkills: PropTypes.objectOf.isRequired,
-  selectedLanguage: PropTypes.string.isRequired,
+  dataSkills: PropTypes.array.isRequired,
+  selectedLanguage: PropTypes.number.isRequired,
 };
 
 export default ContainerSkills;

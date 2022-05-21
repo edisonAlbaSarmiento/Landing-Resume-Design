@@ -67,8 +67,8 @@ function ContainerDetail({ dataRouter, dataWork }) {
 }
 
 ContainerDetail.propTypes = {
-  dataWork: PropTypes.objectOf.isRequired,
-  dataRouter: PropTypes.string.isRequired,
+  dataWork: PropTypes.array,
+  dataRouter: PropTypes.string,
 };
 
 export default ContainerDetail;
