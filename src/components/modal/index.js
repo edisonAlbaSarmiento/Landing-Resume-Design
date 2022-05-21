@@ -80,7 +80,7 @@ function CustomizedDialogs({
         <DialogTitle id="customized-dialog-title" onClose={handleClose}>
           {title}
         </DialogTitle>
-        <DialogContent dividers="body">{children}</DialogContent>
+        <DialogContent>{children}</DialogContent>
         <DialogActions>
           <Button autoFocus onClick={handleClose} style={{ color: "#ff67b6" }}>
             {selectedLanguage === 0 ? "Read" : "Leído"}

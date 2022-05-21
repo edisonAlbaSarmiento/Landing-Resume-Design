@@ -116,11 +116,13 @@ export const ButtonKnow = styled.button`
 export const TextButton = styled.p`
   font-size: 100%;
   color: ${(props) => props.theme.color.white};
+  cursor: pointer;
 `;
 export const ContentButtons = styled.div`
   display: flex;
   justify-content: initial;
   width: 100%;
+  cursor: pointer;
 `;
 
 export const ImageBackground = styled.img`
