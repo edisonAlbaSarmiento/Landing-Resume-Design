@@ -19,6 +19,8 @@ import {
   // ContainerModal
 } from "./styles";
 import CustomizedDialogs from "../modal";
+import PageNotFound from "../../images/under-construction.json";
+import Lottie from "react-lottie";
 
 function Lab({ dataLabs, selectedLanguage }) {
   const [activeButton, setActivButton] = useState(false);
@@ -27,15 +29,24 @@ function Lab({ dataLabs, selectedLanguage }) {
     setActivButton(!activeButton);
   };
 
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: PageNotFound,
+    eventListeners: false,
+  };
+
   return (
     <Container>
-      <ContainerHeader>
+      <Lottie width={"70%"} options={defaultOptions} />
+
+      {/* <ContainerHeader>
         <ContainerTitle>
           <Title>{selectedLanguage === 0 ? "Labs" : "Laboratorios"}</Title>
           <Line />
         </ContainerTitle>
-      </ContainerHeader>
-      <ContainerCards>
+      </ContainerHeader> */}
+      {/* <ContainerCards>
         {dataLabs &&
           dataLabs.map((item, index) => (
             <ContainerChildren key={item?.title}>
@@ -46,20 +57,9 @@ function Lab({ dataLabs, selectedLanguage }) {
                 <ContainerText>
                   <TextPrimary>{item?.title}</TextPrimary>
                   <TextSecond>{item?.description}</TextSecond>
-                  {/*
-                                  <ContainerModal>
 
-                   <TextThree>
-
-                    {selectedLanguage === 0 ? 'View More': 'Ver más'}
-                    <ArrowForwardIosIcon style={{ fontSize: 10 }} />
-                  </TextThree>
-                                  </ContainerModal>
-
-                  */}
                   <CustomizedDialogs
                     key={item?.title}
-                    // itemId={index}
                     title={selectedLanguage === 0 ? "Detail" : "Detalle"}
                     activeButton={activeButton}
                     selectedLanguage={selectedLanguage}
@@ -72,7 +72,7 @@ function Lab({ dataLabs, selectedLanguage }) {
               </ContainerDescription>
             </ContainerChildren>
           ))}
-      </ContainerCards>
+      </ContainerCards> */}
     </Container>
   );
 }
