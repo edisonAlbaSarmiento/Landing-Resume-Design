@@ -74,7 +74,7 @@ export const Input = styled.input`
   color: white;
   padding-left: 7px;
   @media (max-width: 768px) {
-    width: 98%;
+    width: 95%;
     margin: 3%;
     height: 39px;
   }
