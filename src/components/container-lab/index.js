@@ -38,7 +38,9 @@ function Lab({ dataLabs, selectedLanguage }) {
 
   return (
     <Container>
-      <Lottie width={"70%"} options={defaultOptions} />
+      <ContainerCards>
+        <Lottie width={"70%"} options={defaultOptions} />
+      </ContainerCards>
 
       {/* <ContainerHeader>
         <ContainerTitle>
