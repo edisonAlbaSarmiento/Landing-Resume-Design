@@ -68,7 +68,7 @@ function Work({ dataWork, selectedLanguage }) {
             <IconButton>
               <LinkShare
                 target="_blank"
-                href="https://api.whatsapp.com/send?text=Ver mi pagina https://edisonalbasarmiento.github.io/Landing-Resume-Design/"
+                href="https://api.whatsapp.com/send?text=Ver mi pagina https://edison.com.co"
                 data-action="share/whatsapp/share"
               >
                 <Share />
