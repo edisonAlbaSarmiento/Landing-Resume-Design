@@ -7,6 +7,9 @@ import IconButton from "@material-ui/core/IconButton";
 import Tooltip from "@material-ui/core/Tooltip";
 // import CloseIcon from '@material-ui/icons/Close';
 import { useParams } from "react-router-dom";
+import PageNotFound from "../../images/under-construction.json";
+import Lottie from "react-lottie";
+
 import {
   Title,
   Container,
@@ -44,11 +47,18 @@ function ContainerDetail({ dataRouter, dataWork }) {
   console.log("dataRouter DETAIL", dataRouter);
   const image = dataWork[parseInt(id, 10)];
   console.log("dataRouter image", image);
-
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: PageNotFound,
+    eventListeners: false,
+  };
   return (
     <Container>
-      <ContainerTitle>
-        <Title>{image?.description}</Title>
+      <Lottie width={"70%"} options={defaultOptions} />
+
+      {/* <ContainerTitle>
+        <Title>{image?.description}ss</Title>
         <Line />
       </ContainerTitle>
       <Tooltip title="Comparte via Whatsapp" arrow>
@@ -61,7 +71,7 @@ function ContainerDetail({ dataRouter, dataWork }) {
             <Share />
           </LinkShare>
         </IconButton>
-      </Tooltip>
+      </Tooltip> */}
     </Container>
   );
 }
