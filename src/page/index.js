@@ -149,6 +149,14 @@ function Page() {
               />
             </Route>
           </Switch>
+<amp-ad width="100vw" height="320"
+     type="adsense"
+     data-ad-client="ca-pub-6486161585821939"
+     data-ad-slot="9287564280"
+     data-auto-format="rspv"
+     data-full-width="">
+  <div overflow=""></div>
+</amp-ad>
         </ContentBody>
       </div>
     </>
