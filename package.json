@@ -28,7 +28,7 @@
     "react-lottie": "^1.2.3",
     "react-player": "^2.0.1",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "3.3.0",
+    "react-scripts": "5.0.1",
     "react-spring": "^8.0.27",
     "styled-components": "^4.4.1",
     "styled-loaders-react": "^1.1.0"
