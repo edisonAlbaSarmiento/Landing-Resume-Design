@@ -21,13 +21,15 @@
         ],
         "labs": [
           {
+            "id": 0,
             "active": false,
-            "imageLabs": "https://raw.githubusercontent.com/edisonAlbaSarmiento/Landing-Resume-Design/blob/master/images/gifs/testing.gif",
+            "imageLabs": "testing",
             "title": "Website Testing",
             "description": "Example of creating a website with native code, login with networks and filters",
             "viewMoreIn": "https://network-tests.vercel.app"
           },
           {
+            "id": 1,
             "active": false,
             "imageLabs": "https://cdn.pixabay.com/photo/2015/12/04/14/05/code-1076536_1280.jpg",
             "title": "Lab test 2",
@@ -142,10 +144,11 @@
         "labs": [
           {
             "id": 0,
-            "imageLabs": "https://cdn.pixabay.com/photo/2015/12/04/14/05/code-1076536_1280.jpg",
-            "title": "Lab testuper",
-            "description": "Curacion color plateado inspiracion de una figura",
-            "viewMoreIn": "https://github.com/edisonAlbaSarmiento"
+            "active": false,
+            "imageLabs": "testing",
+            "title": "Pruebas de sitios web",
+            "description": "Ejemplo de creación de sitio web con codigo nativo ,inicio de sesion con redes y filtros ",
+            "viewMoreIn": "https://network-tests.vercel.app"
           },
           {
             "id": 1,

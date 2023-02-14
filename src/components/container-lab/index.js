@@ -18,7 +18,7 @@ import {
 } from "./styles";
 import CustomizedDialogs from "../modal";
 import PageNotFound from "../../images/under-construction.json";
-import Lottie from "react-lottie";
+// import Lottie from "react-lottie";
 
 function Lab({ dataLabs, selectedLanguage }) {
   const [activeButton, setActivButton] = useState(false);
@@ -26,7 +26,6 @@ function Lab({ dataLabs, selectedLanguage }) {
     console.log("ENTRO EDI", item);
     setActivButton(!activeButton);
   };
-
   const defaultOptions = {
     loop: true,
     autoplay: true,
@@ -34,6 +33,10 @@ function Lab({ dataLabs, selectedLanguage }) {
     eventListeners: false,
   };
 
+  const returnImage = (item) => {
+    const image = require(`../../images/gifs/${item}.gif`);
+    return image;
+  };
   return (
     <Container>
       {/* <ContainerCards>
@@ -47,13 +50,13 @@ function Lab({ dataLabs, selectedLanguage }) {
         </ContainerTitle>
       </ContainerHeader>
       <ContainerCards>
+        {console.log("dataLabs", dataLabs)}
+
         {dataLabs &&
           dataLabs.map((item, index) => (
             <ContainerChildren key={item?.title}>
-              {console.log("index", index)}
-
               <ContainerDescription>
-                <ImageContainer src={`${item?.imageLabs}`} />
+                <ImageContainer src={returnImage(item?.image)} />
                 <ContainerText>
                   <TextPrimary>{item?.title}</TextPrimary>
                   <TextSecond>{item?.description}</TextSecond>
@@ -66,7 +69,7 @@ function Lab({ dataLabs, selectedLanguage }) {
                     onClickActive={changeState}
                   >
                     {console.log("ENTRO EDI2", activeButton)}
-                    Contain
+                    <ImageContainer src={returnImage(item?.image)} />
                   </CustomizedDialogs>
                 </ContainerText>
               </ContainerDescription>
