@@ -22,10 +22,10 @@
         "labs": [
           {
             "active": false,
-            "imageLabs": "https://cdn.pixabay.com/photo/2015/12/04/14/05/code-1076536_1280.jpg",
-            "title": "Lab test",
-            "description": "Curated color palate inspiration on your  figure  tip",
-            "viewMoreIn": "https://github.com/edisonAlbaSarmiento"
+            "imageLabs": "https://raw.githubusercontent.com/edisonAlbaSarmiento/Landing-Resume-Design/blob/master/images/gifs/testing.gif",
+            "title": "Website Testing",
+            "description": "Example of creating a website with native code, login with networks and filters",
+            "viewMoreIn": "https://network-tests.vercel.app"
           },
           {
             "active": false,

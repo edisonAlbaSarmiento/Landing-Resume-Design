@@ -74,6 +74,7 @@ function Page() {
     dataMenuState,
   ]);
 
+  console.log("dataSkillsState", dataSkillsState);
   return myData.length === 0 ? (
     <Pulsate color="white" size="100px" duration="5s" />
   ) : (
@@ -149,7 +150,6 @@ function Page() {
               />
             </Route>
           </Switch>
-
         </ContentBody>
       </div>
     </>

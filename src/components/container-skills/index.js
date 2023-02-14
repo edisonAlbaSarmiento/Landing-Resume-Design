@@ -1,7 +1,6 @@
 /* eslint-disable react/jsx-filename-extension */
 import React, { useState } from "react";
 import PropTypes from "prop-types";
-// import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
 import {
   Title,
   Container,
@@ -14,16 +13,12 @@ import {
   ContainerDescription,
   ContainerText,
   TextPrimary,
-  // TextSecond,
-  // TextThree,
-  // ContainerModal
+  TextSecond,
 } from "./styles";
-// import CustomizedDialogs from "../modal";
 
 function ContainerSkills({ dataSkills, selectedLanguage }) {
   const [activeButton, setActivButton] = useState(false);
   const changeState = (item) => {
-    console.log("ENTRO EDI", item);
     setActivButton(!activeButton);
   };
 
@@ -36,13 +31,9 @@ function ContainerSkills({ dataSkills, selectedLanguage }) {
         </ContainerTitle>
       </ContainerHeader>
       <ContainerCards>
-        {console.log("dataSkills", dataSkills)}
-
         {dataSkills &&
           dataSkills.map((item, index) => (
             <ContainerChildren onClick={() => changeState(item)} key={index}>
-              {console.log("index", index)}
-
               <ContainerDescription>
                 <ImageContainer
                   src={`${item?.image}`}
@@ -50,28 +41,7 @@ function ContainerSkills({ dataSkills, selectedLanguage }) {
                 />
                 <ContainerText>
                   <TextPrimary>{item?.title}</TextPrimary>
-                  {/* <TextSecond>{item?.description}</TextSecond> */}
-                  {/*
-                                  <ContainerModal>
-
-                   <TextThree>
-
-                    {selectedLanguage === 0 ? 'View More': 'Ver más'}
-                    <ArrowForwardIosIcon style={{ fontSize: 10 }} />
-                  </TextThree>
-                                  </ContainerModal>
-
-                  */}
-                  {/* <CustomizedDialogs
-                    // itemId={index}
-                    title="edde"
-                    activeButton={activeButton}
-                    selectedLanguage={selectedLanguage}
-                    onClickActive={changeState}
-                  >
-                    {console.log("ENTRO EDI2", activeButton)}
-                    DENTro
-                  </CustomizedDialogs> */}
+                  <TextSecond>{item?.description}</TextSecond>
                 </ContainerText>
               </ContainerDescription>
             </ContainerChildren>

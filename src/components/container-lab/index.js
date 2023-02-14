@@ -1,7 +1,5 @@
-/* eslint-disable react/jsx-filename-extension */
 import React, { useState } from "react";
 import PropTypes from "prop-types";
-// import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 import {
   Title,
   Container,
@@ -15,8 +13,8 @@ import {
   ContainerText,
   TextPrimary,
   TextSecond,
-  // TextThree,
-  // ContainerModal
+  TextThree,
+  ContainerModal,
 } from "./styles";
 import CustomizedDialogs from "../modal";
 import PageNotFound from "../../images/under-construction.json";
@@ -38,17 +36,17 @@ function Lab({ dataLabs, selectedLanguage }) {
 
   return (
     <Container>
-      <ContainerCards>
+      {/* <ContainerCards>
         <Lottie width={"70%"} options={defaultOptions} />
-      </ContainerCards>
+      </ContainerCards> */}
 
-      {/* <ContainerHeader>
+      <ContainerHeader>
         <ContainerTitle>
           <Title>{selectedLanguage === 0 ? "Labs" : "Laboratorios"}</Title>
           <Line />
         </ContainerTitle>
-      </ContainerHeader> */}
-      {/* <ContainerCards>
+      </ContainerHeader>
+      <ContainerCards>
         {dataLabs &&
           dataLabs.map((item, index) => (
             <ContainerChildren key={item?.title}>
@@ -74,7 +72,7 @@ function Lab({ dataLabs, selectedLanguage }) {
               </ContainerDescription>
             </ContainerChildren>
           ))}
-      </ContainerCards> */}
+      </ContainerCards>
     </Container>
   );
 }

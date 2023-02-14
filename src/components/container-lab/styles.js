@@ -38,7 +38,7 @@ export const ContainerCards = styled.div`
 
 export const ContainerChildren = styled.div`
   background-color: #281b37;
-  width: 14%;
+  width: 24%;
   text-align: center;
   margin: 1%;
   padding: 2%;
