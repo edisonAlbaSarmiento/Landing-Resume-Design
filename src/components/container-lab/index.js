@@ -34,6 +34,10 @@ function Lab({ dataLabs, selectedLanguage }) {
   };
 
   const returnImage = (item) => {
+    console.log("item", item);
+    if (item.includes("http")) {
+      return item;
+    }
     const image = require(`../../images/gifs/${item}.gif`);
     return image;
   };
@@ -56,7 +60,7 @@ function Lab({ dataLabs, selectedLanguage }) {
           dataLabs.map((item, index) => (
             <ContainerChildren key={item?.title}>
               <ContainerDescription>
-                <ImageContainer src={returnImage(item?.image)} />
+                <ImageContainer src={returnImage(item?.imageLabs)} />
                 <ContainerText>
                   <TextPrimary>{item?.title}</TextPrimary>
                   <TextSecond>{item?.description}</TextSecond>
@@ -69,7 +73,7 @@ function Lab({ dataLabs, selectedLanguage }) {
                     onClickActive={changeState}
                   >
                     {console.log("ENTRO EDI2", activeButton)}
-                    <ImageContainer src={returnImage(item?.image)} />
+                    <ImageContainer src={returnImage(item?.imageLabs)} />
                   </CustomizedDialogs>
                 </ContainerText>
               </ContainerDescription>
