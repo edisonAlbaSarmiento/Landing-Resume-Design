@@ -26,22 +26,101 @@
             "imageLabs": "testing",
             "title": "Website Testing",
             "description": "Example of creating a website with native code, login with networks and filters",
-            "viewMoreIn": "https://network-tests.vercel.app"
+            "redirectGithub": "https://github.com/edisonAlbaSarmiento/network-tests",
+            "viewMoreIn": "https://network-tests.vercel.app",
+            "complete": true
           },
           {
             "id": 1,
             "active": false,
-            "imageLabs": "https://cdn.pixabay.com/photo/2015/12/04/14/05/code-1076536_1280.jpg",
-            "title": "Lab test 2",
+            "imageLabs": "detailhome",
+            "title": "Website Testing API Movies",
             "description": "Curated color palate inspiration on your  figure  tip",
-            "viewMoreIn": "http://www.google.com"
+            "redirectGithub": "https://github.com/edisonAlbaSarmiento/info-landing-page",
+            "viewMoreIn": "https://info-landing-page.vercel.app/",
+            "complete": true
           },
           {
             "id": 2,
-            "imageLabs": "https://cdn.pixabay.com/photo/2018/05/08/08/44/artificial-intelligence-3382507__340.jpg",
-            "title": "Lab test 3",
+            "imageLabs": "landing",
+            "title": "Landing pixel perfect",
             "description": "Curated color palate inspiration on your  figure  tip",
-            "viewMoreIn": "http://www.google.com"
+            "redirectGithub": "https://github.com/edisonAlbaSarmiento/frontend-info-page",
+            "viewMoreIn": "https://edisonalbasarmiento.github.io/frontend-info-page/",
+            "complete": false
+          },
+          {
+            "id": 3,
+            "imageLabs": "chat",
+            "title": "Testing chat whit socket.io",
+            "description": "Curated color palate inspiration on your  figure  tip",
+            "redirectGithub": "https://github.com/edisonAlbaSarmiento/app-chat-react",
+            "viewMoreIn": "https://github.com/edisonAlbaSarmiento/app-chat-react",
+            "complete": true
+          },
+          {
+            "id": 4,
+            "imageLabs": "landingimaginamos.gif",
+            "title": "Clone page Imaginamos",
+            "description": "Create whit next js",
+            "redirectGithub": "https://github.com/edisonAlbaSarmiento/landing-page-in-next",
+            "viewMoreIn": "https://landing-page-in-next.vercel.app/",
+            "complete": false
+          },
+          {
+            "id": 5,
+            "imageLabs": "https://raw.githubusercontent.com/edisonAlbaSarmiento/Landing-Resume-Design/master/images/flutter.png",
+            "title": "Learning flutter",
+            "description": "Create app music whit flutter",
+            "redirectGithub": "https://github.com/edisonAlbaSarmiento/LearnFlutter",
+            "viewMoreIn": "https://github.com/edisonAlbaSarmiento/LearnFlutter",
+            "complete": false
+          },
+          {
+            "id": 6,
+            "imageLabs": "https://raw.githubusercontent.com/edisonAlbaSarmiento/Landing-Resume-Design/master/images/men.jpeg",
+            "title": "Chat bot whit conditions",
+            "description": "Chat create for conditions testing",
+            "redirectGithub": "https://edisonalbasarmiento.github.io/chat-bot/",
+            "viewMoreIn": "https://edisonalbasarmiento.github.io/chat-bot",
+            "complete": false
+          },
+          {
+            "id": 6,
+            "imageLabs": "proyect",
+            "title": "Project Front End for app, back and admin",
+            "description": "Project Front End for app",
+            "redirectGithub": "https://github.com/edisonAlbaSarmiento/Proyect-Front-End",
+            "viewMoreIn": "https://github.com/edisonAlbaSarmiento/Proyect-Front-End",
+            "complete": false
+          },
+          {
+            "id": 7,
+            "imageLabs": "https://raw.githubusercontent.com/edisonAlbaSarmiento/Landing-Resume-Design/master/images/men.jpeg",
+            "title": "Todo list with react and redux",
+            "description": "Todo list testing",
+            "redirectGithub": "https://github.com/edisonAlbaSarmiento/To-List-React-Redux",
+            "viewMoreIn": "https://github.com/edisonAlbaSarmiento/To-List-React-Redux",
+            "complete": false
+          },
+          {
+            "id": 8,
+            "imageLabs": "https://raw.githubusercontent.com/edisonAlbaSarmiento/Landing-Resume-Design/master/images/men.jpeg",
+            "title": "Weather Location",
+            "description": "Web whit Weather Location",
+            "redirectGithub": "https://github.com/edisonAlbaSarmiento/React-Js-Redux-Es6-Udemy/blob/master/src/components/WeatherLocation/Location.js",
+            "viewMoreIn": "https://github.com/edisonAlbaSarmiento/React-Js-Redux-Es6-Udemy/blob/master/src/components/WeatherLocation/Location.js",
+            "complete": false
+          },
+          {
+            "id": 9,
+            "imageLabs": "https://raw.githubusercontent.com/edisonAlbaSarmiento/Landing-Resume-Design/master/images/men.jpeg",
+            "title": "Project in PHP",
+            "description": "Web whit php",
+            "redirectGithub": "https://github.com/edisonAlbaSarmiento/ProyectoSena",
+            "viewMoreIn": "https://github.com/edisonAlbaSarmiento/ProyectoSena",
+            "complete": true
+
           }
         ],
         "about": {
