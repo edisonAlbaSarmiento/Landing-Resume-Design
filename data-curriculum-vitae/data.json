@@ -60,7 +60,7 @@
           },
           {
             "id": 4,
-            "imageLabs": "landingimaginamos.gif",
+            "imageLabs": "landingimaginamos",
             "title": "Clone page Imaginamos",
             "description": "Create whit next js",
             "redirectGithub": "https://github.com/edisonAlbaSarmiento/landing-page-in-next",
@@ -86,7 +86,7 @@
             "complete": false
           },
           {
-            "id": 6,
+            "id": 7,
             "imageLabs": "proyect",
             "title": "Project Front End for app, back and admin",
             "description": "Project Front End for app",
@@ -95,7 +95,7 @@
             "complete": false
           },
           {
-            "id": 7,
+            "id": 8,
             "imageLabs": "https://raw.githubusercontent.com/edisonAlbaSarmiento/Landing-Resume-Design/master/images/men.jpeg",
             "title": "Todo list with react and redux",
             "description": "Todo list testing",
@@ -104,7 +104,7 @@
             "complete": false
           },
           {
-            "id": 8,
+            "id": 9,
             "imageLabs": "https://raw.githubusercontent.com/edisonAlbaSarmiento/Landing-Resume-Design/master/images/men.jpeg",
             "title": "Weather Location",
             "description": "Web whit Weather Location",
@@ -113,7 +113,7 @@
             "complete": false
           },
           {
-            "id": 9,
+            "id": 10,
             "imageLabs": "https://raw.githubusercontent.com/edisonAlbaSarmiento/Landing-Resume-Design/master/images/men.jpeg",
             "title": "Project in PHP",
             "description": "Web whit php",
