@@ -42,9 +42,11 @@ export const ContainerChildren = styled.div`
   text-align: center;
   margin: 1%;
   padding: 2%;
-  height: 0%;
+  height: 24%;
   cursor: pointer;
   transition: 1s;
+  object-fit: scale-down;
+
   &:hover {
     background-color: #4e3283;
     margin-top: -10px;
@@ -57,7 +59,9 @@ export const ContainerChildren = styled.div`
 
 export const ImageContainer = styled.img`
   width: 100%;
-  height: 100%;
+  height: 12em;
+  object-fit: scale-down;
+
 `;
 
 export const ContainerDescription = styled.div`

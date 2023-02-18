@@ -54,8 +54,6 @@ function Lab({ dataLabs, selectedLanguage }) {
         </ContainerTitle>
       </ContainerHeader>
       <ContainerCards>
-        {console.log("dataLabs", dataLabs)}
-
         {dataLabs &&
           dataLabs.map((item, index) => (
             <ContainerChildren key={item?.title}>
