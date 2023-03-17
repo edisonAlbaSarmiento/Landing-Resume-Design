@@ -53,6 +53,7 @@ function CustomizedDialogs({
   selectedLanguage,
   onClickActive,
   itemId,
+  showButton = true,
 }) {
   console.log("itemId", itemId);
 
@@ -67,19 +68,25 @@ function CustomizedDialogs({
   };
   return (
     <div key={itemId}>
-      <ButtonOpen activeButton={activeButton} onClick={handleClickOpen}>
-        <TextButton>
-          {selectedLanguage === 0 ? "Know more" : "Saber más"}
-        </TextButton>
-      </ButtonOpen>
+      {showButton && (
+        <ButtonOpen activeButton={activeButton} onClick={handleClickOpen}>
+          <TextButton>
+            {selectedLanguage === 0 ? "Know more" : "Saber más"}
+          </TextButton>
+        </ButtonOpen>
+      )}
+
       <Dialog
         onClose={handleClose}
         aria-labelledby="customized-dialog-title"
         open={open}
       >
-        <DialogTitle id="customized-dialog-title" onClose={handleClose}>
-          {title}
-        </DialogTitle>
+        {title && (
+          <DialogTitle id="customized-dialog-title" onClose={handleClose}>
+            {title}
+          </DialogTitle>
+        )}
+
         <DialogContent>{children}</DialogContent>
         <DialogActions>
           <Button autoFocus onClick={handleClose} style={{ color: "#ff67b6" }}>

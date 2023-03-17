@@ -1,27 +1,27 @@
 /* eslint-disable react/jsx-filename-extension */
 import React from "react";
 import PropTypes from "prop-types";
-import Share from "@material-ui/icons/Share";
+// import Share from "@material-ui/icons/Share";
 // import Search from '@material-ui/icons/Search';
-import IconButton from "@material-ui/core/IconButton";
-import Tooltip from "@material-ui/core/Tooltip";
+// import IconButton from "@material-ui/core/IconButton";
+// import Tooltip from "@material-ui/core/Tooltip";
 // import CloseIcon from '@material-ui/icons/Close';
 import { useParams } from "react-router-dom";
 import PageNotFound from "../../images/under-construction.json";
 import Lottie from "react-lottie";
 
 import {
-  Title,
+  // Title,
   Container,
   // ContainerHeader,
-  Line,
+  // Line,
   // ContainerCards,
   // ContainerChildren,
-  ContainerTitle,
+  // ContainerTitle,
   // ContainerIcons,
   // ImageContainer,
   // TextImage,
-  LinkShare,
+  // LinkShare,
   // InputFilter,
 } from "./styles";
 

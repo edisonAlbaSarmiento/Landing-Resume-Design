@@ -13,12 +13,14 @@ import {
   ContainerText,
   TextPrimary,
   TextSecond,
-  TextThree,
-  ContainerModal,
+  ButtonCustom,
+  TextButtonCustom,
+  ContentInfo,
 } from "./styles";
 import CustomizedDialogs from "../modal";
-import PageNotFound from "../../images/under-construction.json";
+// import PageNotFound from "../../images/under-construction.json";
 // import Lottie from "react-lottie";
+import Circle from "@material-ui/icons/BlurCircularTwoTone";
 
 function Lab({ dataLabs, selectedLanguage }) {
   const [activeButton, setActivButton] = useState(false);
@@ -26,12 +28,12 @@ function Lab({ dataLabs, selectedLanguage }) {
     console.log("ENTRO EDI", item);
     setActivButton(!activeButton);
   };
-  const defaultOptions = {
-    loop: true,
-    autoplay: true,
-    animationData: PageNotFound,
-    eventListeners: false,
-  };
+  // const defaultOptions = {
+  //   loop: true,
+  //   autoplay: true,
+  //   animationData: PageNotFound,
+  //   eventListeners: false,
+  // };
 
   const returnImage = (item) => {
     console.log("item", item);
@@ -58,20 +60,33 @@ function Lab({ dataLabs, selectedLanguage }) {
           dataLabs.map((item, index) => (
             <ContainerChildren key={item?.title}>
               <ContainerDescription>
-                <ImageContainer src={returnImage(item?.imageLabs)} />
+                {/* <ImageContainer src={returnImage(item?.imageLabs)} /> */}
                 <ContainerText>
                   <TextPrimary>{item?.title}</TextPrimary>
                   <TextSecond>{item?.description}</TextSecond>
+                  <ContentInfo>
+                    <Circle />
+                    <Circle />
+                  </ContentInfo>
+                  <ButtonCustom onClick={() => changeState()}>
+                    <TextButtonCustom>
+                      {selectedLanguage === 0 ? "Know more" : "Saber más"}
+                    </TextButtonCustom>
+                  </ButtonCustom>
 
                   <CustomizedDialogs
                     key={item?.title}
-                    title={selectedLanguage === 0 ? "Detail" : "Detalle"}
                     activeButton={activeButton}
                     selectedLanguage={selectedLanguage}
                     onClickActive={changeState}
+                    showButton={false}
                   >
-                    {console.log("ENTRO EDI2", activeButton)}
                     <ImageContainer src={returnImage(item?.imageLabs)} />
+                    <ButtonCustom>
+                      <TextButtonCustom>
+                        {selectedLanguage === 0 ? "View Demo" : "Ver demo"}
+                      </TextButtonCustom>
+                    </ButtonCustom>
                   </CustomizedDialogs>
                 </ContainerText>
               </ContainerDescription>
