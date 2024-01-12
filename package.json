@@ -2,80 +2,26 @@
   "name": "landing",
   "version": "0.1.0",
   "private": true,
-  "dependencies": {
-    "@material-ui/core": "^4.9.12",
-    "@material-ui/icons": "^4.9.1",
-    "@sendgrid/mail": "^7.1.0",
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
-    "babel-eslint": "10.0.3",
-    "dotenv": "^8.1.0",
-    "eslint-config-airbnb": "^18.0.1",
-    "eslint-config-prettier": "^6.3.0",
-    "eslint-plugin-better-styled-components": "^1.1.2",
-    "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-jsx-a11y": "^6.2.3",
-    "eslint-plugin-prettier": "^3.1.1",
-    "eslint-plugin-react": "^7.14.3",
-    "formik": "^2.1.4",
-    "husky": "^4.2.3",
-    "prop-types": "^15.7.2",
-    "react": "^16.12.0",
-    "react-animations": "^1.0.0",
-    "react-dom": "^16.12.0",
-    "react-flexbox-grid": "^2.1.2",
-    "react-lottie": "^1.2.3",
-    "react-player": "^2.0.1",
-    "react-router-dom": "^5.2.0",
-    "react-scripts": "3.3.0",
-    "react-spring": "^8.0.27",
-    "styled-components": "^4.4.1",
-    "styled-loaders-react": "^1.1.0"
-  },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "lint": "eslint --ext .js src",
-    "pre-commit": "npm run lint",
-    "pre-push": "npm test",
-    "post-merge": "npm install",
-    "post-rewrite": "npm install",
-    "homepage": "https://edisonalbasarmiento.github.io/Landing-Resume-Design/",
-    "dotenv": "^8.2.0"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "lint-staged": {
-    "*.{js,jsx}": [
-      "prettier --write",
-      "eslint --fix"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "dependencies": {
+    "react": "^18",
+    "react-dom": "^18",
+    "next": "14.0.4"
   },
   "devDependencies": {
-    "babel-eslint": "^10.1.0",
-    "babel-plugin-module-resolver": "^4.1.0",
-    "dotenv": "^8.2.0",
-    "eslint": "^6.8.0",
-    "eslint-config-prettier": "^6.11.0",
-    "eslint-plugin-prettier": "^3.1.3",
-    "eslint-plugin-react": "^7.19.0",
-    "husky": "^4.2.5",
-    "prettier": "^2.0.5"
+    "typescript": "^5",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "autoprefixer": "^10.0.1",
+    "postcss": "^8",
+    "tailwindcss": "^3.3.0",
+    "eslint": "^8",
+    "eslint-config-next": "14.0.4"
   }
 }
