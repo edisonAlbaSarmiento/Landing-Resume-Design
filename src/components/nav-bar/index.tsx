@@ -64,12 +64,15 @@ export default function NavBar(): JSX.Element {
 					Contact
 				</a>
 			</div>
-			<input
-				className='w-[18%] h-16 flex items-center justify-center bg-[#3d3e42] p-[2%] rounded-[10px]'
-				type='text'
-				placeholder='Enter'
-				name='buscar'
-			/>
+			<div className='w-[18%] h-16 flex items-center justify-center bg-[#3d3e42] p-[2%] rounded-[10px]'>
+				<input
+					className='bg-[transparent] outline-none'
+					type='text'
+					placeholder='Buscar'
+					name='search'
+				/>
+				<p>A</p>
+			</div>
 		</nav>
 	);
 }
