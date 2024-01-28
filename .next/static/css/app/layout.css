@@ -564,14 +564,58 @@ video {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
+.absolute {
+  position: absolute;
+}
+.relative {
+  position: relative;
+}
+.mx-44 {
+  margin-left: 11rem;
+  margin-right: 11rem;
+}
+.my-0 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.mt-\[-10\%\] {
+  margin-top: -10%;
+}
 .flex {
   display: flex;
 }
 .h-16 {
   height: 4rem;
 }
-.min-h-screen {
-  min-height: 100vh;
+.h-\[20\%\] {
+  height: 20%;
+}
+.h-\[30px\] {
+  height: 30px;
+}
+.h-\[34rem\] {
+  height: 34rem;
+}
+.h-\[36rem\] {
+  height: 36rem;
+}
+.h-\[40rem\] {
+  height: 40rem;
+}
+.h-\[50rem\] {
+  height: 50rem;
+}
+.h-\[32rem\] {
+  height: 32rem;
+}
+.h-\[41rem\] {
+  height: 41rem;
+}
+.h-\[52rem\] {
+  height: 52rem;
+}
+.h-\[48rem\] {
+  height: 48rem;
 }
 .w-\[18\%\] {
   width: 18%;
@@ -579,14 +623,26 @@ video {
 .w-full {
   width: 100%;
 }
+.w-\[97\%\] {
+  width: 97%;
+}
 .flex-row {
   flex-direction: row;
 }
 .flex-col {
   flex-direction: column;
 }
+.items-start {
+  align-items: flex-start;
+}
+.items-end {
+  align-items: flex-end;
+}
 .items-center {
   align-items: center;
+}
+.justify-end {
+  justify-content: flex-end;
 }
 .justify-center {
   justify-content: center;
@@ -604,15 +660,12 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(61 62 66 / var(--tw-bg-opacity));
 }
-.bg-gray {
-  --tw-bg-opacity: 1;
-  background-color: rgb(52 53 58 / var(--tw-bg-opacity));
-}
 .bg-\[transparent\] {
   background-color: transparent;
 }
-.bg-none {
-  background-image: none;
+.bg-gray {
+  --tw-bg-opacity: 1;
+  background-color: rgb(52 53 58 / var(--tw-bg-opacity));
 }
 .p-\[2\%\] {
   padding: 2%;
@@ -624,6 +677,9 @@ video {
 .py-16 {
   padding-top: 4rem;
   padding-bottom: 4rem;
+}
+.align-bottom {
+  vertical-align: bottom;
 }
 .text-2xl {
   font-size: 1.5rem;
@@ -637,12 +693,16 @@ video {
   --tw-text-opacity: 1;
   color: rgb(249 249 249 / var(--tw-text-opacity));
 }
+.opacity-100 {
+  opacity: 1;
+}
 .outline-none {
   outline: 2px solid transparent;
   outline-offset: 2px;
 }
-.outline-\[transparent\] {
-  outline-color: transparent;
+.grayscale-\[1\] {
+  --tw-grayscale: grayscale(1);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 :root {
