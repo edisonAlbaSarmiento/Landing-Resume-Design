@@ -20,7 +20,7 @@ export default function Header(): JSX.Element {
 			<div className='flex flex-row justify-end items-end opacity-100 grayscale-[1]  gap-8 text-[38px] mr-[-5vw] mx-[1vw] my-[0%]'>
 				<Image src={Logo} alt='user' width={850} />
 				<div className='absolute flex flex-col items-center mx-44 my-0  w-1/12'>
-					<div className='w-1/5 border-l-4 border-l-[solid]' />
+					<div className='w-1/5 border-l-4 border-l-[solid]'></div>
 					<p>A</p>
 					<p>B</p>
 					<p>C</p>

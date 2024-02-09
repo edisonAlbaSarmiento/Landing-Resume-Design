@@ -1,6 +1,7 @@
 "use client";
 import About from "@/components/about";
 import Header from "@/components/head";
+import MySkills from "@/components/my-skills";
 import NavBar from "@/components/nav-bar";
 
 export default function Home() {
@@ -20,6 +21,9 @@ export default function Home() {
 			</section>
 			<section className='flex flex-row items-center justify-between px-36 py-16  bg-gray'>
 				<About />
+			</section>
+			<section className='flex flex-row items-center justify-between px-36 py-16  bg-gray'>
+				<MySkills />
 			</section>
 		</main>
 	);
