@@ -3,8 +3,8 @@ import Logo from "../../../public/images/my.png";
 
 export default function Header(): JSX.Element {
 	return (
-		<div className='flex flex-row items-center justify-between h-[48rem] w-full'>
-			<div className='flex flex-col items-start w-1/3 mx-[3%] my-0'>
+		<div className='flex flex-row items-center justify-between h-[71vh] w-full'>
+			<div className='flex flex-col items-start w-1/3 ml-[13%] mr-[3%]'>
 				<div>
 					<div className='text-[42px] flex flex-row items-center gap-8'>
 						I&apos;M <div className='text-[55px]'>Edison Alba</div>
@@ -17,10 +17,10 @@ export default function Header(): JSX.Element {
 				</button>
 			</div>
 
-			<div className='absolute flex flex-row justify-end items-end opacity-100 grayscale-[1]  gap-8 text-[38px] w-full'>
-				<Image src={Logo} alt='user' width={1100} />
+			<div className='flex flex-row justify-end items-end opacity-100 grayscale-[1]  gap-8 text-[38px] mr-[-5vw] mx-[1vw] my-[0%]'>
+				<Image src={Logo} alt='user' width={850} />
 				<div className='absolute flex flex-col items-center mx-44 my-0  w-1/12'>
-					<p>|</p>
+					<div className='w-1/5 border-l-4 border-l-[solid]' />
 					<p>A</p>
 					<p>B</p>
 					<p>C</p>
