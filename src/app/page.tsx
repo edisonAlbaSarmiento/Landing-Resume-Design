@@ -1,8 +1,10 @@
 "use client";
 import About from "@/components/about";
+import Experience from "@/components/experiencie";
 import Header from "@/components/head";
 import MySkills from "@/components/my-skills";
 import NavBar from "@/components/nav-bar";
+import Portafolio from "@/components/portafolio";
 
 export default function Home() {
 	return (
@@ -24,6 +26,12 @@ export default function Home() {
 			</section>
 			<section className='flex flex-row items-center justify-between px-36 py-16  bg-gray'>
 				<MySkills />
+			</section>
+			<section className='bg-gray'>
+				<Portafolio />
+			</section>
+			<section className='flex flex-row items-center justify-between px-20  bg-[#3d3e42]'>
+				<Experience />
 			</section>
 		</main>
 	);
