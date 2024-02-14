@@ -1,14 +1,9 @@
 import React, { useEffect, useState } from "react";
 
-interface ExperienceProps {
-	mediaLine: "1/5" | "3/6" | "4/5" | "full";
-}
-
 export default function Experience(): JSX.Element {
 	const test =
 		"validaciones de los puertos en  de ETB,validaciones los puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos los puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validaciones";
-	const [changeMediaLine, setChangeMediaLine] =
-		useState<ExperienceProps>("h-11");
+	const [changeMediaLine, setChangeMediaLine] = useState<string>("h-11");
 	console.log("letjh", test.length);
 
 	useEffect(() => {
