@@ -1,36 +1,82 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+
+interface ExperienceProps {
+	mediaLine: "1/5" | "3/6" | "4/5" | "full";
+}
 
 export default function Experience(): JSX.Element {
+	const test =
+		"validaciones de los puertos en  de ETB,validaciones los puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos los puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validaciones";
+	const [changeMediaLine, setChangeMediaLine] =
+		useState<ExperienceProps>("h-11");
+	console.log("letjh", test.length);
+
+	useEffect(() => {
+		if (test.length <= 60) {
+			setChangeMediaLine("h-11");
+		} else if (test.length <= 80) {
+			setChangeMediaLine("h-52");
+		} else if (test.length <= 300) {
+			setChangeMediaLine("h-64");
+		} else if (test.length > 400) {
+			setChangeMediaLine("h-96");
+		}
+	}, [test]);
+	console.log("changeMediaLin", changeMediaLine);
+
 	return (
 		<div className='flex flex-1 flex-col justify-center'>
 			<div className='flex flex-1 flex-row justify-start'>
 				<h1 className='text-[54px] mt-[-3%] mb-[-3%] my-[10%]'>Experience</h1>
 			</div>
-			<div className='flex flex-row justify-start gap-10 px-48 py-24'>
-				<div className='flex flex-row'>
-					<div className='w-[5vw] bg-[gray] h-[8vh] flex justify-center items-center'>
-						<div>2021</div>
+			<div className='mt-[6%]'>
+				<div className='flex flex-row justify-start gap-10 px-48  pb-8'>
+					<div className='flex flex-row'>
+						<div className='w-[5vw] bg-[gray] h-[5vh] flex justify-center items-center'>
+							<div>2021</div>
+						</div>
+						<div
+							style={{}}
+							className='w-0 h-0 border-l-[24px] border-l-[gray] border-y-[24px] border-y-transparent border-solid border-[transparent_transparent_transparent_#FF4532]'
+						/>
 					</div>
-					<div className='w-0 h-0 border-l-[24px] border-l-[green] border-y-[24px] border-y-transparent border-solid' />
-				</div>
 
-				<div className='flex flex-col items-center gap-5'>
-					<div className='bg-[red] w-[39px] h-[39px] rounded-[50%]' />
-					<div className='h-32 border-l-[thick] border-l-[#ff0000] border-solid' />
+					<div className='flex flex-col items-center gap-5'>
+						<div className='bg-[red] w-[39px] h-[39px] rounded-[50%]' />
+						<div
+							className={`${changeMediaLine} border-l-[thick] border-l-[#ff0000] border-solid`}
+						/>
+					</div>
+					<div className='contenedor'>
+						<div>titulo</div>
+						<div>sub titulos</div>
+						<div>{test}</div>
+					</div>
 				</div>
-				<div>
-					<div>titulo</div>
-					<div>sub titulos</div>
-					<div>descriptio</div>
+				<div className='flex flex-row justify-start gap-10 px-48  pb-8'>
+					<div className='flex flex-row'>
+						<div className='w-[5vw] bg-[gray] h-[5vh] flex justify-center items-center'>
+							<div>2021</div>
+						</div>
+						<div
+							style={{}}
+							className='w-0 h-0 border-l-[24px] border-l-[gray] border-y-[24px] border-y-transparent border-solid border-[transparent_transparent_transparent_#FF4532]'
+						/>
+					</div>
+
+					<div className='flex flex-col items-center gap-5'>
+						<div className='bg-[red] w-[39px] h-[39px] rounded-[50%]' />
+						<div
+							className={`${changeMediaLine} border-l-[thick] border-l-[#ff0000] border-solid`}
+						/>
+					</div>
+					<div className='contenedor'>
+						<div>titulo</div>
+						<div>sub titulos</div>
+						<div>{test}</div>
+					</div>
 				</div>
 			</div>
-			{/* <div className='flex flex-col'>
-				<div className='flex flex-wrap justify-center gap-[4.5rem] mx-0 my-[4%]'>
-					<button className='w-[15%] h-16 text-2xl mx-0 rounded-[10px] bg-[#ffc86a] text-[#31333b] font-semibold'>
-						Contact Me
-					</button>
-				</div>
-			</div> */}
 		</div>
 	);
 }

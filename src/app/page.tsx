@@ -21,7 +21,10 @@ export default function Home() {
 			>
 				<Header />
 			</section>
-			<section className='flex flex-row items-center justify-between px-36 py-16  bg-gray'>
+			<section
+				id='setion2'
+				className='flex flex-row items-center justify-between px-36 py-16  bg-gray'
+			>
 				<About />
 			</section>
 			<section className='flex flex-row items-center justify-between px-36 py-16  bg-gray'>
@@ -29,6 +32,15 @@ export default function Home() {
 			</section>
 			<section className='bg-gray'>
 				<Portafolio />
+			</section>
+			<section
+				id='setion3'
+				className='flex flex-row items-center justify-between px-20  bg-[#3d3e42]'
+			>
+				<Experience />
+			</section>
+			<section className='flex flex-row items-center justify-between px-36 py-16  bg-gray'>
+				<About />
 			</section>
 			<section className='flex flex-row items-center justify-between px-20  bg-[#3d3e42]'>
 				<Experience />

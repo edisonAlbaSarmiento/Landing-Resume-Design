@@ -46,7 +46,7 @@ export default function Portafolio(): JSX.Element {
 						</div>
 					))}
 					<button className='w-[15%] h-16 text-2xl mb-[7%] rounded-[10px] bg-[#ffc86a] text-[#31333b] font-semibold'>
-						Contact Me
+						View More
 					</button>
 				</div>
 			</div>
