@@ -4,7 +4,6 @@ export default function Experience(): JSX.Element {
 	const test =
 		"validaciones de los puertos en  de ETB,validaciones los puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos los puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validacioneslos puertos en  de ETB,validaciones";
 	const [changeMediaLine, setChangeMediaLine] = useState<string>("h-11");
-	console.log("letjh", test.length);
 
 	useEffect(() => {
 		if (test.length <= 60) {
@@ -17,7 +16,6 @@ export default function Experience(): JSX.Element {
 			setChangeMediaLine("h-96");
 		}
 	}, [test]);
-	console.log("changeMediaLin", changeMediaLine);
 
 	return (
 		<div className='flex flex-1 flex-col justify-center'>
