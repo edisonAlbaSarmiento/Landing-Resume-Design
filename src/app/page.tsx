@@ -58,7 +58,7 @@ export default function Home() {
 				<ContactMe />
 			</section>
 			<section className='flex flex-row items-center justify-center px-36 py-16  bg-gray'>
-				<h1>Thanks for Scrolling</h1>
+				<h1 className='text-[#f0bf6c] font-semibold'>Thanks for Scrolling</h1>
 			</section>
 			<div className='fixed bg-[green] z-[999] p-2.5 left-[97%] right-0 top-[76%] bottom-[20%]'>
 				hola

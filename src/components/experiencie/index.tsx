@@ -35,9 +35,9 @@ export default function Experience(): JSX.Element {
 					</div>
 
 					<div className='flex flex-col items-center gap-5'>
-						<div className='bg-[red] w-[39px] h-[39px] rounded-[50%]' />
+						<div className='bg-[#f0bf6c] shadow-[0px_1px_20px_#cca25c,inset_7px_7px_14px_#ffdc7c] w-[39px] h-[39px] rounded-[50%]' />
 						<div
-							className={`${changeMediaLine} border-l-[thick] border-l-[#ff0000] border-solid`}
+							className={`${changeMediaLine} border-l-[thick] border-l-[#fff] border-solid`}
 						/>
 					</div>
 					<div className='contenedor'>
@@ -58,9 +58,9 @@ export default function Experience(): JSX.Element {
 					</div>
 
 					<div className='flex flex-col items-center gap-5'>
-						<div className='bg-[red] w-[39px] h-[39px] rounded-[50%]' />
+						<div className='bg-[#f0bf6c] shadow-[0px_1px_20px_#cca25c,inset_7px_7px_14px_#ffdc7c] w-[39px] h-[39px] rounded-[50%]' />
 						<div
-							className={`${changeMediaLine} border-l-[thick] border-l-[#ff0000] border-solid`}
+							className={`${changeMediaLine} border-l-[thick] border-l-[#fff] border-solid`}
 						/>
 					</div>
 					<div className='contenedor'>

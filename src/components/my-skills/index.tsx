@@ -1,50 +1,55 @@
 import React from "react";
+import Image from "next/image";
 
 export default function MySkills(): JSX.Element {
 	const data = [
 		{
-			text: "Texto",
-			img: "img/",
+			text: "Javascript",
+			img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg",
 		},
 		{
-			text: "Texto",
-			img: "img/",
+			text: "Typescript",
+			img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg",
 		},
 		{
-			text: "Texto",
-			img: "img/",
+			text: "Next JS",
+			img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/nextjs/nextjs-original.svg",
 		},
 		{
-			text: "Texto",
-			img: "img/",
+			text: "React",
+			img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg",
 		},
 		{
-			text: "Texto",
-			img: "img/",
+			text: "Redux",
+			img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg",
 		},
 		{
-			text: "Texto",
-			img: "img/",
+			text: "Html",
+			img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg",
 		},
 		{
-			text: "Texto",
-			img: "img/",
+			text: "CSS3",
+			img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-plain-wordmark.svg",
 		},
 		{
-			text: "Texto",
-			img: "img/",
+			text: "Mysql",
+			img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg",
 		},
 		{
-			text: "Texto",
-			img: "img/",
+			text: "Node Js",
+			img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg",
 		},
 		{
-			text: "Texto",
-			img: "img/",
+			text: "Git Source Control",
+			img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original-wordmark.svg",
 		},
 		{
-			text: "Texto",
-			img: "img/",
+			text: "Firebase",
+			img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/firebase/firebase-plain-wordmark.svg",
+		},
+		{
+			text: "Flutter in progress",
+			img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/flutter/flutter-original.svg",
 		},
 	];
 	return (
@@ -56,12 +61,17 @@ export default function MySkills(): JSX.Element {
 				<div className='flex flex-wrap justify-center gap-[4.5rem] mx-0 my-[4%]'>
 					{data.map((item) => (
 						<div
-							className='w-[19rem] h-[19rem] bg-[red] flex justify-center items-center rounded-2xl'
+							className='transition-colors duration-300 ease-out w-[19rem] h-[19rem] bg-[#3d3e42] flex justify-center items-center rounded-2xl  hover:bg-[#f0bf6c]  '
 							key={item.text}
 						>
-							<div className='flex flex-col gap-6'>
-								<p>{item.img}</p>
-								<p>{item.text}</p>
+							<div className='flex flex-col gap-6 justify-center items-center'>
+								<Image
+									src={item.img}
+									width={100}
+									height={100}
+									alt={`${item.text}`}
+								/>
+								<p className='text-xl font-bold'>{item.text}</p>
 							</div>
 						</div>
 					))}
