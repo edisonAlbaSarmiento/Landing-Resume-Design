@@ -17,7 +17,7 @@ export default function Home() {
 	useGSAP(
 		() => {
 			// gsap code here...
-			gsap.to(".setion1", { rotation: 180 }); // <-- automatically reverted
+			gsap.to("#setion1", { rotation: 180 }); // <-- automatically reverted
 		},
 		{ scope: container },
 	);
@@ -25,14 +25,11 @@ export default function Home() {
 	return (
 		<main>
 			<section className='flex flex-col items-center justify-between px-36 py-16 bg-gray'>
-				{/* position: fixed;
-    width: 100%;
-    z-index: 1; */}
 				<NavBar />
 			</section>
 			<section
 				id='setion1'
-				className='flex flex-col items-center justify-between  bg-gray'
+				className='flex flex-col items-center justify-between  bg-[#34363a]'
 			>
 				<Header />
 			</section>
@@ -42,10 +39,7 @@ export default function Home() {
 			>
 				<About />
 			</section>
-			<section
-				ref={container}
-				className='setion1 flex flex-row items-center justify-between px-36 py-16  bg-gray'
-			>
+			<section className=' flex flex-row items-center justify-between px-36 py-16  bg-gray'>
 				<MySkills />
 			</section>
 			<section className='bg-gray'>
@@ -64,8 +58,11 @@ export default function Home() {
 				<ContactMe />
 			</section>
 			<section className='flex flex-row items-center justify-center px-36 py-16  bg-gray'>
-				<h1>"Thanks for Scrolling"</h1>
+				<h1>Thanks for Scrolling</h1>
 			</section>
+			<div className='fixed bg-[green] z-[999] p-2.5 left-[97%] right-0 top-[76%] bottom-[20%]'>
+				hola
+			</div>
 		</main>
 	);
 }
