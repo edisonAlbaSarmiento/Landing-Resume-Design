@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Logo from "../../../public/icons/android-chrome-192x192.png";
 import { useState } from "react";
+import SearchIcon from "@mui/icons-material/Search";
 
 type NavBarProps = {
 	about: boolean;
@@ -64,12 +65,15 @@ export default function NavBar(): JSX.Element {
 					Contact
 				</a>
 			</div>
-			<input
-				className='w-[18%] h-16 flex items-center justify-center bg-[#3d3e42] p-[2%] rounded-[10px]'
-				type='text'
-				placeholder='Enter'
-				name='buscar'
-			/>
+			<div className='w-64 h-16 flex items-center justify-center bg-[#3d3e42] p-[2%] rounded-[10px]'>
+				<input
+					className='bg-[transparent] outline-none'
+					type='text'
+					placeholder='Buscar'
+					name='search'
+				/>
+				<SearchIcon sx={{ fontSize: 30, color: "#9c9c9e" }} />
+			</div>
 		</nav>
 	);
 }
