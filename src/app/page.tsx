@@ -10,20 +10,36 @@ import Portfolio from "@/components/portafolio";
 import { useRef, useEffect } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+
+if (typeof window !== "undefined") {
+	gsap.registerPlugin(ScrollTrigger, useGSAP);
+}
 
 export default function Home() {
-	const container = useRef(null);
+	const main = useRef<HTMLElement | any>();
 
 	useGSAP(
 		() => {
-			// gsap code here...
-			gsap.to("#setion1", { rotation: 180 }); // <-- automatically reverted
+			const boxes = gsap.utils.toArray("#setion2");
+			boxes.forEach((box: any) => {
+				gsap.to(box, {
+					x: 0,
+					scrollTrigger: {
+						trigger: box,
+						start: " bottom",
+						end: "top 20%",
+						scrub: true,
+						// markers: true,
+					},
+				});
+			});
 		},
-		{ scope: container },
+		{ scope: main },
 	);
 
 	return (
-		<main>
+		<main ref={main}>
 			<section className='flex flex-col items-center justify-between px-36 py-16 bg-gray'>
 				<NavBar />
 			</section>
@@ -42,6 +58,7 @@ export default function Home() {
 			<section className=' flex flex-row items-center justify-between px-36 py-16  bg-gray'>
 				<MySkills />
 			</section>
+
 			<section className='bg-gray'>
 				<Portfolio />
 			</section>
