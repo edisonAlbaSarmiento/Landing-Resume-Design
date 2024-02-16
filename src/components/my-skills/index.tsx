@@ -48,6 +48,10 @@ export default function MySkills(): JSX.Element {
 			img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/firebase/firebase-plain-wordmark.svg",
 		},
 		{
+			text: "Tailwind",
+			img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/tailwindcss/tailwindcss-original.svg",
+		},
+		{
 			text: "Flutter in progress",
 			img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/flutter/flutter-original.svg",
 		},

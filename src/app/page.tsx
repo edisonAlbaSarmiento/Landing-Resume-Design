@@ -5,7 +5,7 @@ import Experience from "@/components/experiencie";
 import Header from "@/components/head";
 import MySkills from "@/components/my-skills";
 import NavBar from "@/components/nav-bar";
-import Portafolio from "@/components/portafolio";
+import Portfolio from "@/components/portafolio";
 
 import { useRef, useEffect } from "react";
 import gsap from "gsap";
@@ -43,7 +43,7 @@ export default function Home() {
 				<MySkills />
 			</section>
 			<section className='bg-gray'>
-				<Portafolio />
+				<Portfolio />
 			</section>
 			<section
 				id='setion3'
@@ -52,7 +52,7 @@ export default function Home() {
 				<Experience />
 			</section>
 			<section className='flex flex-row items-center justify-between px-36 py-16  bg-gray'>
-				<About />
+				Coming soon...
 			</section>
 			<section className='flex flex-row items-center justify-between  bg-[#3d3e42] h-80'>
 				<ContactMe />
