@@ -88,10 +88,10 @@ export default function Experience(): JSX.Element {
 			data.forEach((item) => {
 				const descriptionLength = item.description.length;
 				console.log(item.description.length);
-				let lineHeight = "h-11";
-				if (descriptionLength <= 500) {
-					lineHeight = "h-52";
-				} else if (descriptionLength <= 600) {
+				let lineHeight = "";
+				if (descriptionLength <= 800) {
+					lineHeight = "h-64";
+				} else if (descriptionLength <= 900) {
 					lineHeight = "h-64";
 				} else if (descriptionLength > 900) {
 					lineHeight = "h-96";
@@ -107,32 +107,34 @@ export default function Experience(): JSX.Element {
 			<div className='flex flex-1 flex-row justify-start'>
 				<h1 className='text-[54px] mt-[-3%] mb-[-3%] my-[10%]'>Experience</h1>
 			</div>
-			{data.map((item) => (
-				<div className='mt-[6%]' key={item.id}>
-					<div className='flex flex-row justify-start gap-10 px-48 pb-8'>
-						<div className='flex flex-row'>
-							<div className='w-[5vw] bg-[gray] h-[5vh] flex justify-center items-center'>
-								<div>{item?.date}</div>
+			<div className='mt-[5%]'>
+				{data.map((item) => (
+					<div className='' key={item.id}>
+						<div className='flex flex-row justify-start gap-10 px-48 pb-8'>
+							<div className='flex flex-row'>
+								<div className='w-[5vw] bg-[gray] h-[5vh] flex justify-center items-center'>
+									<div>{item?.date}</div>
+								</div>
+								<div className='w-0 h-0 border-l-[24px] border-l-[gray] border-y-[24px] border-y-transparent border-solid border-[transparent_transparent_transparent_#FF4532]' />
 							</div>
-							<div className='w-0 h-0 border-l-[24px] border-l-[gray] border-y-[24px] border-y-transparent border-solid border-[transparent_transparent_transparent_#FF4532]' />
-						</div>
 
-						<div className='flex flex-col items-center gap-5'>
-							<div className='bg-[#f0bf6c] shadow-[0px_1px_20px_#cca25c,inset_7px_7px_14px_#ffdc7c] w-[39px] h-[39px] rounded-[50%]' />
-							<div
-								className={`${
-									lineHeights[item.id]
-								} border-l-[thick] border-l-[#fff] border-solid`}
-							/>
-						</div>
-						<div className='flex flex-col gap-[5%]'>
-							<div>{item?.text}</div>
-							<div>{item?.dates}</div>
-							<div>{item?.description}</div>
+							<div className='flex flex-col items-center gap-5'>
+								<div className='bg-[#f0bf6c] shadow-[0px_1px_20px_#cca25c,inset_7px_7px_14px_#ffdc7c] w-[39px] h-[39px] rounded-[50%]' />
+								<div
+									className={`${
+										lineHeights[item.id]
+									} border-l-[thick] border-l-[#fff] border-solid`}
+								/>
+							</div>
+							<div className='flex flex-col gap-[5%]'>
+								<div>{item?.text}</div>
+								<div>{item?.dates}</div>
+								<div>{item?.description}</div>
+							</div>
 						</div>
 					</div>
-				</div>
-			))}
+				))}
+			</div>
 		</div>
 	);
 }
