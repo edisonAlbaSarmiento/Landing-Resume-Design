@@ -28,18 +28,30 @@ export default function Header(): JSX.Element {
 				<div className='absolute flex flex-col items-center mx-44 my-0  w-1/12'>
 					<hr className='rounded-[10px] h-32 border-l-[medium]  bg-[#f0bf6c] border-solid border-[#f0bf6c]' />
 
-					<div>
+					<a
+						href='https://www.facebook.com/edison.albasarmiento/'
+						target='_blank'
+					>
 						<FacebookOutlinedIcon sx={{ fontSize: 40 }} />
-					</div>
-					<div>
+					</a>
+					<a
+						href='https://www.instagram.com/edison_alba_s/?hl=es-la'
+						target='_blank'
+					>
 						<TwitterIcon sx={{ fontSize: 40 }} />
-					</div>
-					<div>
+					</a>
+					<a
+						href='https://www.linkedin.com/in/edison-jordan-alba-sarmiento-866799154'
+						target='_blank'
+					>
 						<LinkedInIcon sx={{ fontSize: 40 }} />
-					</div>
-					<div>
+					</a>
+					<a
+						href='https://api.whatsapp.com/send?text=Ver mi pagina https://edison.com.co'
+						target='_blank'
+					>
 						<WhatsAppIcon sx={{ fontSize: 40 }} />
-					</div>
+					</a>
 				</div>
 			</div>
 		</div>

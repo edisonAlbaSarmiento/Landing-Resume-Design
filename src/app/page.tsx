@@ -6,8 +6,8 @@ import Header from "@/components/head";
 import MySkills from "@/components/my-skills";
 import NavBar from "@/components/nav-bar";
 import Portfolio from "@/components/portafolio";
-
-import { useRef, useEffect } from "react";
+import ShareIcon from "@mui/icons-material/Share";
+import { useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
@@ -77,8 +77,14 @@ export default function Home() {
 			<section className='flex flex-row items-center justify-center px-36 py-16  bg-gray'>
 				<h1 className='text-[#f0bf6c] font-semibold'>Thanks for Scrolling</h1>
 			</section>
-			<div className='fixed bg-[green] z-[999] p-2.5 left-[97%] right-0 top-[76%] bottom-[20%]'>
-				hola
+			<div className='w-[4%] h-12 fixed bg-[#f0bf6c] z-[999] p-2.5 left-[97%] right-0 top-[76%] bottom-[20%] flex items-center rounded-2xl'>
+				<a
+					target='_blank'
+					href='https://api.whatsapp.com/send?text=Ver mi pagina https://edison.com.co'
+					data-action='share/whatsapp/share'
+				>
+					<ShareIcon sx={{ fontSize: 40 }} />
+				</a>
 			</div>
 		</main>
 	);

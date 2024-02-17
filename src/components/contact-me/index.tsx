@@ -38,10 +38,30 @@ export default function ContactMe(): JSX.Element {
 			<div className='flex flex-row justify-center items-center mt-[2.8%] mb-[-3%]'>
 				<hr className='w-full h-1 bg-[#f0bf6c]  my-0' />
 				<div className='flex flex-row justify-center gap-12 w-6/12'>
-					<FacebookOutlinedIcon sx={{ fontSize: 40 }} />
-					<TwitterIcon sx={{ fontSize: 40 }} />
-					<LinkedInIcon sx={{ fontSize: 40 }} />
-					<WhatsAppIcon sx={{ fontSize: 40 }} />
+					<a
+						href='https://www.facebook.com/edison.albasarmiento/'
+						target='_blank'
+					>
+						<FacebookOutlinedIcon sx={{ fontSize: 40 }} />
+					</a>
+					<a
+						href='https://www.instagram.com/edison_alba_s/?hl=es-la'
+						target='_blank'
+					>
+						<TwitterIcon sx={{ fontSize: 40 }} />
+					</a>
+					<a
+						href='https://www.linkedin.com/in/edison-jordan-alba-sarmiento-866799154'
+						target='_blank'
+					>
+						<LinkedInIcon sx={{ fontSize: 40 }} />
+					</a>
+					<a
+						href='https://api.whatsapp.com/send?text=Ver mi pagina https://edison.com.co'
+						target='_blank'
+					>
+						<WhatsAppIcon sx={{ fontSize: 40 }} />
+					</a>
 				</div>
 				<hr className='w-full h-1 bg-[#f0bf6c] mx-0' />
 			</div>
