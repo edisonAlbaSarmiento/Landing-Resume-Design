@@ -13,27 +13,27 @@ export default function Portfolio(): JSX.Element {
 			text: "Website Testing",
 			description:
 				"Example of creating a website with native code, login with networks and filters",
-			img: "https://raw.githubusercontent.com/edisonAlbaSarmiento/Landing-Resume-Design/master/images/men.jpeg",
+			img: "https://raw.githubusercontent.com/edisonAlbaSarmiento/Landing-Resume-Design/master/images/default.jpg",
 		},
 		{
 			text: "Website Testing API Movies",
 			description: "Curated color palate inspiration on your figure tip",
-			img: "https://raw.githubusercontent.com/edisonAlbaSarmiento/Landing-Resume-Design/master/images/men.jpeg",
+			img: "https://raw.githubusercontent.com/edisonAlbaSarmiento/Landing-Resume-Design/master/images/default.j",
 		},
 		{
 			text: "Landing pixel perfect",
 			description: "Curated color palate inspiration on your figure tip",
-			img: "https://raw.githubusercontent.com/edisonAlbaSarmiento/Landing-Resume-Design/master/images/men.jpeg",
+			img: "https://raw.githubusercontent.com/edisonAlbaSarmiento/Landing-Resume-Design/master/images/default.j",
 		},
 		{
 			text: "Testing chat whit socket.io",
 			description: "Curated color palate inspiration on your figure tip",
-			img: "https://raw.githubusercontent.com/edisonAlbaSarmiento/Landing-Resume-Design/master/images/men.jpeg",
+			img: "https://raw.githubusercontent.com/edisonAlbaSarmiento/Landing-Resume-Design/master/images/default.j",
 		},
 		{
 			text: "Clone page Imaginamos",
 			description: "Create whit next js",
-			img: "https://raw.githubusercontent.com/edisonAlbaSarmiento/Landing-Resume-Design/master/images/men.jpeg",
+			img: "https://raw.githubusercontent.com/edisonAlbaSarmiento/Landing-Resume-Design/master/images/default.j",
 		},
 		{
 			text: "Learning flutter",
