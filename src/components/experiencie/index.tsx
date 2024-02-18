@@ -110,7 +110,7 @@ export default function Experience(): JSX.Element {
 			<div className='mt-[5%]'>
 				{data.map((item) => (
 					<div className='' key={item.id}>
-						<div className='flex flex-row justify-start gap-10 px-48 pb-8'>
+						<div className='flex flex-row justify-start gap-10   sm:px-0 md:px-0 lg:px-48 xl:px-48 pb-8'>
 							<div className='flex flex-row'>
 								<div className='w-[5vw] bg-[gray] h-[5vh] flex justify-center items-center'>
 									<div>{item?.date}</div>

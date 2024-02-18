@@ -55,7 +55,7 @@ export default function Home() {
 			>
 				<About />
 			</section>
-			<section className=' flex flex-row items-center justify-between px-36 py-16  bg-gray'>
+			<section className=' flex flex-row items-center justify-between sm:px-0 md:px-0 lg:px-36-py-16  bg-gray'>
 				<MySkills />
 			</section>
 
