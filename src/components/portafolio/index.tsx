@@ -18,22 +18,22 @@ export default function Portfolio(): JSX.Element {
 		{
 			text: "Website Testing API Movies",
 			description: "Curated color palate inspiration on your figure tip",
-			img: "https://raw.githubusercontent.com/edisonAlbaSarmiento/Landing-Resume-Design/master/images/default.j",
+			img: "https://raw.githubusercontent.com/edisonAlbaSarmiento/Landing-Resume-Design/master/images/default.jpg",
 		},
 		{
 			text: "Landing pixel perfect",
 			description: "Curated color palate inspiration on your figure tip",
-			img: "https://raw.githubusercontent.com/edisonAlbaSarmiento/Landing-Resume-Design/master/images/default.j",
+			img: "https://raw.githubusercontent.com/edisonAlbaSarmiento/Landing-Resume-Design/master/images/default.jpg",
 		},
 		{
 			text: "Testing chat whit socket.io",
 			description: "Curated color palate inspiration on your figure tip",
-			img: "https://raw.githubusercontent.com/edisonAlbaSarmiento/Landing-Resume-Design/master/images/default.j",
+			img: "https://raw.githubusercontent.com/edisonAlbaSarmiento/Landing-Resume-Design/master/images/default.jpg",
 		},
 		{
 			text: "Clone page Imaginamos",
 			description: "Create whit next js",
-			img: "https://raw.githubusercontent.com/edisonAlbaSarmiento/Landing-Resume-Design/master/images/default.j",
+			img: "https://raw.githubusercontent.com/edisonAlbaSarmiento/Landing-Resume-Design/master/images/default.jpg",
 		},
 		{
 			text: "Learning flutter",
