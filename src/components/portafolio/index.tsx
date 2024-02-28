@@ -56,13 +56,15 @@ export default function Portfolio(): JSX.Element {
 								backgroundRepeat: "no-repeat",
 								backgroundPosition: "center",
 							}}
-							className={`w-[30rem] h-[30rem] flex justify-center items-center hover:bg-[#f0bf6c] `}
+							className={`w-96 lg:h-96 sm:h-auto flex justify-center items-center hover:bg-[#f0bf6c] `}
 							key={item.text}
 						>
-							<div className='w-[25vw] h-[43vh] flex flex-col justify-center items-center gap-6 opacity-0 hover:bg-[#515155cf] hover:opacity-100 hover:transition-all hover:duration-[1s] hover:ease-[ease] hover:delay-[0s]'>
-								<h1 className='font-semibold  text-2xl'>{item.text}</h1>
+							<div className='max-w-7xl h-[43vh] flex flex-col justify-center items-center gap-6 opacity-0 hover:bg-[#515155cf] hover:opacity-100 hover:transition-all hover:duration-[1s] hover:ease-[ease] hover:delay-[0s]'>
+								<h1 className='font-semibold  text-2xl text-center'>
+									{item.text}
+								</h1>
 								<p className='w-3/5 text-center'>{item.description}</p>
-								<button className='w-1/5 h-8 text-[0.8rem] mb-[7%] rounded-[10px] bg-[#ffc86a] text-[#31333b] font-semibold'>
+								<button className='max-w-1/5 px-8 h-8 text-[0.8rem] mb-[7%] rounded-[10px] bg-[#ffc86a] text-[#31333b] font-semibold'>
 									See More <ArrowForwardIcon sx={{ fontSize: 20 }} />
 								</button>
 							</div>
@@ -70,7 +72,7 @@ export default function Portfolio(): JSX.Element {
 					))}
 					{visibleItems < data.length && (
 						<button
-							className='w-[15%] h-16 text-2xl mb-[7%] rounded-[10px] bg-[#ffc86a] text-[#31333b] font-semibold'
+							className='sm:max-w-3/5 sm:px-8 lg:w-[15%] h-16 text-2xl mb-[7%] rounded-[10px] bg-[#ffc86a] text-[#31333b] font-semibold'
 							onClick={handleShowMore}
 						>
 							View More

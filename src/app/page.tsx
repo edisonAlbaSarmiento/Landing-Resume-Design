@@ -51,7 +51,7 @@ export default function Home() {
 			</section>
 			<section
 				id='setion2'
-				className='flex flex-row items-center justify-between px-36 py-16  bg-gray'
+				className='flex flex-row items-center justify-between  lg:px-36 lg:py-16 sm:px-8  bg-gray'
 			>
 				<About />
 			</section>
@@ -59,12 +59,12 @@ export default function Home() {
 				<MySkills />
 			</section>
 
-			<section className='bg-gray'>
+			<section className='bg-gray lg:px-20 sm:px-8'>
 				<Portfolio />
 			</section>
 			<section
 				id='setion3'
-				className='flex flex-row items-center justify-between px-20  bg-[#3d3e42]'
+				className='flex flex-row items-center justify-between lg:px-20 sm:px-8 bg-[#3d3e42]'
 			>
 				<Experience />
 			</section>

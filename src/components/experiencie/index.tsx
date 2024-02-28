@@ -110,15 +110,15 @@ export default function Experience(): JSX.Element {
 			<div className='mt-[5%]'>
 				{data.map((item) => (
 					<div className='' key={item.id}>
-						<div className='flex flex-row justify-start gap-10   sm:px-0 md:px-0 lg:px-48 xl:px-48 pb-8'>
+						<div className='flex sm:flex-col lg:flex-row justify-start lg:gap-10 sm:gap-2   sm:px-0 md:px-0 lg:px-48 xl:px-48 pb-8'>
 							<div className='flex flex-row'>
-								<div className='w-[5vw] bg-[gray] h-[5vh] flex justify-center items-center'>
+								<div className='sm:w-auto lg:w-[5vw] bg-[gray] h-[5vh] flex justify-center items-center'>
 									<div>{item?.date}</div>
 								</div>
-								<div className='w-0 h-0 border-l-[24px] border-l-[gray] border-y-[24px] border-y-transparent border-solid border-[transparent_transparent_transparent_#FF4532]' />
+								<div className='lg:flex sm:hidden  w-0 h-0 border-l-[24px] border-l-[gray] border-y-[24px] border-y-transparent border-solid border-[transparent_transparent_transparent_#FF4532]' />
 							</div>
 
-							<div className='flex flex-col items-center gap-5'>
+							<div className='lg:flex flex-col items-center gap-5 sm:hidden'>
 								<div className='bg-[#f0bf6c] shadow-[0px_1px_20px_#cca25c,inset_7px_7px_14px_#ffdc7c] w-[39px] h-[39px] rounded-[50%]' />
 								<div
 									className={`${

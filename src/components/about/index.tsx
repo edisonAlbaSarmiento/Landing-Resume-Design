@@ -5,7 +5,7 @@ export default function About(): JSX.Element {
 		<div>
 			<h1 className='text-[54px]'>About</h1>
 			<div className='flex flex-row'>
-				<div className='w-1/5 m-[1%] border-t-4 border-t-[solid]' />
+				<div className='w-1/5 m-[1%] border-t-4 border-t-[solid] sm:hidden' />
 				<h1 className='text-2xl '>
 					Systems Engineering pasionate about teamwork and multidisciplinary
 					tasks. I enjoy learning from new experiences and I find challenges as
