@@ -94,7 +94,6 @@ export default function Experience(): JSX.Element {
 			const updatedLineHeights: Record<number, string> = {};
 			data.forEach((item) => {
 				const descriptionLength = item.description.length;
-				console.log(item.description.length);
 				let lineHeight = "";
 				if (descriptionLength <= 800) {
 					lineHeight = "h-64";

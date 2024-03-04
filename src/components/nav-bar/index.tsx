@@ -2,8 +2,6 @@ import Image from "next/image";
 import Logo from "../../../public/icons/android-chrome-192x192.png";
 import { useState } from "react";
 import SearchIcon from "@mui/icons-material/Search";
-import Close from "@mui/icons-material/Close";
-import Menu from "@mui/icons-material/Menu";
 
 type NavBarProps = {
 	about: boolean;

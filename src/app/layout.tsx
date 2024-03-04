@@ -7,7 +7,6 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
 	title: "Edison Hoja de Vida",
 	description: "Mi hoja de vida",
-	manifest: "/public/manifest.json",
 };
 
 export default function RootLayout({
