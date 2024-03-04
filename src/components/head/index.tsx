@@ -1,5 +1,5 @@
 import Image from "next/image";
-import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
+import GitHubIcon from "@mui/icons-material/GitHub";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
@@ -30,11 +30,8 @@ export default function Header(): JSX.Element {
 				<div className='absolute flex flex-col items-center mx-44 my-0 w-1/12'>
 					<hr className='rounded-[10px] h-32 border-l-[medium]  bg-[#f0bf6c] border-solid border-[#f0bf6c]' />
 
-					<a
-						href='https://www.facebook.com/edison.albasarmiento/'
-						target='_blank'
-					>
-						<FacebookOutlinedIcon sx={{ fontSize: 40 }} />
+					<a href='https://github.com/edisonAlbaSarmiento' target='_blank'>
+						<GitHubIcon sx={{ fontSize: 40 }} />
 					</a>
 					<a
 						href='https://www.instagram.com/edison_alba_s/?hl=es-la'

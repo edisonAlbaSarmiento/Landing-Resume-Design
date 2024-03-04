@@ -1,5 +1,5 @@
 import React from "react";
-import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
+import GitHubIcon from "@mui/icons-material/GitHub";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
@@ -38,11 +38,8 @@ export default function ContactMe(): JSX.Element {
 			<div className='flex flex-row justify-center items-center mt-[2.8%] mb-[-3%]'>
 				<hr className='w-full h-1 bg-[#f0bf6c]  my-0' />
 				<div className='flex flex-row justify-center gap-12 w-6/12'>
-					<a
-						href='https://www.facebook.com/edison.albasarmiento/'
-						target='_blank'
-					>
-						<FacebookOutlinedIcon sx={{ fontSize: 40 }} />
+					<a href='https://github.com/edisonAlbaSarmiento' target='_blank'>
+						<GitHubIcon sx={{ fontSize: 40 }} />
 					</a>
 					<a
 						href='https://www.instagram.com/edison_alba_s/?hl=es-la'
