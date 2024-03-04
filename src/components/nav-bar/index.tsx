@@ -25,7 +25,7 @@ export default function NavBar(): JSX.Element {
 					className={`text-2xl ${
 						isActive.about ? "text-[#f9f9f9]" : "text-[#97989a]"
 					}`}
-					href='#setion1'
+					href='#section2'
 					onClick={() =>
 						setIsActive({
 							about: true,
@@ -40,7 +40,7 @@ export default function NavBar(): JSX.Element {
 					className={`text-2xl ${
 						isActive.portfolio ? "text-[#f9f9f9]" : "text-[#97989a]"
 					}`}
-					href='#setion2'
+					href='#section4'
 					onClick={() =>
 						setIsActive({
 							about: false,
@@ -55,7 +55,7 @@ export default function NavBar(): JSX.Element {
 					className={`text-2xl ${
 						isActive.contact ? "text-[#f9f9f9]" : "text-[#97989a]"
 					}`}
-					href='#setion3'
+					href='#section7'
 					onClick={() =>
 						setIsActive({
 							about: false,
