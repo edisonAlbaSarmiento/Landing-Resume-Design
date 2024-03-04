@@ -3,13 +3,20 @@ import React, { useEffect, useState } from "react";
 const data = [
 	{
 		id: 1,
-		text: "Technical Leader at Imaginamos",
-		description: `As a development team leader, I apply my strong knowledge and soft skills to foster a collaborative environment. My approach consists of delegating tasks jointly with my team, which allows us to work in harmony and achieve established objectives within the planned deadlines. My leadership is based on the application of effective communication skills, conflict resolution and empathy. These qualities allow me to guide my team efficiently, ensuring that each member feels valued and engaged in the process. I have led successful projects in which we have strictly met deadlines. This time management ability has been demonstrated on numerous occasions, supporting our track record of high-quality, timely delivery. My focus is to not only achieve goals, but also cultivate a work environment that inspires excellence and continued growth. I am committed to leading with passion and dedication, ensuring our team reaches its full potential on every project.`,
-		dates: "Sep 2022 — Present",
+		text: "Fronten Ssr at Siigo",
+		description: `As a Frontend SSR Developer, I specialize in creating efficient, high-performance user interfaces using technologies like React, Next.js, and related tools. My main focus is to optimize server-side rendering to ensure fast loading and optimal user experience. With experience in collaborative environments, I contribute my technical skills to the success of the team and the achievement of project objectives. My goal is to develop visually attractive, functional and accessible solutions for users.`,
+		dates: "March — Present",
 		date: "2024",
 	},
 	{
 		id: 2,
+		text: "Technical Leader at Imaginamos",
+		description: `As a development team leader, I apply my strong knowledge and soft skills to foster a collaborative environment. My approach consists of delegating tasks jointly with my team, which allows us to work in harmony and achieve established objectives within the planned deadlines. My leadership is based on the application of effective communication skills, conflict resolution and empathy. These qualities allow me to guide my team efficiently, ensuring that each member feels valued and engaged in the process. I have led successful projects in which we have strictly met deadlines. This time management ability has been demonstrated on numerous occasions, supporting our track record of high-quality, timely delivery. My focus is to not only achieve goals, but also cultivate a work environment that inspires excellence and continued growth. I am committed to leading with passion and dedication, ensuring our team reaches its full potential on every project.`,
+		dates: "Sep 2022 — Feb 2024",
+		date: "2024",
+	},
+	{
+		id: 3,
 		text: "Frontend Developer at Imaginamos",
 		description: `As a Front-End Developer, I have worked with a variety of technologies, including Loopback,
 		React-admin, React, React Native, NextJS, Ant Design, Material-UI, Redux, and Redux Toolkit.
@@ -27,7 +34,7 @@ const data = [
 		date: "2022",
 	},
 	{
-		id: 3,
+		id: 4,
 		text: "Full stack JS Developer at Chiper S.A.S",
 		description: `As a Junior Front-End Developer, I had the opportunity to work with various technologies,
 		including JavaScript (React-admin, Material-UI, React, React Native, Redux, Loopback) and
@@ -44,7 +51,7 @@ const data = [
 		date: "2019",
 	},
 	{
-		id: 4,
+		id: 5,
 		text: "Full stack JS Developer at Imaginamos",
 		description: `Provided support for a wide range of technologies and systems, including WordPress,
 		PHP, Laravel, CodeIgniter, CSS, JavaScript, jQuery and MySQL. My focus was on website
@@ -62,7 +69,7 @@ const data = [
 		date: "2018",
 	},
 	{
-		id: 5,
+		id: 6,
 		text: "Data Analyst at ETB",
 		description: `During my internship, I provided support in port validation of ETB services, managing
 		databases and administering ports. My role involved ensuring ETB services ran efficiently and
@@ -129,9 +136,9 @@ export default function Experience(): JSX.Element {
 								/>
 							</div>
 							<div className='flex flex-col gap-[5%]'>
-								<div>{item?.text}</div>
-								<div>{item?.dates}</div>
-								<div>{item?.description}</div>
+								<h1>{item?.text}</h1>
+								<h3>{item?.dates}</h3>
+								<p>{item?.description}</p>
 							</div>
 						</div>
 					</div>
