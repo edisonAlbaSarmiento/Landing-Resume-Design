@@ -9,11 +9,13 @@ import Logo from "../../../public/images/my.png";
 export default function Header(): JSX.Element {
 	return (
 		<div className='flex flex-row items-center justify-between h-[71vh] w-full'>
-			<div className='flex flex-col items-start w-1/3 ml-[13%] mr-[3%]'>
+			<div className='flex flex-col items-start w-1/3 ml-[13%] mr-[3%] sm:w-5/6'>
 				<div>
-					<div className='text-[42px] flex flex-row items-center gap-8'>
+					<div className='text-[42px] flex flex-row items-center gap-8 sm:gap-4'>
 						I&apos;M
-						<div className='text-[80px] text-[#f0bf6c]'>Edison Alba</div>
+						<h6 className='text-[80px] text-[#f0bf6c] sm:text-4xl'>
+							Edison Alba
+						</h6>
 					</div>
 				</div>
 
@@ -23,9 +25,9 @@ export default function Header(): JSX.Element {
 				</button>
 			</div>
 
-			<div className='flex flex-row justify-end items-end opacity-100   gap-8 text-[38px] mr-[0vw] mx-[1vw] my-[0%]'>
+			<div className='flex flex-row justify-end items-end opacity-100   gap-8 text-[38px] mr-[0vw] mx-[1vw] my-[0%] sm:hidden'>
 				<Image className='grayscale-[1]' src={Logo} alt='user' width={850} />
-				<div className='absolute flex flex-col items-center mx-44 my-0  w-1/12'>
+				<div className='absolute flex flex-col items-center mx-44 my-0 w-1/12'>
 					<hr className='rounded-[10px] h-32 border-l-[medium]  bg-[#f0bf6c] border-solid border-[#f0bf6c]' />
 
 					<a
