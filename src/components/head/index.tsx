@@ -26,7 +26,7 @@ export default function Header(): JSX.Element {
 			</div>
 
 			<div className='flex flex-row justify-end items-end opacity-100   gap-8 text-[38px] mr-[0vw] mx-[1vw] my-[0%] sm:hidden'>
-				<Image className='grayscale-[1]' src={Logo} alt='user' width={850} />
+				<Image className='grayscale-[1]' src={Logo} alt='user' width={751} />
 				<div className='absolute flex flex-col items-center mx-44 my-0 w-1/12'>
 					<hr className='rounded-[10px] h-32 border-l-[medium]  bg-[#f0bf6c] border-solid border-[#f0bf6c]' />
 
