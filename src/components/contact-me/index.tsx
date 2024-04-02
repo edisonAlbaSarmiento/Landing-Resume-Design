@@ -11,12 +11,14 @@ export default function ContactMe(): JSX.Element {
 	return (
 		<div className='flex flex-1 flex-col justify-center mb-[4%]'>
 			<div className='flex flex-row justify-center items-center'>
-				<hr className='w-full h-1 bg-[#f0bf6c] mr-[2%] my-0' />
-				<h1 className='text-[54px] w-6/12'>Contact Me</h1>
-				<hr className='w-full h-1 bg-[#f0bf6c] mx-0' />
+				<hr className='sm:w-1/4 xl:w-full  h-1 bg-[#f0bf6c] mr-[2%] my-0' />
+				<h1 className='sm:text-2xl sm:w-6/12 md:text-base  lg:text-[2rem] xl:text-[54px] xl:w-6/12    '>
+					Contact Me
+				</h1>
+				<hr className='sm:w-1/4 xl:w-full  h-1 bg-[#f0bf6c] mx-0' />
 			</div>
 			<div className='mt-[3%] flex flex-col gap-8'>
-				<div className='flex flex-row justify-center gap-6'>
+				<div className='sm:flex-col sm:items-center flex xl:flex-row justify-center gap-6 '>
 					<div className='w-[22rem] h-16 bg-[#31333b] flex items-center justify-center rounded-lg flex-row gap-3'>
 						<EmailIcon sx={{ fontSize: 40 }} />
 						<div className='text-[#f0bf6c]'>edi9708@hotmail.com</div>
@@ -36,31 +38,43 @@ export default function ContactMe(): JSX.Element {
 				</div>
 			</div>
 			<div className='flex flex-row justify-center items-center mt-[2.8%] mb-[-3%]'>
-				<hr className='w-full h-1 bg-[#f0bf6c]  my-0' />
-				<div className='flex flex-row justify-center gap-12 w-6/12'>
+				<hr className='sm:w-1/4 xl:w-full h-1 bg-[#f0bf6c]  my-0' />
+				<div className='flex flex-row justify-center sm:gap-8 xl:gap-12  w-6/12'>
 					<a href='https://github.com/edisonAlbaSarmiento' target='_blank'>
-						<GitHubIcon sx={{ fontSize: 40 }} />
+						<GitHubIcon
+							sx={{ fontSize: 40 }}
+							className='sm:text-2xl xl:text-[40px]'
+						/>
 					</a>
 					<a
 						href='https://www.instagram.com/edison_alba_s/?hl=es-la'
 						target='_blank'
 					>
-						<TwitterIcon sx={{ fontSize: 40 }} />
+						<TwitterIcon
+							sx={{ fontSize: 40 }}
+							className='sm:text-2xl xl:text-[40px]'
+						/>
 					</a>
 					<a
 						href='https://www.linkedin.com/in/edison-jordan-alba-sarmiento-866799154'
 						target='_blank'
 					>
-						<LinkedInIcon sx={{ fontSize: 40 }} />
+						<LinkedInIcon
+							sx={{ fontSize: 40 }}
+							className='sm:text-2xl xl:text-[40px]'
+						/>
 					</a>
 					<a
 						href='https://api.whatsapp.com/send?text=Ver mi pagina https://edison.com.co'
 						target='_blank'
 					>
-						<WhatsAppIcon sx={{ fontSize: 40 }} />
+						<WhatsAppIcon
+							sx={{ fontSize: 40 }}
+							className='sm:text-2xl xl:text-[40px]'
+						/>
 					</a>
 				</div>
-				<hr className='w-full h-1 bg-[#f0bf6c] mx-0' />
+				<hr className='sm:w-1/4 xl:w-full h-1 bg-[#f0bf6c] mx-0' />
 			</div>
 		</div>
 	);
