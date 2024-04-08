@@ -16,7 +16,7 @@ export default function NavBar(): JSX.Element {
 		contact: false,
 	});
 	return (
-		<nav className='flex flex-row items-center justify-between w-full'>
+		<nav className='flex sm:flex-col sm:gap-8 lg:flex-row items-center justify-between w-full'>
 			<Image src={Logo} alt='Logo' width={100} height={100} />
 			<div className='flex gap-16'>
 				<a

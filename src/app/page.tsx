@@ -85,7 +85,7 @@ export default function Home() {
 					<ContactMe />
 				</section>
 
-				<div className='w-[4%] h-12 fixed bg-[#f0bf6c] z-[999] p-2.5 left-[97%] right-0 top-[76%] bottom-[20%] flex items-center rounded-2xl'>
+				<div className='h-12 fixed bg-[#f0bf6c] z-[999] p-2.5 sm:left-[88%] lg:left-[96%] right-0 top-[76%] bottom-[20%] flex items-center rounded-[1rem_0_0_1rem]'>
 					<a
 						target='_blank'
 						href='https://api.whatsapp.com/send?text=Ver mi pagina https://edison.com.co'
