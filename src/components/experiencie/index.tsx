@@ -136,7 +136,7 @@ export default function Experience(): JSX.Element {
 							</div>
 							<div className='flex flex-col gap-[5%]'>
 								<h1>{item?.text}</h1>
-								<h3>{item?.dates}</h3>
+								<p>{item?.dates}</p>
 								<p>{item?.description}</p>
 							</div>
 						</div>

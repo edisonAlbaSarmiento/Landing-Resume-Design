@@ -90,6 +90,7 @@ export default function Home() {
 						target='_blank'
 						href='https://api.whatsapp.com/send?text=Ver mi pagina https://edison.com.co'
 						data-action='share/whatsapp/share'
+						aria-label='whatsapp'
 					>
 						<ShareIcon sx={{ fontSize: 40 }} />
 					</a>

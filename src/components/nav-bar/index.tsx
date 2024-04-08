@@ -18,7 +18,7 @@ export default function NavBar(): JSX.Element {
 	return (
 		<nav className='flex sm:flex-col sm:gap-8 lg:flex-row items-center justify-between w-full'>
 			<Image src={Logo} alt='Logo' width={100} height={100} />
-			<div className='flex gap-16'>
+			<div className='flex gap-4'>
 				<a
 					className={`text-2xl ${
 						isActive.about ? "text-[#f9f9f9]" : "text-[#97989a]"
@@ -31,6 +31,7 @@ export default function NavBar(): JSX.Element {
 							contact: false,
 						})
 					}
+					aria-label='About'
 				>
 					About
 				</a>
@@ -46,6 +47,7 @@ export default function NavBar(): JSX.Element {
 							contact: false,
 						})
 					}
+					aria-label='portfolio'
 				>
 					Portafolio
 				</a>
@@ -61,6 +63,7 @@ export default function NavBar(): JSX.Element {
 							contact: true,
 						})
 					}
+					aria-label='contact'
 				>
 					Contact
 				</a>
