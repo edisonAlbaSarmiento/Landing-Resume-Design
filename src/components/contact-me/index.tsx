@@ -10,9 +10,9 @@ import RoomIcon from "@mui/icons-material/Room";
 export default function ContactMe(): JSX.Element {
 	return (
 		<div className='flex flex-1 flex-col justify-center mb-[4%]'>
-			<div className='flex flex-row justify-center items-center'>
-				<hr className='sm:w-1/4 xl:w-full  h-1 bg-[#f0bf6c] mr-[2%] my-0' />
-				<h1 className='sm:text-2xl sm:w-6/12 md:text-base  lg:text-[2rem] xl:text-[54px] xl:w-6/12    '>
+			<div className='flex flex-row justify-between items-center'>
+				<hr className='sm:w-1/4 xl:w-full  h-1 bg-[#f0bf6c] my-0' />
+				<h1 className='sm:text-2xl  md:text-base  lg:text-[2rem] xl:text-[54px] xl:w-6/12  gap-6  text-center '>
 					Contact Me
 				</h1>
 				<hr className='sm:w-1/4 xl:w-full  h-1 bg-[#f0bf6c] mx-0' />
@@ -37,41 +37,29 @@ export default function ContactMe(): JSX.Element {
 					</div>
 				</div>
 			</div>
-			<div className='flex flex-row justify-center items-center mt-[2.8%] mb-[-3%]'>
+			<div className='flex flex-row justify-center items-center mt-[2.8%] mb-[-3%] gap-6'>
 				<hr className='sm:w-1/4 xl:w-full h-1 bg-[#f0bf6c]  my-0' />
-				<div className='flex flex-row justify-center sm:gap-8 xl:gap-12  w-6/12'>
+				<div className='flex flex-row justify-evelyn sm:gap-8 xl:gap-12 '>
 					<a href='https://github.com/edisonAlbaSarmiento' target='_blank'>
-						<GitHubIcon
-							sx={{ fontSize: 40 }}
-							className='sm:text-2xl xl:text-[40px]'
-						/>
+						<GitHubIcon className='sm:text-2xl xl:text-[40px]' />
 					</a>
 					<a
 						href='https://www.instagram.com/edison_alba_s/?hl=es-la'
 						target='_blank'
 					>
-						<TwitterIcon
-							sx={{ fontSize: 40 }}
-							className='sm:text-2xl xl:text-[40px]'
-						/>
+						<TwitterIcon className='sm:text-2xl xl:text-[40px]' />
 					</a>
 					<a
 						href='https://www.linkedin.com/in/edison-jordan-alba-sarmiento-866799154'
 						target='_blank'
 					>
-						<LinkedInIcon
-							sx={{ fontSize: 40 }}
-							className='sm:text-2xl xl:text-[40px]'
-						/>
+						<LinkedInIcon className='sm:text-2xl xl:text-[40px]' />
 					</a>
 					<a
 						href='https://api.whatsapp.com/send?text=Ver mi pagina https://edison.com.co'
 						target='_blank'
 					>
-						<WhatsAppIcon
-							sx={{ fontSize: 40 }}
-							className='sm:text-2xl xl:text-[40px]'
-						/>
+						<WhatsAppIcon className='sm:text-2xl xl:text-[40px]' />
 					</a>
 				</div>
 				<hr className='sm:w-1/4 xl:w-full h-1 bg-[#f0bf6c] mx-0' />

@@ -13,7 +13,7 @@ export default function Header(): JSX.Element {
 				<div>
 					<div className='text-[42px] flex flex-row items-center lg:gap-8 sm:gap-4'>
 						I&apos;M
-						<h6 className='lg:text-[80px] text-[#f0bf6c] sm:text-4xl'>
+						<h6 className='lg:text-[50px] text-[#f0bf6c] sm:text-4xl'>
 							Edison Alba
 						</h6>
 					</div>
