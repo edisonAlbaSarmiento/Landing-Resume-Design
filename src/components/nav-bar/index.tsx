@@ -65,7 +65,7 @@ export default function NavBar(): JSX.Element {
 					Contact
 				</a>
 			</div>
-			<div className='w-64 h-16 flex items-center justify-center bg-[#3d3e42] p-[2%] rounded-[10px]'>
+			<div className='w-72 h-16 flex items-center justify-center bg-[#3d3e42] p-[2%] rounded-[10px]'>
 				<input
 					className='bg-[transparent] outline-none'
 					type='text'
