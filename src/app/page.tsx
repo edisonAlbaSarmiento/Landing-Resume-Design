@@ -97,7 +97,9 @@ export default function Home() {
 				</div>
 			</main>
 			<footer className='flex flex-row items-center justify-center px-36 py-16  bg-gray'>
-				<h1 className='text-[#f0bf6c] font-semibold'>Thanks for Scrolling</h1>
+				<h1 className='text-[#f0bf6c] font-semibold text-center'>
+					Thanks for Scrolling
+				</h1>
 			</footer>
 		</>
 	);

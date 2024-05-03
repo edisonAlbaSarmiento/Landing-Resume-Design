@@ -8,7 +8,7 @@ import Logo from "../../../public/images/my.png";
 
 export default function Header(): JSX.Element {
 	return (
-		<div className='flex flex-row items-center justify-between h-[71vh] w-full'>
+		<div className='flex flex-row items-center justify-between lg:h-[71vh] sm:h-[33vh] w-full'>
 			<div className='flex flex-col items-start w-1/3 ml-[13%] mr-[3%] lg:w-auto sm:w-5/6'>
 				<div>
 					<div className='text-[42px] flex flex-row items-center lg:gap-8 sm:gap-4'>
