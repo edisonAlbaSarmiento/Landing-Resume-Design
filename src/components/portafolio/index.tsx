@@ -59,7 +59,7 @@ export default function Portfolio(): JSX.Element {
 							className={`w-96 lg:h-96 sm:h-auto flex justify-center items-center hover:bg-[#f0bf6c] `}
 							key={item.text}
 						>
-							<div className='max-w-7xl h-[43vh] flex flex-col justify-center items-center gap-6 opacity-0 hover:bg-[#515155cf] hover:opacity-100 hover:transition-all hover:duration-[1s] hover:ease-[ease] hover:delay-[0s]'>
+							<div className='w-full h-[43vh] flex flex-col justify-center items-center gap-6 opacity-0 hover:bg-[#515155cf] hover:opacity-100 hover:transition-all hover:duration-[1s] hover:ease-[ease] hover:delay-[0s]'>
 								<h1 className='font-semibold  text-2xl text-center'>
 									{item.text}
 								</h1>
@@ -70,6 +70,8 @@ export default function Portfolio(): JSX.Element {
 							</div>
 						</div>
 					))}
+				</div>
+				<div className='flex justify-center'>
 					{visibleItems < data.length && (
 						<button
 							className='sm:max-w-3/5 sm:px-8 lg:w-[15%] h-16 text-2xl mb-[7%] rounded-[10px] bg-[#ffc86a] text-[#31333b] font-semibold'

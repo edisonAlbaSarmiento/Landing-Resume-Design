@@ -5,7 +5,7 @@ const data = [
 		id: 1,
 		text: "Fronten Ssr at Siigo",
 		description: `As a Frontend SSR Developer, I specialize in creating efficient, high-performance user interfaces using technologies like React, Next.js, and related tools. My main focus is to optimize server-side rendering to ensure fast loading and optimal user experience. With experience in collaborative environments, I contribute my technical skills to the success of the team and the achievement of project objectives. My goal is to develop visually attractive, functional and accessible solutions for users.`,
-		dates: "March — Present",
+		dates: "March 2024 — Present",
 		date: "2024",
 	},
 	{
@@ -119,10 +119,10 @@ export default function Experience(): JSX.Element {
 						<div className='flex sm:flex-col lg:flex-row justify-start lg:gap-10 sm:gap-2   sm:px-0 md:px-0 lg:px-48 xl:px-48 pb-8'>
 							<div className='flex flex-row'>
 								<div className='flex justify-center flex-row h-[53px] items-center'>
-									<div className='sm:w-auto lg:w-[5vw] bg-[gray] h-[5vh] flex justify-center items-center'>
+									<div className='sm:w-[4rem] lg:w-[5vw] bg-[gray] h-[3rem] flex justify-center items-center'>
 										<div>{item?.date}</div>
 									</div>
-									<div className='lg:flex sm:hidden  w-0 h-0  border-t-[16px] border-b-[24px] border-l-[24px] border-l-[gray] border-y-[24px] border-y-transparent border-solid border-[transparent_transparent_transparent_#FF4532]' />
+									<div className='lg:flex sm:hidden  w-0 h-0  border-t-[24px] border-b-[24px] border-l-[24px] border-l-[gray] border-y-[24px] border-y-transparent border-solid border-[transparent_transparent_transparent_#FF4532]' />
 								</div>
 							</div>
 
@@ -134,9 +134,9 @@ export default function Experience(): JSX.Element {
 									} border-l-[thick] border-l-[#fff] border-solid`}
 								/>
 							</div>
-							<div className='flex flex-col gap-[5%]'>
+							<div className='flex flex-col gap-[1rem	]'>
 								<h1>{item?.text}</h1>
-								<p>{item?.dates}</p>
+								<p className='text-[#f0bf6c]'>{item?.dates}</p>
 								<p>{item?.description}</p>
 							</div>
 						</div>
