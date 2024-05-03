@@ -134,7 +134,7 @@ export default function Experience(): JSX.Element {
 									} border-l-[thick] border-l-[#fff] border-solid`}
 								/>
 							</div>
-							<div className='flex flex-col gap-[1rem	]'>
+							<div className='flex flex-col gap-[1rem]'>
 								<h1>{item?.text}</h1>
 								<p className='text-[#f0bf6c]'>{item?.dates}</p>
 								<p>{item?.description}</p>
