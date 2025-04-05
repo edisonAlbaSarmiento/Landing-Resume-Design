@@ -44,7 +44,7 @@ export default function Portfolio(): JSX.Element {
 	return (
 		<div className='flex flex-1 flex-col justify-center'>
 			<div className='flex flex-1 flex-row justify-center'>
-				<h1 className='text-[54px]'>Portafolio</h1>
+				<h1 className='text-[54px]'>Projects</h1>
 			</div>
 			<div className='flex flex-col'>
 				<div className='flex flex-wrap justify-center gap-[4.5rem] mx-0 my-[4%]'>

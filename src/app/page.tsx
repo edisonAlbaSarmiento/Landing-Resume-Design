@@ -7,7 +7,7 @@ import MySkills from "@/components/my-skills";
 import NavBar from "@/components/nav-bar";
 import Portfolio from "@/components/portafolio";
 import ShareIcon from "@mui/icons-material/Share";
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
@@ -18,6 +18,37 @@ if (typeof window !== "undefined") {
 
 export default function Home() {
 	const main = useRef<HTMLElement | any>();
+	const [isVisible, setIsVisible] = useState(true);
+	const mainSectionRef = useRef<HTMLElement | any>(null);
+
+	useEffect(() => {
+		const handleScroll = () => {
+			const scrollTop = window.screenY;
+			const windowHeight = window.innerHeight;
+			const docHeight = document.documentElement.scrollHeight;
+			const atBottom = scrollTop + windowHeight >= docHeight;
+
+			if (atBottom) {
+				if (isVisible) {
+					setIsVisible(false);
+					scrollToMain();
+				}
+			} else {
+				setIsVisible(true);
+			}
+		};
+
+		const scrollToMain = () => {
+			if (mainSectionRef.current) {
+				mainSectionRef.current.scrollIntoView({ behavior: "smooth" });
+			}
+		};
+
+		window.addEventListener("scroll", handleScroll);
+		return () => {
+			window.removeEventListener("scroll", handleScroll);
+		};
+	}, [isVisible]);
 
 	useGSAP(
 		() => {
@@ -41,7 +72,10 @@ export default function Home() {
 	return (
 		<>
 			<main ref={main}>
-				<section className='flex flex-col items-center justify-between px-36 py-16 bg-gray'>
+				<section
+					id='main'
+					className='flex flex-col items-center justify-between px-36 py-16 bg-gray'
+				>
 					<NavBar />
 				</section>
 				<section
@@ -72,20 +106,19 @@ export default function Home() {
 				>
 					<Experience />
 				</section>
-				<section
+				{/*<section
 					id='section6'
 					className='flex flex-row items-center justify-between px-36 py-16  bg-gray'
 				>
 					Coming soon...
-				</section>
+				</section>*/}
 				<section
 					id='section7'
 					className='flex flex-row items-center justify-between  bg-[#3d3e42] h-80'
 				>
 					<ContactMe />
 				</section>
-
-				<div className='h-12 fixed bg-[#f0bf6c] z-[999] p-2.5 sm:left-[88%] lg:left-[96%] right-0 top-[76%] bottom-[20%] flex items-center rounded-[1rem_0_0_1rem]'>
+				<div className='h-12 fixed bg-[#f0bf6c] z-[999] p-2.5 sm:left-[88%] lg:left-[96%] right-0 top-50%] bottom-[50%] flex items-center rounded-[1rem_0_0_1rem]'>
 					<a
 						target='_blank'
 						href='https://api.whatsapp.com/send?text=Ver mi pagina https://edison.com.co'
@@ -95,6 +128,17 @@ export default function Home() {
 						<ShareIcon sx={{ fontSize: 40 }} />
 					</a>
 				</div>
+				{isVisible && (
+					<div className='h-12 fixed bg-[#f0bf6c] z-[999] p-2.5 sm:left-[88%] lg:left-[96%] right-0 top-[76%] bottom-[20%] flex items-center rounded-[1rem_0_0_1rem]'>
+						<a
+							href='#main'
+							data-action='share/whatsapp/share'
+							aria-label='whatsapp'
+						>
+							<ShareIcon sx={{ fontSize: 40 }} />
+						</a>
+					</div>
+				)}
 			</main>
 			<footer className='flex flex-row items-center justify-center px-36 py-16  bg-gray'>
 				<h1 className='text-[#f0bf6c] font-semibold text-center'>

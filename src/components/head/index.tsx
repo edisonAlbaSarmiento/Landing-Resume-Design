@@ -20,8 +20,11 @@ export default function Header(): JSX.Element {
 				</div>
 
 				<p className='text-bold text-4xl'>Tech Leader and Frontend Developer</p>
-				<button className='w-1/2 h-16 text-2xl mx-0 my-[13%] rounded-[10px] border-4 border-solid  border-[#ffc86a]'>
-					<a href='#section7'>Contact Me</a>
+				<button
+					className='w-1/2 h-16 text-2xl mx-0 my-[13%] rounded-[10px] border-4 border-solid  border-[#ffc86a] hover:bg-[#f0bf6c]'
+					onClick={() => (window.location.href = "#section7")}
+				>
+					Contact Me
 				</button>
 			</div>
 

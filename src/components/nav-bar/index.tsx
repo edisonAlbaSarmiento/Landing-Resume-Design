@@ -15,6 +15,14 @@ export default function NavBar(): JSX.Element {
 		portfolio: false,
 		contact: false,
 	});
+	const search = (e: { target: { value: any } }) => {
+		console.log("search", e.target.value);
+		if ("about" === e.target.value) {
+			window.location.href = "#section2";
+		} else if ("portfolio" === e.target.value) {
+			window.location.href = "#section4";
+		}
+	};
 	return (
 		<nav className='flex sm:flex-col sm:gap-8 lg:flex-row items-center justify-between w-full'>
 			<Image src={Logo} alt='Logo' width={100} height={100} />
@@ -49,7 +57,7 @@ export default function NavBar(): JSX.Element {
 					}
 					aria-label='portfolio'
 				>
-					Portafolio
+					Projects
 				</a>
 				<a
 					className={`text-2xl ${
@@ -74,6 +82,7 @@ export default function NavBar(): JSX.Element {
 					type='text'
 					placeholder='Buscar'
 					name='search'
+					onChange={search}
 				/>
 				<SearchIcon sx={{ fontSize: 30, color: "#9c9c9e" }} />
 			</div>
