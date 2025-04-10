@@ -21,6 +21,8 @@ export default function NavBar(): JSX.Element {
 			window.location.href = "#section2";
 		} else if ("portfolio" === e.target.value) {
 			window.location.href = "#section4";
+		} else if ("contact" === e.target.value) {
+			window.location.href = "#section7";
 		}
 	};
 	return (

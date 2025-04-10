@@ -1,326 +1,325 @@
 {
-  "data": [
-    {
-      "en": {
-        "work": [
-          {
-            "imageWork": "https://raw.githubusercontent.com/edisonAlbaSarmiento/Landing-Resume-Design/master/images/icon-imaginamos.jpeg",
-            "description": "Imaginamos",
-            "urlWork": "https://imaginamos.com/"
-          },
-          {
-            "imageWork": "https://raw.githubusercontent.com/edisonAlbaSarmiento/Landing-Resume-Design/master/images/icon-chiper.png",
-            "description": "Chiper",
-            "urlWork": "https://chiper.co/"
-          },
-          {
-            "imageWork": "https://raw.githubusercontent.com/edisonAlbaSarmiento/Landing-Resume-Design/master/images/icon-etb.jpeg",
-            "description": "ETB-Practices",
-            "urlWork": "https://etb.com/"
-          }
-        ],
-        "labs": [
-          {
-            "id": 0,
-            "active": false,
-            "imageLabs": "testing",
-            "title": "Website Testing",
-            "description": "Example of creating a website with native code, login with networks and filters",
-            "redirectGithub": "https://github.com/edisonAlbaSarmiento/network-tests",
-            "viewMoreIn": "https://network-tests.vercel.app",
-            "complete": true
-          },
-          {
-            "id": 1,
-            "active": false,
-            "imageLabs": "detailhome",
-            "title": "Website Testing API Movies",
-            "description": "Curated color palate inspiration on your  figure  tip",
-            "redirectGithub": "https://github.com/edisonAlbaSarmiento/info-landing-page",
-            "viewMoreIn": "https://info-landing-page.vercel.app/",
-            "complete": true
-          },
-          {
-            "id": 2,
-            "imageLabs": "landing",
-            "title": "Landing pixel perfect",
-            "description": "Curated color palate inspiration on your  figure  tip",
-            "redirectGithub": "https://github.com/edisonAlbaSarmiento/frontend-info-page",
-            "viewMoreIn": "https://edisonalbasarmiento.github.io/frontend-info-page/",
-            "complete": false
-          },
-          {
-            "id": 3,
-            "imageLabs": "chat",
-            "title": "Testing chat whit socket.io",
-            "description": "Curated color palate inspiration on your  figure  tip",
-            "redirectGithub": "https://github.com/edisonAlbaSarmiento/app-chat-react",
-            "viewMoreIn": "https://github.com/edisonAlbaSarmiento/app-chat-react",
-            "complete": true
-          },
-          {
-            "id": 4,
-            "imageLabs": "landingimaginamos",
-            "title": "Clone page Imaginamos",
-            "description": "Create whit next js",
-            "redirectGithub": "https://github.com/edisonAlbaSarmiento/landing-page-in-next",
-            "viewMoreIn": "https://landing-page-in-next.vercel.app/",
-            "complete": false
-          },
-          {
-            "id": 5,
-            "imageLabs": "https://raw.githubusercontent.com/edisonAlbaSarmiento/Landing-Resume-Design/master/images/flutter.png",
-            "title": "Learning flutter",
-            "description": "Create app music whit flutter",
-            "redirectGithub": "https://github.com/edisonAlbaSarmiento/LearnFlutter",
-            "viewMoreIn": "https://github.com/edisonAlbaSarmiento/LearnFlutter",
-            "complete": false
-          },
-          {
-            "id": 6,
-            "imageLabs": "https://raw.githubusercontent.com/edisonAlbaSarmiento/Landing-Resume-Design/master/images/men.jpeg",
-            "title": "Chat bot whit conditions",
-            "description": "Chat create for conditions testing",
-            "redirectGithub": "https://edisonalbasarmiento.github.io/chat-bot/",
-            "viewMoreIn": "https://edisonalbasarmiento.github.io/chat-bot",
-            "complete": false
-          },
-          {
-            "id": 7,
-            "imageLabs": "proyect",
-            "title": "Project Front End for app, back and admin",
-            "description": "Project Front End for app",
-            "redirectGithub": "https://github.com/edisonAlbaSarmiento/Proyect-Front-End",
-            "viewMoreIn": "https://github.com/edisonAlbaSarmiento/Proyect-Front-End",
-            "complete": false
-          },
-          {
-            "id": 8,
-            "imageLabs": "https://raw.githubusercontent.com/edisonAlbaSarmiento/Landing-Resume-Design/master/images/men.jpeg",
-            "title": "Todo list with react and redux",
-            "description": "Todo list testing",
-            "redirectGithub": "https://github.com/edisonAlbaSarmiento/To-List-React-Redux",
-            "viewMoreIn": "https://github.com/edisonAlbaSarmiento/To-List-React-Redux",
-            "complete": false
-          },
-          {
-            "id": 9,
-            "imageLabs": "https://raw.githubusercontent.com/edisonAlbaSarmiento/Landing-Resume-Design/master/images/men.jpeg",
-            "title": "Weather Location",
-            "description": "Web whit Weather Location",
-            "redirectGithub": "https://github.com/edisonAlbaSarmiento/React-Js-Redux-Es6-Udemy/blob/master/src/components/WeatherLocation/Location.js",
-            "viewMoreIn": "https://github.com/edisonAlbaSarmiento/React-Js-Redux-Es6-Udemy/blob/master/src/components/WeatherLocation/Location.js",
-            "complete": false
-          },
-          {
-            "id": 10,
-            "imageLabs": "https://raw.githubusercontent.com/edisonAlbaSarmiento/Landing-Resume-Design/master/images/men.jpeg",
-            "title": "Project in PHP",
-            "description": "Web whit php",
-            "redirectGithub": "https://github.com/edisonAlbaSarmiento/ProyectoSena",
-            "viewMoreIn": "https://github.com/edisonAlbaSarmiento/ProyectoSena",
-            "complete": true
-
-          }
-        ],
-        "about": {
-          "userName": "Edison Jordan Alba Sarmiento",
-          "position": "Frontend Developer",
-          "jobDescriptionShort": "Systems Engineering pasionate about teamwork and multidisciplinary tasks. I enjoy learning from new experiences and I find challenges as something that would make me grow as a proffesional. Working in technology makes me find out different and logical ways to solve problems and propose innovative ideas that could help the team I am working with.",
-          "DescriptionLargeModal": "Proin dictum eros non eros aliquet, non accumsan arcu maximus. Sed eu pellentesque turpisProin dictum eros non eros aliquet, non accumsan arcu maximus. Sed eu pellentesque turpisProin dictum eros non eros aliquet, non accumsan arcu maximus. Sed eu pellentesque turpisProin dictum eros non eros aliquet, non accumsan arcu maximus. Sed eu pellentesque turpisProin dictum eros non eros aliquet, non accumsan arcu maximus. Sed eu pellentesque turpis",
-          "urlVideoProfile": "https://www.youtube.com/watch?v=oNOeHyV_aC0"
-        },
-        "skills": [
-          {
-            "image": "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg",
-            "porcentus": 50,
-            "title": "JavaScript"
-          },
-          {
-            "image": "https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg",
-            "porcentus": 50,
-            "title": "Typescript"
-          },
-          {
-            "image": "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg",
-            "porcentus": 50,
-            "title": "React"
-          },
-          {
-            "image": "https://raw.githubusercontent.com/devicons/devicon/master/icons/materialui/materialui-original.svg",
-            "porcentus": 50,
-            "title": "Material UI"
-          },
-          {
-            "image": "https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg",
-            "porcentus": 50,
-            "title": "Redux"
-          },
-          {
-            "image": "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-plain-wordmark.svg",
-            "porcentus": 50,
-            "title": "CSS3"
-          },
-          {
-            "image": "https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg",
-            "porcentus": 50,
-            "title": "HTML5"
-          },
-          {
-            "image": "https://raw.githubusercontent.com/devicons/devicon/master/icons/firebase/firebase-plain-wordmark.svg",
-            "porcentus": 50,
-            "title": "Firebase"
-          },
-          {
-            "image": "https://raw.githubusercontent.com/devicons/devicon/master/icons/nextjs/nextjs-original.svg",
-            "porcentus": 50,
-            "title": "Nextjs"
-          },
-          {
-            "image": "https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg",
-            "porcentus": 50,
-            "title": "MySQL"
-          },
-          {
-            "image": "https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg",
-            "porcentus": 50,
-            "title": "NodeJS"
-          },
-          {
-            "image": "https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original-wordmark.svg",
-            "porcentus": 50,
-            "title": "Git"
-          }
-        ],
-        "dataUserMenu": {
-          "userImage": "https://avatars3.githubusercontent.com/u/31748119?s=460&amp;u=5b533fd135904b8b25951011a0c3da20fe15b413&amp;v=4",
-          "facebook": "https://github.com/edisonAlbaSarmiento",
-          "instagram": "https://www.instagram.com/edison_alba_s/?hl=es-la",
-          "linkedIn": "https://co.linkedin.com/in/edison-jordan-alba-sarmiento-866799154",
-          "twitter": ""
-        }
-      }
-    },
-    {
-      "es": {
-        "work": [
-          {
-            "imageWork": "https://raw.githubusercontent.com/edisonAlbaSarmiento/Landing-Resume-Design/master/images/icon-imaginamos.jpeg",
-            "description": "Imaginamos",
-            "urlWork": "https://imaginamos.com/"
-          },
-          {
-            "imageWork": "https://raw.githubusercontent.com/edisonAlbaSarmiento/Landing-Resume-Design/master/images/icon-chiper.png",
-            "description": "Chiper",
-            "urlWork": "https://chiper.co/"
-          },
-          {
-            "imageWork": "https://raw.githubusercontent.com/edisonAlbaSarmiento/Landing-Resume-Design/master/images/icon-etb.jpeg",
-            "description": "ETB-Praticas",
-            "urlWork": "https://etb.com/"
-          }
-        ],
-        "labs": [
-          {
-            "id": 0,
-            "active": false,
-            "imageLabs": "testing",
-            "title": "Pruebas de sitios web",
-            "description": "Ejemplo de creación de sitio web con codigo nativo ,inicio de sesion con redes y filtros ",
-            "viewMoreIn": "https://network-tests.vercel.app"
-          },
-          {
-            "id": 1,
-            "imageLabs": "https://cdn.pixabay.com/photo/2015/12/04/14/05/code-1076536_1280.jpg",
-            "title": "Lab testuper 2",
-            "description": "Curacion color plateado inspiracion de una figura",
-            "viewMoreIn": "http://www.google.com"
-          },
-          {
-            "id": 2,
-            "imageLabs": "https://cdn.pixabay.com/photo/2018/05/08/08/44/artificial-intelligence-3382507__340.jpg",
-            "title": "Lab testuper 3",
-            "description": "Curacion color plateado inspiracion de una figura",
-            "viewMoreIn": "http://www.google.com"
-          }
-        ],
-        "about": {
-          "userName": "Edison Jordan Alba Sarmiento",
-          "position": "Desarrollador FullStack",
-          "jobDescriptionShort": "Ingeniero de Sistemas apasionado por el trabajo en equipo y las tareas multidisciplinares. Disfruto aprendiendo de nuevas experiencias y encuentro desafíos como algo que me haría crecer como profesional. Trabajar en tecnología me hace descubrir formas diferentes y lógicas de resolver problemas y proponer ideas innovadoras que puedan ayudar al equipo con el que trabajo.",
-          "DescriptionLargeModal": "la globalización solamente como un proceso económico, tiene también implicaciones sociales y culturalela globalización solamente como un proceso económico, tiene también implicaciones sociales y culturalela globalización solamente como un proceso económico, tiene también implicaciones sociales y culturalela globalización solamente como un proceso económico, tiene también implicaciones sociales y culturalela globalización solamente como un proceso económico, tiene también implicaciones sociales y culturale",
-          "urlVideoProfile": "https://www.youtube.com/watch?v=oNOeHyV_aC0"
-        },
-        "skills": [
-          {
-            "image": "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg",
-            "porcentus": 50,
-            "title": "JavaScript"
-          },
-          {
-            "image": "https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg",
-            "porcentus": 50,
-            "title": "Typescript"
-          },
-          {
-            "image": "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg",
-            "porcentus": 50,
-            "title": "React"
-          },
-          {
-            "image": "https://raw.githubusercontent.com/devicons/devicon/master/icons/materialui/materialui-original.svg",
-            "porcentus": 50,
-            "title": "Material UI"
-          },
-          {
-            "image": "https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg",
-            "porcentus": 50,
-            "title": "Redux"
-          },
-          {
-            "image": "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-plain-wordmark.svg",
-            "porcentus": 50,
-            "title": "CSS3"
-          },
-          {
-            "image": "https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg",
-            "porcentus": 50,
-            "title": "HTML5"
-          },
-          {
-            "image": "https://raw.githubusercontent.com/devicons/devicon/master/icons/firebase/firebase-plain-wordmark.svg",
-            "porcentus": 50,
-            "title": "Firebase"
-          },
-          {
-            "image": "https://raw.githubusercontent.com/devicons/devicon/master/icons/nextjs/nextjs-original.svg",
-            "porcentus": 50,
-            "title": "Nextjs"
-          },
-          {
-            "image": "https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg",
-            "porcentus": 50,
-            "title": "MySQL"
-          },
-          {
-            "image": "https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg",
-            "porcentus": 50,
-            "title": "NodeJS"
-          },
-          {
-            "image": "https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original-wordmark.svg",
-            "porcentus": 50,
-            "title": "Git"
-          }
-        ],
-        "dataUserMenu": {
-          "userImage": "https://avatars3.githubusercontent.com/u/31748119?s=460&amp;u=5b533fd135904b8b25951011a0c3da20fe15b413&amp;v=4",
-          "facebook": "https://github.com/edisonAlbaSarmiento",
-          "instagram": "https://www.instagram.com/edison_alba_s/?hl=es-la",
-          "linkedIn": "https://co.linkedin.com/in/edison-jordan-alba-sarmiento-866799154",
-          "twitter": ""
-        }
-      }
-    }
-  ]
+	"data": [
+		{
+			"en": {
+				"work": [
+					{
+						"imageWork": "https://raw.githubusercontent.com/edisonAlbaSarmiento/Landing-Resume-Design/master/images/icon-imaginamos.jpeg",
+						"description": "Imaginamos",
+						"urlWork": "https://imaginamos.com/"
+					},
+					{
+						"imageWork": "https://raw.githubusercontent.com/edisonAlbaSarmiento/Landing-Resume-Design/master/images/icon-chiper.png",
+						"description": "Chiper",
+						"urlWork": "https://chiper.co/"
+					},
+					{
+						"imageWork": "https://raw.githubusercontent.com/edisonAlbaSarmiento/Landing-Resume-Design/master/images/icon-etb.jpeg",
+						"description": "ETB-Practices",
+						"urlWork": "https://etb.com/"
+					}
+				],
+				"labs": [
+					{
+						"id": 0,
+						"active": false,
+						"imageLabs": "testing",
+						"title": "Website Testing",
+						"description": "Example of creating a website with native code, login with networks and filters",
+						"redirectGithub": "https://github.com/edisonAlbaSarmiento/network-tests",
+						"viewMoreIn": "https://network-tests.vercel.app",
+						"complete": true
+					},
+					{
+						"id": 1,
+						"active": false,
+						"imageLabs": "detailhome",
+						"title": "Website Testing API Movies",
+						"description": "Curated color palate inspiration on your  figure  tip",
+						"redirectGithub": "https://github.com/edisonAlbaSarmiento/info-landing-page",
+						"viewMoreIn": "https://info-landing-page.vercel.app/",
+						"complete": true
+					},
+					{
+						"id": 2,
+						"imageLabs": "landing",
+						"title": "Landing pixel perfect",
+						"description": "Curated color palate inspiration on your  figure  tip",
+						"redirectGithub": "https://github.com/edisonAlbaSarmiento/frontend-info-page",
+						"viewMoreIn": "https://edisonalbasarmiento.github.io/frontend-info-page/",
+						"complete": false
+					},
+					{
+						"id": 3,
+						"imageLabs": "chat",
+						"title": "Testing chat whit socket.io",
+						"description": "Curated color palate inspiration on your  figure  tip",
+						"redirectGithub": "https://github.com/edisonAlbaSarmiento/app-chat-react",
+						"viewMoreIn": "https://github.com/edisonAlbaSarmiento/app-chat-react",
+						"complete": true
+					},
+					{
+						"id": 4,
+						"imageLabs": "landingimaginamos",
+						"title": "Clone page Imaginamos",
+						"description": "Create whit next js",
+						"redirectGithub": "https://github.com/edisonAlbaSarmiento/landing-page-in-next",
+						"viewMoreIn": "https://landing-page-in-next.vercel.app/",
+						"complete": false
+					},
+					{
+						"id": 5,
+						"imageLabs": "https://raw.githubusercontent.com/edisonAlbaSarmiento/Landing-Resume-Design/master/images/flutter.png",
+						"title": "Learning flutter",
+						"description": "Create app music whit flutter",
+						"redirectGithub": "https://github.com/edisonAlbaSarmiento/LearnFlutter",
+						"viewMoreIn": "https://github.com/edisonAlbaSarmiento/LearnFlutter",
+						"complete": false
+					},
+					{
+						"id": 6,
+						"imageLabs": "https://raw.githubusercontent.com/edisonAlbaSarmiento/Landing-Resume-Design/master/images/men.jpeg",
+						"title": "Chat bot whit conditions",
+						"description": "Chat create for conditions testing",
+						"redirectGithub": "https://edisonalbasarmiento.github.io/chat-bot/",
+						"viewMoreIn": "https://edisonalbasarmiento.github.io/chat-bot",
+						"complete": false
+					},
+					{
+						"id": 7,
+						"imageLabs": "proyect",
+						"title": "Project Front End for app, back and admin",
+						"description": "Project Front End for app",
+						"redirectGithub": "https://github.com/edisonAlbaSarmiento/Proyect-Front-End",
+						"viewMoreIn": "https://github.com/edisonAlbaSarmiento/Proyect-Front-End",
+						"complete": false
+					},
+					{
+						"id": 8,
+						"imageLabs": "https://raw.githubusercontent.com/edisonAlbaSarmiento/Landing-Resume-Design/master/images/men.jpeg",
+						"title": "Todo list with react and redux",
+						"description": "Todo list testing",
+						"redirectGithub": "https://github.com/edisonAlbaSarmiento/To-List-React-Redux",
+						"viewMoreIn": "https://github.com/edisonAlbaSarmiento/To-List-React-Redux",
+						"complete": false
+					},
+					{
+						"id": 9,
+						"imageLabs": "https://raw.githubusercontent.com/edisonAlbaSarmiento/Landing-Resume-Design/master/images/men.jpeg",
+						"title": "Weather Location",
+						"description": "Web whit Weather Location",
+						"redirectGithub": "https://github.com/edisonAlbaSarmiento/React-Js-Redux-Es6-Udemy/blob/master/src/components/WeatherLocation/Location.js",
+						"viewMoreIn": "https://github.com/edisonAlbaSarmiento/React-Js-Redux-Es6-Udemy/blob/master/src/components/WeatherLocation/Location.js",
+						"complete": false
+					},
+					{
+						"id": 10,
+						"imageLabs": "https://raw.githubusercontent.com/edisonAlbaSarmiento/Landing-Resume-Design/master/images/men.jpeg",
+						"title": "Project in PHP",
+						"description": "Web whit php",
+						"redirectGithub": "https://github.com/edisonAlbaSarmiento/ProyectoSena",
+						"viewMoreIn": "https://github.com/edisonAlbaSarmiento/ProyectoSena",
+						"complete": true
+					}
+				],
+				"about": {
+					"userName": "Edison Jordan Alba Sarmiento",
+					"position": "Frontend Developer",
+					"jobDescriptionShort": "I am a passionate Technology Leader and Frontend Developer from Colombia, with training in Systems Engineering. My approach focuses on collaborative work and the execution of multidisciplinary tasks. I am excited by the opportunity to learn from new experiences and consider challenges as opportunities to grow professionally. My dedication to technology goes beyond the mere execution of tasks; For me, it is a window that allows me to discover different and logical approaches to solving problems. I feel inspired by coming up with innovative ideas that not only improve my individual performance, but also contribute to the success of the team I collaborate with.",
+					"DescriptionLargeModal": "Proin dictum eros non eros aliquet, non accumsan arcu maximus. Sed eu pellentesque turpisProin dictum eros non eros aliquet, non accumsan arcu maximus. Sed eu pellentesque turpisProin dictum eros non eros aliquet, non accumsan arcu maximus. Sed eu pellentesque turpisProin dictum eros non eros aliquet, non accumsan arcu maximus. Sed eu pellentesque turpisProin dictum eros non eros aliquet, non accumsan arcu maximus. Sed eu pellentesque turpis",
+					"urlVideoProfile": "https://www.youtube.com/watch?v=oNOeHyV_aC0"
+				},
+				"skills": [
+					{
+						"image": "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg",
+						"porcentus": 50,
+						"title": "JavaScript"
+					},
+					{
+						"image": "https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg",
+						"porcentus": 50,
+						"title": "Typescript"
+					},
+					{
+						"image": "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg",
+						"porcentus": 50,
+						"title": "React"
+					},
+					{
+						"image": "https://raw.githubusercontent.com/devicons/devicon/master/icons/materialui/materialui-original.svg",
+						"porcentus": 50,
+						"title": "Material UI"
+					},
+					{
+						"image": "https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg",
+						"porcentus": 50,
+						"title": "Redux"
+					},
+					{
+						"image": "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-plain-wordmark.svg",
+						"porcentus": 50,
+						"title": "CSS3"
+					},
+					{
+						"image": "https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg",
+						"porcentus": 50,
+						"title": "HTML5"
+					},
+					{
+						"image": "https://raw.githubusercontent.com/devicons/devicon/master/icons/firebase/firebase-plain-wordmark.svg",
+						"porcentus": 50,
+						"title": "Firebase"
+					},
+					{
+						"image": "https://raw.githubusercontent.com/devicons/devicon/master/icons/nextjs/nextjs-original.svg",
+						"porcentus": 50,
+						"title": "Nextjs"
+					},
+					{
+						"image": "https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg",
+						"porcentus": 50,
+						"title": "MySQL"
+					},
+					{
+						"image": "https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg",
+						"porcentus": 50,
+						"title": "NodeJS"
+					},
+					{
+						"image": "https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original-wordmark.svg",
+						"porcentus": 50,
+						"title": "Git"
+					}
+				],
+				"dataUserMenu": {
+					"userImage": "https://avatars3.githubusercontent.com/u/31748119?s=460&amp;u=5b533fd135904b8b25951011a0c3da20fe15b413&amp;v=4",
+					"facebook": "https://github.com/edisonAlbaSarmiento",
+					"instagram": "https://www.instagram.com/edison_alba_s/?hl=es-la",
+					"linkedIn": "https://co.linkedin.com/in/edison-jordan-alba-sarmiento-866799154",
+					"twitter": ""
+				}
+			}
+		},
+		{
+			"es": {
+				"work": [
+					{
+						"imageWork": "https://raw.githubusercontent.com/edisonAlbaSarmiento/Landing-Resume-Design/master/images/icon-imaginamos.jpeg",
+						"description": "Imaginamos",
+						"urlWork": "https://imaginamos.com/"
+					},
+					{
+						"imageWork": "https://raw.githubusercontent.com/edisonAlbaSarmiento/Landing-Resume-Design/master/images/icon-chiper.png",
+						"description": "Chiper",
+						"urlWork": "https://chiper.co/"
+					},
+					{
+						"imageWork": "https://raw.githubusercontent.com/edisonAlbaSarmiento/Landing-Resume-Design/master/images/icon-etb.jpeg",
+						"description": "ETB-Praticas",
+						"urlWork": "https://etb.com/"
+					}
+				],
+				"labs": [
+					{
+						"id": 0,
+						"active": false,
+						"imageLabs": "testing",
+						"title": "Pruebas de sitios web",
+						"description": "Ejemplo de creación de sitio web con codigo nativo ,inicio de sesion con redes y filtros ",
+						"viewMoreIn": "https://network-tests.vercel.app"
+					},
+					{
+						"id": 1,
+						"imageLabs": "https://cdn.pixabay.com/photo/2015/12/04/14/05/code-1076536_1280.jpg",
+						"title": "Lab testuper 2",
+						"description": "Curacion color plateado inspiracion de una figura",
+						"viewMoreIn": "http://www.google.com"
+					},
+					{
+						"id": 2,
+						"imageLabs": "https://cdn.pixabay.com/photo/2018/05/08/08/44/artificial-intelligence-3382507__340.jpg",
+						"title": "Lab testuper 3",
+						"description": "Curacion color plateado inspiracion de una figura",
+						"viewMoreIn": "http://www.google.com"
+					}
+				],
+				"about": {
+					"userName": "Edison Jordan Alba Sarmiento",
+					"position": "Desarrollador FullStack",
+					"jobDescriptionShort": "Ingeniero de Sistemas apasionado por el trabajo en equipo y las tareas multidisciplinares. Disfruto aprendiendo de nuevas experiencias y encuentro desafíos como algo que me haría crecer como profesional. Trabajar en tecnología me hace descubrir formas diferentes y lógicas de resolver problemas y proponer ideas innovadoras que puedan ayudar al equipo con el que trabajo.",
+					"DescriptionLargeModal": "la globalización solamente como un proceso económico, tiene también implicaciones sociales y culturalela globalización solamente como un proceso económico, tiene también implicaciones sociales y culturalela globalización solamente como un proceso económico, tiene también implicaciones sociales y culturalela globalización solamente como un proceso económico, tiene también implicaciones sociales y culturalela globalización solamente como un proceso económico, tiene también implicaciones sociales y culturale",
+					"urlVideoProfile": "https://www.youtube.com/watch?v=oNOeHyV_aC0"
+				},
+				"skills": [
+					{
+						"image": "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg",
+						"porcentus": 50,
+						"title": "JavaScript"
+					},
+					{
+						"image": "https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg",
+						"porcentus": 50,
+						"title": "Typescript"
+					},
+					{
+						"image": "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg",
+						"porcentus": 50,
+						"title": "React"
+					},
+					{
+						"image": "https://raw.githubusercontent.com/devicons/devicon/master/icons/materialui/materialui-original.svg",
+						"porcentus": 50,
+						"title": "Material UI"
+					},
+					{
+						"image": "https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg",
+						"porcentus": 50,
+						"title": "Redux"
+					},
+					{
+						"image": "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-plain-wordmark.svg",
+						"porcentus": 50,
+						"title": "CSS3"
+					},
+					{
+						"image": "https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg",
+						"porcentus": 50,
+						"title": "HTML5"
+					},
+					{
+						"image": "https://raw.githubusercontent.com/devicons/devicon/master/icons/firebase/firebase-plain-wordmark.svg",
+						"porcentus": 50,
+						"title": "Firebase"
+					},
+					{
+						"image": "https://raw.githubusercontent.com/devicons/devicon/master/icons/nextjs/nextjs-original.svg",
+						"porcentus": 50,
+						"title": "Nextjs"
+					},
+					{
+						"image": "https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg",
+						"porcentus": 50,
+						"title": "MySQL"
+					},
+					{
+						"image": "https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg",
+						"porcentus": 50,
+						"title": "NodeJS"
+					},
+					{
+						"image": "https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original-wordmark.svg",
+						"porcentus": 50,
+						"title": "Git"
+					}
+				],
+				"dataUserMenu": {
+					"userImage": "https://avatars3.githubusercontent.com/u/31748119?s=460&amp;u=5b533fd135904b8b25951011a0c3da20fe15b413&amp;v=4",
+					"facebook": "https://github.com/edisonAlbaSarmiento",
+					"instagram": "https://www.instagram.com/edison_alba_s/?hl=es-la",
+					"linkedIn": "https://co.linkedin.com/in/edison-jordan-alba-sarmiento-866799154",
+					"twitter": ""
+				}
+			}
+		}
+	]
 }
