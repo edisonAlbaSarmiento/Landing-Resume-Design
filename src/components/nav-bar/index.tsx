@@ -38,7 +38,7 @@ export default function NavBar(): JSX.Element {
 				</div>
 			</div>
 
-			<div className='hidden lg:flex gap-4 mt-4 lg:mt-0'>
+			<div className='hidden lg:flex items-center gap-4 mt-4 lg:mt-0'>
 				{menuItems.map((item) => (
 					<a
 						key={item.key}

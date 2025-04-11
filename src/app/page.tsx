@@ -79,11 +79,7 @@ export default function Home() {
 	return (
 		<>
 			<main ref={main}>
-				<section
-					ref={mainSectionRef}
-					id='main'
-					className='px-36 py-6 bg-gray sticky top-0 z-50 backdrop-blur-sm'
-				>
+				<section ref={mainSectionRef} id='main' className='px-36 py-16 bg-gray'>
 					<NavBar />
 				</section>
 				<section id='section1' className='bg-[#34363a]'>
