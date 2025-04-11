@@ -26,7 +26,7 @@ export default function ContactMe(): JSX.Element {
 					<div className='w-[22rem] h-16 bg-[#31333b] flex items-center justify-center rounded-lg flex-row gap-3'>
 						<PhoneIcon sx={{ fontSize: 40 }} />
 
-						<div className='text-[#f0bf6c]'>(57) 3114748824</div>
+						<div className='text-[#f0bf6c]'>+(57) 3114748824</div>
 					</div>
 				</div>
 				<div className='flex flex-row justify-center'>

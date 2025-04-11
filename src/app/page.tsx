@@ -7,6 +7,7 @@ import MySkills from "@/components/my-skills";
 import NavBar from "@/components/nav-bar";
 import Portfolio from "@/components/portafolio";
 import ShareIcon from "@mui/icons-material/Share";
+import ExpandLessIcon from "@mui/icons-material/ExpandLess";
 import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
@@ -17,54 +18,60 @@ if (typeof window !== "undefined") {
 }
 
 export default function Home() {
-	const main = useRef<HTMLElement | any>();
-	const [isVisible, setIsVisible] = useState(true);
-	const mainSectionRef = useRef<HTMLElement | any>(null);
+	const main = useRef(null);
+	const [isVisible, setIsVisible] = useState(false);
+	const mainSectionRef = useRef<HTMLElement>(null);
+
+	// 🔁 Referencias para animar componentes
+	const aboutRef = useRef(null);
+	const skillsRef = useRef(null);
+	const portfolioRef = useRef(null);
+	const experienceRef = useRef(null);
+	const contactMeRef = useRef(null);
 
 	useEffect(() => {
 		const handleScroll = () => {
-			const scrollTop = window.screenY;
-			const windowHeight = window.innerHeight;
-			const docHeight = document.documentElement.scrollHeight;
-			const atBottom = scrollTop + windowHeight >= docHeight;
-
-			if (atBottom) {
-				if (isVisible) {
-					setIsVisible(false);
-					scrollToMain();
-				}
-			} else {
-				setIsVisible(true);
-			}
-		};
-
-		const scrollToMain = () => {
-			if (mainSectionRef.current) {
-				mainSectionRef.current.scrollIntoView({ behavior: "smooth" });
-			}
+			setIsVisible(window.scrollY > 300);
 		};
 
 		window.addEventListener("scroll", handleScroll);
-		return () => {
-			window.removeEventListener("scroll", handleScroll);
-		};
-	}, [isVisible]);
+		return () => window.removeEventListener("scroll", handleScroll);
+	}, []);
+
+	const scrollToMain = () => {
+		if (mainSectionRef.current) {
+			mainSectionRef.current.scrollIntoView({ behavior: "smooth" });
+		}
+	};
 
 	useGSAP(
 		() => {
-			const boxes = gsap.utils.toArray("#setion2");
-			boxes.forEach((box: any) => {
-				gsap.to(box, {
+			const animate = (target: any, direction: "left" | "right" | "scale") => {
+				let from: gsap.TweenVars = { opacity: 0 };
+
+				if (direction === "left") from.x = -100;
+				else if (direction === "right") from.x = 100;
+				else if (direction === "scale") from.scale = 0.8;
+
+				gsap.fromTo(target, from, {
+					opacity: 1,
 					x: 0,
+					scale: 1,
+					duration: 1,
+					ease: "power2.out",
 					scrollTrigger: {
-						trigger: box,
-						start: " bottom",
-						end: "top 20%",
-						scrub: true,
-						// markers: true,
+						trigger: target,
+						start: "top 100%",
+						toggleActions: "play none none none",
 					},
 				});
-			});
+			};
+
+			animate(aboutRef.current, "left");
+			animate(skillsRef.current, "right");
+			animate(portfolioRef.current, "left");
+			animate(experienceRef.current, "right");
+			animate(contactMeRef.current, "left");
 		},
 		{ scope: main },
 	);
@@ -72,75 +79,66 @@ export default function Home() {
 	return (
 		<>
 			<main ref={main}>
-				<section
-					id='main'
-					className='flex flex-col items-center justify-between px-36 py-16 bg-gray'
-				>
+				<section ref={mainSectionRef} id='main' className='px-36 py-16 bg-gray'>
 					<NavBar />
 				</section>
-				<section
-					id='section1'
-					className='flex flex-col items-center justify-between  bg-[#34363a]'
-				>
+				<section id='section1' className='bg-[#34363a]'>
 					<Header />
 				</section>
-				<section
-					id='section2'
-					className='flex flex-row items-center justify-between  lg:px-36 lg:py-16 sm:px-8  bg-gray'
-				>
-					<About />
-				</section>
-				<section
-					id='section3'
-					className=' flex flex-row items-center justify-between sm:px-0 md:px-0 lg:px-36-py-16  bg-gray'
-				>
-					<MySkills />
+
+				<section id='section2' className='bg-gray px-8 lg:px-36 py-16'>
+					<div ref={aboutRef}>
+						<About />
+					</div>
 				</section>
 
-				<section id='section4' className='bg-gray lg:px-20 sm:px-8'>
-					<Portfolio />
+				<section id='section3' className='bg-gray px-8 lg:px-36 py-16'>
+					<div ref={skillsRef}>
+						<MySkills />
+					</div>
 				</section>
-				<section
-					id='section5'
-					className='flex flex-row items-center justify-between lg:px-20 sm:px-8 bg-[#3d3e42]'
-				>
-					<Experience />
+
+				<section id='section4' className='bg-gray px-8 lg:px-20'>
+					<div ref={portfolioRef}>
+						<Portfolio />
+					</div>
 				</section>
-				{/*<section
-					id='section6'
-					className='flex flex-row items-center justify-between px-36 py-16  bg-gray'
-				>
-					Coming soon...
-				</section>*/}
-				<section
-					id='section7'
-					className='flex flex-row items-center justify-between  bg-[#3d3e42] h-80'
-				>
-					<ContactMe />
+
+				<section id='section5' className='bg-[#3d3e42] px-8 lg:px-20'>
+					<div ref={experienceRef}>
+						<Experience />
+					</div>
 				</section>
-				<div className='h-12 fixed bg-[#f0bf6c] z-[999] p-2.5 sm:left-[88%] lg:left-[96%] right-0 top-50%] bottom-[50%] flex items-center rounded-[1rem_0_0_1rem]'>
+
+				<section id='section7' className='bg-[#3d3e42] h-80'>
+					<div ref={contactMeRef}>
+						<ContactMe />
+					</div>
+				</section>
+
+				<div className='fixed z-[999] flex flex-col gap-4 items-end right-4 bottom-8'>
 					<a
 						target='_blank'
 						href='https://api.whatsapp.com/send?text=Ver mi pagina https://edison.com.co'
-						data-action='share/whatsapp/share'
 						aria-label='whatsapp'
+						className='bg-[#f0bf6c] p-3 rounded-full shadow-lg hover:scale-105 transition'
 					>
-						<ShareIcon sx={{ fontSize: 40 }} />
+						<ShareIcon sx={{ fontSize: 32 }} />
 					</a>
-				</div>
-				{isVisible && (
-					<div className='h-12 fixed bg-[#f0bf6c] z-[999] p-2.5 sm:left-[88%] lg:left-[96%] right-0 top-[76%] bottom-[20%] flex items-center rounded-[1rem_0_0_1rem]'>
-						<a
-							href='#main'
-							data-action='share/whatsapp/share'
-							aria-label='whatsapp'
+
+					{isVisible && (
+						<button
+							onClick={scrollToMain}
+							aria-label='Subir'
+							className='bg-[#f0bf6c] p-3 rounded-full shadow-lg hover:scale-105 transition'
 						>
-							<ShareIcon sx={{ fontSize: 40 }} />
-						</a>
-					</div>
-				)}
+							<ExpandLessIcon sx={{ fontSize: 32 }} />
+						</button>
+					)}
+				</div>
 			</main>
-			<footer className='flex flex-row items-center justify-center px-36 py-16  bg-gray'>
+
+			<footer className='flex justify-center px-36 py-16 bg-gray'>
 				<h1 className='text-[#f0bf6c] font-semibold text-center'>
 					Thanks for Scrolling
 				</h1>
