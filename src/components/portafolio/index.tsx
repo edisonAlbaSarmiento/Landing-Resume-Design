@@ -13,32 +13,32 @@ export default function Portfolio(): JSX.Element {
 			text: "Website Testing",
 			description:
 				"Example of creating a website with native code, login with networks and filters",
-			img: "https://raw.githubusercontent.com/edisonAlbaSarmiento/Landing-Resume-Design/master/images/default.jpg",
+			img: "https://raw.githubusercontent.com/edisonAlbaSarmiento/Landing-Resume-Design/master/images/default.webp",
 		},
 		{
 			text: "Website Testing API Movies",
 			description: "Curated color palate inspiration on your figure tip",
-			img: "https://raw.githubusercontent.com/edisonAlbaSarmiento/Landing-Resume-Design/master/images/default.jpg",
+			img: "https://raw.githubusercontent.com/edisonAlbaSarmiento/Landing-Resume-Design/master/images/default.webp",
 		},
 		{
 			text: "Landing pixel perfect",
 			description: "Curated color palate inspiration on your figure tip",
-			img: "https://raw.githubusercontent.com/edisonAlbaSarmiento/Landing-Resume-Design/master/images/default.jpg",
+			img: "https://raw.githubusercontent.com/edisonAlbaSarmiento/Landing-Resume-Design/master/images/default.webp",
 		},
 		{
 			text: "Testing chat whit socket.io",
 			description: "Curated color palate inspiration on your figure tip",
-			img: "https://raw.githubusercontent.com/edisonAlbaSarmiento/Landing-Resume-Design/master/images/default.jpg",
+			img: "https://raw.githubusercontent.com/edisonAlbaSarmiento/Landing-Resume-Design/master/images/default.webp",
 		},
 		{
 			text: "Clone page Imaginamos",
 			description: "Create whit next js",
-			img: "https://raw.githubusercontent.com/edisonAlbaSarmiento/Landing-Resume-Design/master/images/default.jpg",
+			img: "https://raw.githubusercontent.com/edisonAlbaSarmiento/Landing-Resume-Design/master/images/default.webp",
 		},
 		{
 			text: "Learning flutter",
 			description: "Create app music whit flutter",
-			img: "https://raw.githubusercontent.com/edisonAlbaSarmiento/Landing-Resume-Design/master/images/flutter.png",
+			img: "https://raw.githubusercontent.com/edisonAlbaSarmiento/Landing-Resume-Design/master/images/flutter.webp",
 		},
 	];
 	return (
