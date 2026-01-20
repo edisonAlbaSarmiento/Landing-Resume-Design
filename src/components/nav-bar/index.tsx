@@ -20,8 +20,8 @@ export default function NavBar(): JSX.Element {
 
 	const menuItems = [
 		{ label: "About", id: "section2", key: "about" },
-		/* 		{ label: "Projects", id: "section4", key: "portfolio" },
-		 */ { label: "Contact", id: "section7", key: "contact" },
+		{ label: "Projects", id: "section4", key: "portfolio" },
+		{ label: "Contact", id: "section7", key: "contact" },
 	] as const;
 
 	return (
