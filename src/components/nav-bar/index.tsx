@@ -6,7 +6,7 @@ import CloseIcon from "@mui/icons-material/Close";
 
 type NavBarProps = {
 	about: boolean;
-	portfolio: boolean;
+	portfolio?: boolean;
 	contact: boolean;
 };
 
@@ -20,8 +20,8 @@ export default function NavBar(): JSX.Element {
 
 	const menuItems = [
 		{ label: "About", id: "section2", key: "about" },
-		{ label: "Projects", id: "section4", key: "portfolio" },
-		{ label: "Contact", id: "section7", key: "contact" },
+		/* 		{ label: "Projects", id: "section4", key: "portfolio" },
+		 */ { label: "Contact", id: "section7", key: "contact" },
 	] as const;
 
 	return (
@@ -49,8 +49,8 @@ export default function NavBar(): JSX.Element {
 						onClick={() =>
 							setIsActive({
 								about: item.key === "about",
-								portfolio: item.key === "portfolio",
-								contact: item.key === "contact",
+								/* 								portfolio: item.key === "portfolio",
+								 */ contact: item.key === "contact",
 							})
 						}
 						aria-label={item.label}
@@ -73,8 +73,8 @@ export default function NavBar(): JSX.Element {
 								setIsMenuOpen(false);
 								setIsActive({
 									about: item.key === "about",
-									portfolio: item.key === "portfolio",
-									contact: item.key === "contact",
+									/* 									portfolio: item.key === "portfolio",
+									 */ contact: item.key === "contact",
 								});
 							}}
 							aria-label={item.label}

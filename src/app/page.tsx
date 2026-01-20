@@ -86,17 +86,17 @@ export default function Home() {
 					<Header />
 				</section>
 
-				<section id='section2' className='bg-gray px-8 lg:px-36 py-16'>
+			{	<section id='section2' className='bg-gray px-8 lg:px-36 py-16'>
 					<div ref={aboutRef}>
 						<About />
 					</div>
-				</section>
+				</section>}
 
-				<section id='section3' className='bg-gray px-8 lg:px-36 py-16'>
+				{/* <section id='section3' className='bg-gray px-8 lg:px-36 py-16'>
 					<div ref={skillsRef}>
 						<MySkills />
 					</div>
-				</section>
+				</section> */}
 
 				<section id='section4' className='bg-gray px-8 lg:px-20'>
 					<div ref={portfolioRef}>
